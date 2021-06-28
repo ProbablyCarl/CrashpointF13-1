@@ -12,7 +12,7 @@
 	var/last_tick //used to delay the powercheck
 	dog_fashion = null
 	var/unfastened = FALSE
-
+/*
 /obj/item/radio/intercom/ham_radio
 	name = "station intercom"
 	desc = "Talk through this."
@@ -21,7 +21,7 @@
 	anchored = TRUE
 	w_class = WEIGHT_CLASS_BULKY
 	canhear_range = 6
-
+*/
 /obj/item/radio/intercom/ham_radio
 	name = "station intercom"
 	desc = "Talk through this."
