@@ -752,7 +752,7 @@
 			slowdown += 15
 			armor = armor.modifyRating(melee = -60, bullet = -60, laser = -60)
 			emped = 1
-			spawn(50) //5 seconds of being slow and weak
+			spawn(600) //1 minute of being slow and weak
 				to_chat(loc, "<span class='warning'>Armor power reroute successful. All systems operational.</span>")
 				slowdown -= 15
 				armor = armor.modifyRating(melee = 60, bullet = 60, laser = 60)

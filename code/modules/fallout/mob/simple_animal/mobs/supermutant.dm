@@ -99,7 +99,7 @@
 	..()
 
 /////////
-// HMG Mutant - Boss mutant, similar to Robobrain and Sentrybot. Not used yet outside of Admin abuse.
+// HMG Mutant - Boss mutant, similar to Robobrain and Sentrybot. Not used yet outside of Admin abuse(and soon Lavaland.).
 /////////
 /mob/living/simple_animal/hostile/supermutant/rangedmutant/heavy
 	desc = "A huge and ugly mutant humanoid.  This one is clad in armor and carrying a rather large gun."
@@ -136,5 +136,5 @@
 		return FALSE
 
 /obj/item/projectile/bullet/F13/sm_hmg
-	damage = 35
+	damage = 15//from 35
 	armour_penetration = 45

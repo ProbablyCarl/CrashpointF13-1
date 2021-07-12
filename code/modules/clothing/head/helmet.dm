@@ -817,7 +817,7 @@
 				M.update_tint()
 			armor = armor.modifyRating(melee = -60, bullet = -60, laser = -60)
 			emped = 1
-			spawn(50) //5 seconds of being blind and weak
+			spawn(600) //1 minute of being blind and weak
 				to_chat(loc, "<span class='warning'>Helmet power reroute successful. All systems operational.</span>")
 				tint -= 2
 				if(istype(loc, /mob/living/carbon))
