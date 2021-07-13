@@ -647,7 +647,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/shopkeeper
 	name = "Shopkeeper"
-	icon_state = "Shopkeeper"
+	icon_state = "Vault-tec Doctor"
 
 // Wasteland
 
