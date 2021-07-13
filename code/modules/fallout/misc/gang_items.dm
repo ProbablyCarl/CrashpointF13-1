@@ -170,19 +170,19 @@
 /datum/gang_item/equipment/police
 	name = "Officer Sidearm"
 	id = "police"
-	cost = 240
+	cost = 100
 	item_path = /obj/item/gun/ballistic/revolver/police
 
 /datum/gang_item/equipment/uzi
 	name = "Type U3 Uzi"
 	id = "uzi"
-	cost = 1200
+	cost = 600
 	item_path = /obj/item/gun/ballistic/automatic/mini_uzi
 
 /datum/gang_item/equipment/type93
 	name = "Type 93 Assault Rifle"
 	id = "type93"
-	cost = 2400
+	cost = 1200
 	item_path = /obj/item/gun/ballistic/automatic/type93
 
 ///////////////////

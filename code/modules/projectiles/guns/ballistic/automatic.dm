@@ -734,7 +734,7 @@
 	extra_damage = 25
 	extra_penetration = 10
 
-/obj/item/gun/ballistic/automatic/marksman/servicerifle/r82
+/obj/item/gun/ballistic/automatic/marksman/servicerifle/r82//doesn't exist oy vey
 	name = "R82 heavy service rifle"
 	desc = "A top of the line 5.56x45 automatic service rifle manufactured by the NCR and issued to high ranking personnel."
 	fire_delay = 4
