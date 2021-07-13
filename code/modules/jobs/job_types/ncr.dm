@@ -194,7 +194,7 @@ Lieutenant
 /datum/outfit/loadout/ltcombat
 	name = "Combat Lieutenant"
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle/reinforced
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/servicerifle/r82
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle=3,
 		/obj/item/book/granter/trait/trekking=1)
@@ -255,7 +255,7 @@ Sergeant
 /datum/outfit/loadout/sgtcombat
 	name = "Combat Sergeant"
 	suit = /obj/item/clothing/suit/armor/f13/ncrarmor/mantle
-	suit_store = /obj/item/gun/ballistic/automatic/marksman/servicerifle/r82
+	suit_store = /obj/item/gun/ballistic/automatic/assault_carbine
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle=3)
 
