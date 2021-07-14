@@ -1,3 +1,4 @@
 NothingButCarl = Host
 Evoturd = Elder
 CyberThot = Elder
+Franzemmerich = Elder
