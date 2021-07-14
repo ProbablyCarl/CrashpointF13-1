@@ -875,6 +875,20 @@
 	bulb_colour = "#00FFFF"
 	light_color = "#00FFFF"
 
+/obj/machinery/light/fo13colored/emergency
+	icon_state = "bulb"
+	base_state = "bulb"
+	fitting = "bulb"
+	brightness = 2
+	desc = "A small lighting fixture. This one appears lit by a backup generator."
+	light_type = /obj/item/light/bulb
+	nightshift_allowed = FALSE
+	no_emergency = TRUE
+	density = 0
+	layer = WALL_OBJ_LAYER
+	bulb_colour = "#61171B"
+	light_color = "#61171B"
+
 //Flickering Ported From Hippiestation. credits to yoyobatty
 /obj/machinery/light/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = 1)
 	. = ..()

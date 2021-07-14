@@ -91,6 +91,10 @@
 	infinite = TRUE
 	heat = 2000
 
+/obj/item/candle/tribal_torch/lit
+	infinite = TRUE
+	start_lit = TRUE
+
 /obj/item/candle/tribal_torch/attackby(obj/item/W, mob/user, params)
 	..()
 	var/msg = W.ignition_effect(src, user)

@@ -567,17 +567,14 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
 "bG" = (
-/obj/structure/barricade/sandbags{
-	dir = 1;
-	tag = "icon-sandbags (NORTH)"
-	},
-/obj/machinery/light/small{
-	dir = 1
+/obj/machinery/porta_turret/syndicate/wasteland,
+/obj/effect/turf_decal/stripes/box,
+/obj/machinery/light/fo13colored/emergency{
+	dir = 8
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2";
-	tag = "icon-bluerustychess2"
+	icon_state = "plating";
+	tag = "icon-plating"
 	},
 /area/f13/bunker)
 "bH" = (
@@ -869,15 +866,14 @@
 	},
 /area/f13/bunker)
 "cl" = (
-/obj/effect/decal/cleanable/blood/old,
-/obj/structure/barricade/sandbags{
-	dir = 8;
-	tag = "icon-sandbags (WEST)"
+/obj/machinery/porta_turret/syndicate/wasteland,
+/obj/effect/turf_decal/stripes/box,
+/obj/machinery/light/fo13colored/emergency{
+	dir = 4
 	},
 /turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2";
-	tag = "icon-bluerustychess2"
+	icon_state = "plating";
+	tag = "icon-plating"
 	},
 /area/f13/bunker)
 "cm" = (
@@ -1251,16 +1247,6 @@
 "dl" = (
 /turf/open/floor/plasteel/elevatorshaft,
 /area/f13/bunker)
-"dm" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/machinery/porta_turret/syndicate/wasteland,
-/turf/open/floor/plasteel/barber{
-	icon_state = "plating";
-	tag = "icon-plating"
-	},
-/area/f13/bunker)
 "dn" = (
 /obj/structure/barricade/sandbags{
 	dir = 8;
@@ -1276,15 +1262,6 @@
 /obj/structure/barricade/wooden,
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess"
-	},
-/area/f13/bunker)
-"dp" = (
-/obj/machinery/light/small,
-/obj/effect/spawner/lootdrop/trash,
-/turf/open/floor/plasteel/barber{
-	icon = 'icons/turf/f13floors2.dmi';
-	icon_state = "bluerustychess2";
-	tag = "icon-bluerustychess2"
 	},
 /area/f13/bunker)
 "dq" = (
@@ -3392,12 +3369,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/ahs)
-"iz" = (
-/mob/living/simple_animal/hostile/spawner/ghoul,
-/turf/open/floor/plating/f13/inside/mountain{
-	icon_state = "mountain2"
-	},
-/area/f13/underground/cave)
 "iA" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -6565,13 +6536,6 @@
 /turf/open/floor/plasteel/barber{
 	icon_state = "platingdmg1";
 	tag = "icon-platingdmg1"
-	},
-/area/f13/bunker)
-"pL" = (
-/obj/machinery/porta_turret/syndicate/wasteland,
-/turf/open/floor/plasteel/barber{
-	icon_state = "plating";
-	tag = "icon-plating"
 	},
 /area/f13/bunker)
 "pM" = (
@@ -19482,7 +19446,7 @@ fV
 EC
 HD
 aV
-pL
+bG
 aV
 pI
 aV
@@ -19738,9 +19702,9 @@ zb
 aV
 ns
 HD
-bG
-cl
-dn
+aV
+sA
+aV
 HD
 HD
 HD
@@ -20254,7 +20218,7 @@ aV
 HD
 PU
 aV
-dF
+aV
 HD
 aa
 aa
@@ -21025,7 +20989,7 @@ HD
 HD
 aV
 aV
-dp
+dq
 HD
 aa
 aa
@@ -23852,7 +23816,7 @@ RW
 HD
 aV
 aV
-dF
+aV
 HD
 aa
 aa
@@ -24621,9 +24585,9 @@ Ih
 Ku
 gF
 HD
-dn
-dn
-cl
+aV
+aV
+sA
 HD
 aa
 aa
@@ -24879,7 +24843,7 @@ Hv
 RN
 pJ
 bO
-dm
+cl
 aV
 HD
 aa
@@ -58691,7 +58655,7 @@ aa
 aa
 aa
 im
-iz
+fu
 iS
 kX
 aa
