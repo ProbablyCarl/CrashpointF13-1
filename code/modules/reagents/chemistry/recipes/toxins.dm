@@ -49,7 +49,7 @@
 	name = "Unstable FEV solution"
 	id = "FEV_solution"
 	results = list("FEV_solution" = 5)
-	required_reagents = list("radium" = 1, "phosphorus" = 1, "chlorine" = 1, "virusfood" = 2)
+	required_reagents = list("radium" = 1, "phosphorus" = 1, "chlorine" = 1/*, "virusfood" = 2*/)//disabled for the moment, due to it being fucky
 
 /datum/chemical_reaction/lexorin
 	name = "Lexorin"

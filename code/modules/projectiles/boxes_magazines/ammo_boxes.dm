@@ -271,6 +271,14 @@
 	multiple_sprites = 1
 	materials = list(MAT_METAL = 20000)
 
+/obj/item/ammo_box/a40mmg
+	name = "ammo box (40mm teargas grenades)"
+	icon_state = "40mmtg"
+	ammo_type = /obj/item/ammo_casing/a40mmg
+	max_ammo = 4
+	multiple_sprites = 1
+	materials = list(MAT_METAL = 20000)
+
 //Needler
 /obj/item/ammo_box/needle
 	name = "needler stripper clip (needle darts)"

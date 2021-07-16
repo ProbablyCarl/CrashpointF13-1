@@ -283,14 +283,17 @@
 	..()
 	icon_state = "stone-[pick(1,2)]"
 
-/obj/structure/statue/sandstone/gravestone/soldier
+/obj/structure/statue/sandstone/soldier
 	name = "grave marker"
 	desc = "An old grave marker, the name of the person buried here has long been lost to time."
 	icon = 'icons/obj/graveyard.dmi'
 	icon_state = "gravesoldier"
+	max_integrity = 50000//Why would you want to destroy something so grand?
+	anchored = TRUE
+	density = TRUE
 
-/obj/structure/statue/sandstone/gravestone/soldier/New()
-	..()
+/obj/structure/statue/sandstone/soldier/fwm
+	desc = "The helmet has an inscription, reading: Here lies one of the best men of post-war America, F.W.M. A hero, friend and confidant."
 
 /////////////////////snow/////////////////////////////////////////
 

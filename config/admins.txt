@@ -1,4 +1,7 @@
 NothingButCarl = Host
+
 Evoturd = Elder
 CyberThot = Elder
 Franzemmerich = Elder
+
+FulminatingGold = Journeyman Scribe
