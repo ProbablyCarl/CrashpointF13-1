@@ -67,10 +67,10 @@
 		to_chat(user, "<span class='notice'>You switch to semi-automatic.</span>")
 	else
 		//burst_size = initial(burst_size) //Removed for Gun Mods System
-		if(set_burst_size == null || set_burst_size < 2) //Added for Gun Mods System
-			burst_size = initial(burst_size) //Added for Gun Mods System
-		else //Added for Gun Mods System
+		if(set_burst_size != null && set_burst_size > 1) //Added for Gun Mods System
 			burst_size = set_burst_size //Added for Gun Mods System
+		else //Added for Gun Mods System
+			burst_size = initial(burst_size) //Added for Gun Mods System
 		to_chat(user, "<span class='notice'>You switch to [burst_size]-rnd burst.</span>")
 
 	playsound(user, 'sound/weapons/empty.ogg', 100, 1)

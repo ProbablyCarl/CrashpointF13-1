@@ -97,6 +97,15 @@
 	can_suppress = TRUE
 	extra_damage = 25
 	extra_penetration = 5
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 28, "west" =  9, "south" = 21, "north" = 14) //x coordinate for attachment point
+	yattachlist = list("east" = 18, "west" = 17, "south" = 17, "north" = 21) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/automatic/pistol/n99/executive
 	name = "\improper Executive" //'the Executive'

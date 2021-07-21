@@ -1,16 +1,19 @@
-obj/item/gun/ballistic/automatic/modifiablefirearm/coltn99 //OG
+obj/item/gun/ballistic/automatic/coltn99 //OG
 	name = "Colt N99"
 	desc = "A 10x25mm calliber pistol."
 	icon = 'icons/obj/guns/modifiableguns.dmi'
 	icon_state = "ColtN99"
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
 	//stats
+	burst_size = 1
 	spread = 20
 	fire_delay = 2
 	extra_damage = 18
 	extra_penetration = 12
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
 	base_size = 1
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
 	//Sprite Attachment Points
 	xattachlist = list("east" = 25, "west" =  9, "south" = 21, "north" = 16) //x coordinate for attachment point
 	yattachlist = list("east" = 20, "west" = 17, "south" = 17, "north" = 21) //y coordinate for attachment point
@@ -19,29 +22,7 @@ obj/item/gun/ballistic/automatic/modifiablefirearm/coltn99 //OG
 	//Blacklisted Parts
 	blacklistedparts = list("stock")
 
-obj/item/gun/ballistic/automatic/modifiablefirearm/colt1911
-	name = "Colt 1911"
-	desc = "A 11.43×23mm calliber pistol."
-	icon = 'icons/obj/guns/modifiableguns.dmi'
-	icon_state = "Colt1911"
-	fire_sound = 'sound/f13weapons/ninemil.ogg'
-	mag_type = /obj/item/ammo_box/magazine/m45
-	//stats
-	spread = 19
-	fire_delay = 1.6
-	extra_damage = 29
-	extra_penetration = 5
-	mag_type = /obj/item/ammo_box/magazine/m45
-	base_size = 1
-	//Sprite Attachment Points
-	xattachlist = list("east" = 31, "west" =  5, "south" = 21, "north" = 14) //x coordinate for attachment point
-	yattachlist = list("east" = 23, "west" = 19, "south" = 18, "north" = 24) //y coordinate for attachment point
-	//Attachment Points
-	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
-	//Blacklisted Parts
-	blacklistedparts = list("stock")
-
-obj/item/gun/ballistic/automatic/modifiablefirearm/browninghipower
+obj/item/gun/ballistic/automatic/browninghipower
 	name = "Browning Hi-Power"
 	desc = "A 9x19mm calliber pistol."
 	icon = 'icons/obj/guns/modifiableguns.dmi'
@@ -49,12 +30,15 @@ obj/item/gun/ballistic/automatic/modifiablefirearm/browninghipower
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m9mm
 	//stats
+	burst_size = 1
 	spread = 19
 	fire_delay = 1.5
 	extra_damage = 22
 	extra_penetration = 9
 	mag_type = /obj/item/ammo_box/magazine/m9mm
 	base_size = 1
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
 	//Sprite Attachment Points
 	xattachlist = list("east" = 31, "west" =  4, "south" = 21, "north" = 16) //x coordinate for attachment point
 	yattachlist = list("east" = 21, "west" = 17, "south" = 17, "north" = 22) //y coordinate for attachment point
@@ -71,12 +55,15 @@ obj/item/gun/ballistic/automatic/modifiablefirearm/M16A2
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
 	mag_type = /obj/item/ammo_box/magazine/m9mm
 	//stats
+	burst_size = 1
 	spread = 20.5
 	fire_delay = 2.5
 	extra_damage = 22
 	extra_penetration = 15
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	base_size = 2
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
 	//Sprite Attachment Points
 	xattachlist = list("east" = 27, "west" =  7, "south" = 19, "north" = 15) //x coordinate for attachment point
 	yattachlist = list("east" = 17, "west" = 17, "south" = 15, "north" = 20) //y coordinate for attachment point

@@ -364,6 +364,15 @@
 	fire_delay = 3
 	extra_damage = 30
 	extra_penetration = 10
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 32, "west" =  9, "south" = 21, "north" = 16) //x coordinate for attachment point
+	yattachlist = list("east" = 22, "west" = 17, "south" = 17, "north" = 23) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/revolver/m29/alt
 	item_state = "44magnum"
@@ -435,7 +444,7 @@
 	icon_state = "lucky"
 	w_class = WEIGHT_CLASS_SMALL
 	fire_delay = 0
-	block_chance = 20 
+	block_chance = 20
 	extra_penetration = 10
 
 /obj/item/gun/ballistic/revolver/colt357/lucky/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)

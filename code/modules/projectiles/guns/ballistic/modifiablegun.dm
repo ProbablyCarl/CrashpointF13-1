@@ -1,32 +1,20 @@
-obj/item/gun/ballistic/automatic/modifiablefirearm
-	name = "Testing Glock"
-	desc = "Yoo she got a mothafuckin' glock."
-	icon = 'icons/obj/guns/modifiableguns.dmi'
-	icon_state = "ColtN99"
-	fire_sound = 'sound/f13weapons/ninemil.ogg'
-	w_class = WEIGHT_CLASS_NORMAL
+obj/item/gun/ballistic
 	var/modifiable = FALSE
-	can_suppress = FALSE
-	mag_type = /obj/item/ammo_box/magazine/m9mm
-	//Stats
-	spread = 18
-	fire_delay = 2
-	extra_damage = 17
-	extra_penetration = 10
-	burst_size = 1
-	mag_type = /obj/item/ammo_box/magazine/m9mm
-	//Base Stats
+	var/modifiablegun = FALSE
 	var/base_mag_type = null
+	var/obj/item/ammo_box/magazine/internal/mag = null
+	//Base Stats
 	var/base_size = 1
 	//Sprite Attachment Points
 	var/list/xattachlist = list("east" = 26, "west" = 9, "south" = 21, "north" = 15) //x coordinate for attachment point
 	var/list/yattachlist = list("east" = 20, "west" = 17, "south" = 16, "north" = 21) //y coordinate for attachment point
 	//Attachment Points
-	var/obj/item/gunpart/attachableparts[] = list("internal" = /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	var/obj/item/gunpart/attachableparts[] = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
 	//Blacklisted Parts
-	var/obj/item/gunpart/blacklistedparts[] = list("stock", "barrel", "receiver", "scope", "burstcam")
+	//var/obj/item/gunpart/blacklistedparts[] = list("stock", "barrel", "receiver", "scope", "burstcam")
+	var/obj/item/gunpart/blacklistedparts[] = list()
 
-/obj/item/gun/ballistic/automatic/modifiablefirearm/Initialize()
+/obj/item/gun/ballistic/Initialize()
 	. = ..()
 
 	base_mag_type = mag_type
@@ -35,13 +23,15 @@ obj/item/gun/ballistic/automatic/modifiablefirearm
 	updatesprites()
 	updatesize()
 
-/obj/item/gun/ballistic/automatic/modifiablefirearm/proc/updatestats()
+/obj/item/gun/ballistic/proc/updatestats()
 	//base stats
 	spread = initial(spread)
 	fire_delay = initial(fire_delay)
 	extra_damage = initial(extra_damage)
 	extra_penetration = initial(extra_penetration)
-	set_burst_size = initial(set_burst_size)
+	if(istype(src, /obj/item/gun/ballistic/automatic))
+		var/obj/item/gun/ballistic/automatic/I = src
+		I.set_burst_size = initial(I.set_burst_size)
 	//scope
 	zoomable = FALSE
 	azoom = null
@@ -53,13 +43,14 @@ obj/item/gun/ballistic/automatic/modifiablefirearm
 			spread = spread * (1 - attachableparts[attachableparts[i]].accuracymodifier)
 			fire_delay = fire_delay * (1 - attachableparts[attachableparts[i]].firedelaymodifier)
 			extra_damage = extra_damage * (1 + attachableparts[attachableparts[i]].damagemodifier)
-			extra_penetration = extra_penetration * (1 + attachableparts[attachableparts[i]].penetrationmodifier)
-			set_burst_size = set_burst_size + attachableparts[attachableparts[i]].burstmodifier //changes when refreshed
+			if(istype(src, /obj/item/gun/ballistic/automatic))
+				var/obj/item/gun/ballistic/automatic/I = src
+				I.set_burst_size = I.set_burst_size + I.attachableparts[attachableparts[i]].burstmodifier //changes when refreshed
 			if(attachableparts[attachableparts[i]].parttype == "scope") //works but doesnt add scope
 				zoomable = TRUE
 				build_zooming()
 
-/obj/item/gun/ballistic/automatic/modifiablefirearm/proc/updatesprites()
+/obj/item/gun/ballistic/proc/updatesprites()
 	overlays = null
 	for(var/i = 1; i <= attachableparts.len; i++)
 		if(attachableparts[attachableparts[i]] != null)
@@ -68,7 +59,7 @@ obj/item/gun/ballistic/automatic/modifiablefirearm
 			I.pixel_y = yattachlist[attachableparts[i]] - attachableparts[attachableparts[i]].attachy
 			overlays += I
 
-/obj/item/gun/ballistic/automatic/modifiablefirearm/proc/updatesize()
+/obj/item/gun/ballistic/proc/updatesize()
 	var/size = base_size
 	for(var/i = 1; i <= attachableparts.len; i++)
 		if(attachableparts[attachableparts[i]] != null)
@@ -83,12 +74,15 @@ obj/item/gun/ballistic/automatic/modifiablefirearm
 		w_class = WEIGHT_CLASS_BULKY
 		weapon_weight = WEAPON_HEAVY
 
-obj/item/gun/ballistic/automatic/modifiablefirearm/attackby(obj/item/I, mob/user, params)
-	..()
+obj/item/gun/ballistic/attackby(obj/item/I, mob/user, params)
+	if(!modifiablegun)
+		return
 	//adding parts
 	if(istype(I, /obj/item/gunpart) && modifiable && do_after(user, 8, target = src))
 		var/obj/item/gunpart/A = I
 		for(var/i = 1; i <= attachableparts.len; i++)
+			if(!istype(src, /obj/item/gun/ballistic/automatic) && A.parttype == "burstcam")
+				return
 			if(A.partlocation == "[attachableparts[i]]" && blacklistedparts.Find(A.parttype) <= 0)
 				if(attachableparts[attachableparts[i]] != null)
 					user.dropItemToGround(attachableparts[attachableparts[i]])
@@ -103,13 +97,26 @@ obj/item/gun/ballistic/automatic/modifiablefirearm/attackby(obj/item/I, mob/user
 	if(istype(I, /obj/item/screwdriver))
 		if(modifiable && attachableparts[attachableparts[1]] != null && do_after(user, 20, target = src))
 			playsound(src, "gun_insert_full_magazine", 70, 1)
-			mag_type = base_mag_type
+			mag_type = initial(mag_type)
+			if(istype(src, /obj/item/gun/ballistic/revolver) || istype(src, /obj/item/gun/ballistic/shotgun))
+				magazine = mag
 			modifiable = FALSE
 			to_chat(user, "<span class='notice'>You screw the \the [src] closed for usage.</span>")
 		else if(!modifiable && do_after(user, 20, target = src))
+			if(istype(src, /obj/item/gun/ballistic/revolver) || istype(src, /obj/item/gun/ballistic/shotgun))
+				//magazine.empty_magazine()
+				mag = magazine
+				chambered = null
+				while (get_ammo() > 0)
+					var/obj/item/ammo_casing/CB
+					CB = mag.get_round(0)
+					if(CB)
+						CB.forceMove(drop_location())
+						CB.bounce_away(FALSE, NONE)
+			else
+				user.dropItemToGround(magazine)
+				user.dropItemToGround(chambered)
 			playsound(src, "gun_insert_full_magazine", 70, 1)
-			user.dropItemToGround(magazine)
-			user.dropItemToGround(chambered)
 			mag_type = null
 			magazine = null
 			chambered = null
@@ -127,3 +134,4 @@ obj/item/gun/ballistic/automatic/modifiablefirearm/attackby(obj/item/I, mob/user
 		updatesprites()
 		updatesize()
 		return
+//Version #3: For Crashpoint, not degeneracy.
