@@ -650,16 +650,10 @@ SUBSYSTEM_DEF(ticker)
 	save_admin_data()
 	if(!round_end_sound)
 		round_end_sound = pick(\
-		'sound/roundend/newroundsexy.ogg',
-		'sound/roundend/bangindonk.ogg',
-		'sound/roundend/its_only_game.ogg',
-		'sound/roundend/yeehaw.ogg',
-		'sound/roundend/roundend_jean_baptist.ogg',
-		'sound/roundend/roundend_smoothskin.ogg',
-		'sound/roundend/roundend_tunnel_snakes_rule.ogg',
-		'sound/roundend/roundend_real_tunnel_snake.ogg',
-		'sound/roundend/roundend_nuclear_backyard.ogg',
-		'sound/roundend/roundend_patrolling.ogg'\
+		'sound/roundend/littlekitten.ogg',
+		'sound/roundend/gnomed.ogg',
+		'sound/roundend/not.ogg',
+		'sound/roundend/nyaa.ogg'\
 		)
 
 	SEND_SOUND(world, sound(round_end_sound))
