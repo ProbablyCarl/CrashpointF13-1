@@ -424,6 +424,15 @@
 	fire_delay = 5
 	extra_damage = 40
 	extra_penetration = 0
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 29, "west" =  9, "south" = 21, "north" = 17) //x coordinate for attachment point
+	yattachlist = list("east" = 20, "west" = 17, "south" = 17, "north" = 20) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy/scoped
 	name = "scoped cowboy repeater"
