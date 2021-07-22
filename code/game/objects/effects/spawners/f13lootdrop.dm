@@ -695,7 +695,6 @@
 				)
 
 	var/loot4 = list(
-				/obj/item/gun/ballistic/revolver/m29/scoped,
 				/obj/item/ammo_box/m44,
 				/obj/item/ammo_box/m44
 				)
@@ -705,7 +704,7 @@
 				/obj/item/ammo_box/tube/a357
 				)
 
-	var/loot6 = list(/obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy/scoped,
+	var/loot6 = list(
 				/obj/item/ammo_box/tube/a357,
 				/obj/item/ammo_box/tube/a357
 				)
@@ -782,7 +781,6 @@
 				)
 
 	var/loot8 = list(
-				/obj/item/gun/ballistic/shotgun/automatic/hunting/trail/scoped,
 				/obj/item/ammo_box/tube/m44,
 				/obj/item/ammo_box/tube/m44
 				)
@@ -849,7 +847,6 @@
 				 )
 
 	var/loot10 = list(
-				/obj/item/gun/ballistic/shotgun/automatic/hunting/brush/scoped,
 				/obj/item/ammo_box/tube/c4570,
 				/obj/item/ammo_box/tube/c4570
 				)
@@ -902,7 +899,6 @@
 	loot = list(
 				/obj/item/gun/energy/laser/plasma,
 				/obj/item/gun/energy/laser/plasma/scatter,
-				/obj/item/gun/ballistic/revolver/sequoia/scoped,
 				/obj/item/gun/ballistic/automatic/bozar,
 				/obj/item/gun/ballistic/automatic/atlauncher
 				)

@@ -99,6 +99,15 @@
 						"Gold Trim" = "detective_gold",
 						"The Peacemaker" = "detective_peacemaker"
 						)
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 26, "west" =  9, "south" = 21, "north" = 12) //x coordinate for attachment point
+	yattachlist = list("east" = 19, "west" = 17, "south" = 17, "north" = 24) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock", "scope")
 
 /obj/item/gun/ballistic/revolver/detective/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0)
 	if(prob(70 - (magazine.ammo_count() * 15)))	//minimum probability of 15, maximum of 60
@@ -153,6 +162,15 @@
 	recoil = 8
 	pin = /obj/item/firing_pin
 	w_class = WEIGHT_CLASS_NORMAL
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 29, "west" =  9, "south" = 21, "north" = 19) //x coordinate for attachment point
+	yattachlist = list("east" = 19, "west" = 17, "south" = 17, "north" = 19) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 // A gun to play Russian Roulette!
 // You can spin the chamber to randomize the position of the bullet.
@@ -416,16 +434,6 @@
 			to_chat(user, "<span class='notice'>You switch to single-shot fire.</span>")
 	update_icon()
 
-/obj/item/gun/ballistic/revolver/m29/scoped
-	name = "\improper .44 magnum revolver"
-	icon_state = "scoped_m29"
-	desc = "Being that this is the most powerful handgun in the world, and can blow your head clean-off, you've got to ask yourself one question. Do I feel lucky? Well, do ya punk? Now with a scope!"
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	w_class = WEIGHT_CLASS_NORMAL
-	fire_delay = 4
-
 /obj/item/gun/ballistic/revolver/colt357
 	name = "\improper .357 magnum revolver"
 	desc = "A relatively primitive .357 magnum revolver."
@@ -436,6 +444,15 @@
 	fire_delay = 4
 	extra_damage = 30
 	extra_penetration = 0
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 30, "west" =  9, "south" = 21, "north" = 17) //x coordinate for attachment point
+	yattachlist = list("east" = 20, "west" = 17, "south" = 17, "north" = 20) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/revolver/colt357/lucky
 	name = "Lucky"
@@ -475,6 +492,15 @@
 	fire_delay = 2
 	extra_damage = 30
 	extra_penetration = 5
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 30, "west" =  9, "south" = 21, "north" = 15) //x coordinate for attachment point
+	yattachlist = list("east" = 20, "west" = 17, "south" = 17, "north" = 21) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/revolver/sequoia
 	name = "ranger sequoia"
@@ -487,17 +513,15 @@
 	fire_delay = 4
 	extra_damage = 45
 	extra_penetration = 5
-
-/obj/item/gun/ballistic/revolver/sequoia/scoped
-	name = "hunting revolver"
-	desc = "A scoped double action revolver chambered in 45-70."
-	icon_state = "hunting_revolver"
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	w_class = WEIGHT_CLASS_NORMAL
-	fire_delay = 5
-
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 30, "west" =  9, "south" = 21, "north" = 17) //x coordinate for attachment point
+	yattachlist = list("east" = 20, "west" = 17, "south" = 17, "north" = 20) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/revolver/zipgun
 	name = "zipgun"
@@ -524,7 +548,15 @@
 	fire_delay = 5
 	extra_damage = 30
 	extra_penetration = 10
-
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 32, "west" =  9, "south" = 21, "north" = 15) //x coordinate for attachment point
+	yattachlist = list("east" = 17, "west" = 17, "south" = 17, "north" = 17) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/revolver/police
 	name = "police pistol"
@@ -536,6 +568,15 @@
 	fire_delay = 3
 	extra_damage = 30
 	extra_penetration = 0
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 29, "west" =  9, "south" = 21, "north" = 12) //x coordinate for attachment point
+	yattachlist = list("east" = 22, "west" = 17, "south" = 17, "north" = 24) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock", "scope")
 
 /obj/item/gun/ballistic/revolver/thatgun
 	name = ".223 pistol"
@@ -558,3 +599,12 @@
 	burst_size = 1
 	extra_penetration = 15
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 32, "west" =  9, "south" = 21, "north" =  7) //x coordinate for attachment point
+	yattachlist = list("east" = 24, "west" = 17, "south" = 17, "north" = 26) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")

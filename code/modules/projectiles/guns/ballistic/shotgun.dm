@@ -110,6 +110,15 @@
 	fire_sound = 'sound/f13weapons/hunting_rifle.ogg'
 	extra_damage = 40
 	extra_penetration = 0
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 30, "west" =  9, "south" = 21, "north" = 18) //x coordinate for attachment point
+	yattachlist = list("east" = 18, "west" = 17, "south" = 17, "north" = 18) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/shotgun/boltaction/enchanted
 	name = "enchanted bolt action rifle"
@@ -394,22 +403,15 @@
 	fire_delay = 4
 	extra_damage = 40
 	extra_penetration = 10
-
-/obj/item/gun/ballistic/shotgun/automatic/hunting/trail/scoped
-	name = "scoped trail carbine"
-	desc = "A lever action rifle chambered in .44 Magnum."
-	icon_state = "scopedtrailcarbine"
-	item_state = "scopedtrailcarbine"
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube44
-	fire_sound = 'sound/f13weapons/44mag.ogg'
-	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	fire_delay = 6
-	projectile_speed = 0.7
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 31, "west" =  9, "south" = 21, "north" = 20) //x coordinate for attachment point
+	yattachlist = list("east" = 20, "west" = 17, "south" = 17, "north" = 20) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy
 	name = "cowboy repeater"
@@ -427,28 +429,12 @@
 	//Extra Modifiable Gun Vars
 	modifiablegun = TRUE
 	//Sprite Attachment Points
-	xattachlist = list("east" = 29, "west" =  9, "south" = 21, "north" = 17) //x coordinate for attachment point
+	xattachlist = list("east" = 29, "west" =  9, "south" = 21, "north" = 18) //x coordinate for attachment point
 	yattachlist = list("east" = 20, "west" = 17, "south" = 17, "north" = 20) //y coordinate for attachment point
 	//Attachment Points
 	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
 	//Blacklisted Parts
 	blacklistedparts = list("stock")
-
-/obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy/scoped
-	name = "scoped cowboy repeater"
-	desc = "A lever action rifle chambered in .357 Magnum. Smells vaguely of brooding veterans and cigarettes."
-	icon_state = "scopedcowboyrepeater"
-	item_state = "scopedcowboyrepeater"
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube357
-	fire_sound = 'sound/f13weapons/cowboyrepeaterfire.ogg'
-	pump_sound = 'sound/f13weapons/cowboyrepeaterreload.ogg'
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	fire_delay = 8
-	projectile_speed = 0.7
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
 	name = "brush gun"
@@ -462,21 +448,15 @@
 	fire_delay = 4
 	extra_damage = 50
 	extra_penetration = 15
-
-/obj/item/gun/ballistic/shotgun/automatic/hunting/brush/scoped
-	name = "scoped brush gun"
-	desc = "A short lever action rifle chambered in the heavy 45-70 round. Issued to NCR Veteran Rangers in the absence of heavier weaponry."
-	icon_state = "scopedbrushgun"
-	item_state = "scopedbrushgun"
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
-	fire_sound = 'sound/f13weapons/brushgunfire.ogg'
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	fire_delay = 6
-	projectile_speed = 0.7
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 29, "west" =  9, "south" = 21, "north" = 20) //x coordinate for attachment point
+	yattachlist = list("east" = 20, "west" = 17, "south" = 17, "north" = 20) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/revolver/widowmaker
 	name = "winchester widowmaker"
