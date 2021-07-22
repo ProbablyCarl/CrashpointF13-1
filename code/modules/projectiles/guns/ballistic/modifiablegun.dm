@@ -1,10 +1,9 @@
 obj/item/gun/ballistic
 	var/modifiable = FALSE
 	var/modifiablegun = FALSE
-	var/base_mag_type = null
 	var/obj/item/ammo_box/magazine/internal/mag = null
 	//Base Stats
-	var/base_size = 1
+	var/base_size = null
 	//Sprite Attachment Points
 	var/list/xattachlist = list("east" = 26, "west" = 9, "south" = 21, "north" = 15) //x coordinate for attachment point
 	var/list/yattachlist = list("east" = 20, "west" = 17, "south" = 16, "north" = 21) //y coordinate for attachment point
@@ -17,7 +16,12 @@ obj/item/gun/ballistic
 /obj/item/gun/ballistic/Initialize()
 	. = ..()
 
-	base_mag_type = mag_type
+	if(w_class == WEIGHT_CLASS_SMALL && base_size != null)
+		base_size = 0.5
+	else if(w_class == WEIGHT_CLASS_NORMAL && base_size != null)
+		base_size = 1
+	else if(w_class == WEIGHT_CLASS_BULKY && base_size != null)
+		base_size = 4
 
 	updatestats()
 	updatesprites()
@@ -33,10 +37,11 @@ obj/item/gun/ballistic
 		var/obj/item/gun/ballistic/automatic/I = src
 		I.set_burst_size = initial(I.set_burst_size)
 	//scope
-	zoomable = FALSE
-	azoom = null
-	zoom_amt = 10
-	zoom_out_amt = 13
+	if(modifiablegun)
+		zoomable = FALSE
+		azoom = null
+		zoom_amt = 10
+		zoom_out_amt = 13
 	//"for loop" for changing stats
 	for(var/i = 1; i <= attachableparts.len; i++)
 		if(attachableparts[attachableparts[i]] != null)
