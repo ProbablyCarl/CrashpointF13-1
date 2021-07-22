@@ -34,6 +34,11 @@
 	reagents.add_reagent("foaming_agent", 5)
 	reagents.add_reagent("facid", 5)
 
+/obj/item/projectile/bullet/dart/catsurgeon/Initialize()
+	. = ..()
+	reagents.add_reagent("chloralhydratedelayed_cat", 30)
+
+
 /obj/item/projectile/bullet/dart/syringe
 	name = "syringe"
 	icon_state = "syringeproj"

@@ -45,8 +45,8 @@ Elder
 	supervisors = "the high elders"
 	selection_color = "#7f8c8d"
 	req_admin_notify = 1
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0//from 1
+	spawn_positions = 0//from 1
 	description = "You, of all individuals, likely have the most power out of anyone within this wretched valley, and, by extension, the bunker. You're here to assure the chapter lives on, and, with that, you must maintain the Security of those in your charge. - Additionally, while normally you'd follow the codex and such to a letter, you may deviate, if you believe it for the better of the chapter. Good luck, Elder."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -176,8 +176,8 @@ Head Scribe
 	title = "Head Scribe"
 	flag = F13HEADSCRIBE
 	faction = "BOS"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0//from 1
+	spawn_positions = 0//from 1
 	description = "You are the foremost experienced scribe remaining in this bunker. Your role is to ensure the safekeeping and proper usage of technology within the Brotherhood. You are also the lead medical expert in this Chapter. Delegate your tasks to your Scribes."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -326,8 +326,8 @@ Senior Paladin
 	title = "Senior Paladin"
 	flag = F13SENIORPALADIN
 	faction = "BOS"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0//from 1
+	spawn_positions = 0//from 1
 	description = "As the Chapter's Senior offensive warrior, you have proven your service and dedication to the Brotherhood over your time as a Paladin. As your skills gained, however, you were deigned to be more useful as a commander and trainer. Now you have your trusty super-sledge, and were recently given a suit of T-51b power armor. Your job is to coordinate the Paladins and ensure they work as a team, instilling discipline as you go."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -398,8 +398,8 @@ Paladin
 	title = "Paladin"
 	flag = F13PALADIN
 	faction = "BOS"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0//from 1
+	spawn_positions = 0//from 1
 	description = "You answer directly to the Senior Paladin and Elder. You are this Chapter's main line of defense and offense; highly trained in combat and weaponry though with little practical field experience, you are eager to prove your worth to the Brotherhood. Your primary duties are defense and surface operations. You may also be assigned a trainee Initiate."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -465,8 +465,8 @@ Scribe
 	title = "Scribe"
 	flag = F13SCRIBE
 	faction = "BOS"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0//from 2
+	spawn_positions = 0//from 2
 	description = "You answer directly to the Head Scribe, tasked with researching and reverse-engineering recovered technologies from the old world, while maintaining the brotherhoods scientific archives. You may also be given a trainee to assign duties to."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -528,8 +528,8 @@ Knight
 	title = "Knight"
 	flag = F13KNIGHT
 	faction = "BOS"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0//from 2
+	spawn_positions = 0//from 2
 	description = "You report directly to the Knight-Captain. You are the Brotherhood Knight, the veritable lifeblood of your organization. You are a versatile and adaptably trained person: from your primary duties of weapon & armor repair to basic combat, survival and stealth skills, the only thing you lack is proper experience. You are also in charge of Initiates."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
@@ -647,8 +647,8 @@ Initiate
 	title = "Vertibird Pilot"
 	flag = VERTIPILOT
 	faction = "BOS"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0//from 1
+	spawn_positions = 0//from 1
 	description = "Likely starting out as a Knight, you've decided to train to pilot one of the most dangerous creations still around. Good job."
 	forbids = "The Brotherhood of Steel Forbids: Unethical human experimentation. Violence beyond what is needed to accomplish Brotherhood goals."
 	enforces = "The Brotherhood of Steel Expects: Obeying the Chain That - Binds your direct superior. Collection and safeguarding of technology from the wasteland. Experimentation and research."
