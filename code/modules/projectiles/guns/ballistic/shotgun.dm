@@ -384,10 +384,6 @@
 			var/mob/living/carbon/human/H = user
 			H.apply_damage(2*force, BRUTE, BODY_ZONE_PRECISE_GROIN)
 			H.visible_message("<span class='warning'>[H] shoots themselves in the groin like an absolute retard!</span>")
-			if(user.has_penis())
-				user.has_penis = 0
-			if(user.has_vagina(()
-				user.has_vagina = 0
 */ //Not enabled for now.
 
 /obj/item/gun/ballistic/shotgun/automatic/hunting/trail

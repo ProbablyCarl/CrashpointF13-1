@@ -36,7 +36,7 @@
 
 Journeyman Scribe	= +DEBUG -AUTOLOGIN
 Scribe 			= +@ +SERVER +DEBUG +VAREDIT +SPAWN
-Head Scribe 		= +@ +POLL -AUTOLOGIN
+Head Scribe 		= +@ +POLL
 
 Initiate		= +ADMIN
 

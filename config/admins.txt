@@ -4,4 +4,7 @@ Evoturd = Elder
 CyberThot = Elder
 Franzemmerich = Elder
 
-FulminatingGold = Journeyman Scribe
+Whyman = Paladin
+katzevon = Paladin
+
+FulminatingGold = Scribe
