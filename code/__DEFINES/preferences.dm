@@ -35,7 +35,6 @@
 
 //Wasteland toggles
 #define SOUND_RADIO				(1<<0)
-#define VERB_CONSENT			(1<<1)
 
 #define TOGGLES_DEFAULT_WASTELAND (SOUND_RADIO)
 
