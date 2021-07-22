@@ -738,7 +738,7 @@
 	weapon_weight = WEAPON_HEAVY
 	extra_damage = 25
 	extra_penetration = 10
-
+/*
 /obj/item/gun/ballistic/automatic/marksman/servicerifle/r82//doesn't exist oy vey
 	name = "R82 heavy service rifle"
 	desc = "A top of the line 5.56x45 automatic service rifle manufactured by the NCR and issued to high ranking personnel."
@@ -751,7 +751,7 @@
 	automatic = 1
 	extra_damage = 30
 	extra_penetration = 10
-
+*/
 /obj/item/gun/ballistic/automatic/marksman/servicerifle/varmint
 	name = "varmint rifle"
 	desc = "A low powered 5.56, easy to use rifle."
@@ -1030,5 +1030,24 @@
 	weapon_weight = WEAPON_HEAVY
 	spread = 10
 	fire_delay = 3
+	extra_damage = 30
+	extra_penetration = 15
+
+/obj/item/gun/ballistic/automatic/m1918
+	name = "M1918 Automatic Rifle"
+	desc = "A hefty rifle meant for supporting fire. Examples of this that actually work are rare, so it's lucky you've found it in good condition."
+	lefthand_file = 'icons/mob/inhands/weapons/large_guns_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/large_guns_righthand.dmi'
+	icon = 'icons/fallout/objects/guns/large_ballistic.dmi'
+	icon_state = "bar1918_stock"
+	item_state = "bar1918_stock"
+	mag_type = /obj/item/ammo_box/magazine/m762
+	init_mag_type = /obj/item/ammo_box/magazine/m762/ext
+	fire_sound = 'sound/f13weapons/bozar_fire.ogg'
+	can_suppress = FALSE
+	automatic = 1
+	fire_delay = 2
+	force = 15
+	spread = 1
 	extra_damage = 30
 	extra_penetration = 15

@@ -1,9 +1,9 @@
 //KEEP IN MIND: These are different from gun/grenadelauncher. These are designed to shoot premade rocket and grenade projectiles, not flashbangs or chemistry casings etc.
 //Put handheld rocket launchers here if someone ever decides to make something so hilarious ~Paprika
 
-/obj/item/gun/ballistic/revolver/grenadelauncher//this is only used for underbarrel grenade launchers at the moment, but admins can still spawn it if they feel like being assholes
-	desc = "A break-operated grenade launcher."
+/obj/item/gun/ballistic/revolver/grenadelauncher//Once underbarrel only, now actually used.
 	name = "M79 grenade launcher"
+	desc = "A break-operated grenade launcher."
 	icon_state = "dshotgun-sawn"
 	item_state = "gun"
 	mag_type = /obj/item/ammo_box/magazine/internal/grenadelauncher
@@ -12,6 +12,12 @@
 	pin = /obj/item/firing_pin/implant/pindicate
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/unrestricted
+	pin = /obj/item/firing_pin
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/nonlethal
+	name = "M79-TG grenade launcher"
+	desc = "A break-operated grenade launcher. This one appears modified for riot control."
+	mag_type = /obj/item/ammo_box/magazine/internal/grenadelauncher_nl
 	pin = /obj/item/firing_pin
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/attackby(obj/item/A, mob/user, params)

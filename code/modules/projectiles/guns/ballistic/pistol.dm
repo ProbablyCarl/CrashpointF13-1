@@ -78,6 +78,15 @@
 	icon_state = "deaglecamo"
 	item_state = "deagleg"
 
+/obj/item/gun/ballistic/automatic/pistol/deagle/fwm_deagle
+	name = "rusty desert eagle"
+	desc = "This heavy frame handgun has an inscription beneath the barrel, reading: 'Property of F.W.M., return if found.' \
+	Doesn't look like it's in good condition, so you'd probably be better off leaving it alone."
+	force = 8
+	extra_damage = 15
+	spawnwithmagazine = FALSE
+	pin = null
+
 /obj/item/gun/ballistic/automatic/pistol/APS
 	name = "stechkin APS pistol"
 	desc = "The original russian version of a widely used Syndicate sidearm. Uses 9mm ammo."
