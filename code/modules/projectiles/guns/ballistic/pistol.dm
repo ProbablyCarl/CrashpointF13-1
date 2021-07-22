@@ -28,6 +28,15 @@
 	can_suppress = FALSE
 	fire_delay = 3
 	extra_damage = 28
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 29, "west" =  9, "south" = 21, "north" = 12) //x coordinate for attachment point
+	yattachlist = list("east" = 22, "west" = 17, "south" = 17, "north" = 24) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/automatic/pistol/deagle
 	name = "desert eagle"
@@ -40,6 +49,15 @@
 	fire_delay = 3
 	extra_damage = 45
 	fire_sound = 'sound/f13weapons/max_sawn_off.ogg'
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 31, "west" =  9, "south" = 21, "north" = 15) //x coordinate for attachment point
+	yattachlist = list("east" = 22, "west" = 17, "south" = 17, "north" = 23) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/automatic/pistol/deagle/update_icon()
 	..()
@@ -127,6 +145,15 @@
 	extra_damage = 20
 	extra_penetration = 5
 	fire_sound = 'sound/f13weapons/ninemil.ogg'
+	//Extra Modifiable Gun Vars
+	modifiablegun = TRUE
+	//Sprite Attachment Points
+	xattachlist = list("east" = 31, "west" =  4, "south" = 21, "north" = 16) //x coordinate for attachment point
+	yattachlist = list("east" = 21, "west" = 17, "south" = 17, "north" = 22) //y coordinate for attachment point
+	//Attachment Points
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
+	//Blacklisted Parts
+	blacklistedparts = list("stock")
 
 /obj/item/gun/ballistic/automatic/pistol/type17
 	name = "type 17"
