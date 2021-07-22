@@ -290,6 +290,19 @@
 			M.Sleeping(40, 0)
 	..()
 
+/datum/reagent/toxin/chloralhydratedelayed/cat //cat surgeon version
+	name = "Chloral Hydrate"
+	id = "chloralhydratedelayed_cat"
+
+/datum/reagent/toxin/chloralhydratedelayed/cat/on_mob_life(mob/living/carbon/M)
+	switch(current_cycle)
+		if(1 to 5)
+			M.confused += 1
+			M.drowsyness += 1
+		if(6 to INFINITY)
+			M.Sleeping(40, 0)
+	..()
+
 /datum/reagent/toxin/fakebeer	//disguised as normal beer for use by emagged brobots
 	name = "Beer"
 	id = "fakebeer"
