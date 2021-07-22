@@ -16,11 +16,11 @@ obj/item/gun/ballistic
 /obj/item/gun/ballistic/Initialize()
 	. = ..()
 
-	if(w_class == WEIGHT_CLASS_SMALL && base_size != null)
+	if(w_class == WEIGHT_CLASS_SMALL && base_size == null)
 		base_size = 0.5
-	else if(w_class == WEIGHT_CLASS_NORMAL && base_size != null)
+	else if(w_class == WEIGHT_CLASS_NORMAL && base_size == null)
 		base_size = 1
-	else if(w_class == WEIGHT_CLASS_BULKY && base_size != null)
+	else if(w_class == WEIGHT_CLASS_BULKY && base_size == null)
 		base_size = 4
 
 	updatestats()
