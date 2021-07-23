@@ -48,7 +48,7 @@
 		return
 
 	user.log_message(msg, INDIVIDUAL_EMOTE_LOG)
-	msg = "<b>[user]</b> " + msg
+	msg = msg
 
 	for(var/mob/M in GLOB.dead_mob_list)
 		if(!M.client || isnewplayer(M))
@@ -58,9 +58,9 @@
 			M.show_message(msg)
 
 	if(emote_type == EMOTE_AUDIBLE)
-		user.audible_message(msg)
+		user.audible_message(msg, audible_message_flags = EMOTE_MESSAGE)
 	else
-		user.visible_message(msg)
+		user.visible_message(msg, visible_message_flags = EMOTE_MESSAGE)
 	log_talk(user,"[key_name(user)] : [msg]",LOGEMOTE)
 
 /datum/emote/proc/replace_pronoun(mob/user, message)
