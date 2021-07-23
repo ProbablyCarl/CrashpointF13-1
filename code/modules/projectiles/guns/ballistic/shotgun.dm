@@ -409,6 +409,11 @@
 	//Blacklisted Parts
 	blacklistedparts = list("stock")
 
+/obj/item/gun/ballistic/shotgun/automatic/hunting/trail/scoped
+	name = "trail carbine"
+	desc = "A lever action rifle chambered in .44 Magnum."
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = new /obj/item/gunpart/scope)
+
 /obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy
 	name = "cowboy repeater"
 	desc = "A lever action rifle chambered in .357 Magnum. Smells vaguely of whiskey and cigarettes."
@@ -432,6 +437,11 @@
 	//Blacklisted Parts
 	blacklistedparts = list("stock")
 
+/obj/item/gun/ballistic/shotgun/automatic/hunting/cowboy/scoped
+	name = "scoped cowboy repeater"
+	desc = "A lever action rifle chambered in .357 Magnum. Smells vaguely of brooding veterans and cigarettes."
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = new /obj/item/gunpart/scope)
+
 /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
 	name = "brush gun"
 	desc = "A short lever action rifle chambered in the heavy 45-70 round. Issued to NCR Veteran Rangers in the absence of heavier weaponry."
@@ -453,6 +463,11 @@
 	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
 	//Blacklisted Parts
 	blacklistedparts = list("stock")
+
+/obj/item/gun/ballistic/shotgun/automatic/hunting/brush/scoped
+	name = "scoped brush gun"
+	desc = "A short lever action rifle chambered in the heavy 45-70 round. Issued to NCR Veteran Rangers in the absence of heavier weaponry."
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = new /obj/item/gunpart/scope)
 
 /obj/item/gun/ballistic/revolver/widowmaker
 	name = "winchester widowmaker"
