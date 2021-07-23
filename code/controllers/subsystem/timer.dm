@@ -423,7 +423,7 @@ SUBSYSTEM_DEF(timer)
 		L = SStimer.second_queue
 
 	if(L)
-		BINARY_INSERT(src, L, datum/timedevent, timeToRun)
+		BINARY_INSERT(src, L, /datum/timedevent, src, timeToRun, COMPARE_KEY)
 		return
 
 	//get the list of buckets
