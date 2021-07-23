@@ -392,6 +392,9 @@
 	//Blacklisted Parts
 	blacklistedparts = list("stock")
 
+/obj/item/gun/ballistic/revolver/m29/scoped
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = new /obj/item/gunpart/scope)
+
 /obj/item/gun/ballistic/revolver/m29/alt
 	item_state = "44magnum"
 	icon_state = "mysterious_m29"
@@ -522,6 +525,9 @@
 	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
 	//Blacklisted Parts
 	blacklistedparts = list("stock")
+
+/obj/item/gun/ballistic/revolver/sequoia/scoped
+	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = new /obj/item/gunpart/scope)
 
 /obj/item/gun/ballistic/revolver/zipgun
 	name = "zipgun"

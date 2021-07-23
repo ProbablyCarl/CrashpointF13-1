@@ -584,7 +584,7 @@ Veteran Ranger
 	name = "Boneyard Veteran"
 	suit = 			/obj/item/clothing/suit/armor/f13/rangercombat
 	head = 			/obj/item/clothing/head/helmet/f13/ncr/rangercombat
-	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/brush
+	suit_store = /obj/item/gun/ballistic/shotgun/automatic/hunting/brush/scoped
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/c4570=3)
 
