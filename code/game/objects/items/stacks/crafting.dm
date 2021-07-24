@@ -63,3 +63,9 @@ GLOBAL_LIST_INIT(powder_recipes, list ( \
 /obj/item/stack/crafting/powder/Initialize(mapload, new_amount, merge = TRUE)
 	recipes = GLOB.powder_recipes
 	return ..()
+
+/obj/item/stack/crafting/prewartech
+    name = "pre-war technology"
+    icon_state = "prewartech"
+    singular_name = "pre-war tech"
+    materials = list(MAT_GLASS=10000)

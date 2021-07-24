@@ -1083,7 +1083,8 @@
 	name = "(Upgrade) Wattz 1000 magneto-laser pistol"
 	result = /obj/item/gun/energy/laser/wattz/magneto
 	reqs = list(/obj/item/gun/energy/laser/wattz = 1,
-				/obj/item/stack/crafting/electronicparts = 2)
+	            /obj/item/stack/crafting/electronicparts = 2,
+				/obj/item/stack/crafting/prewartech = 1)
 	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
 	traits = list(TRAIT_GUNSMITH_TWO)
 	time = 120
@@ -1095,8 +1096,8 @@
 	result = /obj/item/gun/energy/laser/plasma/glock/extended
 	reqs = list(/obj/item/gun/energy/laser/plasma/glock = 1,
 				/obj/item/stack/crafting/metalparts = 3,
-				/obj/item/stack/sheet/metal = 1,
-				/obj/item/stack/crafting/electronicparts = 3)
+				/obj/item/stack/crafting/prewartech = 2,
+				/obj/item/stack/crafting/electronicparts = 2)
 	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER3)
 	traits = list(TRAIT_GUNSMITH_THREE)
 	time = 120
@@ -1914,3 +1915,150 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
+//////////////////////////////////////////////////////////////
+// ALCOHOLISM REDOES THE CRAFTING SYSTEM!                   //
+//                                                          //
+// FROM NOW ON, ALL CRAFTING MUST BE PUT UNDER A CATAGORY   //
+//////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////
+// PRE-WAR CRAFTING CATAGORY                                //
+//                                                          //
+// LASER WEAPONS, PLASMA WEAPONS, AND POWER-ARMOR!          //
+//////////////////////////////////////////////////////////////
+
+// Power Armor Sub-Catagory
+
+
+// Escavator Specific
+
+/datum/crafting_recipe/repair_esca
+	name = "Retrofit broken Escavator"
+	result = /obj/item/clothing/suit/armor/f13/brokentesca
+	reqs = list(/obj/item/stack/crafting/prewartech = 2,
+	/obj/item/brokentesca = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_esca
+	name = "Salvage Escavator"
+	result = /obj/item/clothing/suit/armor/f13/brokentesca
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/clothing/suit/armor/f13/power_armor/excavator = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_esca
+	name = "Service Escavator Power Armor"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/excavator
+	reqs = list(/obj/item/stack/crafting/prewartech = 3,
+	/obj/item/clothing/suit/armor/f13/brokentesca = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+
+// T-45 Specific
+
+/datum/crafting_recipe/repair_t45
+	name = "Retrofit broken T-45"
+	result = /obj/item/clothing/suit/armor/f13/brokent45
+	reqs = list(/obj/item/stack/crafting/prewartech = 2,
+	/obj/item/brokent45 = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_t45
+	name = "Salvage T-45"
+	result = /obj/item/clothing/suit/armor/f13/brokent45
+	reqs = list(/obj/item/stack/sheet/mineral/titanium= 2,
+	/obj/item/clothing/suit/armor/f13/power_armor/t45d = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_t45
+	name = "Service T-45"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t45d
+	reqs = list(/obj/item/stack/crafting/prewartech = 3,
+	/obj/item/clothing/suit/armor/f13/brokent45 = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+
+// T-51
+
+/datum/crafting_recipe/repair_t51
+	name = "Retrofit broken T-51"
+	result = /obj/item/clothing/suit/armor/f13/brokent51
+	reqs = list(/obj/item/stack/crafting/prewartech = 6,
+	/obj/item/brokent51 = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_t51
+	name = "Salvage T-51"
+	result = /obj/item/clothing/suit/armor/f13/brokent51
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/clothing/suit/armor/f13/power_armor/t51b = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_t51
+	name = "Service T-51"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t51b
+	reqs = list(/obj/item/stack/crafting/prewartech = 4,
+	/obj/item/clothing/suit/armor/f13/brokent51 = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+// T-60
+
+/datum/crafting_recipe/repair_t60
+	name = "Retrofit broken T-60"
+	result = /obj/item/clothing/suit/armor/f13/brokent60
+	reqs = list(/obj/item/stack/crafting/prewartech = 10,
+	/obj/item/brokent60 = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_t60
+	name = "Salvage T-60"
+	result = /obj/item/clothing/suit/armor/f13/brokent60
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/clothing/suit/armor/f13/power_armor/t60 = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_t60
+	name = "Service T-60"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t60
+	reqs = list(/obj/item/stack/crafting/prewartech = 10,
+	/obj/item/clothing/suit/armor/f13/brokent51 = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+//////////////
+// FOR CARL //
+//////////////
