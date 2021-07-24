@@ -734,12 +734,14 @@
 	if(slot == SLOT_WEAR_SUIT)
 		H.add_trait(TRAIT_STUNIMMUNE)
 		H.add_trait(TRAIT_PUSHIMMUNE)
+		H.add_trait(TRAIT_NOSLIPALL)
 		return ..()
 
 /obj/item/clothing/suit/armor/f13/power_armor/dropped(mob/user)
 	var/mob/living/carbon/human/H = user
 	H.remove_trait(TRAIT_STUNIMMUNE)
 	H.remove_trait(TRAIT_PUSHIMMUNE)
+	H.remove_trait(TRAIT_NOSLIPALL)
 	return ..()
 
 /obj/item/clothing/suit/armor/f13/power_armor/emp_act(mob/living/carbon/human/owner, severity)

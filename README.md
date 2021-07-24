@@ -5,14 +5,14 @@
 [![Percentage of issues still open](https://isitmaintained.com/badge/open/BadDeathclaw/TG-Claw.svg)](https://isitmaintained.com/project/BadDeathclaw/TG-Claw "Percentage of issues still open") [![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/BadDeathclaw/TG-Claw.svg)](https://isitmaintained.com/project/BadDeathclaw/TG-Claw "Average time to resolve an issue")  
 [![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-technical-debt.svg)](https://forthebadge.com) [![worksonmymachine](https://img.shields.io/badge/works--on-_my--machine-yellowgreen.svg?longCache=true&style=for-the-badge)](https://shields.io) [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
-**Discord** https://discord.gg/TCj5cJN
+**Discord** https://discord.gg/2XbAyP3fSY
 
-## Notes from F13
+## Notes from Crashpoint
 
-Fallout 13 Alpha 0.5 Terms of service A friendly reminder to anyone who would like to create personal edition of a game to host a server
-while keeping the code base private - a source code is licensed under /tg/ Station 13 terms, and thus rendering your project closed-source will likely cause considerable sanctions on their behalf. onestly, we tried it ourselves - it didn't work, and Byond administration officially disabled one of our servers for violation of licensing terms - don't repeat our mistakes. 
+This is a heavily modified version of very, very old F13 code. Primarily DR and BD. So much so, that it's its own branch at this point. 
+It will soon take considerable work to port modern features into this, especially from recent code, as we're moving to have a significant amount of the code cleaned up in the near future. Keep this in mind, if you're using the codebase as a downstream.
 
-**Please carefully read the following statement**: If you desire to host your own server based of Fallout 13 source code - you may not pretend to be an "Official Fallout 13" community. The only Fallout 13 communities that are considered official at the moment are specified as: [EN] Fallout 13 - Vault One [RU] Fallout 13 - CBET ATOMA ( Light of the Atom ) By our terms and conditions we require any potential host to specify that they are an unofficial server in announcements and the Byond HUB. Stated terms of service fully comply with the original AGPL v3 license of /tg/ Station 13, as long as this applies to the running server of unofficial community.
+On another note, if you're a degenerate community trying to cope, please, go somewhere else. There are no features in this codebase to poach for those that wish to prey on others, nor will we have them. Ever.
 
 ## /tg/station codebase
 

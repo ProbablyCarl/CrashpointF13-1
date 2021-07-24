@@ -34,6 +34,10 @@
 	del_on_death = 1
 	var/impatience = 0
 
+/mob/living/simple_animal/hostile/cat_butcherer/whyman
+	icon_state = "cat_butcher_whyman"
+	icon_living = "cat_butcher_whyman"
+
 /mob/living/simple_animal/hostile/cat_butcherer/Life()
 	. = ..()
 	if(prob(10) && health <= maxHealth && !target) //heal himself when not in combat
