@@ -199,3 +199,46 @@
 	desc = "A set of plate armor with tabard for the user's high-visibility during combat."
 	icon_state = "knight_tabard"
 	item_state = "knight_tabard"
+
+
+
+// BROKEN POWER-ARMOR //
+
+/obj/item/clothing/suit/armor/f13/brokentesca
+	name = "Retrofitted Escavator power-armor"
+	desc = "A suit of repaired Escavator power armor that lacks functional gyroscopes or a fusion core! You'd have to be a fucking idiot to wear this into combat!"
+	icon_state = "excavator"
+	item_state = "excavator"
+	armor = list("melee" = 60, "bullet" = 55, "laser" = 45, "energy" = 60, "bomb" = 62, "bio" = 30, "rad" = 60, "fire" = 90, "acid" = 0)
+	slowdown = 0.9
+	strip_delay = 140
+
+
+/obj/item/clothing/suit/armor/f13/brokent45
+	name = "Retrofitted T-45"
+	desc = "A suit of repaired T-45 power armor that lacks functional gyroscopes or a fusion core! It'll feel like a Brahmin on your back, but it protects quite well!"
+	icon_state = "t45dpowerarmor"
+	item_state = "t45dpowerarmor"
+	armor = list("melee" = 70, "bullet" = 65, "laser" = 45, "energy" = 60, "bomb" = 62, "bio" = 80, "rad" = 60, "fire" = 90, "acid" = 0)
+	slowdown = 0.8
+	strip_delay = 140
+
+
+/obj/item/clothing/suit/armor/f13/brokent51
+	name = "Retrofitted T-51"
+	desc = "A suit of repaired T-45 power armor that lacks functional gyroscopes or a fusion core! It's weight is fairly concerning, but it protects extremely well!"
+	icon_state = "t51bpowerarmor"
+	item_state = "t51bpowerarmor"
+	armor = list("melee" = 85, "bullet" = 75, "laser" = 55, "energy" = 70, "bomb" = 82, "bio" = 80, "rad" = 70, "fire" = 95, "acid" = 0)
+	slowdown = 0.75
+	strip_delay = 140
+
+
+/obj/item/clothing/suit/armor/f13/brokent60
+	name = "Retrofitted T-60"
+	desc = "A suit of repaired T-60 power armor that lacks functional gyroscopes or a fusion core! The modern materials make it somewhat functional in a combat-scenario!"
+	icon_state = "t60powerarmor"
+	item_state = "t60powerarmor"
+	slowdown = 0.65 // How very modern! It's actually quite useable in it's state.
+	armor = list("melee" = 60, "bullet" = 55, "laser" = 35, "energy" = 40, "bomb" = 40, "bio" = 40, "rad" = 50, "fire" = 90, "acid" = 0)
+	strip_delay = 140
