@@ -219,6 +219,17 @@
 	glass_desc = "A rather foul smelling glass of water."
 	shot_glass_icon_state = "shotglassclear"
 
+/datum/reagent/watertabletpowder
+	name = "Water Purification Powder"
+	id = "wppowder"
+	description = "This compound can be used to purify water"
+	color = "#ACBCBD"
+	taste_description = "charred and metallic"
+	glass_icon_state = "glass_clear"
+	glass_name = "glass with a water purification tablet"
+	glass_desc = "A glass containing a powdery grey substance"
+	shot_glass_icon_state = "shotglassclear"
+
 /datum/reagent/water/boiled/on_mob_life(mob/living/M, mob/user)
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M

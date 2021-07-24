@@ -181,3 +181,10 @@
 	desc = "A pill that stabilizes radiation levels and treats small amounts of toxin damage."
 	icon_state = "pill18"
 	list_reagents = list("radx" = 20)
+
+//Crashpoint Fallout
+/obj/item/reagent_containers/pill/waterpuretablet
+	name = "Water Purification Tablet"
+	desc = "A pill that can simply be dropped into 50u of water to make it safe for drinking."
+	icon_state = "pill18"
+	list_reagents = list("wppowder" = 10)
