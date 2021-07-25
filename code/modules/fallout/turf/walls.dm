@@ -145,12 +145,13 @@
 
 /turf/closed/wall/r_wall/f13/vault
 	name = "composite reinforced wall"
-	desc = "A wall built to withstand an atomic explosion."
+	desc = "A wall built to withstand an atomic explosion. You're not getting through this."//Could use an indestructible wall, but, whatever. Lets make it a pain to get through.
 	icon = 'icons/fallout/turfs/walls/vault_reinforced.dmi'
 	icon_state = "vaultrwall0"
 	icon_type_smooth = "vaultrwall"
-	hardness = 230
-//	explosion_block = 5
+	hardness = -100//because people seem to have forgotten how this works. Or maybe I did. Whatever.
+//	explosion_block = 50
+	slicing_duration = 250//:)
 	smooth = SMOOTH_OLD
 	canSmoothWith = list(/turf/closed/wall/f13/vault, /turf/closed/wall/r_wall/f13/vault, /turf/closed/wall)
 
@@ -221,6 +222,15 @@
 /turf/closed/indestructible/f13/obsidian/New()
 	..()
 	icon_state = "rock[rand(1,6)]"
+
+/turf/closed/indestructible/f13/vault_r
+	name = "composite reinforced wall"
+	desc = "A wall built to withstand an atomic explosion. You're not getting through this."//Used an indestructible wall!
+	icon = 'icons/fallout/turfs/walls/vault_reinforced.dmi'
+	icon_state = "vaultrwall0"
+	icon_type_smooth = "vaultrwall"
+	smooth = SMOOTH_OLD
+	canSmoothWith = list(/turf/closed/wall/f13/vault, /turf/closed/wall/r_wall/f13/vault, /turf/closed/wall)
 
 //Splashscreen
 /*
