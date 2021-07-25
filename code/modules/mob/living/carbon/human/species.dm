@@ -989,16 +989,21 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			H.overeatduration -= 2 //doubled the unfat rate
 
 	//metabolism change
-	if(H.nutrition > NUTRITION_LEVEL_FAT)
+	if(H.nutrition > NUTRITION_LEVEL_FAT) //Overweight
 		H.metabolism_efficiency = 1
-	else if(H.nutrition > NUTRITION_LEVEL_FED && H.satiety > 80)
+	else if(H.nutrition > NUTRITION_LEVEL_FED && H.satiety > 80) //Well fed.
 		if(H.metabolism_efficiency != 1.25 && !H.has_trait(TRAIT_NOHUNGER))
 			to_chat(H, "<span class='notice'>You feel vigorous.</span>")
 			H.metabolism_efficiency = 1.25
-	else if(H.nutrition < NUTRITION_LEVEL_STARVING + 50)
+	else if(H.nutrition < NUTRITION_LEVEL_STARVING + 50) //Starving.
 		if(H.metabolism_efficiency != 0.8)
 			to_chat(H, "<span class='notice'>You feel sluggish.</span>")
 		H.metabolism_efficiency = 0.8
+		if(H.getStaminaLoss() > 80)//Only screws with stamina up to a point.
+			return
+		else
+			if(prob(15)) //Eat something, nerd.`
+				H.adjustStaminaLoss(25)
 	else
 		if(H.metabolism_efficiency == 1.25)
 			to_chat(H, "<span class='notice'>You no longer feel vigorous.</span>")

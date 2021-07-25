@@ -1962,6 +1962,37 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
 
+//Escavator Helmet
+
+/datum/crafting_recipe/repair_esca_helmet
+	name = "Retrofit broken Escavator Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/excavatorsalv
+	reqs = list(/obj/item/stack/crafting/prewartech = 1,
+	/obj/item/brokentesca = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_esca_helmet
+	name = "Salvage Escavator Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/excavatorsalv
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/clothing/head/helmet/power_armor/excavator = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_esca_helmet
+	name = "Service Escavator Power Armor Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/excavator
+	reqs = list(/obj/item/stack/crafting/prewartech = 2,
+	/obj/item/clothing/head/helmet/power_armor/excavatorsalv = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
 
 // T-45 Specific
 
@@ -1995,6 +2026,37 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
 
+// T-45 Helmet
+
+/datum/crafting_recipe/repair_t45_helmet
+	name = "Retrofit broken T-45 Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/t45dsalv
+	reqs = list(/obj/item/stack/crafting/prewartech = 1,
+	/obj/item/t45dhelmbroken = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_t45_helmet
+	name = "Salvage T-45 Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/t45dsalv
+	reqs = list(/obj/item/stack/sheet/mineral/titanium= 2,
+	/obj/item/clothing/head/helmet/power_armor/t45d = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_t45_helmet
+	name = "Service T-45 Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/t45d
+	reqs = list(/obj/item/stack/crafting/prewartech = 2,
+	/obj/item/clothing/head/helmet/power_armor/t45dsalv = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
 
 // T-51
 
@@ -2027,6 +2089,39 @@
 	tools = list(TOOL_AWORKBENCH)
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
+
+// T-51 Helmet
+
+/datum/crafting_recipe/repair_t51_helmet
+	name = "Retrofit broken T-51 Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/t51bsalv
+	reqs = list(/obj/item/stack/crafting/prewartech = 5,
+	/obj/item/t51bhelmbroken = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_t51_helmet
+	name = "Salvage T-51 Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/t51bsalv
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/clothing/head/helmet/power_armor/t51b = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_t51_helmet
+	name = "Service T-51 Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/t51b
+	reqs = list(/obj/item/stack/crafting/prewartech = 3,
+	/obj/item/clothing/head/helmet/power_armor/t51bsalv = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
 // T-60
 
 /datum/crafting_recipe/repair_t60
@@ -2053,7 +2148,39 @@
 	name = "Service T-60"
 	result = /obj/item/clothing/suit/armor/f13/power_armor/t60
 	reqs = list(/obj/item/stack/crafting/prewartech = 10,
-	/obj/item/clothing/suit/armor/f13/brokent51 = 1)
+	/obj/item/clothing/suit/armor/f13/brokent60 = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+// T-60 Helmet
+
+/datum/crafting_recipe/repair_t60_helmet
+	name = "Retrofit broken T-60 Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/t60salv
+	reqs = list(/obj/item/stack/crafting/prewartech = 9,
+	/obj/item/t60helmbroken = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_t60_helmet
+	name = "Salvage T-60 Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/t60salv
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/clothing/head/helmet/power_armor/t60 = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_t60_helmet
+	name = "Service T-60 Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/t60
+	reqs = list(/obj/item/stack/crafting/prewartech = 9,
+	/obj/item/clothing/head/helmet/power_armor/t60salv = 1)
 	time = 120
 	tools = list(TOOL_AWORKBENCH)
 	category = CAT_CLOTHING

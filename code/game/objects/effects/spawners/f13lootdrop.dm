@@ -338,24 +338,16 @@
 	name = "tier 5 armor"
 	lootcount = 2
 	var/loot1 = list(
-				/obj/item/clothing/suit/armor/f13/power_armor/t45d,
-				/obj/item/clothing/head/helmet/power_armor/t45d
+				/obj/item/brokent45,
+				/obj/item/t45dhelmbroken
 				)
 	var/loot2 = list(
-				/obj/item/clothing/suit/armor/f13/power_armor/t51b,
-				/obj/item/clothing/head/helmet/power_armor/t51b
-				)
-	var/loot3 = list(
-				/obj/item/clothing/suit/armor/f13/power_armor/advanced,
-				/obj/item/clothing/head/helmet/power_armor/advanced
-				)
-	var/loot4 = list(
-				/obj/item/clothing/suit/armor/f13/power_armor/tesla,
-				/obj/item/clothing/head/helmet/power_armor/tesla
+				/obj/item/brokent51,
+				/obj/item/t51bhelmbroken
 				)
 
 /obj/effect/spawner/lootdrop/f13/armor/tier5/Initialize(mapload) //on mapload, pick what shit to spawn
-	loot = pick(loot1, loot2, loot3, loot4)
+	loot = pick(loot1, loot2)
 	. = ..()
 
 /obj/effect/spawner/lootdrop/f13/armor/random

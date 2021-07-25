@@ -186,5 +186,11 @@
 /obj/item/reagent_containers/pill/waterpuretablet
 	name = "Water Purification Tablet"
 	desc = "A pill that can simply be dropped into 50u of water to make it safe for drinking."
-	icon_state = "pill18"
+	icon_state = "pill8"
 	list_reagents = list("wppowder" = 10)
+
+/obj/item/reagent_containers/pill/foodpaste
+	name = "Nutriment Tablet"
+	desc = "A pill with all the required material needed to survive. Probably."
+	icon_state = "chew"
+	list_reagents = list("nutriment" = 50)

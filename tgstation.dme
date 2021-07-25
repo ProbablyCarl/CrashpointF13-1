@@ -1628,6 +1628,8 @@
 #include "code\modules\fallout\obj\structures\window.dm"
 #include "code\modules\fallout\obj\trash\deconstruction.dm"
 #include "code\modules\fallout\obj\trash\electronics.dm"
+#include "code\modules\fallout\resources\base_dispenser.dm"
+#include "code\modules\fallout\resources\factory.dm"
 #include "code\modules\fallout\turf\floor.dm"
 #include "code\modules\fallout\turf\ground.dm"
 #include "code\modules\fallout\turf\mineral_walls.dm"
