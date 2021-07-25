@@ -213,6 +213,7 @@
 	armor = list("melee" = 50, "bullet" = 45, "laser" = 35, "energy" = 50, "bomb" = 62, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 0)
 	slowdown = 2.5
 	strip_delay = 140
+	w_class = WEIGHT_CLASS_BULKY
 
 
 /obj/item/clothing/suit/armor/f13/brokent45
@@ -224,6 +225,7 @@
 	armor = list("melee" = 60, "bullet" = 55, "laser" = 35, "energy" = 50, "bomb" = 62, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 0)
 	slowdown = 1.8
 	strip_delay = 140
+	w_class = WEIGHT_CLASS_BULKY
 
 
 /obj/item/clothing/suit/armor/f13/brokent51
@@ -235,6 +237,7 @@
 	armor = list("melee" = 65, "bullet" = 60, "laser" = 40, "energy" = 50, "bomb" = 62, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 0)
 	slowdown = 1.7
 	strip_delay = 140
+	w_class = WEIGHT_CLASS_BULKY
 
 
 /obj/item/clothing/suit/armor/f13/brokent60
@@ -246,3 +249,4 @@
 	slowdown = 1.5 // How very modern! It's actually quite useable in it's state.
 	armor = list("melee" = 75, "bullet" = 65, "laser" = 45, "energy" = 60, "bomb" = 82, "bio" = 0, "rad" = 0, "fire" = 95, "acid" = 0)
 	strip_delay = 140
+	w_class = WEIGHT_CLASS_BULKY

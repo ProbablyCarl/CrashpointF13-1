@@ -900,49 +900,44 @@
 	dynamic_hair_suffix = ""
 
 // BROKEN POWER-ARMOR HELMETS //
-/obj/item/clothing/head/helmet/power_armor/t51bsalv
+
+/obj/item/clothing/head/helmet/t51bsalv
 	name = "Retrofitted T-51b power helmet"
-	desc = "It's a gutted T-51b power helmet. Looks like it lacks most of what you'd expect, aside from being a brain case.\
+	desc = "It's a gutted T-51b power helmet. Looks like it lacks most of what you'd expect, aside from being a brain case. \
 	Stripped of filters and insulation, this won't protect you from radiation or biohazards."
 	icon_state = "t51bhelmet"
 	item_state = "t51bhelmet"
 	armor = list("melee" = 65, "bullet" = 60, "laser" = 40, "energy" = 50, "bomb" = 62, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 0)
-	darkness_view = 0
-	lighting_alpha = null
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 
-/obj/item/clothing/head/helmet/power_armor/t60salv
+/obj/item/clothing/head/helmet/t60salv
 	name = "Retrofitted T-60a power helmet"
-	desc = "A gutted T-60 powered helmet, lacking both a targetting software suite and Friend-or-Foe identifiers.\
+	desc = "A gutted T-60 powered helmet, lacking both a targetting software suite and Friend-or-Foe identifiers. \
 	Stripped of filters and insulation, this won't protect you from radiation or biohazards."
 	icon_state = "t60helmet"
 	item_state = "t60helmet"
 	armor = list("melee" = 75, "bullet" = 65, "laser" = 45, "energy" = 60, "bomb" = 82, "bio" = 0, "rad" = 0, "fire" = 95, "acid" = 0)
-	darkness_view = 0
-	lighting_alpha = null
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 
-/obj/item/clothing/head/helmet/power_armor/t45dsalv
+/obj/item/clothing/head/helmet/t45dsalv
 	name = "Retrofitted T-45d power helmet"
-	desc = "It's an old pre-War power armor helmet, gutted of nearly all utility.\
+	desc = "It's an old pre-War power armor helmet, gutted of nearly all utility. \
 	Stripped of filters and insulation, this won't protect you from radiation or biohazards."
 	icon_state = "t45dhelmet"
 	item_state = "t45dhelmet"
 	armor = list("melee" = 60, "bullet" = 55, "laser" = 35, "energy" = 50, "bomb" = 62, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 0)
-	darkness_view = 0
-	lighting_alpha = null
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 
-/obj/item/clothing/head/helmet/power_armor/excavatorsalv
+/obj/item/clothing/head/helmet/excavatorsalv
 	name = "Retrofitted excavator power helmet"
-	desc = "The helmet of the excavator power armor suit. Looks to be in bad shape.\
+	desc = "The helmet of the excavator power armor suit. Looks to be in bad shape. \
 	Stripped of filters and insulation, this won't protect you from radiation or biohazards."
 	icon_state = "excavator"
 	item_state = "excavator"
 	armor = list("melee" = 50, "bullet" = 45, "laser" = 35, "energy" = 50, "bomb" = 62, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 0)
-	darkness_view = 0
-	lighting_alpha = null
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 
