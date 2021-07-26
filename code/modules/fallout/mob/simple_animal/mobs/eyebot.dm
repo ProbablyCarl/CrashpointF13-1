@@ -77,7 +77,7 @@
 /mob/living/simple_animal/hostile/eyebot/floatingeye/warden
 	name = "warden"
 	desc = "A quick-observation robot commonly found in pre-War military installations.<br>The floating eyebot uses a powerful taser to keep prisoners in line."
-	faction = list("hostile", "bs", "enclave", "wastebot")
+	faction = list("hostile", "bs", "enclave", "wastebot", "ghoul")//Ghoul, because pre-war IDs.
 
 /mob/living/simple_animal/hostile/eyebot/floatingeye/warden/New()
 	..()
