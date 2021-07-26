@@ -5,7 +5,7 @@
 /obj/machinery/sepfunnel
 	name = "Separatory Funnel"
 	desc = "Used to separate chemicals."
-	density = TRUE
+	density = FALSE
 	layer = BELOW_OBJ_LAYER
 	icon = 'icons/obj/sepfunnel.dmi'
 	icon_state = "nobeaker"
