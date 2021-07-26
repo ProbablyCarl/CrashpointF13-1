@@ -152,12 +152,28 @@
 	tag = "icon-verticalleftborderright2top"
 	},
 /area/f13/wasteland)
+"aaC" = (
+/obj/machinery/sepfunnel,
+/obj/structure/table/glass,
+/turf/open/floor/f13{
+	icon_state = "floorrusty";
+	tag = "icon-floorrusty"
+	},
+/area/f13/city)
 "aaD" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft1";
 	tag = "icon-verticalrightborderleft1"
 	},
 /area/f13/wasteland)
+"aaE" = (
+/obj/machinery/pillpress,
+/obj/structure/table/glass,
+/turf/open/floor/f13{
+	icon_state = "floorrusty";
+	tag = "icon-floorrusty"
+	},
+/area/f13/city)
 "aaF" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
@@ -169,6 +185,17 @@
 	dir = 4;
 	icon_state = "dirt";
 	tag = "icon-dirt (EAST)"
+	},
+/area/f13/wasteland)
+"aaH" = (
+/obj/vehicle/ridden/fuel/motorcycle/rusty{
+	dir = 8;
+	fuel = 0
+	},
+/turf/open/indestructible/ground/outside/road{
+	dir = 8;
+	icon_state = "horizontalinnermain2left";
+	tag = "icon-horizontalinnermain2left (WEST)"
 	},
 /area/f13/wasteland)
 "aaI" = (
@@ -5230,16 +5257,6 @@
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain1";
 	tag = "icon-horizontalinnermain1"
-	},
-/area/f13/wasteland)
-"apO" = (
-/obj/vehicle/ridden/fuel/motorcycle/rusty{
-	dir = 8
-	},
-/turf/open/indestructible/ground/outside/road{
-	dir = 8;
-	icon_state = "horizontalinnermain2left";
-	tag = "icon-horizontalinnermain2left (WEST)"
 	},
 /area/f13/wasteland)
 "apP" = (
@@ -24163,20 +24180,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/legion)
-"bqD" = (
-/obj/machinery/chem_dispenser,
-/turf/open/floor/f13{
-	icon_state = "floorrusty";
-	tag = "icon-floorrusty"
-	},
-/area/f13/city)
-"bqE" = (
-/obj/machinery/chem_master,
-/turf/open/floor/f13{
-	icon_state = "floorrusty";
-	tag = "icon-floorrusty"
-	},
-/area/f13/city)
 "bqF" = (
 /obj/machinery/chem_heater,
 /turf/open/floor/f13{
@@ -40877,7 +40880,7 @@ bpL
 adY
 aMr
 bjx
-bqD
+aaC
 blt
 biQ
 bmx
@@ -41134,7 +41137,7 @@ bpL
 adY
 aMr
 bjx
-bqE
+aaE
 brd
 biQ
 blJ
@@ -45062,7 +45065,7 @@ aNu
 aoB
 aoX
 aoX
-apO
+aaH
 aqp
 afL
 ard
