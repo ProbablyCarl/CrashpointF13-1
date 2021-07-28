@@ -249,19 +249,46 @@
 
 // Fallout Stuff
 
+// New-Stimpacks!
+
+
+
+
+/datum/chemical_reaction/stimpaksuper
+	name = "Super-Stimpak Fluid"
+	id = "superduperstimfluid"
+	results = list("superstimpakfluid" = 10)
+	required_reagents = list("stimpakfluid" = 5, "water" = 10, "medx" = 10, "antivenom" = 10  )
+	required_temp = 1200 // Requires an upgraded chem-heater to obtain! Yup. No Super-Stimpacks for wasties, Fucker!
 
 /datum/chemical_reaction/stimpak
 	name = "Stimpak Fluid"
-	id = "stimpak"
-	results = list("stimpak" = 1)
-	required_reagents = list("blood" = 1, "xanderpulp" = 1, "brocpulp" = 1, )
-	required_temp = 300
+	id = "stimpakfluid"
+	results = list("stimfluid" = 10)
+	required_reagents = list("stimfluidweak" = 5, "bitterdrink" = 10, "ferropulp" = 5, "water" = 10  ) // Requires pure water to produce. Not that wastie-crap!
+	required_temp = 800
 
+/datum/chemical_reaction/stimpakfluidfirst
+	name = "Weak Stimpak"
+	id = "stimpakfluidprecursor"
+	results = list("stimfluidweak" = 10)
+	required_reagents = list("blood" = 5, "xanderpulp" = 5, "brocpulp" = 5, "bwater" = 10 )
+	required_temp = 375
+
+// AntiVenom
 /datum/chemical_reaction/antivenom
 	name = "Antivenom"
 	id = "antivenom"
 	results = list("antivenom" = 3)
-	required_reagents = list("calomel" = 2, "blood" = 1,)
+	required_reagents = list("ferrapulp" = 2, "bwater" = 1,)
+	required_temp = 400
+
+/datum/chemical_reaction/antivenom_water
+	name = "Healthy Antivenom"
+	id = "antivenom_water"
+	results = list("antivenom" = 3)
+	required_reagents = list("ferrapulp" = 2, "water" = 1,)
+
 
 /datum/chemical_reaction/f13_nukacolahomemade
 	name = "Nuka-Cola Homemade"
@@ -269,9 +296,15 @@
 	results = list("nukahomebrew" = 10)
 	required_reagents = list("triple_citrus" = 5, "water" = 5,)
 
-/datum/chemical_reaction/bitterdrink
+/datum/chemical_reaction/bitterdrinkcreation
 	name = "Bitter-Drink"
-	id = "drinkbitter"
-	results = list("bitterdrink" = 2)
-	required_reagents = list("brocpulp" = 1, "xanderpulp" = 1,)
+	id = "drinkbitterdrink"
+	results = list("bitterdrink" = 30)
+	required_reagents = list("brocpulp" = 10, "xanderpulp" = 10, "bwater" = 10 )
 
+
+/datum/chemical_reaction/waterybitterdrinkcreation
+	name = "Water-Down Bitter-Drink"
+	id = "drinkwaterybitterdrink"
+	results = list("waterybitterdrink" = 2)
+	required_reagents = list("bitterdrink" = 1, "bwater" = 1,)

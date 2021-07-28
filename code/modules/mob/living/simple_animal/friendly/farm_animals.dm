@@ -377,7 +377,7 @@
 
 /mob/living/simple_animal/cow/brahmin
 	name = "brahmin"
-	desc = "Brahmin or brahma are mutated cattle with two heads and looking udderly ridiculous.<br>Known for their milk, just don't tip them over."
+	desc = "Brahmin or brahma are mutated cattle with two heads and looking udderly ridiculous.<br>Known for their interesting biology, don't ask how Jet is made!"
 	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "brahmin"
 	icon_living = "brahmin"
