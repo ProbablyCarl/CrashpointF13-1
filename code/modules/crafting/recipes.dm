@@ -1420,14 +1420,44 @@
 
 /* Category Drugs*/
 
+// JET - FUCK YEAH
 /datum/crafting_recipe/jet
-	name = "Jet"
+	name = "Aresolize Jet"
 	result = /obj/item/reagent_containers/pill/patch/jet
-	reqs = list(/datum/reagent/consumable/milk = 10, /obj/item/clothing/mask/cigarette = 3, /obj/item/toy/crayon/spraycan)
-	time = 20
+	reqs = list(/datum/reagent/toxin/jetfinished = 10,
+	/obj/item/crafting/inhaler )
+	time = 40
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_DRUGS
 
+/datum/crafting_recipe/ruinedjet
+	name = "Aresolize Ruined Jet"
+	result = /obj/item/reagent_containers/pill/patch/ruinedjet
+	reqs = list(/datum/reagent/toxin/jetfuckup = 10,
+	/obj/item/crafting/inhaler )
+	time = 40
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_DRUGS
+
+/datum/crafting_recipe/cutjet
+	name = "Aresolize Cut-Jet"
+	result = /obj/item/reagent_containers/pill/patch/jet
+	reqs = list(/datum/reagent/toxin/jetfinishedcut = 10,
+	/obj/item/crafting/inhaler )
+	time = 40
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_DRUGS
+
+/*/datum/crafting_recipe/ultrajet
+	name = "Aresolize UltraJet"
+	result = /obj/item/reagent_containers/pill/patch/jet
+	reqs = list(/datum/reagent/toxin/jetfinishedultra = 10,
+	/obj/item/crafting/inhaler )
+	time = 40
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_DRUGS
+*/ // Currently disabled from crafting
+// OTHER DRUGS
 /datum/crafting_recipe/psycho
 	name = "Psycho"
 	result = /obj/item/reagent_containers/hypospray/medipen/psycho
@@ -1800,33 +1830,43 @@
 	time = 120
 	category = CAT_MEDICAL
 
-/datum/crafting_recipe/antivenom
-	name = "Antivenom"
-	result = /obj/item/reagent_containers/glass/bottle/antivenom
-	reqs = list(/obj/item/stack/sheet/glass = 1,
-				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
-				/obj/item/reagent_containers/food/snacks/f13/venomgland = 1,
-				/obj/item/reagent_containers/food/snacks/grown/xander = 1 )
-	time = 55
+// Stimpacks!
+
+
+/datum/crafting_recipe/stimpakweak
+	name = "Weak Stimpak"
+	result = /obj/item/reagent_containers/hypospray/medipen/weakstimpak
+	reqs = list(/datum/reagent/medicine/stimpack = 10,
+				/obj/item/crafting/injector = 1)
+	tools = list(TOOL_WORKBENCH)
+	time = 50
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/stimpak
 	name = "Stimpak"
 	result = /obj/item/reagent_containers/hypospray/medipen/stimpak
-	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 1,
-				/obj/item/reagent_containers/food/snacks/grown/xander = 1,
-				/obj/item/reagent_containers/syringe = 1)
+	reqs = list(/datum/reagent/medicine/stimpack/stimfluid = 10,
+				/obj/item/crafting/injector = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 50
 	category = CAT_MEDICAL
 
+/* /datum/crafting_recipe/stimpakultra
+	name = "Ultra Stimpak"
+	result = /obj/item/reagent_containers/hypospray/medipen/weakstimpak
+	reqs = list(/datum/reagent/medicine/stimpack/superstimfluid = 10,
+				/obj/item/crafting/injector = 1)
+	tools = list(TOOL_WORKBENCH)
+	time = 50
+	category = CAT_MEDICAL
+*/ // Too powerful to let everyone play with as a craftable! Sad, I know.
+
 /datum/crafting_recipe/superstimpak
 	name = "Super Stimpak"
 	result = /obj/item/reagent_containers/hypospray/medipen/stimpak/super
-	reqs = list(/datum/reagent/medicine/stimpak = 10,
+	reqs = list(/datum/reagent/medicine/stimpack/superstimfluid = 10,
 				/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
-				/obj/item/stack/sheet/leather = 1,
-				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 1)
+				/obj/item/stack/sheet/leather = 1 ) // Leather may be removed on a later date, but is kept so that super-stimm production still requires some outside source of material than just a lab.
 	tools = list(TOOL_WORKBENCH)
 	time = 80
 	category = CAT_MEDICAL
@@ -1906,7 +1946,7 @@
 
 /* Category Explosives - mk.2*/
 
-/datum/crafting_recipe/salvagedpaconversion2
+/datum/crafting_recipe/pipebomb
 	name = "Pipebomb"
 	result = /obj/item/grenade/syndieminibomb/pipebomb
 	reqs = list(/obj/item/reagent_containers/glass/bottle/blackpowder = 1,
@@ -2186,6 +2226,24 @@
 	category = CAT_CLOTHING
 	subcategory = CAT_WASTELAND
 
+// Drug-Parapha-Big-Word!
+
+/datum/crafting_recipe/createinjector
+	name = "Create Autoinjector"
+	result = /obj/item/crafting/injector
+	reqs = list(/obj/item/reagent_containers/syringe = 1,
+	/obj/item/stack/sheet/metal = 1, /obj/item/stack/sheet/glass = 1 )
+	time = 40
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_DRUGS
+
+/datum/crafting_recipe/createinhaler
+	name = "Create Inhaler"
+	result = /obj/item/crafting/inhaler
+	reqs = list(/obj/item/stack/sheet/metal = 1 )
+	time = 40
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_DRUGS
 //////////////
 // FOR CARL //
 //////////////

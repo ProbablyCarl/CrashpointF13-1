@@ -1349,7 +1349,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 /datum/reagent/medicine/healing_powder
 	name = "Healing Powder"
 	id = "healing_powder"
-	description = "A healing powder derived from a mix of ground broc flowers and xander roots. Consumed orally, and produces a euphoric high."
+	description = "A healing powder derived from a mix of ground broc flowers and xander roots. Taken orally or used as a clotting-agent, it produces a strong high!"
 	reagent_state = SOLID
 	color = "#A9FBFB"
 	taste_description = "bitterness"
@@ -1362,6 +1362,14 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	M.hallucination = max(M.hallucination, 5)
 	. = 1
 	..()
+
+/datum/reagent/medicine/healing_powder/on_mob_life(mob/living/M)
+	if(!M.reagents.has_reagent("stimfluid") && !M.reagents.has_reagent("stimfluidweak")) // NO FUN ALLOWED! Stims cannot be used together effeciently!
+		M.adjustFireLoss(-0.5*REM)
+		M.adjustBruteLoss(-0.5*REM)
+		M.adjustToxLoss(-0.5*REM)
+		M.adjustOxyLoss(-0.5*REM)
+
 
 /datum/reagent/medicine/healing_powder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)
 	if(iscarbon(M) && M.stat != DEAD)
@@ -1387,7 +1395,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	overdose_threshold = 20
 
 /datum/reagent/medicine/healing_poultice/on_mob_life(mob/living/M)
-	if(!M.reagents.has_reagent("stimpak") && !M.reagents.has_reagent("healing_powder")) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found. We only check for the less powerful chems, so the least powerful one always heals.
+	if(!M.reagents.has_reagent("stimfluid") && !M.reagents.has_reagent("healing_powder")) // We don't want these healing items to stack, so we only apply the healing if these chems aren't found. We only check for the less powerful chems, so the least powerful one always heals.
 		M.adjustFireLoss(-4*REM)
 		M.adjustBruteLoss(-4*REM)
 		M.adjustOxyLoss(-2*REM)
@@ -1744,7 +1752,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	overdose_threshold = 60
 
 /datum/reagent/medicine/bitterdrink/on_mob_life(mob/living/M)
-	if(!M.reagents.has_reagent("stimpak") && !M.reagents.has_reagent("healing_powder")) // Bitter-Drink does not stack with Stimpacks, and is much, much weaker than powder. It however can be stored and made enmass, good for sharing!
+	if(!M.reagents.has_reagent("stimfluidweak") && !M.reagents.has_reagent("ultrastimfluid") && !M.reagents.has_reagent("superstimfluid" )) // Bitter-Drink does not stack with Stimpacks, and is much, much weaker than powder. It however can be stored and made enmass, good for sharing!
 		M.adjustFireLoss(-1*REM)
 		M.adjustBruteLoss(-1*REM)
 		M.adjustToxLoss(-1*REM)
@@ -1760,7 +1768,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	overdose_threshold = 90
 
 /datum/reagent/medicine/brocjuice/on_mob_life(mob/living/M)
-	if(!M.reagents.has_reagent("stimpak") && !M.reagents.has_reagent("healing_powder")) // No, you cannot shove medicinal pulp down your throat with a stimpack you powerloving fuck.
+	if(!M.reagents.has_reagent("bitterdrink") && !M.reagents.has_reagent("healing_powder")) // No, you cannot shove medicinal pulp down your throat with a stimpack you powerloving fuck.
 		M.adjustFireLoss(-0.4*REM)
 		M.adjustBruteLoss(-0.4*REM)
 
@@ -1774,6 +1782,98 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	overdose_threshold = 90
 
 /datum/reagent/medicine/xanderjuice/on_mob_life(mob/living/M)
-	if(!M.reagents.has_reagent("stimpak") && !M.reagents.has_reagent("healing_powder")) // No, you cannot shove medicinal pulp down your throat with a stimpack you powerloving fuck.
+	if(!M.reagents.has_reagent("bitterdrink") && !M.reagents.has_reagent("healing_powder")) // No, you cannot shove medicinal pulp down your throat with a stimpack you powerloving fuck.
 		M.adjustFireLoss(-0.2*REM)
 		M.adjustBruteLoss(-0.2*REM)
+
+/datum/reagent/medicine/waterybitterdrink
+	name = "Watered-Down Bitter-Drink"
+	id = "waterybitterdrink"
+	description = "Restores and revitalizes the drinker. Bringing forth the regeneration of flesh, lifeblood and purifying the body of lesser toxins. It's been watered down!"
+	reagent_state = LIQUID
+	color = "#7A601F"
+	overdose_threshold = 120 // You can drink a ton more of it! Enjoy, lad!
+
+/datum/reagent/medicine/bitterdrink/on_mob_life(mob/living/M)
+	if(!M.reagents.has_reagent("bitterdrink") && !M.reagents.has_reagent("healing_powder")) // Bitter-Drink does not stack with it's full-drink, and is much, much weaker than powder. It however can be stored and made enmass, good for sharing!
+		M.adjustFireLoss(-0.5*REM)
+		M.adjustBruteLoss(-0.5*REM)
+		M.adjustToxLoss(-0.5*REM)
+
+/datum/reagent/medicine/ferrajuice
+	name = "Ferracactus Pulp"
+	id = "ferrapulp"
+	description = "Extracted pulp from the Ferra-Cactus. Hypertoxic. You'd best avoid consuming it!"
+	reagent_state = LIQUID
+	color = "#CFE6C6"
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+	overdose_threshold = 10
+
+
+// Stimpack Shit
+
+/datum/reagent/medicine/stimpack
+	name = "Weak Stim-fluid"
+	id = "stimfluidweak"
+	description = "Extracted pulp from the Broc Flower and Xander Root and purified via clean water. This enriched blood has a similar effect to stem-cells! This is of low-potency!"
+	reagent_state = LIQUID
+	color = "#DCDCDC"
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+	overdose_threshold = 12
+
+/datum/reagent/medicine/stimfluid/on_mob_life(mob/living/M)
+	if(!M.reagents.has_reagent("ultrastimfluid") && !M.reagents.has_reagent("stimfluid") && !M.reagents.has_reagent("superstimfluid")) // NO FUN ALLOWED! Stims cannot be used together!
+		M.adjustFireLoss(-2*REM)
+		M.adjustBruteLoss(-2*REM)
+		M.adjustToxLoss(-0.5*REM)
+		M.adjustOxyLoss(-1*REM)
+
+
+/datum/reagent/medicine/stimpack/stimfluid
+	name = "Stim-fluid"
+	id = "stimfluid"
+	description = "Enriched stimpack-fluid with the pulp from the Broc Flower and Xander Root that's been properly distilled with both heat and a stabilizer. This is of standard potency!"
+	reagent_state = LIQUID
+	color = "#DCDCDC"
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+	overdose_threshold = 12
+
+/datum/reagent/medicine/stimfluid/on_mob_life(mob/living/M)
+	if(!M.reagents.has_reagent("stimfluidweak") && !M.reagents.has_reagent("ultrastimfluid") && !M.reagents.has_reagent("superstimfluid" )) // NO FUN ALLOWED! Stims cannot be used together!
+		M.adjustFireLoss(-4*REM )
+		M.adjustBruteLoss(-4*REM)
+		M.adjustToxLoss(-1*REM)
+		M.adjustOxyLoss(-2*REM)
+
+/datum/reagent/medicine/stimpack/superstimfluid
+	name = "Super Stim-fluid"
+	id = "superstimfluid"
+	description = "Enriched stimpack-fluid with a cocktail of other chems to create a fairly powerful combination! This is of strong potency!"
+	reagent_state = LIQUID
+	color = "#DCDCDC"
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+	overdose_threshold = 12
+
+/datum/reagent/medicine/stimfluid/on_mob_life(mob/living/M)
+	if(!M.reagents.has_reagent("stimfluid") && !M.reagents.has_reagent("ultrastimfluid") && !M.reagents.has_reagent("weakstimfluid" )) // NO FUN ALLOWED! Stims cannot be used together!
+		M.adjustFireLoss(-6*REM )
+		M.adjustBruteLoss(-6*REM)
+		M.adjustToxLoss(-2*REM)
+		M.adjustOxyLoss(-3*REM)
+
+/datum/reagent/medicine/stimpack/ultrastimfluid // You cannot craft ultra-stims. Only finding them as end-tier loot.
+	name = "Ultra Stim-fluid"
+	id = "ultrastimfluid"
+	description = "Hyperenriched Stimpack fluid that's been distilled and purified. This is of absolute purity."
+	reagent_state = LIQUID
+	color = "#DCDCDC"
+	metabolization_rate = 1 * REAGENTS_METABOLISM
+	overdose_threshold = 12
+
+/datum/reagent/medicine/stimfluid/on_mob_life(mob/living/M)
+	if(!M.reagents.has_reagent("superstimfluid") && !M.reagents.has_reagent("stimfluid") && !M.reagents.has_reagent("stimfluidweak" )) // NO FUN ALLOWED! Stims cannot be used together!
+		M.adjustFireLoss(-8*REM)
+		M.adjustBruteLoss(-8*REM)
+		M.adjustToxLoss(-4*REM)
+		M.adjustOxyLoss(-5*REM)
+
