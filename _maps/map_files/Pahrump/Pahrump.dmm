@@ -241,6 +241,13 @@
 /mob/living/simple_animal/hostile/molerat,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"aaP" = (
+/obj/structure/table/wood/settler,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaloutermain2";
+	tag = "icon-horizontaloutermain2"
+	},
+/area/f13/wasteland)
 "aaS" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
@@ -4049,21 +4056,6 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
-"amr" = (
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaloutermain2";
-	tag = "icon-horizontaloutermain2"
-	},
-/area/f13/wasteland)
-"ams" = (
-/obj/item/ammo_casing/a556,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaloutermain2";
-	tag = "icon-horizontaloutermain2"
-	},
-/area/f13/wasteland)
 "amt" = (
 /obj/item/flag/ncr,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -4135,33 +4127,6 @@
 "amC" = (
 /turf/closed/wall/f13/tunnel,
 /area/f13/building)
-"amD" = (
-/obj/structure/barricade/sandbags,
-/obj/item/ammo_casing/a556,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaloutermain2";
-	tag = "icon-horizontaloutermain2"
-	},
-/area/f13/wasteland)
-"amE" = (
-/obj/structure/barricade/sandbags,
-/obj/item/ammo_casing/a556,
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 1;
-	icon_state = "horizontaloutermain1";
-	tag = "icon-horizontaloutermain1 (NORTH)"
-	},
-/area/f13/wasteland)
-"amF" = (
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 1;
-	icon_state = "horizontaloutermain1";
-	tag = "icon-horizontaloutermain1 (NORTH)"
-	},
-/area/f13/wasteland)
 "amG" = (
 /obj/machinery/door/poddoor/shutters{
 	id = 7246;
@@ -4324,45 +4289,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"anc" = (
-/obj/structure/table/wood/settler,
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaloutermain2";
-	tag = "icon-horizontaloutermain2"
-	},
-/area/f13/wasteland)
-"and" = (
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "outerbordercorner";
-	tag = "icon-outerbordercorner"
-	},
-/area/f13/wasteland)
-"ane" = (
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaltopbordertop2";
-	tag = "icon-horizontaltopbordertop2"
-	},
-/area/f13/wasteland)
-"anf" = (
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaltopbordertop2";
-	tag = "icon-horizontaltopbordertop2"
-	},
-/area/f13/wasteland)
 "ang" = (
 /obj/structure/table/wood/settler,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier1,
@@ -4440,28 +4366,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"anq" = (
-/obj/item/ammo_casing/a556,
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 1;
-	icon_state = "horizontaloutermain1";
-	tag = "icon-horizontaloutermain1 (NORTH)"
-	},
-/area/f13/wasteland)
-"anr" = (
-/obj/item/ammo_casing/a556,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain0"
-	},
-/area/f13/wasteland)
-"ans" = (
-/obj/item/ammo_casing/a556,
-/obj/item/ammo_casing/a556,
-/turf/open/indestructible/ground/outside/road{
-	icon_state = "horizontalinnermain2";
-	tag = "icon-horizontalinnermain2"
-	},
-/area/f13/wasteland)
 "ant" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
@@ -41716,9 +41620,9 @@ atM
 atM
 atM
 axU
-amD
-anc
-anq
+akH
+aaP
+axU
 axU
 atM
 aox
@@ -41972,9 +41876,9 @@ akH
 alc
 axU
 atM
-amr
-amE
-and
+atM
+akI
+axU
 aeD
 aeD
 aaA
@@ -42229,9 +42133,9 @@ akH
 axU
 axU
 atM
-ams
-amF
-ane
+atM
+axU
+aep
 ayu
 ayu
 ayu
@@ -42488,8 +42392,8 @@ axU
 atM
 atM
 akH
-anf
-anr
+aep
+acZ
 ayu
 ayu
 aox
@@ -42744,9 +42648,9 @@ ald
 atM
 axU
 axU
-amE
+akI
 ang
-ans
+ayu
 ayu
 acZ
 aox
@@ -150404,8 +150308,8 @@ bcc
 aph
 aph
 aph
-aph
-aph
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -150660,10 +150564,10 @@ bcc
 aph
 aph
 aph
-aph
-aph
-aph
-bzd
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -150916,11 +150820,11 @@ bcc
 bcc
 aph
 aph
-bzd
 aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -151174,10 +151078,10 @@ bcc
 aph
 aph
 bcc
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -151431,10 +151335,10 @@ bcc
 aph
 aph
 bcc
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -151688,11 +151592,11 @@ bcc
 aph
 aph
 bcc
-aph
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -151945,11 +151849,11 @@ bcc
 aph
 aph
 bcc
-aph
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -152202,11 +152106,11 @@ aph
 aph
 aph
 bcc
-aph
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -152460,10 +152364,10 @@ aph
 aph
 bcc
 bcc
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -152717,11 +152621,11 @@ aph
 aph
 bcc
 bcc
-aph
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -152974,11 +152878,11 @@ aph
 aph
 bcc
 bcc
-aph
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -153232,10 +153136,10 @@ aph
 bcc
 bcc
 bcc
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -153489,10 +153393,10 @@ aph
 bcc
 bcc
 bcc
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -153746,10 +153650,10 @@ bcc
 bcc
 bcc
 bcc
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -154003,10 +153907,10 @@ bcc
 bcc
 bcc
 bcc
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -154260,11 +154164,11 @@ bcc
 bcc
 bcc
 bcc
-aph
-aph
-aph
-aph
-bzd
+bcc
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -154517,11 +154421,11 @@ bcc
 bcc
 bcc
 bcc
-aph
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -154774,11 +154678,11 @@ bcc
 bcc
 bcc
 bcc
-aph
-aph
-aph
-aph
-aph
+bcc
+bcc
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -155031,8 +154935,8 @@ bcc
 bcc
 bcc
 bcc
-aph
-aph
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -155288,8 +155192,8 @@ bcc
 bcc
 bcc
 bcc
-bzd
-aph
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -157370,7 +157274,7 @@ byF
 byF
 byF
 byF
-byE
+byF
 bcc
 bcc
 bcc
@@ -157627,7 +157531,7 @@ byF
 byF
 byF
 byF
-byE
+byF
 bcc
 bcc
 bcc
@@ -157884,7 +157788,7 @@ bEF
 bEO
 bEW
 byF
-byE
+byF
 bcc
 bcc
 bcc
@@ -158141,7 +158045,7 @@ bBM
 bBM
 bBM
 byF
-byE
+byF
 bcc
 bcc
 bcc
@@ -158398,7 +158302,7 @@ bBD
 bEP
 bBM
 byF
-byE
+byF
 bcc
 bcc
 bcc
@@ -158655,7 +158559,7 @@ bBD
 bEQ
 bBM
 byF
-byE
+byF
 bcc
 bcc
 bcc
@@ -158912,7 +158816,7 @@ bBM
 bBM
 bBM
 byF
-byE
+byF
 bcc
 bcc
 bcc
@@ -159169,7 +159073,7 @@ bBM
 bBM
 bBM
 byF
-byE
+byF
 bcc
 bcc
 bcc
@@ -159426,14 +159330,14 @@ bBM
 bDh
 bBM
 byF
-byE
-byE
-byE
-byE
-byE
-byE
-byE
-byE
+byF
+byF
+byF
+byF
+byF
+byF
+byF
+byF
 bcc
 bcc
 aaa
@@ -159690,7 +159594,7 @@ byF
 byF
 byF
 byF
-byE
+byF
 bcc
 bcc
 aaa
@@ -159947,7 +159851,7 @@ bEd
 bEG
 bBM
 byF
-byE
+byF
 bcc
 bcc
 aaa
@@ -160204,7 +160108,7 @@ bBM
 bBM
 bBM
 byF
-byE
+byF
 bcc
 bcc
 aaa
@@ -161194,7 +161098,7 @@ bcc
 bcc
 bcc
 bcc
-byE
+byF
 byF
 byF
 byF
@@ -161451,7 +161355,7 @@ bcc
 bcc
 bcc
 bcc
-byE
+byF
 byF
 byF
 bzv
@@ -164274,7 +164178,7 @@ aaa
 aaa
 bcc
 bcc
-byE
+byF
 byF
 byF
 byF
@@ -164530,7 +164434,7 @@ aaa
 (230,1,2) = {"
 aaa
 bcc
-byD
+bcc
 byF
 byF
 byF
@@ -164787,7 +164691,7 @@ aaa
 (231,1,2) = {"
 aaa
 bcc
-byD
+bcc
 byF
 byF
 byY
@@ -165043,8 +164947,8 @@ aaa
 "}
 (232,1,2) = {"
 aaa
-byD
-byD
+bcc
+bcc
 byF
 byF
 byZ
@@ -165300,8 +165204,8 @@ aaa
 "}
 (233,1,2) = {"
 aaa
-byD
-byD
+bcc
+bcc
 byF
 byF
 byY
@@ -165557,8 +165461,8 @@ aaa
 "}
 (234,1,2) = {"
 aaa
-byD
-byD
+bcc
+bcc
 byF
 byF
 bza
@@ -166586,7 +166490,7 @@ aaa
 (238,1,2) = {"
 aaa
 bcc
-byE
+byF
 byF
 byP
 byY
@@ -166843,7 +166747,7 @@ aaa
 (239,1,2) = {"
 aaa
 bcc
-byE
+byF
 byF
 byF
 byF
@@ -167100,7 +167004,7 @@ aaa
 (240,1,2) = {"
 aaa
 bcc
-byE
+byF
 byF
 byF
 byF
@@ -167356,7 +167260,7 @@ aaa
 "}
 (241,1,2) = {"
 aaa
-byE
+byF
 byF
 byF
 byQ
@@ -167613,7 +167517,7 @@ aaa
 "}
 (242,1,2) = {"
 aaa
-byE
+byF
 byF
 byF
 byF
@@ -167870,7 +167774,7 @@ aaa
 "}
 (243,1,2) = {"
 aaa
-byE
+byF
 byF
 byF
 byH
@@ -168127,7 +168031,7 @@ aaa
 "}
 (244,1,2) = {"
 aaa
-byE
+byF
 byF
 byH
 byH
@@ -168384,7 +168288,7 @@ aaa
 "}
 (245,1,2) = {"
 aaa
-byE
+byF
 byF
 byI
 byH
@@ -168641,7 +168545,7 @@ aaa
 "}
 (246,1,2) = {"
 aaa
-byE
+byF
 byF
 byH
 byH
@@ -168898,7 +168802,7 @@ aaa
 "}
 (247,1,2) = {"
 aaa
-byE
+byF
 byF
 byJ
 byH
@@ -169155,7 +169059,7 @@ aaa
 "}
 (248,1,2) = {"
 aaa
-byE
+byF
 byF
 byF
 byF
@@ -169412,7 +169316,7 @@ aaa
 "}
 (249,1,2) = {"
 aaa
-byE
+byF
 byF
 byF
 byF
