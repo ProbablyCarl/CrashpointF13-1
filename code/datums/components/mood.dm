@@ -109,12 +109,12 @@
 /datum/component/mood/process() //Called on SSmood process
 	switch(sanity)
 		if(SANITY_INSANE to SANITY_CRAZY)
-			owner.overlay_fullscreen("depression", /obj/screen/fullscreen/depression, 3)
+			owner.overlay_fullscreen("depression", /obj/screen/fullscreen/depressiontwo, 3)
 			update_mood_icon()
 		if(SANITY_INSANE to SANITY_UNSTABLE)
-			owner.overlay_fullscreen("depression", /obj/screen/fullscreen/depression, 2)
+			owner.overlay_fullscreen("depression", /obj/screen/fullscreen/depressiontwo, 2)
 		if(SANITY_UNSTABLE to SANITY_DISTURBED)
-			owner.overlay_fullscreen("depression", /obj/screen/fullscreen/depression, 1)
+			owner.overlay_fullscreen("depression", /obj/screen/fullscreen/depressiontwo, 1)
 		if(SANITY_DISTURBED to INFINITY)
 			owner.clear_fullscreen("depression")
 
