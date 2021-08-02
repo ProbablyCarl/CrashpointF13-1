@@ -2145,10 +2145,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/ahs)
-"fv" = (
-/mob/living/simple_animal/hostile/spawner/ghoul,
-/turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
 "fw" = (
 /mob/living/simple_animal/hostile/ghoul/glowing,
 /turf/open/floor/plating/f13/inside/mountain,
@@ -48654,7 +48650,7 @@ dU
 fk
 dl
 dl
-fv
+dl
 aa
 aa
 aa

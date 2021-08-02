@@ -1002,7 +1002,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(H.getStaminaLoss() > 80)//Only screws with stamina up to a point.
 			return
 		else
-			if(prob(15)) //Eat something, nerd.`
+			if(prob(15)) //Eat something, nerd.
 				H.adjustStaminaLoss(25)
 	else
 		if(H.metabolism_efficiency == 1.25)

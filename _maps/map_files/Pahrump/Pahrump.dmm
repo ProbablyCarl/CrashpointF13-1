@@ -248,10 +248,37 @@
 	tag = "icon-horizontaloutermain2"
 	},
 /area/f13/wasteland)
+"aaQ" = (
+/obj/structure/table/glass,
+/obj/machinery/pillpress,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2";
+	tag = "icon-housewood2"
+	},
+/area/f13/building)
+"aaR" = (
+/obj/structure/table/glass,
+/obj/machinery/sepfunnel,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2";
+	tag = "icon-housewood2"
+	},
+/area/f13/building)
 "aaS" = (
 /obj/structure/barricade/wooden,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"aaT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/rack,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/turf/open/floor/plasteel/f13/vault_floor/dark,
+/area/f13/ncr)
 "aaV" = (
 /obj/machinery/light/lampost{
 	dir = 1;
@@ -928,13 +955,6 @@
 	icon_state = "dirt"
 	},
 /area/f13/wasteland)
-"adg" = (
-/obj/machinery/chem_master,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2";
-	tag = "icon-housewood2"
-	},
-/area/f13/building)
 "adi" = (
 /obj/structure/table/wood/settler,
 /obj/item/storage/box/beakers,
@@ -3473,23 +3493,6 @@
 	icon_state = "horizontaloutermain2";
 	tag = "icon-horizontaloutermain2"
 	},
-/area/f13/ncr)
-"akN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/rack,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/ncr)
 "akO" = (
 /obj/effect/landmark/start/f13/ncrht,
@@ -39965,13 +39968,6 @@
 /mob/living/simple_animal/pet/dog/mutant,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"ciw" = (
-/obj/machinery/chem_dispenser,
-/turf/open/floor/f13/wood{
-	icon_state = "housewood2";
-	tag = "icon-housewood2"
-	},
-/area/f13/building)
 "cix" = (
 /obj/item/watertank,
 /turf/open/floor/f13/wood,
@@ -47269,7 +47265,7 @@ aiJ
 aiH
 ajT
 aeY
-akN
+aaT
 ajT
 alz
 ajT
@@ -90942,7 +90938,7 @@ bcc
 bcc
 aMr
 acU
-adg
+aaQ
 arJ
 adZ
 acU
@@ -91199,7 +91195,7 @@ bcc
 bcc
 bcc
 acU
-ciw
+aaR
 arJ
 aea
 acU

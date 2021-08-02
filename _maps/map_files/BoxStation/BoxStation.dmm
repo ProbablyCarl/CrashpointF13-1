@@ -2165,7 +2165,7 @@
 /turf/open/floor/plating,
 /area/f13/klamat/mine)
 "agT" = (
-/obj/structure/reagent_dispensers/barrel/three,
+/obj/structure/reagent_dispensers/barrel/half,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/desert)
 "agU" = (
@@ -34767,7 +34767,7 @@
 	},
 /area/f13/sunny_dale)
 "bUU" = (
-/obj/structure/reagent_dispensers/barrel/three,
+/obj/structure/reagent_dispensers/barrel/half,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowrustyfull"
 	},
