@@ -224,8 +224,8 @@
 	icon_state = "rock[rand(1,6)]"
 
 /turf/closed/indestructible/f13/vault_r
-	name = "composite reinforced wall"
-	desc = "A wall built to withstand an atomic explosion. You're not getting through this."//Used an indestructible wall!
+	name = "super composite reinforced wall"
+	desc = "A wall built to withstand an atomic explosion. You're not getting through this. For real this time."//Used an indestructible wall!
 	icon = 'icons/fallout/turfs/walls/vault_reinforced.dmi'
 	icon_state = "vaultrwall0"
 	icon_type_smooth = "vaultrwall"
