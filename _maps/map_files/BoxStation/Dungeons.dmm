@@ -174,6 +174,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/effect/spawner/lootdrop/f13/gunparts/tier2,
 /turf/open/floor/plasteel/f13/vault_floor{
 	icon_state = "floorgrime"
 	},
@@ -570,9 +571,20 @@
 	},
 /area/f13/underground/enclave_base)
 "bw" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	icon_state = "fwindow"
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
 /obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
 /turf/open/floor/plasteel/f13/vault_floor{
-	icon_state = "whitepurplerustychess2"
+	icon_state = "greendirtysolid"
 	},
 /area/f13/underground/enclave_base)
 "bx" = (
@@ -672,6 +684,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
 /turf/open/floor/plasteel/f13/vault_floor{
 	icon_state = "whitepurplerustychess2"
 	},
@@ -934,7 +947,7 @@
 	},
 /area/f13/ahs)
 "cs" = (
-/obj/structure/barricade/wooden/crude,
+/obj/structure/barricade/wooden/planks/pregame,
 /obj/machinery/door/airlock/hatch,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
@@ -1417,19 +1430,10 @@
 	},
 /area/f13/ahs)
 "dE" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	icon_state = "fwindow"
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 5
-	},
 /obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
 /turf/open/floor/plasteel/f13/vault_floor{
-	icon_state = "greendirtysolid"
+	icon_state = "whitepurplerustychess2"
 	},
 /area/f13/underground/enclave_base)
 "dF" = (
@@ -1950,7 +1954,7 @@
 /obj/machinery/door/airlock{
 	name = "Vault 223 Garden"
 	},
-/obj/structure/barricade/wooden/crude,
+/obj/structure/barricade/wooden/planks/pregame,
 /obj/machinery/door/poddoor/shutters{
 	id = "marx";
 	name = "Vault shutters"
@@ -2145,6 +2149,26 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/ahs)
+"fv" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/bot_red,
+/obj/machinery/porta_turret/syndicate/wasteland/energy,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/turf/open/floor/plasteel/f13{
+	icon_state = "plating"
+	},
+/area/space)
 "fw" = (
 /mob/living/simple_animal/hostile/ghoul/glowing,
 /turf/open/floor/plating/f13/inside/mountain,
@@ -2236,8 +2260,18 @@
 	dir = 1;
 	light_color = "#706891"
 	},
+/obj/machinery/base_dispenser/prewar,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/open/floor/plasteel/f13{
-	icon_state = "yellowrustyfull"
+	icon_state = "yellowdirtysolid"
 	},
 /area/f13/ahs)
 "fI" = (
@@ -3072,7 +3106,7 @@
 	icon = 'icons/obj/doors/airlocks/station/engineering.dmi';
 	name = "Vault 223 Enginieering"
 	},
-/obj/structure/barricade/wooden/crude,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -3548,13 +3582,10 @@
 /area/f13/ahs)
 "iB" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/flashbangs,
-/obj/item/storage/box/handcuffs,
 /obj/effect/turf_decal/stripes/red/full,
 /obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner/west,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
+/obj/effect/spawner/lootdrop/f13/gunparts/tier2,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -3639,13 +3670,10 @@
 /area/f13/ahs)
 "iL" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/rubbershot,
-/obj/item/storage/box/rubbershot,
-/obj/item/storage/box/lethalshot,
-/obj/item/storage/box/lethalshot,
 /obj/effect/turf_decal/stripes/red/full,
 /obj/structure/window/reinforced/spawner,
 /obj/structure/window/reinforced/spawner/west,
+/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -3818,7 +3846,7 @@
 	icon = 'icons/obj/doors/airlocks/station/medical.dmi';
 	name = "Vault 223 Medical"
 	},
-/obj/structure/barricade/wooden/crude,
+/obj/structure/barricade/wooden/planks/pregame,
 /obj/machinery/door/poddoor/shutters{
 	id = "marx";
 	name = "Vault shutters"
@@ -3912,7 +3940,7 @@
 	id = "stalin";
 	name = "Overseer Office shutters"
 	},
-/obj/structure/barricade/wooden/crude,
+/obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -5123,9 +5151,14 @@
 	},
 /area/f13/ahs)
 "mr" = (
-/obj/structure/barricade/sandbags,
+/obj/machinery/light{
+	dir = 8;
+	light_color = "#e8eaff"
+	},
+/obj/effect/turf_decal/bot_red,
+/obj/machinery/porta_turret/syndicate/wasteland,
 /turf/open/floor/plasteel/f13{
-	icon_state = "redrustyfull"
+	icon_state = "plating"
 	},
 /area/f13/ahs)
 "ms" = (
@@ -5143,9 +5176,13 @@
 	},
 /area/f13/ahs)
 "mu" = (
-/obj/structure/barricade/sandbags,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/turf_decal/bot_red,
+/obj/machinery/porta_turret/syndicate/wasteland,
 /turf/open/floor/plasteel/f13{
-	icon_state = "yellowdirtyfull"
+	icon_state = "plating"
 	},
 /area/f13/ahs)
 "mv" = (
@@ -5160,12 +5197,11 @@
 /turf/open/floor/plasteel/freezer,
 /area/f13/ahs)
 "mx" = (
-/obj/effect/decal/cleanable/blood/old,
-/obj/structure/barricade/sandbags,
-/turf/open/floor/plasteel/f13{
-	icon_state = "yellowdirtyfull"
+/obj/effect/spawner/lootdrop/f13/gunparts/tier2,
+/turf/open/floor/plating/f13/inside/mountain{
+	icon_state = "mountain2"
 	},
-/area/f13/ahs)
+/area/f13/underground/cave)
 "my" = (
 /obj/machinery/light,
 /mob/living/simple_animal/hostile/ghoul,
@@ -5187,27 +5223,6 @@
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrusty"
-	},
-/area/f13/ahs)
-"mB" = (
-/obj/machinery/light{
-	dir = 8;
-	light_color = "#e8eaff"
-	},
-/obj/effect/turf_decal/bot_red,
-/obj/machinery/porta_turret/syndicate/wasteland,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
-/area/f13/ahs)
-"mC" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/effect/turf_decal/bot_red,
-/obj/machinery/porta_turret/syndicate/wasteland,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
 	},
 /area/f13/ahs)
 "mD" = (
@@ -5496,16 +5511,6 @@
 "YF" = (
 /turf/closed/indestructible/riveted,
 /area/f13/tcoms)
-"YZ" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/effect/turf_decal/bot_red,
-/obj/machinery/porta_turret/syndicate/wasteland/energy,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorgrime"
-	},
-/area/f13/ahs)
 
 (1,1,1) = {"
 aa
@@ -48390,7 +48395,7 @@ aa
 dk
 dp
 dr
-dU
+mx
 dl
 ck
 aa
@@ -62340,7 +62345,7 @@ bz
 mL
 bu
 bu
-bw
+dE
 bu
 ab
 ab
@@ -62792,8 +62797,8 @@ eO
 fb
 fo
 eP
+fc
 mr
-mB
 iw
 iw
 iw
@@ -63049,7 +63054,7 @@ eP
 fc
 fp
 fc
-mu
+eP
 cw
 cw
 cw
@@ -63059,8 +63064,8 @@ cw
 cw
 fe
 cw
-iM
-iM
+cw
+cw
 cw
 cA
 jn
@@ -63316,8 +63321,8 @@ gr
 cG
 cG
 cG
-Wy
-YZ
+cG
+fv
 cG
 ji
 jo
@@ -63563,7 +63568,7 @@ eP
 fc
 fp
 fc
-mx
+fB
 cw
 cw
 cw
@@ -63573,8 +63578,8 @@ cw
 cw
 cI
 cE
-iM
-iM
+cw
+cw
 fe
 cC
 jn
@@ -63623,7 +63628,7 @@ aa
 aa
 aa
 ab
-dE
+bw
 mo
 lT
 bu
@@ -63820,8 +63825,8 @@ eR
 eP
 fo
 eP
-mr
-mC
+fc
+mu
 iw
 iw
 iw

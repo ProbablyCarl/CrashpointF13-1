@@ -228,6 +228,22 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/radiation)
+"aN" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock{
+	name = "Vault 223 Garden"
+	},
+/obj/structure/barricade/wooden/planks/pregame,
+/obj/machinery/door/poddoor/shutters{
+	id = "marx";
+	name = "Vault shutters"
+	},
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/ahs)
 "aO" = (
 /obj/structure/reagent_dispensers/barrel/old,
 /turf/open/floor/plating/tunnel,
@@ -254,6 +270,23 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/plating/tunnel,
 /area/f13/bunker)
+"aS" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock{
+	icon = 'icons/obj/doors/airlocks/station/medical.dmi';
+	name = "Vault 223 Medical"
+	},
+/obj/structure/barricade/wooden/planks/pregame,
+/obj/machinery/door/poddoor/shutters{
+	id = "marx";
+	name = "Vault shutters"
+	},
+/turf/open/floor/plasteel/f13{
+	icon_state = "showroomfloor"
+	},
+/area/f13/ahs)
 "aT" = (
 /obj/effect/decal/waste,
 /turf/open/floor/plating/tunnel,
@@ -266,6 +299,21 @@
 	tag = "icon-bluerustychess2"
 	},
 /area/f13/bunker)
+"aV" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/decal/hammerandsickle,
+/turf/open/floor/plasteel/f13{
+	icon_state = "yellowdirtyfull"
+	},
+/area/f13/ahs)
 "aW" = (
 /obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/indestructible/ground/inside/mountain,
@@ -361,6 +409,12 @@
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
+"bl" = (
+/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
+/turf/open/floor/plating/f13/inside/mountain{
+	icon_state = "mountain2"
+	},
+/area/f13/underground/cave)
 "bm" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/plating/tunnel{
@@ -451,6 +505,16 @@
 	tag = "icon-bluerustychess2"
 	},
 /area/f13/bunker)
+"bx" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/stripes/red/full,
+/obj/structure/window/reinforced/spawner/north,
+/obj/structure/window/reinforced/spawner/west,
+/obj/effect/spawner/lootdrop/f13/gunparts/tier2,
+/turf/open/floor/plasteel/f13{
+	icon_state = "redrustyfull"
+	},
+/area/f13/ahs)
 "by" = (
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/plasteel/barber{
@@ -548,6 +612,16 @@
 	tag = "icon-plating"
 	},
 /area/f13/bunker)
+"bH" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/stripes/red/full,
+/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/west,
+/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
+/turf/open/floor/plasteel/f13{
+	icon_state = "redrustyfull"
+	},
+/area/f13/ahs)
 "bI" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/barber{
@@ -606,6 +680,10 @@
 	icon_state = "bluerustychess2";
 	tag = "icon-bluerustychess2"
 	},
+/area/f13/bunker)
+"bO" = (
+/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
+/turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/bunker)
 "bP" = (
 /obj/machinery/shower{
@@ -828,6 +906,10 @@
 	tag = "icon-plating"
 	},
 /area/f13/bunker)
+"cm" = (
+/obj/effect/spawner/lootdrop/f13/gunparts/tier2,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/bunker)
 "cn" = (
 /mob/living/simple_animal/hostile/handy/sentrybot,
 /turf/open/floor/plating/tunnel,
@@ -891,6 +973,13 @@
 	tag = "icon-bluerustychess2"
 	},
 /area/f13/bunker)
+"ct" = (
+/obj/effect/spawner/lootdrop/f13/gunparts/tier2,
+/turf/open/floor/plasteel/barber{
+	icon_state = "plating";
+	tag = "icon-plating"
+	},
+/area/f13/bunker)
 "cu" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -944,6 +1033,10 @@
 /turf/open/floor/plating/tunnel{
 	icon_state = "tunnelchess2"
 	},
+/area/f13/bunker)
+"cB" = (
+/obj/effect/spawner/lootdrop/f13/gunparts/tier2,
+/turf/open/floor/plating/tunnel,
 /area/f13/bunker)
 "cC" = (
 /turf/open/floor/plating/tunnel,
@@ -1112,6 +1205,12 @@
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/bunker)
+"cX" = (
+/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
+/turf/open/floor/plating/tunnel{
+	icon_state = "tunnelrusty"
+	},
+/area/f13/bunker)
 "cY" = (
 /obj/machinery/light/small,
 /turf/open/floor/plating/tunnel{
@@ -1144,6 +1243,10 @@
 	icon_state = "tunnelrusty"
 	},
 /area/f13/bunker)
+"de" = (
+/obj/effect/spawner/lootdrop/f13/gunparts/tier2,
+/turf/open/floor/plating/tunnel,
+/area/f13/radiation)
 "df" = (
 /obj/item/pickaxe,
 /turf/open/indestructible/ground/inside/mountain,
@@ -2274,6 +2377,13 @@
 /obj/structure/reagent_dispensers/barrel/old,
 /turf/open/floor/plating,
 /area/f13/bunker)
+"fZ" = (
+/obj/effect/decal/remains/human,
+/obj/item/clothing/shoes/workboots/mining,
+/obj/item/clothing/under/sl_suit,
+/obj/item/clothing/head/fedora,
+/turf/open/indestructible/ground/inside/mountain,
+/area/f13/tunnel)
 "ga" = (
 /obj/structure/closet/crate,
 /obj/item/clothing/gloves/f13/baseball,
@@ -3038,22 +3148,6 @@
 	icon_state = "mountain2"
 	},
 /area/f13/underground/cave)
-"hS" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/airlock{
-	name = "Vault 223 Garden"
-	},
-/obj/structure/barricade/wooden/crude,
-/obj/machinery/door/poddoor/shutters{
-	id = "marx";
-	name = "Vault shutters"
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/ahs)
 "hT" = (
 /obj/item/clothing/under/f13/rag,
 /turf/open/floor/plating,
@@ -3089,21 +3183,6 @@
 "hY" = (
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
-	},
-/area/f13/ahs)
-"hZ" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/effect/decal/hammerandsickle,
-/turf/open/floor/plasteel/f13{
-	icon_state = "yellowdirtyfull"
 	},
 /area/f13/ahs)
 "ia" = (
@@ -5187,19 +5266,6 @@
 	icon_state = "darkdirtysolid"
 	},
 /area/f13/bunker)
-"mC" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/box/flashbangs,
-/obj/item/storage/box/handcuffs,
-/obj/effect/turf_decal/stripes/red/full,
-/obj/structure/window/reinforced/spawner/north,
-/obj/structure/window/reinforced/spawner/west,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/obj/item/reagent_containers/hypospray/medipen/stimpak,
-/turf/open/floor/plasteel/f13{
-	icon_state = "redrustyfull"
-	},
-/area/f13/ahs)
 "mF" = (
 /obj/effect/turf_decal/stripes/red/full,
 /obj/structure/guncase,
@@ -5284,19 +5350,6 @@
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
-	},
-/area/f13/ahs)
-"mP" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/box/rubbershot,
-/obj/item/storage/box/rubbershot,
-/obj/item/storage/box/lethalshot,
-/obj/item/storage/box/lethalshot,
-/obj/effect/turf_decal/stripes/red/full,
-/obj/structure/window/reinforced/spawner,
-/obj/structure/window/reinforced/spawner/west,
-/turf/open/floor/plasteel/f13{
-	icon_state = "redrustyfull"
 	},
 /area/f13/ahs)
 "mQ" = (
@@ -5561,23 +5614,6 @@
 "ny" = (
 /obj/structure/cable{
 	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "showroomfloor"
-	},
-/area/f13/ahs)
-"nz" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/airlock{
-	icon = 'icons/obj/doors/airlocks/station/medical.dmi';
-	name = "Vault 223 Medical"
-	},
-/obj/structure/barricade/wooden/crude,
-/obj/machinery/door/poddoor/shutters{
-	id = "marx";
-	name = "Vault shutters"
 	},
 /turf/open/floor/plasteel/f13{
 	icon_state = "showroomfloor"
@@ -7627,14 +7663,6 @@
 /area/f13/tunnel)
 "sF" = (
 /turf/closed/indestructible/opshuttle,
-/area/f13/tunnel)
-"sG" = (
-/obj/effect/decal/remains/human,
-/obj/item/clothing/shoes/workboots/mining,
-/obj/item/clothing/under/sl_suit,
-/obj/item/clothing/head/fedora,
-/obj/item/gun/ballistic/automatic/surplus,
-/turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
 "sH" = (
 /obj/effect/decal/waste,
@@ -14703,7 +14731,7 @@ aa
 aa
 aa
 aX
-jZ
+bO
 jZ
 jZ
 jZ
@@ -15740,7 +15768,7 @@ jZ
 jZ
 jZ
 jZ
-jZ
+cm
 aX
 aa
 aa
@@ -29628,7 +29656,7 @@ aa
 aa
 aa
 aa
-Hv
+ct
 Hv
 ED
 yr
@@ -58294,7 +58322,7 @@ aa
 aa
 fu
 fu
-fu
+bl
 kq
 aa
 aa
@@ -62669,7 +62697,7 @@ gC
 gC
 gC
 IO
-hS
+aN
 IO
 IO
 IO
@@ -63970,7 +63998,7 @@ dZ
 IO
 IO
 IO
-nz
+aS
 IO
 eC
 eC
@@ -66595,7 +66623,7 @@ sY
 sY
 Qa
 Qa
-sG
+fZ
 Qa
 Qa
 sY
@@ -66891,7 +66919,7 @@ aa
 aa
 aa
 aX
-dc
+cX
 cY
 aX
 aa
@@ -67387,7 +67415,7 @@ aa
 ac
 ad
 ah
-al
+de
 ar
 bn
 ad
@@ -69866,7 +69894,7 @@ em
 em
 hG
 eo
-hZ
+aV
 eo
 hG
 em
@@ -71677,8 +71705,8 @@ IO
 IO
 IO
 IO
-mC
-mP
+bx
+bH
 IO
 aa
 aa
@@ -73559,7 +73587,7 @@ aa
 aa
 aa
 bq
-cC
+cB
 cC
 pr
 ac
