@@ -6,7 +6,8 @@
 
 // The default UI style is the first one in the list
 GLOBAL_LIST_INIT(available_ui_styles, list(
-	"Slimecore" = 'icons/mob/screen_slimecore.dmi',
+	"Fallout" = 'icons/fallout/misc/screen_fallout2.dmi',
+//	"Slimecore" = 'icons/mob/screen_slimecore.dmi',
 	"Midnight" = 'icons/mob/screen_midnight.dmi',
 	"Retro" = 'icons/mob/screen_retro.dmi',
 	"Plasmafire" = 'icons/mob/screen_plasmafire.dmi',
