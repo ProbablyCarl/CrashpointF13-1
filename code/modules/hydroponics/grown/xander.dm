@@ -18,11 +18,12 @@
 /obj/item/reagent_containers/food/snacks/grown/xander
 	seed = /obj/item/seeds/xander
 	name = "xander root"
-	desc = "Xander roots are large, hardy, turnip-like roots with mild healing properties."
+	desc = "Xander roots are large, hardy, turnip-like roots with mild healing properties. It is noted for it's ability to cure anemia!"
 	icon_state = "xander"
 	filling_color = "#FF6347"
 
 /obj/item/reagent_containers/food/snacks/grown/xander/add_juice()
 	if(..())
 		reagents.add_reagent("xanderpulp", 1 + round((seed.potency / 5), 1))
+		reagents.add_reagent("salglu_solution", 1 + round((seed.potency / 5), 1))
 		bitesize = 1 + round(reagents.total_volume / 3, 1)

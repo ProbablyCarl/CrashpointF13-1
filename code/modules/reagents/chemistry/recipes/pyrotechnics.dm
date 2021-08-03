@@ -432,23 +432,3 @@
 	required_reagents = list("stabilizing_agent" = 1,"fluorosurfactant" = 1,"carbon" = 1)
 	required_temp = 200
 	is_cold_recipe = 1
-
-
-/datum/chemical_reaction/reagent_explosion/jetstageone_explosion
-	name = "Jet Stage-One Kaboom"
-	id = "jetstageone_explosion"
-	required_reagents = list("jetstageone" = 1)
-	required_temp = 405
-	strengthdiv = 10
-	modifier = 1
-	mix_message = "<span class='boldannounce'>You're pretty fucking sure that was too much heat!</span>"
-
-
-/datum/chemical_reaction/reagent_explosion/jetstageone_explosion
-	name = "Jet Stage-One Kaboom"
-	id = "jetstagetwo_explosion"
-	required_reagents = list("jetstagetwo"= 1)
-	required_temp = 455
-	strengthdiv = 20
-	modifier = 1
-	mix_message = "<span class='boldannounce'>YOU'RE VERY FUCKING CERTAIN JET ISN'T SUPPOSED TO BE A FIREBALL!</span>"

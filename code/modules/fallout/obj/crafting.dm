@@ -155,15 +155,3 @@
 	desc = "This was a promotional item created by Vault-Tec before the Great War and used in the company's advertisements. With the right schematics, it can be used to make bottlecap mines."
 	icon_state = "lunchbox"
 	tool_behaviour = TOOL_LUNCHBOX
-
-// Drug Stuff
-
-/obj/item/crafting/injector
-	name = "Empty Injector"
-	desc = "Used for the speedy-injection of many-a-chems!"
-	icon_state = "injector"
-
-/obj/item/crafting/inhaler
-	name = "Empty Inhaler"
-	desc = "Used for the speedy-inhalation of many-a-chems!"
-	icon_state = "inhaler"
