@@ -6,13 +6,14 @@
 
 // The default UI style is the first one in the list
 GLOBAL_LIST_INIT(available_ui_styles, list(
-	"Fallout" = 'icons/fallout/misc/screen_fallout2.dmi',
-  "Slimecore" = 'icons/mob/screen_slimecore.dmi',
-	"Plasmafire" = 'icons/mob/screen_plasmafire.dmi',
+	"EngFallout" = 'icons/fallout/misc/screen_fallout.dmi',
+	"RusFallout (UNSTABLE)" = 'icons/fallout/misc/screen_fallout2.dmi'
+/*	"Plasmafire" = 'icons/mob/screen_plasmafire.dmi',
+	"Slimecore" = 'icons/mob/screen_slimecore.dmi',
 	"Midnight" = 'icons/mob/screen_midnight.dmi',
 	"Retro" = 'icons/mob/screen_retro.dmi',
 	"Operative" = 'icons/mob/screen_operative.dmi',
-	"Clockwork" = 'icons/mob/screen_clockwork.dmi'
+	"Clockwork" = 'icons/mob/screen_clockwork.dmi'*/
 ))
 
 /proc/ui_style2icon(ui_style)
