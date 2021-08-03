@@ -835,7 +835,7 @@
 	id = "nukacherry"
 	description = "Nuka-Cola with the added flavour of cherry! If cherry tasted like filthy sewer shit."
 	color = "#2B1105"
-	taste_description = "what would happen if you took a good old fashioned nuka-cola and then pissed in it."
+	taste_description = "what would happen if you mixed cherry, John Goodmans ass-sweat and then served it within a filthy pirate-hookers vagina."
 	glass_name = "glass of Nuka-Cola Cherry"
 	glass_desc = "One of the Pre-War America's favorite soda brand's biggest fuck-ups! It's only use is target practice or torture."
 	water_level = 1

@@ -355,89 +355,25 @@
 		M.adjustOxyLoss(1, 0)
 	..()
 	. = 1
-// JET
+
 /datum/reagent/drug/jet
-	name = "Jet"
+	name = "Jet Inhalant"
 	id = "jet"
 	description = "A chemical used to induce a euphoric high derived from brahmin dung. Fast-acting, powerful, and highly addictive."
 	color = "#60A584" // rgb: 96, 165, 132
 	overdose_threshold = 30
-	addiction_threshold = 10
+	addiction_threshold = 25
 
 /datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
+	M.set_drugginess(15)
 	M.AdjustStun(-5, 0)
 	M.adjustStaminaLoss(-0.5*REM, 0)
-	M.adjustFireLoss(-1*REM)
-	M.adjustBruteLoss(-1*REM)
-	if(isturf(M.loc) && !isspaceturf(M.loc))
-		if(M.canmove)
-			if(prob(1))
-				step(M, pick(GLOB.cardinals))
-	if(prob(1))
-		M.emote(pick("twitch"))
-	..()
-
-/datum/reagent/drug/jet/overdose_start(mob/living/M)
-	to_chat(M, "<span class='userdanger'>You start tripping hard!</span>")
-	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[id]_overdose", /datum/mood_event/drugs/overdose, name)
-
-/datum/reagent/drug/jet/overdose_process(mob/living/M)
-	if(M.hallucination < volume && prob(20))
-		M.hallucination += 5
-		M.adjustToxLoss(0.5, 0)
-	..()
-
-/datum/reagent/drug/jet/addiction_act_stage1(mob/living/M)
-	if(prob(20))
-		M.emote(pick("twitch","drool","moan"))
-	..()
-
-/datum/reagent/drug/jet/addiction_act_stage2(mob/living/M)
-	M.Dizzy(5)
-	if(prob(30))
-		M.emote(pick("twitch","drool","moan"))
-	..()
-
-/datum/reagent/drug/jet/addiction_act_stage3(mob/living/M)
-	if(M.canmove && !ismovableatom(M.loc))
-		for(var/i = 0, i < 4, i++)
-			step(M, pick(GLOB.cardinals))
-	M.Dizzy(10)
-	if(prob(40))
-		M.emote(pick("twitch","drool","moan"))
-	..()
-
-/datum/reagent/drug/jet/addiction_act_stage4(mob/living/carbon/human/M)
-	if(M.canmove && !ismovableatom(M.loc))
-		for(var/i = 0, i < 8, i++)
-			step(M, pick(GLOB.cardinals))
-	M.Dizzy(15)
-	if(prob(50))
-		M.emote(pick("twitch","drool","moan"))
-	..()
-	. = 1
-
-/datum/reagent/drug/jet/cut
-	name = "Low Quality Jet"
-	id = "cutjet"
-	description = "A chemical used to induce a euphoric high derived from brahmin dung. This stuff has been cut with fillers and other crap. It's pretty low-quality."
-	color = "#60A584" // rgb: 96, 165, 132
-
-/datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
-	M.AdjustStun(-2, 0)
-	M.adjustStaminaLoss(-0.2*REM, 0)
-	M.adjustFireLoss(-0.2*REM)
-	M.adjustBruteLoss(-0.2*REM)
-	if(!M.reagents.has_reagent("ultrajet") && !M.reagents.has_reagent("jet")) // You cannot achieve crackhead ascendence
-		M.adjustFireLoss(-0*REM)
-		M.adjustBruteLoss(-0*REM)
-
 	if(isturf(M.loc) && !isspaceturf(M.loc))
 		if(M.canmove)
 			if(prob(10))
 				step(M, pick(GLOB.cardinals))
 	if(prob(12))
-		M.emote(pick("twitch"))
+		M.emote(pick("twitch","drool","moan","giggle"))
 	..()
 
 /datum/reagent/drug/jet/overdose_start(mob/living/M)
@@ -480,67 +416,6 @@
 	..()
 	. = 1
 
-/datum/reagent/drug/jet/ultrajet
-	name = "UltraJet"
-	id = "ultrajet"
-	description = "A chemical used to induce a euphoric high derived from brahmin dung. This stuff has been bolstered with high-quality additions. It's top-of-the-line stuff!"
-	color = "#60A584" // rgb: 96, 165, 132
-
-/datum/reagent/drug/jet/on_mob_life(mob/living/carbon/M)
-	M.AdjustStun(-10, 0)
-	M.adjustStaminaLoss(-1*REM, 0)
-	M.adjustFireLoss(-1.5*REM)
-	M.adjustBruteLoss(-1.5*REM)
-	if(isturf(M.loc) && !isspaceturf(M.loc))
-		if(M.canmove)
-			if(prob(10))
-				step(M, pick(GLOB.cardinals))
-	if(prob(12))
-		M.emote(pick("twitch"))
-	..()
-
-/datum/reagent/drug/jet/overdose_start(mob/living/M)
-	to_chat(M, "<span class='userdanger'>You start tripping hard!</span>")
-	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[id]_overdose", /datum/mood_event/drugs/overdose, name)
-
-/datum/reagent/drug/jet/overdose_process(mob/living/M)
-	if(M.hallucination < volume && prob(20))
-		M.hallucination += 5
-		M.adjustToxLoss(0.5, 0)
-	..()
-
-/datum/reagent/drug/jet/addiction_act_stage1(mob/living/M)
-	if(prob(20))
-		M.emote(pick("twitch","drool","moan"))
-	..()
-
-/datum/reagent/drug/jet/addiction_act_stage2(mob/living/M)
-	M.Dizzy(5)
-	if(prob(30))
-		M.emote(pick("twitch","drool","moan"))
-	..()
-
-/datum/reagent/drug/jet/addiction_act_stage3(mob/living/M)
-	if(M.canmove && !ismovableatom(M.loc))
-		for(var/i = 0, i < 4, i++)
-			step(M, pick(GLOB.cardinals))
-	M.Dizzy(10)
-	if(prob(40))
-		M.emote(pick("twitch","drool","moan"))
-	..()
-
-/datum/reagent/drug/jet/addiction_act_stage4(mob/living/carbon/human/M)
-	if(M.canmove && !ismovableatom(M.loc))
-		for(var/i = 0, i < 8, i++)
-			step(M, pick(GLOB.cardinals))
-	M.Dizzy(15)
-	if(prob(50))
-		M.emote(pick("twitch","drool","moan"))
-	..()
-	. = 1
-
-
-// ADVANCED DRUG ABUSE
 /datum/reagent/drug/turbo
 	name = "Turbo Inhalant"
 	id = "turbo"
@@ -566,12 +441,12 @@
 	..()
 
 /datum/reagent/drug/turbo/on_mob_life(mob/living/carbon/M)
-	var/high_message = pick("I AM SPEED MOTHERFUCKER!", "FUCKING SPEED!", "GOD I LOVE THIS SHIT!")
+	var/high_message = pick("You feel hyper.", "You feel like you need to go faster.", "You feel like you can run the world.")
 	if(prob(5))
 		to_chat(M, "<span class='notice'>[high_message]</span>")
 	M.Jitter(2)
 	if(prob(5))
-		M.emote(pick("twitch", "shiver", "tweak"))
+		M.emote(pick("twitch", "shiver"))
 	..()
 	. = 1
 
