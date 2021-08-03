@@ -36,7 +36,7 @@
 
 Journeyman Scribe	= +DEBUG -AUTOLOGIN
 Scribe 			= +@ +SERVER +DEBUG +VAREDIT +SPAWN
-Head Scribe 		= +@ +POLL
+#Head Scribe 		= +@ +POLL
 
 Initiate		= +ADMIN
 
@@ -44,7 +44,7 @@ Aspirant 		= +@ +BAN
 Knight 			= +@ +SPAWN +FUN +VAREDIT
 Paladin			= +@ +STEALTH +POSSESS +BUILD +SOUND +SERVER +DEBUG
 
-Head Coder 		= +EVERYTHING *EVERYTHING
+Head Scribe 		= +EVERYTHING *EVERYTHING
 Head Paladin		= +EVERYTHING *EVERYTHING
 Elder			= +EVERYTHING *EVERYTHING
 

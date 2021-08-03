@@ -62,7 +62,7 @@
 
 /turf/closed/indestructible/splashscreen/New()
 	icon = 'icons/fallout/misc/lobby.dmi'
-	icon_state = "title[rand(1,5)]"
+	icon_state = "title[rand(1,4)]"
 
 	src.fullDark = new/atom/movable{
 		icon = 'icons/fallout/misc/lobby.dmi' //Replace with actual icon
