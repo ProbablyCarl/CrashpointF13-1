@@ -10,7 +10,7 @@
 //Builmode Move
 
 /obj/screen/buildmode
-	icon = 'icons/misc/buildmode.dmi'
+	icon = 'icons/fallout/misc/buildmode.dmi'
 	var/datum/buildmode/bd
 
 /obj/screen/buildmode/New(bd)
