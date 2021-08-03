@@ -199,3 +199,54 @@
 	desc = "A set of plate armor with tabard for the user's high-visibility during combat."
 	icon_state = "knight_tabard"
 	item_state = "knight_tabard"
+
+
+
+// BROKEN POWER-ARMOR //
+
+/obj/item/clothing/suit/armor/f13/brokentesca
+	name = "Retrofitted Escavator power-armor"
+	desc = "A suit of repaired Escavator power armor that lacks functional gyroscopes or a fusion core! You'd have to be a fucking idiot to wear this into combat!\
+	Stripped of filters and insulation, this won't protect you from radiation or biohazards."
+	icon_state = "excavator"
+	item_state = "excavator"
+	armor = list("melee" = 50, "bullet" = 45, "laser" = 35, "energy" = 50, "bomb" = 62, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 0)
+	slowdown = 2.5
+	strip_delay = 140
+	w_class = WEIGHT_CLASS_BULKY
+
+
+/obj/item/clothing/suit/armor/f13/brokent45
+	name = "Retrofitted T-45"
+	desc = "A suit of repaired T-45 power armor that lacks functional gyroscopes or a fusion core! It'll feel like a Brahmin on your back, but it protects quite well!\
+	Stripped of filters and insulation, this won't protect you from radiation or biohazards."
+	icon_state = "t45dpowerarmor"
+	item_state = "t45dpowerarmor"
+	armor = list("melee" = 60, "bullet" = 55, "laser" = 35, "energy" = 50, "bomb" = 62, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 0)
+	slowdown = 1.8
+	strip_delay = 140
+	w_class = WEIGHT_CLASS_BULKY
+
+
+/obj/item/clothing/suit/armor/f13/brokent51
+	name = "Retrofitted T-51"
+	desc = "A suit of repaired T-45 power armor that lacks functional gyroscopes or a fusion core! It's weight is fairly concerning, but it protects extremely well!\
+	Stripped of filters and insulation, this won't protect you from radiation or biohazards."
+	icon_state = "t51bpowerarmor"
+	item_state = "t51bpowerarmor"
+	armor = list("melee" = 65, "bullet" = 60, "laser" = 40, "energy" = 50, "bomb" = 62, "bio" = 0, "rad" = 0, "fire" = 90, "acid" = 0)
+	slowdown = 1.7
+	strip_delay = 140
+	w_class = WEIGHT_CLASS_BULKY
+
+
+/obj/item/clothing/suit/armor/f13/brokent60
+	name = "Retrofitted T-60"
+	desc = "A suit of repaired T-60 power armor that lacks functional gyroscopes or a fusion core! The modern materials make it somewhat functional in a combat-scenario!\
+	Stripped of filters and insulation, this won't protect you from radiation or biohazards."
+	icon_state = "t60powerarmor"
+	item_state = "t60powerarmor"
+	slowdown = 1.5 // How very modern! It's actually quite useable in it's state.
+	armor = list("melee" = 75, "bullet" = 65, "laser" = 45, "energy" = 60, "bomb" = 82, "bio" = 0, "rad" = 0, "fire" = 95, "acid" = 0)
+	strip_delay = 140
+	w_class = WEIGHT_CLASS_BULKY

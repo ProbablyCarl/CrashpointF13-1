@@ -1083,7 +1083,8 @@
 	name = "(Upgrade) Wattz 1000 magneto-laser pistol"
 	result = /obj/item/gun/energy/laser/wattz/magneto
 	reqs = list(/obj/item/gun/energy/laser/wattz = 1,
-				/obj/item/stack/crafting/electronicparts = 2)
+	            /obj/item/stack/crafting/electronicparts = 2,
+				/obj/item/stack/crafting/prewartech = 1)
 	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER2)
 	traits = list(TRAIT_GUNSMITH_TWO)
 	time = 120
@@ -1095,8 +1096,8 @@
 	result = /obj/item/gun/energy/laser/plasma/glock/extended
 	reqs = list(/obj/item/gun/energy/laser/plasma/glock = 1,
 				/obj/item/stack/crafting/metalparts = 3,
-				/obj/item/stack/sheet/metal = 1,
-				/obj/item/stack/crafting/electronicparts = 3)
+				/obj/item/stack/crafting/prewartech = 2,
+				/obj/item/stack/crafting/electronicparts = 2)
 	tools = list(TOOL_WORKBENCH, TOOL_GUNTIER3)
 	traits = list(TRAIT_GUNSMITH_THREE)
 	time = 120
@@ -1419,14 +1420,44 @@
 
 /* Category Drugs*/
 
+// JET - FUCK YEAH
 /datum/crafting_recipe/jet
-	name = "Jet"
+	name = "Aresolize Jet"
 	result = /obj/item/reagent_containers/pill/patch/jet
-	reqs = list(/datum/reagent/consumable/milk = 10, /obj/item/clothing/mask/cigarette = 3, /obj/item/toy/crayon/spraycan)
-	time = 20
+	reqs = list(/datum/reagent/toxin/jetfinished = 10,
+	/obj/item/crafting/inhaler )
+	time = 40
 	tools = list(TOOL_WORKBENCH)
 	category = CAT_DRUGS
 
+/datum/crafting_recipe/ruinedjet
+	name = "Aresolize Ruined Jet"
+	result = /obj/item/reagent_containers/pill/patch/ruinedjet
+	reqs = list(/datum/reagent/toxin/jetfuckup = 10,
+	/obj/item/crafting/inhaler )
+	time = 40
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_DRUGS
+
+/datum/crafting_recipe/cutjet
+	name = "Aresolize Cut-Jet"
+	result = /obj/item/reagent_containers/pill/patch/jet
+	reqs = list(/datum/reagent/toxin/jetfinishedcut = 10,
+	/obj/item/crafting/inhaler )
+	time = 40
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_DRUGS
+
+/*/datum/crafting_recipe/ultrajet
+	name = "Aresolize UltraJet"
+	result = /obj/item/reagent_containers/pill/patch/jet
+	reqs = list(/datum/reagent/toxin/jetfinishedultra = 10,
+	/obj/item/crafting/inhaler )
+	time = 40
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_DRUGS
+*/ // Currently disabled from crafting
+// OTHER DRUGS
 /datum/crafting_recipe/psycho
 	name = "Psycho"
 	result = /obj/item/reagent_containers/hypospray/medipen/psycho
@@ -1799,33 +1830,43 @@
 	time = 120
 	category = CAT_MEDICAL
 
-/datum/crafting_recipe/antivenom
-	name = "Antivenom"
-	result = /obj/item/reagent_containers/glass/bottle/antivenom
-	reqs = list(/obj/item/stack/sheet/glass = 1,
-				/obj/item/reagent_containers/food/snacks/grown/feracactus = 2,
-				/obj/item/reagent_containers/food/snacks/f13/venomgland = 1,
-				/obj/item/reagent_containers/food/snacks/grown/xander = 1 )
-	time = 55
+// Stimpacks!
+
+
+/datum/crafting_recipe/stimpakweak
+	name = "Weak Stimpak"
+	result = /obj/item/reagent_containers/hypospray/medipen/weakstimpak
+	reqs = list(/datum/reagent/medicine/stimpack = 10,
+				/obj/item/crafting/injector = 1)
+	tools = list(TOOL_WORKBENCH)
+	time = 50
 	category = CAT_MEDICAL
 
 /datum/crafting_recipe/stimpak
 	name = "Stimpak"
 	result = /obj/item/reagent_containers/hypospray/medipen/stimpak
-	reqs = list(/obj/item/reagent_containers/food/snacks/grown/broc = 1,
-				/obj/item/reagent_containers/food/snacks/grown/xander = 1,
-				/obj/item/reagent_containers/syringe = 1)
+	reqs = list(/datum/reagent/medicine/stimpack/stimfluid = 10,
+				/obj/item/crafting/injector = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 50
 	category = CAT_MEDICAL
 
+/* /datum/crafting_recipe/stimpakultra
+	name = "Ultra Stimpak"
+	result = /obj/item/reagent_containers/hypospray/medipen/weakstimpak
+	reqs = list(/datum/reagent/medicine/stimpack/superstimfluid = 10,
+				/obj/item/crafting/injector = 1)
+	tools = list(TOOL_WORKBENCH)
+	time = 50
+	category = CAT_MEDICAL
+*/ // Too powerful to let everyone play with as a craftable! Sad, I know.
+
 /datum/crafting_recipe/superstimpak
 	name = "Super Stimpak"
 	result = /obj/item/reagent_containers/hypospray/medipen/stimpak/super
-	reqs = list(/datum/reagent/medicine/stimpak = 10,
+	reqs = list(/datum/reagent/medicine/stimpack/superstimfluid = 10,
 				/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
-				/obj/item/stack/sheet/leather = 1,
-				/obj/item/reagent_containers/food/snacks/grown/mutfruit = 1)
+				/obj/item/stack/sheet/leather = 1 ) // Leather may be removed on a later date, but is kept so that super-stimm production still requires some outside source of material than just a lab.
 	tools = list(TOOL_WORKBENCH)
 	time = 80
 	category = CAT_MEDICAL
@@ -1905,7 +1946,7 @@
 
 /* Category Explosives - mk.2*/
 
-/datum/crafting_recipe/salvagedpaconversion2
+/datum/crafting_recipe/pipebomb
 	name = "Pipebomb"
 	result = /obj/item/grenade/syndieminibomb/pipebomb
 	reqs = list(/obj/item/reagent_containers/glass/bottle/blackpowder = 1,
@@ -1914,3 +1955,295 @@
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
 
+//////////////////////////////////////////////////////////////
+// ALCOHOLISM REDOES THE CRAFTING SYSTEM!                   //
+//                                                          //
+// FROM NOW ON, ALL CRAFTING MUST BE PUT UNDER A CATAGORY   //
+//////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////
+// PRE-WAR CRAFTING CATAGORY                                //
+//                                                          //
+// LASER WEAPONS, PLASMA WEAPONS, AND POWER-ARMOR!          //
+//////////////////////////////////////////////////////////////
+
+// Power Armor Sub-Catagory
+
+
+// Escavator Specific
+
+/datum/crafting_recipe/repair_esca
+	name = "Retrofit broken Escavator"
+	result = /obj/item/clothing/suit/armor/f13/brokentesca
+	reqs = list(/obj/item/stack/crafting/prewartech = 2,
+	/obj/item/brokentesca = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_esca
+	name = "Salvage Escavator"
+	result = /obj/item/clothing/suit/armor/f13/brokentesca
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/clothing/suit/armor/f13/power_armor/excavator = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_esca
+	name = "Service Escavator Power Armor"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/excavator
+	reqs = list(/obj/item/stack/crafting/prewartech = 3,
+	/obj/item/clothing/suit/armor/f13/brokentesca = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+//Escavator Helmet
+
+/datum/crafting_recipe/repair_esca_helmet
+	name = "Retrofit broken Escavator Helmet"
+	result = /obj/item/clothing/head/helmet/excavatorsalv
+	reqs = list(/obj/item/stack/crafting/prewartech = 1,
+	/obj/item/brokentesca = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_esca_helmet
+	name = "Salvage Escavator Helmet"
+	result = /obj/item/clothing/head/helmet/excavatorsalv
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/clothing/head/helmet/power_armor/excavator = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_esca_helmet
+	name = "Service Escavator Power Armor Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/excavator
+	reqs = list(/obj/item/stack/crafting/prewartech = 2,
+	/obj/item/clothing/head/helmet/excavatorsalv = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+// T-45 Specific
+
+/datum/crafting_recipe/repair_t45
+	name = "Retrofit broken T-45"
+	result = /obj/item/clothing/suit/armor/f13/brokent45
+	reqs = list(/obj/item/stack/crafting/prewartech = 2,
+	/obj/item/brokent45 = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_t45
+	name = "Salvage T-45"
+	result = /obj/item/clothing/suit/armor/f13/brokent45
+	reqs = list(/obj/item/stack/sheet/mineral/titanium= 2,
+	/obj/item/clothing/suit/armor/f13/power_armor/t45d = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_t45
+	name = "Service T-45"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t45d
+	reqs = list(/obj/item/stack/crafting/prewartech = 3,
+	/obj/item/clothing/suit/armor/f13/brokent45 = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+// T-45 Helmet
+
+/datum/crafting_recipe/repair_t45_helmet
+	name = "Retrofit broken T-45 Helmet"
+	result = /obj/item/clothing/head/helmet/t45dsalv
+	reqs = list(/obj/item/stack/crafting/prewartech = 1,
+	/obj/item/t45dhelmbroken = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_t45_helmet
+	name = "Salvage T-45 Helmet"
+	result = /obj/item/clothing/head/helmet/t45dsalv
+	reqs = list(/obj/item/stack/sheet/mineral/titanium= 2,
+	/obj/item/clothing/head/helmet/power_armor/t45d = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_t45_helmet
+	name = "Service T-45 Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/t45d
+	reqs = list(/obj/item/stack/crafting/prewartech = 2,
+	/obj/item/clothing/head/helmet/t45dsalv = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+// T-51
+
+/datum/crafting_recipe/repair_t51
+	name = "Retrofit broken T-51"
+	result = /obj/item/clothing/suit/armor/f13/brokent51
+	reqs = list(/obj/item/stack/crafting/prewartech = 6,
+	/obj/item/brokent51 = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_t51
+	name = "Salvage T-51"
+	result = /obj/item/clothing/suit/armor/f13/brokent51
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/clothing/suit/armor/f13/power_armor/t51b = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_t51
+	name = "Service T-51"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t51b
+	reqs = list(/obj/item/stack/crafting/prewartech = 4,
+	/obj/item/clothing/suit/armor/f13/brokent51 = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+// T-51 Helmet
+
+/datum/crafting_recipe/repair_t51_helmet
+	name = "Retrofit broken T-51 Helmet"
+	result = /obj/item/clothing/head/helmet/t51bsalv
+	reqs = list(/obj/item/stack/crafting/prewartech = 5,
+	/obj/item/t51bhelmbroken = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_t51_helmet
+	name = "Salvage T-51 Helmet"
+	result = /obj/item/clothing/head/helmet/t51bsalv
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/clothing/head/helmet/power_armor/t51b = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_t51_helmet
+	name = "Service T-51 Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/t51b
+	reqs = list(/obj/item/stack/crafting/prewartech = 3,
+	/obj/item/clothing/head/helmet/t51bsalv = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+// T-60
+
+/datum/crafting_recipe/repair_t60
+	name = "Retrofit broken T-60"
+	result = /obj/item/clothing/suit/armor/f13/brokent60
+	reqs = list(/obj/item/stack/crafting/prewartech = 10,
+	/obj/item/brokent60 = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_t60
+	name = "Salvage T-60"
+	result = /obj/item/clothing/suit/armor/f13/brokent60
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/clothing/suit/armor/f13/power_armor/t60 = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_t60
+	name = "Service T-60"
+	result = /obj/item/clothing/suit/armor/f13/power_armor/t60
+	reqs = list(/obj/item/stack/crafting/prewartech = 10,
+	/obj/item/clothing/suit/armor/f13/brokent60 = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+// T-60 Helmet
+
+/datum/crafting_recipe/repair_t60_helmet
+	name = "Retrofit broken T-60 Helmet"
+	result = /obj/item/clothing/head/helmet/t60salv
+	reqs = list(/obj/item/stack/crafting/prewartech = 9,
+	/obj/item/t60helmbroken = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/salvage_t60_helmet
+	name = "Salvage T-60 Helmet"
+	result = /obj/item/clothing/head/helmet/t60salv
+	reqs = list(/obj/item/stack/sheet/mineral/titanium = 2,
+	/obj/item/clothing/head/helmet/power_armor/t60 = 1)
+	time = 240
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+/datum/crafting_recipe/service_t60_helmet
+	name = "Service T-60 Helmet"
+	result = /obj/item/clothing/head/helmet/power_armor/t60
+	reqs = list(/obj/item/stack/crafting/prewartech = 9,
+	/obj/item/clothing/head/helmet/t60salv = 1)
+	time = 120
+	tools = list(TOOL_AWORKBENCH)
+	category = CAT_CLOTHING
+	subcategory = CAT_WASTELAND
+
+// Drug-Parapha-Big-Word!
+
+/datum/crafting_recipe/createinjector
+	name = "Create Autoinjector"
+	result = /obj/item/crafting/injector
+	reqs = list(/obj/item/reagent_containers/syringe = 1,
+	/obj/item/stack/sheet/metal = 1, /obj/item/stack/sheet/glass = 1 )
+	time = 40
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_DRUGS
+
+/datum/crafting_recipe/createinhaler
+	name = "Create Inhaler"
+	result = /obj/item/crafting/inhaler
+	reqs = list(/obj/item/stack/sheet/metal = 1 )
+	time = 40
+	tools = list(TOOL_WORKBENCH)
+	category = CAT_DRUGS
+//////////////
+// FOR CARL //
+//////////////

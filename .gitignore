@@ -12,6 +12,7 @@
 /config/admins.txt
 /config/comms.txt #shh
 /config/config.txt
+/tools/discord/config.yml
 
 #Ignore compiled files and other files generated during compilation.
 *.mdme

@@ -219,6 +219,17 @@
 	glass_desc = "A rather foul smelling glass of water."
 	shot_glass_icon_state = "shotglassclear"
 
+/datum/reagent/water/boiled/on_mob_life(mob/living/M, mob/user)
+	if(ishuman(M))
+		M.apply_effect(0.1,EFFECT_IRRADIATE,0)//near nothing.
+		var/mob/living/carbon/human/H = M
+		if(prob(1))//Practically never. Safe to drink, except for rads.
+			H.emote("cough")
+			if(prob(5))//RNG within RNG.
+				H.vomit(1)
+				M.reagents.remove_all()
+	..()
+
 /datum/reagent/watertabletpowder
 	name = "Water Purification Powder"
 	id = "wppowder"
@@ -229,14 +240,6 @@
 	glass_name = "glass with a water purification tablet"
 	glass_desc = "A glass containing a powdery grey substance"
 	shot_glass_icon_state = "shotglassclear"
-
-/datum/reagent/water/boiled/on_mob_life(mob/living/M, mob/user)
-	if(ishuman(M))
-		var/mob/living/carbon/human/H = M
-		if(prob(1))//Practically never. Safe to drink.
-			H.vomit(1)
-			M.reagents.remove_all()
-	..()
 
 //holy
 /datum/reagent/water/holywater

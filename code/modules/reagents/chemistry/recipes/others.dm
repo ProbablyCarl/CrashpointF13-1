@@ -598,9 +598,16 @@
 	required_reagents = list("dwater" = 5, "wppowder" = 1)
 	mob_react = FALSE //I don't think you're supposed to eat these, buddy.
 
+/datum/chemical_reaction/watertabletreact2
+	name = "Tablet Purifying Water"
+	id = "puretabwater"
+	results = list("water" = 5)
+	required_reagents = list("bwater" = 5, "wppowder" = 1)
+	mob_react = FALSE
+
 /datum/chemical_reaction/wpsynthesis
 	name = "Purification Tablet Powder"
 	id = "wpsynth"
 	results = list("wppowder" = 5)
 	required_reagents = list("saltpetre" = 5, "sacid" = 5, "silver" = 5, "sugar" = 5, "charcoal" = 5)
-	mob_react = FALSE //I don't think you're supposed to eat these, buddy.
+	mob_react = FALSE //I don't think you're supposed to eat these, buddy. | You're not my Dad, asshole!

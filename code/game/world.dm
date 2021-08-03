@@ -1,5 +1,7 @@
 #define RESTART_COUNTER_PATH "data/round_counter.txt"
 
+var/world_startup_time
+
 GLOBAL_VAR(security_mode)
 GLOBAL_VAR(restart_counter)
 GLOBAL_PROTECT(security_mode)
@@ -7,6 +9,7 @@ GLOBAL_PROTECT(security_mode)
 //This happens after the Master subsystem new(s) (it's a global datum)
 //So subsystems globals exist, but are not initialised
 /world/New()
+	world_startup_time = world.timeofday
 	log_world("World loaded at [time_stamp()]!")
 
 	SetupExternalRSC()

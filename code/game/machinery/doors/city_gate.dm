@@ -40,7 +40,7 @@
 //bos
 /obj/machinery/door/poddoor/gate/bos
 	name = "pneumatic door"
-	desc = "A rather massive pneumatic door. No chance of getting through this."//Seriously. Lets not get through this. You can deconstruct the walls.
+	desc = "A rather massive pneumatic door. No chance of getting through this."//Seriously. Lets not get through this.
 	icon = 'icons/fallout/objects/structures/brotherhood_gate.dmi'
 	icon_state = "closed"
 	id = null

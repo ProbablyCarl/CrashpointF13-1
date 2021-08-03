@@ -41,9 +41,28 @@
 
 /obj/item/reagent_containers/pill/patch/jet
 	name = "Jet"
-	desc = "A highly addictive meta-amphetamine that produces a fast-acting, intense euphoric high on the user."
+	desc = "A highly addictive meta-amphetamine that provides the user a intense high! Commonly used by Raiders as a combat-chem!"
 	list_reagents = list("jet" = 10)
 	icon_state = "bandaid_jet"
+
+/obj/item/reagent_containers/pill/patch/cutjet
+	name = "Jet"
+	desc = "A highly addictive meta-amphetamine that provides the user a intense high! Commonly used by Raiders as a combat-chem!"
+	list_reagents = list("cutjet" = 10)
+	icon_state = "bandaid_jet"
+
+/obj/item/reagent_containers/pill/patch/ruinedjet
+	name = "Jet"
+	desc = "A highly addictive meta-amphetamine that provides the user a intense high! Commonly used by Raiders as a combat-chem! This one seems to be hastily made!"
+	list_reagents = list("ruinedjet" = 10)
+	icon_state = "bandaid_jet"
+
+/obj/item/reagent_containers/pill/patch/ultrajet
+	name = "UltraJet"
+	desc = "A extremely addictive meta-amphetamine that produces a fast-acting, intense euphoric high on the user."
+	list_reagents = list("ultrajet" = 10)
+	icon = 'icons/fallout/objects/medicine/chemical.dmi'
+	icon_state = "ultrajet"
 
 /obj/item/reagent_containers/pill/patch/turbo
 	name = "Turbo"
