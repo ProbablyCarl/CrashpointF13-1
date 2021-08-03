@@ -36,9 +36,10 @@
 	else if(isturf(target))
 		impact_effect_type = /obj/effect/temp_visual/impact_effect/red_laser/wall
 
-/obj/item/projectile/beam/weak
+/obj/item/projectile/beam/laser/weak
 	damage = 15
 	armour_penetration = 50
+	hitscan = TRUE
 
 /obj/item/projectile/beam/practice
 	name = "practice laser"
@@ -210,11 +211,13 @@
 	name = "solar scorcher beam"
 	damage = 30
 	armour_penetration = 20
+	hitscan = TRUE
 
 /obj/item/projectile/beam/laser/tribeam //Tribeam laser, fires 3 shots, will melt you
 	name = "tribeam laser"
 	damage = 15
 	armour_penetration = 0
+	hitscan = TRUE
 
 /obj/item/projectile/plasma //Plasma rifle
 	name = "plasma bolt"

@@ -7,4 +7,8 @@ Franzemmerich = Elder
 Whyman = Paladin
 katzevon = Paladin
 
-FulminatingGold = Scribe
+FulminatingGold = Head Scribe
+
+#############################
+## Rest handled on the DB. ##
+#############################

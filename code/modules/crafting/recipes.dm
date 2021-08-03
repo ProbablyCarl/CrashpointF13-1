@@ -1906,7 +1906,7 @@
 
 /* Category Explosives - mk.2*/
 
-/datum/crafting_recipe/salvagedpaconversion2
+/datum/crafting_recipe/pipebomb
 	name = "Pipebomb"
 	result = /obj/item/grenade/syndieminibomb/pipebomb
 	reqs = list(/obj/item/reagent_containers/glass/bottle/blackpowder = 1,
