@@ -1812,7 +1812,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 
 // Stimpack Shit
 
-/datum/reagent/medicine/stimpack
+/datum/reagent/medicine/stimpack_weak
 	name = "Weak Stim-fluid"
 	id = "stimfluidweak"
 	description = "Extracted pulp from the Broc Flower and Xander Root and purified via clean water. This enriched blood has a similar effect to stem-cells! This is of low-potency!"
@@ -1821,15 +1821,15 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	metabolization_rate = 1 * REAGENTS_METABOLISM
 	overdose_threshold = 12
 
-/datum/reagent/medicine/stimfluid/on_mob_life(mob/living/M)
-	if(!M.reagents.has_reagent("ultrastimfluid") && !M.reagents.has_reagent("stimfluid") && !M.reagents.has_reagent("superstimfluid")) // NO FUN ALLOWED! Stims cannot be used together!
+/datum/reagent/medicine/stimpack_weak/on_mob_life(mob/living/M)
+	if(!M.reagents.has_reagent("healing_powder") && ("stimpack_regular") && ("stimpack_super") && ("stimpack_ultra"))
 		M.adjustFireLoss(-2*REM)
 		M.adjustBruteLoss(-2*REM)
 		M.adjustToxLoss(-0.5*REM)
 		M.adjustOxyLoss(-1*REM)
+	..()
 
-
-/datum/reagent/medicine/stimpack/stimfluid
+/datum/reagent/medicine/stimpack_regular
 	name = "Stim-fluid"
 	id = "stimfluid"
 	description = "Enriched stimpack-fluid with the pulp from the Broc Flower and Xander Root that's been properly distilled with both heat and a stabilizer. This is of standard potency!"
@@ -1838,14 +1838,15 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	metabolization_rate = 1 * REAGENTS_METABOLISM
 	overdose_threshold = 12
 
-/datum/reagent/medicine/stimfluid/on_mob_life(mob/living/M)
-	if(!M.reagents.has_reagent("stimfluidweak") && !M.reagents.has_reagent("ultrastimfluid") && !M.reagents.has_reagent("superstimfluid" )) // NO FUN ALLOWED! Stims cannot be used together!
+/datum/reagent/medicine/stimpack_regular/on_mob_life(mob/living/M)
+	if(!M.reagents.has_reagent("healing_powder") && ("stimpack_weak") && ("stimpack_super") && ("stimpack_ultra"))
 		M.adjustFireLoss(-4*REM )
 		M.adjustBruteLoss(-4*REM)
 		M.adjustToxLoss(-1*REM)
 		M.adjustOxyLoss(-2*REM)
+	..()
 
-/datum/reagent/medicine/stimpack/superstimfluid
+/datum/reagent/medicine/stimpack_super
 	name = "Super Stim-fluid"
 	id = "superstimfluid"
 	description = "Enriched stimpack-fluid with a cocktail of other chems to create a fairly powerful combination! This is of strong potency!"
@@ -1854,14 +1855,14 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	metabolization_rate = 1 * REAGENTS_METABOLISM
 	overdose_threshold = 12
 
-/datum/reagent/medicine/stimfluid/on_mob_life(mob/living/M)
-	if(!M.reagents.has_reagent("stimfluid") && !M.reagents.has_reagent("ultrastimfluid") && !M.reagents.has_reagent("weakstimfluid" )) // NO FUN ALLOWED! Stims cannot be used together!
+/datum/reagent/medicine/stimpack_super/on_mob_life(mob/living/M)
+	if(!M.reagents.has_reagent("healing_powder") && ("stimpack_regular") && ("stimpack_weak") && ("stimpack_ultra"))
 		M.adjustFireLoss(-6*REM )
 		M.adjustBruteLoss(-6*REM)
 		M.adjustToxLoss(-2*REM)
 		M.adjustOxyLoss(-3*REM)
-
-/datum/reagent/medicine/stimpack/ultrastimfluid // You cannot craft ultra-stims. Only finding them as end-tier loot.
+	..()
+/datum/reagent/medicine/stimpack_ultra // You cannot craft ultra-stims. Only finding them as end-tier loot.
 	name = "Ultra Stim-fluid"
 	id = "ultrastimfluid"
 	description = "Hyperenriched Stimpack fluid that's been distilled and purified. This is of absolute purity."
@@ -1870,10 +1871,10 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	metabolization_rate = 1 * REAGENTS_METABOLISM
 	overdose_threshold = 12
 
-/datum/reagent/medicine/stimfluid/on_mob_life(mob/living/M)
-	if(!M.reagents.has_reagent("superstimfluid") && !M.reagents.has_reagent("stimfluid") && !M.reagents.has_reagent("stimfluidweak" )) // NO FUN ALLOWED! Stims cannot be used together!
-		M.adjustFireLoss(-8*REM)
+/datum/reagent/medicine/stimpack_ultra/on_mob_life(mob/living/M)
+	if(!M.reagents.has_reagent("healing_powder") && ("stimpack_regular") && ("stimpack_super") && ("stimpack_weak"))
+		M.adjustFireLoss(-8*REM )
 		M.adjustBruteLoss(-8*REM)
-		M.adjustToxLoss(-4*REM)
-		M.adjustOxyLoss(-5*REM)
-
+		M.adjustToxLoss(-3*REM)
+		M.adjustOxyLoss(-4*REM)
+	..()

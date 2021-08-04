@@ -27,51 +27,51 @@
 
 	return round(amount/MINERAL_MATERIAL_AMOUNT)
 
-// Materials. Nothing but plasma is really worth selling. Better leave it all to RnD and sell some plasma instead.
+// Materials. Nothing but the valuable minerals are worth selling. Even then? Why would you? Domestic market, fucker.
 
 /datum/export/material/bananium
-	cost = 1000
+	cost = 1000 // HONK!!!!
 	material_id = MAT_BANANIUM
 	message = "cm3 of bananium"
 
 /datum/export/material/diamond
-	cost = 500
+	cost = 100
 	material_id = MAT_DIAMOND
 	message = "cm3 of diamonds"
 
 /datum/export/material/plasma
-	cost = 200
+	cost = 10 // GET FUCKED
 	k_elasticity = 0
 	material_id = MAT_PLASMA
 	message = "cm3 of plasma"
 
 /datum/export/material/uranium
-	cost = 100
+	cost = 50
 	material_id = MAT_URANIUM
 	message = "cm3 of uranium"
 
 /datum/export/material/gold
-	cost = 125
+	cost = 40
 	material_id = MAT_GOLD
 	message = "cm3 of gold"
 
 /datum/export/material/silver
-	cost = 50
+	cost = 30
 	material_id = MAT_SILVER
 	message = "cm3 of silver"
 
 /datum/export/material/titanium
-	cost = 125
+	cost = 20
 	material_id = MAT_TITANIUM
 	message = "cm3 of titanium"
-
+/*
 /datum/export/material/plastitanium
 	cost = 325 // plasma + titanium costs
 	material_id = MAT_TITANIUM // code can only check for one material_id; plastitanium is half plasma, half titanium
 	message = "cm3 of plastitanium"
-
+*/
 /datum/export/material/metal
-	cost = 5
+	cost = 2
 	message = "cm3 of metal"
 	material_id = MAT_METAL
 	export_types = list(
@@ -79,7 +79,7 @@
 		/obj/item/stack/rods, /obj/item/stack/ore, /obj/item/coin)
 
 /datum/export/material/glass
-	cost = 5
+	cost = 2
 	message = "cm3 of glass"
 	material_id = MAT_GLASS
 	export_types = list(/obj/item/stack/sheet/glass, /obj/item/stack/ore,

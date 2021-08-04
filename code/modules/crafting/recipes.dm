@@ -1836,7 +1836,7 @@
 /datum/crafting_recipe/stimpakweak
 	name = "Weak Stimpak"
 	result = /obj/item/reagent_containers/hypospray/medipen/weakstimpak
-	reqs = list(/datum/reagent/medicine/stimpack = 10,
+	reqs = list(/datum/reagent/medicine/stimpack_weak = 10,
 				/obj/item/crafting/injector = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 50
@@ -1845,26 +1845,16 @@
 /datum/crafting_recipe/stimpak
 	name = "Stimpak"
 	result = /obj/item/reagent_containers/hypospray/medipen/stimpak
-	reqs = list(/datum/reagent/medicine/stimpack/stimfluid = 10,
+	reqs = list(/datum/reagent/medicine/stimpack_regular = 10,
 				/obj/item/crafting/injector = 1)
 	tools = list(TOOL_WORKBENCH)
 	time = 50
 	category = CAT_MEDICAL
-
-/* /datum/crafting_recipe/stimpakultra
-	name = "Ultra Stimpak"
-	result = /obj/item/reagent_containers/hypospray/medipen/weakstimpak
-	reqs = list(/datum/reagent/medicine/stimpack/superstimfluid = 10,
-				/obj/item/crafting/injector = 1)
-	tools = list(TOOL_WORKBENCH)
-	time = 50
-	category = CAT_MEDICAL
-*/ // Too powerful to let everyone play with as a craftable! Sad, I know.
 
 /datum/crafting_recipe/superstimpak
 	name = "Super Stimpak"
 	result = /obj/item/reagent_containers/hypospray/medipen/stimpak/super
-	reqs = list(/datum/reagent/medicine/stimpack/superstimfluid = 10,
+	reqs = list(/datum/reagent/medicine/stimpack_super = 10,
 				/obj/item/reagent_containers/hypospray/medipen/stimpak = 1,
 				/obj/item/stack/sheet/leather = 1 ) // Leather may be removed on a later date, but is kept so that super-stimm production still requires some outside source of material than just a lab.
 	tools = list(TOOL_WORKBENCH)

@@ -81,3 +81,8 @@
 	cost = 100
 	unit_name = "bomb suit"
 	export_types = list(/obj/item/clothing/suit/bomb_suit)
+
+/datum/export/gear/quantum
+	cost = 75
+	unit_name = "Nuka-Cola Quantum"
+	export_types = list(/obj/item/reagent_containers/food/drinks/bottle/nukacolaquantum)

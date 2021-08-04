@@ -1,7 +1,7 @@
 // Approved manifest.
-// +200 credits flat.
+// You get a couple caps for being a good little Tax-Recording Nerd!
 /datum/export/manifest_correct
-	cost = 200
+	cost = 5
 	k_elasticity = 0
 	unit_name = "approved manifest"
 	export_types = list(/obj/item/paper/fluff/jobs/cargo/manifest)
