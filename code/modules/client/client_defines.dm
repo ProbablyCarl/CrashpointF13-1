@@ -72,6 +72,9 @@
 	var/list/topiclimiter
 	var/list/clicklimiter
 
+	/// Messages currently seen by this client
+	var/list/seen_messages
+
 	var/datum/chatOutput/chatOutput
 
 	var/list/credits //lazy list of all credit object bound to this client

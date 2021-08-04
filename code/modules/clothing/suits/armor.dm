@@ -734,12 +734,14 @@
 	if(slot == SLOT_WEAR_SUIT)
 		H.add_trait(TRAIT_STUNIMMUNE)
 		H.add_trait(TRAIT_PUSHIMMUNE)
+		H.add_trait(TRAIT_NOSLIPALL)
 		return ..()
 
 /obj/item/clothing/suit/armor/f13/power_armor/dropped(mob/user)
 	var/mob/living/carbon/human/H = user
 	H.remove_trait(TRAIT_STUNIMMUNE)
 	H.remove_trait(TRAIT_PUSHIMMUNE)
+	H.remove_trait(TRAIT_NOSLIPALL)
 	return ..()
 
 /obj/item/clothing/suit/armor/f13/power_armor/emp_act(mob/living/carbon/human/owner, severity)
@@ -771,6 +773,7 @@
 	desc = "Originally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle."
 	icon_state = "t45dpowerarmor"
 	item_state = "t45dpowerarmor"
+	slowdown = 0.4
 	armor = list("melee" = 70, "bullet" = 65, "laser" = 45, "energy" = 60, "bomb" = 62, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 0)
 
 /obj/item/clothing/suit/armor/f13/power_armor/t60

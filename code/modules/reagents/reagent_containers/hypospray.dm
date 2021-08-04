@@ -185,20 +185,40 @@
 	list_reagents = list("holywater" = 150, "tiresolution" = 50, "dizzysolution" = 50)
 	amount_per_transfer_from_this = 50
 
+
+// New Stimpacks!
+
+
+/obj/item/reagent_containers/hypospray/medipen/weakstimpak
+	name = "Weak Stimpack"
+	desc = "A homemade concotion of watered-down stimfluid, it is still quite effective at healing wounds!"
+	icon_state = "stimpakpen"
+	volume = 10
+	amount_per_transfer_from_this = 10
+	list_reagents = list("stimfluidweak" = 10)
+
 /obj/item/reagent_containers/hypospray/medipen/stimpak
 	name = "stimpak"
 	desc = "A handheld delivery system for medicine, used to rapidly heal physical damage to the body."
 	icon_state = "stimpakpen"
 	volume = 10
 	amount_per_transfer_from_this = 10
-	list_reagents = list("stimpak" = 10)
+	list_reagents = list("stimfluid"= 10)
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/super
 	name = "super stimpak"
 	desc = "The super version comes in a hypodermic, but with an additional vial containing more powerful drugs than the basic model and a leather belt to strap the needle to the injured limb."
 	icon_state = "superstimpakpen"
 	amount_per_transfer_from_this = 10
-	list_reagents = list("super_stimpak" = 10)
+	list_reagents = list("superstimfluid" = 10)
+
+/obj/item/reagent_containers/hypospray/medipen/stimpak/ultra
+	name = "ultra-stimpak"
+	desc = "The Ultra-Stimpack is a experimental super-stim with a'dose' of powerful healing medications. This 'cocktail' of chemicals is slightly weaker than it's original inception, but no longer causes long-term tissue decay!"
+	icon_state = "superstimpakpen"
+	amount_per_transfer_from_this = 10
+	list_reagents = list("ultrastimfluid" = 10)
+
 
 /obj/item/reagent_containers/hypospray/medipen/psycho
 	name = "Psycho"

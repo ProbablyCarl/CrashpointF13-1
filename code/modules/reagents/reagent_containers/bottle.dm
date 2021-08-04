@@ -316,8 +316,33 @@
 	volume = 60
 	list_reagents = list("blackpowder" = 60)
 
-/obj/item/reagent_containers/glass/bottle/antivenom 
+/obj/item/reagent_containers/glass/bottle/antivenom
 	name = "Antivenom bottle"
 	desc = "Antivenom is modern medicine's answer to the tribal antidote by combining barral cactus fruit, xander root, and a venom gland from a cazador or radscorpion, which acts as a cure against animal venom."
 	icon_state = "bottle_antivenom"
-	list_reagents = list("antivenom" = 30) 
+	list_reagents = list("antivenom" = 30)
+
+
+/obj/item/reagent_containers/glass/bottle/abraxocleaner
+	name = "Abraxo"
+	desc = "A large carton containing a pre-War cleaning agent produced by Abraxodyne Chemical."
+	volume = 60
+	icon = 'icons/fallout/objects/crafting.dmi'
+	icon_state = "abraxo"
+	list_reagents = list("abraxocleaner" = 60)
+
+/obj/item/reagent_containers/glass/bottle/ultrajet
+	name = "Ultrajet"
+	desc = "You cheaty fuck.."
+	volume = 60
+	icon = 'icons/fallout/objects/medicine/chemical.dmi'
+	icon_state = "ultrajet"
+	list_reagents = list("jetfinishedultra" = 60)
+
+/obj/item/reagent_containers/glass/bottle/turpentine
+	name = "Turpentine"
+	desc = "Used originally to remove paint and many other household uses. Now used as an industrial wash!"
+	volume = 60
+	icon = 'icons/fallout/objects/medicine/chemical.dmi'
+	icon_state = "turpentine"
+	list_reagents = list("turpentinecleaner" = 60)

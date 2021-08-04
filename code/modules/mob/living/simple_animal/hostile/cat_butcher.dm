@@ -21,6 +21,9 @@
 	robust_searching = 1
 	maxHealth = 100
 	health = 100
+	obj_damage = 50
+	melee_damage_lower = 1
+	melee_damage_upper = 5//very small
 	attacktext = "slashes at"
 	attack_sound = 'sound/f13other/nyaaman.ogg'
 	a_intent = INTENT_HARM
@@ -32,7 +35,21 @@
 	check_friendly_fire = 1
 	status_flags = CANPUSH
 	del_on_death = 1
+	minbodytemp = 0
 	var/impatience = 0
+
+/mob/living/simple_animal/hostile/cat_butcherer/AttackingTarget()
+	. = ..()
+	if(. && prob(50) && iscarbon(target))
+		var/mob/living/carbon/C = target
+		C.Knockdown(60)
+		C.visible_message("<span class='danger'>\The [src] knocks down \the [C]!</span>", \
+				"<span class='userdanger'>\The [src] knocks you down!</span>")
+
+
+/mob/living/simple_animal/hostile/cat_butcherer/whyman
+	icon_state = "cat_butcher_whyman"
+	icon_living = "cat_butcher_whyman"
 
 /mob/living/simple_animal/hostile/cat_butcherer/Life()
 	. = ..()

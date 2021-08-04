@@ -1,0 +1,1 @@
+var/list/fontlist = list('interface/JH_FALLOUT.TTF')

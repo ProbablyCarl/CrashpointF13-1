@@ -631,12 +631,19 @@
 	},
 /area/f13/underground/enclave_base)
 "bE" = (
-/obj/machinery/mecha_part_fabricator,
-/obj/machinery/light{
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/structure/table/reinforced,
+/obj/item/extinguisher/mini,
 /turf/open/floor/plasteel/f13/vault_floor{
-	icon_state = "whitepurplerustychess2"
+	icon_state = "greendirtysolid"
 	},
 /area/f13/underground/enclave_base)
 "bF" = (
@@ -870,6 +877,17 @@
 "cj" = (
 /obj/structure/lattice,
 /turf/closed/indestructible/rock,
+/area/f13/underground/cave)
+"ck" = (
+/obj/effect/decal/waste,
+/mob/living/simple_animal/hostile/ghoul/glowing{
+	maxHealth = 300;
+	melee_damage_lower = 30;
+	melee_damage_upper = 45;
+	name = "Overseer";
+	resize = 1.4
+	},
+/turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/cave)
 "cl" = (
 /turf/closed/wall/r_wall/f13composite{
@@ -1310,6 +1328,19 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
 /turf/open/floor/plating/f13/inside/mountain,
 /area/f13/underground/cave)
+"dv" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/base_dispenser/prewar,
+/turf/open/floor/plasteel/f13/vault_floor,
+/area/f13/underground/enclave_base)
 "dw" = (
 /obj/item/clothing/under/f13/vault{
 	desc = "A blue jumpsuit with a yellow vault pattern and the number 223 printed on it.";
@@ -1385,6 +1416,22 @@
 	icon_state = "greenrusty"
 	},
 /area/f13/ahs)
+"dE" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	icon_state = "fwindow"
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 5
+	},
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel/f13/vault_floor{
+	icon_state = "greendirtysolid"
+	},
+/area/f13/underground/enclave_base)
 "dF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13{
@@ -1804,6 +1851,14 @@
 	icon_state = "greenrusty"
 	},
 /area/f13/ahs)
+"eL" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/turf/open/floor/plasteel/f13/vault_floor{
+	icon_state = "greendirtysolid"
+	},
+/area/f13/underground/enclave_base)
 "eM" = (
 /obj/machinery/door/airlock{
 	name = "Vault 223 Cafeteria"
@@ -1863,6 +1918,12 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/ahs)
+"eU" = (
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plasteel/f13/vault_floor{
+	icon_state = "greendirtysolid"
+	},
+/area/f13/underground/enclave_base)
 "eV" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2084,10 +2145,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/ahs)
-"fv" = (
-/mob/living/simple_animal/hostile/spawner/ghoul,
-/turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
 "fw" = (
 /mob/living/simple_animal/hostile/ghoul/glowing,
 /turf/open/floor/plating/f13/inside/mountain,
@@ -5046,16 +5103,13 @@
 	},
 /area/f13/underground/cave)
 "mo" = (
-/mob/living/simple_animal/hostile/ghoul/glowing{
-	maxHealth = 300;
-	melee_damage_lower = 30;
-	melee_damage_upper = 45;
-	name = "Overseer";
-	resize = 1.4
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
 	},
-/obj/effect/decal/waste,
-/turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/turf/open/floor/plasteel/f13/vault_floor{
+	icon_state = "greendirtysolid"
+	},
+/area/f13/underground/enclave_base)
 "mp" = (
 /mob/living/simple_animal/hostile/ghoul/reaver,
 /turf/open/floor/plasteel/f13{
@@ -48338,7 +48392,7 @@ dp
 dr
 dU
 dl
-mo
+ck
 aa
 aa
 aa
@@ -48596,7 +48650,7 @@ dU
 fk
 dl
 dl
-fv
+dl
 aa
 aa
 aa
@@ -62538,7 +62592,7 @@ aa
 aa
 aa
 ab
-bw
+mR
 bA
 bC
 bu
@@ -63055,8 +63109,8 @@ aa
 aa
 aa
 ab
-mR
-bu
+bE
+eL
 bu
 bu
 ab
@@ -63312,9 +63366,9 @@ aa
 aa
 aa
 ab
-bE
+dv
+eU
 bu
-bJ
 bu
 ab
 aa
@@ -63569,8 +63623,8 @@ aa
 aa
 aa
 ab
-mR
-bu
+dE
+mo
 lT
 bu
 ab
