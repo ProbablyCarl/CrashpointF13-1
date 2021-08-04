@@ -40,6 +40,24 @@
 	description = "<span class='boldwarning'>This is how I die...</span>\n"
 	mood_change = -12
 
+/datum/mood_event/nutrition/pissself
+	description = "<span class='boldwarning'>I just pissed myself...</span>\n"
+	mood_change = -12
+	timeout = 4000
+
+/datum/mood_event/nutrition/piss
+	description = "<span class='warning'>I really need to take a piss!</span>\n"
+	mood_change = -4
+
+/datum/mood_event/nutrition/shitself
+	description = "<span class='boldwarning'>I just shat myself...</span>\n"
+	mood_change = -12
+	timeout = 4000
+
+/datum/mood_event/nutrition/shit
+	description = "<span class='warning'>I really need to take a shit!</span>\n"
+	mood_change = -4
+
 //Disgust
 /datum/mood_event/disgust/gross
 	description = "<span class='warning'>I saw something gross.</span>\n"

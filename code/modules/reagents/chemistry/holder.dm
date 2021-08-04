@@ -185,12 +185,12 @@
 			if(istype(current_reagent,/datum/reagent/consumable))
 				var/datum/reagent/consumable/drink = current_reagent
 				H.water += drink.water_level * amount * 2
-			if(istype(current_reagent,/datum/reagent/water))
-				H.water += amount * 2
 			if(istype(current_reagent,/datum/reagent/water/dwater))
 				H.water += amount * 0.2
-			if(istype(current_reagent,/datum/reagent/water/boiled))
+			else if(istype(current_reagent,/datum/reagent/water/boiled))
 				H.water += amount * 1
+			else if(istype(current_reagent,/datum/reagent/water))
+				H.water += amount * 2
 
 	var/part = amount / src.total_volume
 	var/trans_data = null

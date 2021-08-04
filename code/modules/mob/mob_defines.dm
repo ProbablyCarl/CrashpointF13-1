@@ -49,6 +49,8 @@
 	var/jitteriness = 0//Carbon
 	var/nutrition = NUTRITION_LEVEL_START_MIN // randomised in Initialize
 	var/water = THIRST_LEVEL_START_MIN
+	var/piss = PISS_LEVEL_START_MIN
+	var/shit = SHIT_LEVEL_START_MIN
 	var/satiety = 0//Carbon
 
 	var/overeatduration = 0		// How long this guy is overeating //Carbon

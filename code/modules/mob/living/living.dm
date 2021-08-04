@@ -345,6 +345,65 @@
 	to_chat(src, "<span class='notice'>You are now [resting ? "resting" : "getting up"].</span>")
 	update_canmove()
 
+/mob/living/proc/piss()
+	set name = "Piss"
+	set category = "IC"
+
+	if(piss < 15)
+		to_chat(src, "<span class='notice'>You don't need to take a piss.</span>")
+		return
+
+	if(istype(src, /mob/living/carbon/human))
+		var/mob/living/carbon/human/C = src
+		if(C.w_uniform != null)
+			to_chat(src, "<span class='boldwarning'>You piss your pants.</span>")
+			piss = 0
+			SEND_SIGNAL(C, COMSIG_ADD_MOOD_EVENT, "piss", /datum/mood_event/nutrition/pissself)
+			return
+		for(var/obj/item/reagent_containers/I in C.held_items)
+			if(I != null)
+				var/pissing = min(piss, I.volume)
+				I.reagents.add_reagent("piss", pissing)
+				to_chat(src, "<span class='notice'>You take a piss in [I].</span>")
+				piss -= pissing
+				return
+		to_chat(src, "<span class='notice'>You take a piss on the floor.</span>")
+		piss = 0
+		return
+	else
+		to_chat(src, "<span class='notice'>You take a piss on the floor.</span>")
+		piss = 0
+		return
+
+/mob/living/proc/shit()
+	set name = "Shit"
+	set category = "IC"
+
+	if(shit < 15)
+		to_chat(src, "<span class='notice'>You don't need to take a shit.</span>")
+		return
+
+	if(istype(src, /mob/living/carbon/human))
+		var/mob/living/carbon/human/C = src
+		if(C.w_uniform != null)
+			to_chat(src, "<span class='notice'>You shit your pants.</span>")
+			piss = 0
+			SEND_SIGNAL(C, COMSIG_ADD_MOOD_EVENT, "shit", /datum/mood_event/nutrition/shitself)
+			return
+		for(var/obj/item/reagent_containers/I in C.held_items)
+			if(I != null)
+				var/shitting = min(shit, I.volume)
+				I.reagents.add_reagent("shit", shitting)
+				to_chat(src, "<span class='notice'>You take a shit in [I].</span>")
+				shit -= shitting
+				return
+		to_chat(src, "<span class='notice'>You take a shit on the floor.</span>")
+		shit = 0
+	else
+		to_chat(src, "<span class='notice'>You take a shit on the floor.</span>")
+		shit = 0
+		return
+
 /mob/living/proc/surrender(mob/user)
 	set name = "Surrender"
 	set category = "IC"

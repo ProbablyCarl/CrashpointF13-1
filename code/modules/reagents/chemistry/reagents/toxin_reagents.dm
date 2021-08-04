@@ -10,6 +10,22 @@
 	taste_mult = 1.2
 	var/toxpwr = 1.5
 
+/datum/reagent/toxin/piss
+	name = "Piss"
+	id = "piss"
+	description = "Liquid gold."
+	color = "#CCCC00" // rgb: 204, 204, 0
+	toxpwr = 0.2
+	taste_description = "piss"
+
+/datum/reagent/toxin/shit
+	name = "Shit"
+	id = "shit"
+	description = "Chocolate."
+	color = "#663300" // rgb: 102, 51, 0
+	toxpwr = 2
+	taste_description = "shit"
+
 /datum/reagent/toxin/on_mob_life(mob/living/carbon/M)
 	if(toxpwr)
 		M.adjustToxLoss(toxpwr*REM, 0)
