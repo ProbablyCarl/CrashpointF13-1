@@ -105,3 +105,20 @@
 	materials = list(MAT_GLASS=500)
 	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
 	list_reagents = list("sasp" = 30)
+
+// WATER
+/obj/item/reagent_containers/food/drinks/bottle/dwater
+	name = "Dirty Water"
+	desc = "Unclean water. It's not the safest to drink as is, but it's better than dying!... Maybe."
+	icon_state = "dirty"
+	item_state = "beer"
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
+	list_reagents = list("dwater" = 30)
+
+/obj/item/reagent_containers/food/drinks/bottle/bwater
+	name = "Ration Water"
+	desc = "Carton of boiled and sieved water. It's completely safe to drink!"
+	icon_state = "boiled"
+	item_state = "beer"
+	icon = 'icons/fallout/objects/food&drinks/drinks.dmi'
+	list_reagents = list("bwater" = 30)

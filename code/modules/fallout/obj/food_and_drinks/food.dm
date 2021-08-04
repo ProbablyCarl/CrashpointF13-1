@@ -322,6 +322,15 @@
    list_reagents = list("nutriment" = 20)
    filling_color = "B#22222"
 
+/obj/item/reagent_containers/food/snacks/f13/wastiesoup
+   name = "Wasteland Stew"
+   desc = "A thin gruel made of scrap-meats from both radroach and bloatfly. It's fairly unappetizing, but it's better than starving to death!"
+   icon_state = "moleratstew"
+   bonus_reagents = list("vitamin" = 5, "bwater" = 5)
+   list_reagents = list("nutriment" = 20)
+   filling_color = "B#22222"
+
+
 /obj/item/reagent_containers/food/snacks/f13/crispysquirrel
    name = "Crispy Squirrel Bits"
    desc = "Bits of squirrel meat roasted on a skewer. Tasty."
