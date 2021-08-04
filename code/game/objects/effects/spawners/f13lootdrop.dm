@@ -293,38 +293,26 @@
 				/obj/item/clothing/head/helmet/f13/metalmask/mk2
 				)
 	var/loot2 = list(
-				/obj/item/clothing/head/helmet/f13/combat/swat,
-				/obj/item/clothing/suit/armor/f13/combat/swat
-				)
-	var/loot3 = list(
 				/obj/item/clothing/suit/armor/f13/combat,
 				/obj/item/clothing/head/helmet/f13/combat
 				)
-	var/loot4 = list(
-				/obj/item/clothing/suit/armor/bulletproof,
-				/obj/item/clothing/head/helmet/alt
-				)
 
 /obj/effect/spawner/lootdrop/f13/armor/tier3/Initialize(mapload) //on mapload, pick what shit to spawn
-	loot = pick(loot1, loot2, loot3, loot4)
+	loot = pick(loot1, loot2)
 	. = ..()
 
 /obj/effect/spawner/lootdrop/f13/armor/tier4 //TIER 4 ARMOR
 	name = "tier 4 armor"
 	lootcount = 2
 	var/loot1 = list(
-				/obj/item/clothing/suit/armor/f13/brokenpa/t45b,
-				/obj/item/clothing/head/helmet/power_armor/t45b
-				)
-	var/loot2 = list(
 				/obj/item/clothing/suit/armor/f13/rangercombat/desert,
 				/obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert
 				)
-	var/loot3 = list(
+	var/loot2 = list(
 				/obj/item/clothing/suit/armor/f13/combat/mk2,
 				/obj/item/clothing/head/helmet/f13/combat/mk2
 				)
-	var/loot4 = list(
+	var/loot3 = list(
 				/obj/item/clothing/suit/armor/f13/tesla,
 				/obj/item/clothing/head/helmet/f13/tesla
 				)
@@ -544,7 +532,8 @@
 				/obj/item/twohanded/fireaxe,
 				/obj/item/twohanded/sledgehammer,
 				/obj/item/twohanded/fireaxe/bmprsword,
-				/obj/item/shield/riot
+				/obj/item/shield/riot,
+				/obj/item/shishkebabpack
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier5 //TIER 5 MELEE WEAPON
@@ -554,13 +543,11 @@
 	loot = list(
 				/obj/item/twohanded/required/thermic_lance,
 				/obj/item/twohanded/required/chainsaw,
-				/obj/item/twohanded/required/kinetic_crusher,
 				/obj/item/nullrod/claymore/chainsaw_sword,
 				/obj/item/melee/powerfist,
 				/obj/item/melee/transforming/energy/axe,
 				/obj/item/gun/ballistic/revolver/ballisticfist,
-				/obj/item/twohanded/sledgehammer/supersledge,
-				/obj/item/shishkebabpack
+				/obj/item/twohanded/sledgehammer/supersledge
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random
@@ -876,16 +863,9 @@
 				/obj/item/stock_parts/cell/ammo/ec,
 				/obj/item/stock_parts/cell/ammo/ec,
 				)
-	var/loot16 = list(
-				/obj/item/gun/energy/ionrifle,
-				/obj/item/stock_parts/cell/ammo/mfc,
-				)
-	var/loot17 = list(
-				/obj/item/gun/medbeam
-				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier4/Initialize(mapload) //on mapload, pick what shit to spawn
-	loot = pick(loot1, loot2, loot3, loot4, loot5, loot6, loot7, loot8, loot9, loot10, loot11, loot12, loot13, loot14, loot15, loot16, loot17)
+	loot = pick(loot1, loot2, loot3, loot4, loot5, loot6, loot7, loot8, loot9, loot10, loot11, loot12, loot13, loot14, loot15)
 	. = ..()
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier5 //TIER 5 GUN
@@ -897,7 +877,8 @@
 				/obj/item/gun/energy/laser/plasma/scatter,
 				/obj/item/gun/ballistic/revolver/sequoia/scoped,
 				/obj/item/gun/ballistic/automatic/bozar,
-				/obj/item/gun/ballistic/automatic/atlauncher
+				/obj/item/gun/ballistic/automatic/atlauncher,
+				/obj/item/minigunpack
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/unique //UNIQUE GUN
@@ -909,7 +890,8 @@
 				/obj/item/gun/ballistic/automatic/pistol/ninemil/maria,
 				/obj/item/gun/ballistic/shotgun/remington/scoped/paciencia,
 				/obj/item/gun/energy/laser/solar,
-				/obj/item/gun/energy/laser/plasma/alien
+				/obj/item/gun/energy/laser/plasma/alien,
+				/obj/item/gun/ballistic/revolver/thatgun
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random
@@ -1068,7 +1050,6 @@
 				/obj/item/storage/box/snappops,
 				/obj/item/bikehorn/rubberducky,
 				/obj/item/stack/packageWrap,
-//				/obj/item/dildo,
 				/obj/item/storage/box/matches,
 				/obj/item/reagent_containers/food/snacks/deadmouse,
 				/obj/item/toner,
