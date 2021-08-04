@@ -73,6 +73,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/override_float = FALSE
 
 	var/typing_indicator_state
+	var/pissstate = 0
+	var/shitstate = 0
 
 ///////////
 // PROCS //
@@ -1012,26 +1014,53 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		H.transpiration_efficiency = 1.1
 	else if(H.water > THIRST_LEVEL_MIDDLE) //LITLE THIRST
 		if(H.transpiration_efficiency != 1)
-			H << "<span class='notice'>Your mouth is incredibly dry.</span>"
+			to_chat(H, "<span class='notice'>Your mouth is incredibly dry.</span>")
 		H.transpiration_efficiency = 1
 	else if(H.water > THIRST_LEVEL_HARD) //MIDDLE THIRST
 		if(H.transpiration_efficiency != 0.9)
-			H << "<span class='warning'>You are very thirsty, find water.</span>"
+			to_chat(H, "<span class='warning'>You are very thirsty, find water.</span>")
 		H.transpiration_efficiency = 0.9
 	else if(H.water > THIRST_LEVEL_DEADLY) //HARD THIRST
 		if(H.transpiration_efficiency != 0.6)
-			H << "<span class='warning'>You are very dehydrated, find water immediately or you will perish.</span>"
+			to_chat(H, "<span class='warning'>You are very dehydrated, find water immediately or you will perish.</span>")
 		H.transpiration_efficiency = 0.6
 		if(prob(10))//Minor annoyance, depending on luck.
 			H.adjustStaminaLoss(25)
 	else
 		if(H.transpiration_efficiency != 0.1)
-			H << "<span class='warning'>You are extremely dehydrated, death is upon you. You must find water.</span>"
+			to_chat(H, "<span class='warning'>You are extremely dehydrated, death is upon you. You must find water.</span>")
 		H.adjustOxyLoss(15)//No longer minor.
 		H.transpiration_efficiency = 0.1
 		if(prob(10))
 			H.adjustStaminaLoss(50)
 
+	//piss and shit... maybe-
+	if(H.piss >= PISS_LEVEL_FULL) //piss
+		to_chat(H, "<span class='boldwarning'>You piss yourself.</span>")
+		H.piss = 0
+		SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "piss", /datum/mood_event/nutrition/pissself)
+	else if(H.piss > PISS_LEVEL_HIGH)
+		if(pissstate != 2)
+			to_chat(H, "<span class='warning'>You are about to piss yourself.</span>")
+			pissstate = 2
+		SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "piss", /datum/mood_event/nutrition/piss)
+	else if(H.piss > PISS_LEVEL_MIDDLE)
+		if(pissstate != 1)
+			to_chat(H, "<span class='notice'>You need to take a piss.</span>")
+			pissstate = 1
+	if(H.shit >= SHIT_LEVEL_FULL) //shit
+		to_chat(H, "<span class='boldwarning'>You shit yourself.</span>")
+		H.shit = 0
+		SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "shit", /datum/mood_event/nutrition/shitself)
+	else if(H.shit > SHIT_LEVEL_HIGH)
+		if(shitstate != 2)
+			to_chat(H, "<span class='warning'>You are about to shit yourself.</span>")
+			shitstate = 2
+			SEND_SIGNAL(H, COMSIG_ADD_MOOD_EVENT, "shit", /datum/mood_event/nutrition/shit)
+	else if(H.shit > SHIT_LEVEL_MIDDLE)
+		if(shitstate != 1)
+			to_chat(H, "<span class='notice'>You need to take a shit.</span>")
+			shitstate = 1
 
 	switch(H.nutrition)
 		if(NUTRITION_LEVEL_FULL to INFINITY)

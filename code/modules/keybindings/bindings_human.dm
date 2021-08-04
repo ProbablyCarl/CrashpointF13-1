@@ -4,6 +4,10 @@
 		return
 	if(client.keys_held["Shift"])
 		switch(_key)
+			if("I")
+				piss()
+			if("P")
+				shit()
 			if("E") // Put held thing in belt or take out most recent thing from belt
 				var/obj/item/thing = get_active_held_item()
 				var/obj/item/storage/equipped_belt = get_item_by_slot(SLOT_BELT)

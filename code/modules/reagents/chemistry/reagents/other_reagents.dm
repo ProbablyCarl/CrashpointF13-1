@@ -125,6 +125,7 @@
 /datum/reagent/water/on_mob_life(mob/living/carbon/M)
 	current_cycle++
 	M.water += water_level
+	M.piss += water_level * 10
 	holder.remove_reagent(src.id, metabolization_rate)
 
 /*

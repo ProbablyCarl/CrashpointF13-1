@@ -19,6 +19,8 @@
 	current_cycle++
 	M.nutrition += nutriment_factor
 	M.water += water_level
+	M.shit += nutriment_factor / 4
+	M.piss += water_level * 10
 	holder.remove_reagent(src.id, metabolization_rate)
 
 /datum/reagent/consumable/nutriment
