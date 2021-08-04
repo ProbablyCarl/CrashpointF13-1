@@ -7,7 +7,7 @@
 
 
 /datum/round_event_control/shuttle_loan
-	name = "Shuttle Loan"
+	name = "Caravan Loaned"
 	typepath = /datum/round_event/shuttle_loan
 	max_occurrences = 1
 	earliest_start = 7 MINUTES
@@ -17,9 +17,9 @@
 	endWhen = 500
 	var/dispatched = 0
 	var/dispatch_type = 0
-	var/bonus_points = 10000
-	var/thanks_msg = "The cargo shuttle should return in five minutes. Have some supply points for your trouble."
-
+	var/bonus_points = 300 // Barely enough for a fancy toy!
+	var/thanks_msg = "The Caravan has been sent for an emergency delivery. A replacement is underway. You've been compensated for this trouble."
+/*
 /datum/round_event/shuttle_loan/setup()
 	dispatch_type = pick(HIJACK_SYNDIE, RUSKY_PARTY, SPIDER_GIFT, DEPARTMENT_RESUPPLY, ANTIDOTE_NEEDED, PIZZA_DELIVERY)
 
@@ -72,7 +72,7 @@
 			endWhen = activeFor
 		else
 			endWhen = activeFor + 1
-
+// Disabled because Syndies raiding my fuckin' Caravan ain't lore accurate!
 /datum/round_event/shuttle_loan/end()
 	if(SSshuttle.shuttle_loan && SSshuttle.shuttle_loan.dispatched)
 		//make sure the shuttle was dispatched in time
@@ -189,7 +189,7 @@
 
 			var/spawn_type = pick_n_take(shuttle_spawns)
 			new spawn_type(T)
-
+*/
 #undef HIJACK_SYNDIE
 #undef RUSKY_PARTY
 #undef SPIDER_GIFT

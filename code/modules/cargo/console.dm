@@ -1,14 +1,14 @@
 /obj/machinery/computer/cargo
-	name = "supply console"
-	desc = "Used to order supplies, approve requests, and control the shuttle."
+	name = "caravan console"
+	desc = "Used to order supplies, approve requests, and request transfer of supplies from other Caravans!"
 	icon_screen = "supply"
 	circuit = /obj/item/circuitboard/computer/cargo
 	var/requestonly = FALSE
 	var/contraband = FALSE
-	var/safety_warning = "For safety reasons the automated supply shuttle \
+	var/safety_warning = "For safety reasons \
 		cannot transport live organisms, classified nuclear weaponry or \
-		homing beacons."
-	var/blockade_warning = "Bluespace instability detected. Shuttle movement impossible."
+		homing beacons after the Nuclear-SBrahmin"
+	var/blockade_warning = "Caravan Route denied. The I-5 is currently experiencing Deathclaws!"
 
 	light_color = "#E2853D"//orange
 
@@ -31,8 +31,8 @@
 /obj/machinery/computer/cargo/emag_act(mob/user)
 	if(obj_flags & EMAGGED)
 		return
-	user.visible_message("<span class='warning'>[user] swipes a suspicious card through [src]!</span>",
-	"<span class='notice'>You adjust [src]'s routing and receiver spectrum, unlocking special supplies and contraband.</span>")
+	user.visible_message("<span class='warning'>[user] swipes a specialist card through [src]!</span>",
+	"<span class='notice'>You adjust [src]'s transmitter from AM to an FM frequency. Unlocking more distant trade-companies!</span>")
 
 	obj_flags |= EMAGGED
 	contraband = TRUE
@@ -121,11 +121,11 @@
 					SSshuttle.supply.obj_flags = (SSshuttle.supply.obj_flags & ~EMAGGED)
 				SSshuttle.supply.contraband = contraband
 				SSshuttle.moveShuttle("supply", "supply_away", TRUE)
-				say("The supply shuttle has departed.")
-				investigate_log("[key_name(usr)] sent the supply shuttle away.", INVESTIGATE_CARGO)
+				say("The Caravan has departed.")
+				investigate_log("[key_name(usr)] sent the Caravan away!", INVESTIGATE_CARGO)
 			else
 				investigate_log("[key_name(usr)] called the supply shuttle.", INVESTIGATE_CARGO)
-				say("The supply shuttle has been called and will arrive in [SSshuttle.supply.timeLeft(600)] minutes.")
+				say("The Caravan has begun movement. They'll arrive in [SSshuttle.supply.timeLeft(600)] minutes.")
 				SSshuttle.moveShuttle("supply", "supply_home", TRUE)
 			. = TRUE
 		if("loan")
@@ -139,8 +139,8 @@
 			else if(SSshuttle.supply.getDockedId() != "supply_away")
 				return
 			else
-				SSshuttle.shuttle_loan.loan_shuttle()
-				say("The supply shuttle has been loaned to CentCom.")
+				// SSshuttle.shuttle_loan.loan_shuttle() // HAHA-FUCK This is jury-rigged but I really don't care for a playtest
+				say("The Brahmin Caravan has been loaned out to another Caravan-Company. Payment Arriving Shortly.")
 				. = TRUE
 		if("add")
 			var/id = text2path(params["id"])

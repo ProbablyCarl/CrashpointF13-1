@@ -9,6 +9,7 @@
 
 // Hides
 
+/*
 /datum/export/stack/skin/monkey
 	cost = 50
 	unit_name = "monkey hide"
@@ -105,4 +106,7 @@
 	cost = 500
 	message = "of adamantine"
 	export_types = list(/obj/item/stack/sheet/mineral/adamantine)
+*/
+
+// Fallout Stuff
 

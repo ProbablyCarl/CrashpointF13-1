@@ -1,5 +1,5 @@
 // Circuit boards, spare parts, etc.
-
+/*
 /datum/export/solar/assembly
 	cost = 50
 	unit_name = "solar panel assembly"
@@ -19,3 +19,4 @@
 	cost = 2000
 	unit_name = "deactivated alien deconstruction drone"
 	export_types = list(/obj/item/deactivated_swarmer)
+*/
