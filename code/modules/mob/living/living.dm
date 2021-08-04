@@ -387,7 +387,7 @@
 		var/mob/living/carbon/human/C = src
 		if(C.w_uniform != null)
 			to_chat(src, "<span class='notice'>You shit your pants.</span>")
-			piss = 0
+			shit = 0
 			SEND_SIGNAL(C, COMSIG_ADD_MOOD_EVENT, "shit", /datum/mood_event/nutrition/shitself)
 			return
 		for(var/obj/item/reagent_containers/I in C.held_items)
@@ -399,6 +399,7 @@
 				return
 		to_chat(src, "<span class='notice'>You take a shit on the floor.</span>")
 		shit = 0
+		return
 	else
 		to_chat(src, "<span class='notice'>You take a shit on the floor.</span>")
 		shit = 0
