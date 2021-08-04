@@ -610,4 +610,4 @@
 	id = "wpsynth"
 	results = list("wppowder" = 5)
 	required_reagents = list("saltpetre" = 5, "sacid" = 5, "silver" = 5, "sugar" = 5, "charcoal" = 5)
-	mob_react = FALSE //I don't think you're supposed to eat these, buddy.
+	mob_react = FALSE //I don't think you're supposed to eat these, buddy. | You're not my Dad, asshole!
