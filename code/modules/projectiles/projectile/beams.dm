@@ -36,11 +36,6 @@
 	else if(isturf(target))
 		impact_effect_type = /obj/effect/temp_visual/impact_effect/red_laser/wall
 
-/obj/item/projectile/beam/laser/weak
-	damage = 15
-	armour_penetration = 50
-	hitscan = TRUE
-
 /obj/item/projectile/beam/practice
 	name = "practice laser"
 	damage = 0
@@ -183,6 +178,11 @@
 		var/mob/living/carbon/M = target
 		M.visible_message("<span class='danger'>[M] explodes into a shower of gibs!</span>")
 		M.gib()
+
+/obj/item/projectile/beam/laser/weak
+	damage = 15
+	armour_penetration = 50
+	hitscan = TRUE
 
 /obj/item/projectile/beam/laser/lasgun //AER9
 	name = "laser beam"
