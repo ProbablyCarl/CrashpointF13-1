@@ -95,7 +95,7 @@
 	return
 
 /turf/closed/indestructible/splashscreen/proc/chooseIcon()
-	var/chosen_icon = "title[rand(1,5)]"
+	var/chosen_icon = "title[rand(1,4)]"
 	if(icon_state != chosen_icon)
 		icon_state = chosen_icon
 	else
