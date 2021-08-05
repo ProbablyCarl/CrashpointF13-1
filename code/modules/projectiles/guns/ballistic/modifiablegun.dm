@@ -37,11 +37,11 @@ obj/item/gun/ballistic
 		var/obj/item/gun/ballistic/automatic/I = src
 		I.set_burst_size = initial(I.set_burst_size)
 	//scope
+	/* not necessary
 	if(modifiablegun)
 		zoomable = FALSE
-		azoom = null
-		zoom_amt = 10
-		zoom_out_amt = 13
+		qdel(azoom)
+	*/
 	//"for loop" for changing stats
 	for(var/i = 1; i <= attachableparts.len; i++)
 		if(attachableparts[attachableparts[i]] != null)
@@ -53,7 +53,9 @@ obj/item/gun/ballistic
 				I.set_burst_size = I.set_burst_size + I.attachableparts[attachableparts[i]].burstmodifier //changes when refreshed
 			if(attachableparts[attachableparts[i]].parttype == "scope") //works but doesnt add scope
 				zoomable = TRUE
-				build_zooming()
+				//build_zooming() //Scope Button Removal
+				zoom_amt = 10
+				zoom_out_amt = 13
 
 /obj/item/gun/ballistic/proc/updatesprites()
 	overlays = null
@@ -94,7 +96,6 @@ obj/item/gun/ballistic/attackby(obj/item/I, mob/user, params)
 				attachableparts[attachableparts[i]] = A
 				attachableparts[attachableparts[i]].forceMove(src)
 				playsound(src, "gun_insert_full_magazine", 70, 1)
-				updatestats()
 				updatesprites()
 				updatesize()
 				return
@@ -107,6 +108,7 @@ obj/item/gun/ballistic/attackby(obj/item/I, mob/user, params)
 				magazine = mag
 			modifiable = FALSE
 			to_chat(user, "<span class='notice'>You screw the \the [src] closed for usage.</span>")
+			updatestats()
 		else if(!modifiable && do_after(user, 20, target = src))
 			if(istype(src, /obj/item/gun/ballistic/revolver) || istype(src, /obj/item/gun/ballistic/shotgun))
 				//magazine.empty_magazine()
@@ -127,6 +129,8 @@ obj/item/gun/ballistic/attackby(obj/item/I, mob/user, params)
 			chambered = null
 			modifiable = TRUE
 			to_chat(user, "<span class='notice'>You screw the \the [src] open for modification. </span>")
+			updatestats()
+			zoomable = FALSE
 		return
 	//removing parts
 	if(istype(I, /obj/item/crowbar) && modifiable && do_after(user, 15, target = src))
