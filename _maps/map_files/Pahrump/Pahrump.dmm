@@ -28019,10 +28019,6 @@
 /obj/item/stock_parts/cell/high,
 /turf/open/floor/plating,
 /area/f13/brotherhood)
-"bAZ" = (
-/obj/structure/rack,
-/turf/open/floor/plating,
-/area/f13/brotherhood)
 "bBa" = (
 /obj/structure/closet/crate/freezer/saline,
 /obj/effect/turf_decal/bot,
@@ -28448,7 +28444,6 @@
 /area/f13/brotherhood)
 "bCr" = (
 /obj/structure/rack,
-/obj/item/circuitboard/machine/dna_vault,
 /turf/open/floor/plating,
 /area/f13/brotherhood)
 "bCs" = (
@@ -37488,12 +37483,10 @@
 "cbp" = (
 /obj/structure/table,
 /obj/machinery/light,
-/obj/item/circuitboard/machine/dna_vault,
 /obj/item/circuitboard/machine/plantgenes/vault,
 /obj/item/disk/plantgene,
 /obj/item/disk/plantgene,
 /obj/item/disk/plantgene,
-/obj/item/dna_probe,
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/space)
 "cbq" = (
@@ -168919,7 +168912,7 @@ bAg
 bAg
 bAH
 byF
-bAZ
+bCr
 bzW
 bBq
 byF

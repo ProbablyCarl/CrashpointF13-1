@@ -9350,12 +9350,10 @@
 "aAa" = (
 /obj/structure/table,
 /obj/machinery/light,
-/obj/item/circuitboard/machine/dna_vault,
 /obj/item/circuitboard/machine/plantgenes/vault,
 /obj/item/disk/plantgene,
 /obj/item/disk/plantgene,
 /obj/item/disk/plantgene,
-/obj/item/dna_probe,
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/science/research)
 "aAb" = (
@@ -32575,11 +32573,6 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/brotherhood)
-"bOR" = (
-/obj/structure/rack,
-/obj/item/circuitboard/machine/dna_vault,
-/turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
-/area/f13/brotherhood)
 "bOS" = (
 /turf/closed/wall/f13wood{
 	icon_state = "wasteland3alt"
@@ -32708,10 +32701,6 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
-/area/f13/brotherhood)
-"bPj" = (
-/obj/structure/rack,
-/turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/brotherhood)
 "bPk" = (
 /obj/structure/cable{
@@ -32920,7 +32909,6 @@
 /area/f13/brotherhood)
 "bPV" = (
 /obj/structure/rack,
-/obj/item/dna_probe,
 /turf/open/floor/plasteel/f13/vault_floor/purple/whitepurplefull,
 /area/f13/brotherhood)
 "bPW" = (
@@ -38467,13 +38455,13 @@ aaf
 aaf
 aaf
 bEU
-bPj
+bPV
 bNJ
 bnd
-bOR
+bPV
 bvB
 bPr
-bPj
+bPV
 bPU
 bEU
 bEU
@@ -40077,7 +40065,7 @@ bEU
 bEU
 bNJ
 bOg
-bPj
+bPV
 bNr
 bNr
 bPt
