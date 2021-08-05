@@ -4,6 +4,9 @@
 		return
 	if(client.keys_held["Shift"])
 		switch(_key)
+			if("V")
+				if(get_active_held_item() != null)
+					get_active_held_item().shiftv(src)
 			if("I")
 				piss()
 			if("P")

@@ -76,7 +76,7 @@
 		pin = new pin(src)
 	if(gun_light)
 		alight = new /datum/action/item_action/toggle_gunlight(src)
-	build_zooming()
+	//build_zooming() //Scope Button Removal
 
 /obj/item/gun/New()
 	. = ..()
@@ -419,28 +419,31 @@
 	for(var/X in actions)
 		var/datum/action/A = X
 		A.UpdateButtonIcon()
-
+/* Scope Button Removal
 /obj/item/gun/pickup(mob/user)
 	..()
 	if(azoom)
 		azoom.Grant(user)
 	if(alight)
 		alight.Grant(user)
-
+*/
 
 /obj/item/gun/equipped(mob/living/user, slot)
 	. = ..()
 	if(user.get_active_held_item() != src) //we can only stay zoomed in if it's in our hands	//yeah and we only unzoom if we're actually zoomed using the gun!!
 		zoom(user, FALSE)
+		/* Scope Button Removal
 		if(zoomable == TRUE)
 			azoom.Remove(user)
-
+*/
 /obj/item/gun/dropped(mob/user)
 	. = ..()
 	if(zoomed)
 		zoom(user,FALSE)
+	/* Scope Button Removal
 	if(azoom)
 		azoom.Remove(user)
+	*/
 	if(alight)
 		alight.Remove(user)
 
@@ -486,7 +489,7 @@
 /////////////
 // ZOOMING //
 /////////////
-
+/*
 /datum/action/toggle_scope_zoom
 	name = "Toggle Scope"
 	check_flags = AB_CHECK_CONSCIOUS|AB_CHECK_RESTRAINED|AB_CHECK_STUN|AB_CHECK_LYING
@@ -505,11 +508,14 @@
 /datum/action/toggle_scope_zoom/Remove(mob/living/L)
 	gun.zoom(L, FALSE)
 	..()
+*/
+/obj/item/gun/shiftv(mob/user)
+	if(zoomable)
+		zoom(user)
 
 /obj/item/gun/proc/zoom(mob/living/user, forced_zoom)
 	if(!user || !user.client)
 		return
-
 	switch(forced_zoom)
 		if(FALSE)
 			zoomed = FALSE
@@ -541,6 +547,7 @@
 	return zoomed
 
 //Proc, so that gun accessories/scopes/etc. can easily add zooming.
+/* Scope Button Removal
 /obj/item/gun/proc/build_zooming()
 	if(azoom)
 		return
@@ -548,7 +555,7 @@
 	if(zoomable)
 		azoom = new()
 		azoom.gun = src
-
+*/
 /obj/item/gun/handle_atom_del(atom/A)
 	if(A == chambered)
 		chambered = null
