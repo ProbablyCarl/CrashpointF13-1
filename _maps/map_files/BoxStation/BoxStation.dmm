@@ -13556,10 +13556,8 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/desert)
 "aLm" = (
-/obj/machinery/workbench,
-/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
-/turf/open/floor/plasteel/f13,
-/area/f13/den)
+/turf/closed/wall/r_wall/rust,
+/area/f13/shopheep)
 "aLn" = (
 /turf/open/indestructible/ground/outside/road,
 /area/f13/desert)
@@ -15236,9 +15234,10 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "aQh" = (
-/obj/structure/closet/cabinet,
-/turf/open/floor/f13/wood,
-/area/f13/den)
+/obj/machinery/workbench,
+/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
+/turf/open/floor/plasteel/f13,
+/area/f13/shopheep)
 "aQi" = (
 /obj/structure/closet/crate/bin,
 /turf/open/floor/wood/f13/old,
@@ -17672,7 +17671,7 @@
 /obj/effect/spawner/lootdrop/f13/crafting,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/plasteel/f13,
-/area/f13/den)
+/area/f13/shopheep)
 "aXA" = (
 /obj/structure/chair/f13chair2{
 	dir = 1
@@ -24968,7 +24967,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/crafting,
 /turf/open/floor/plasteel/f13,
-/area/f13/den)
+/area/f13/shopheep)
 "bsB" = (
 /obj/structure/closet/secure_closet/medical2,
 /turf/open/floor/plasteel/cafeteria,
@@ -25439,7 +25438,7 @@
 /area/f13/raider_mall)
 "btU" = (
 /turf/open/floor/plasteel/f13,
-/area/f13/den)
+/area/f13/shopheep)
 "btV" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/sheet/metal/fifty,
@@ -25534,7 +25533,7 @@
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrustysolid"
 	},
-/area/f13/den)
+/area/f13/shopheep)
 "bui" = (
 /turf/open/floor/wood/f13/old/ruinedcornertr,
 /area/f13/desert)
@@ -25543,10 +25542,11 @@
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "buk" = (
-/turf/open/floor/wood/f13{
-	icon_state = "housewood1-broken"
+/obj/machinery/light{
+	dir = 8
 	},
-/area/f13/den)
+/turf/open/floor/plasteel/f13,
+/area/f13/shopheep)
 "bul" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
@@ -25861,10 +25861,13 @@
 /area/f13/den)
 "buV" = (
 /obj/machinery/light{
-	dir = 8
+	dir = 4;
+	light_color = "#c1caff"
 	},
+/obj/structure/table/wood/settler,
+/obj/effect/spawner/lootdrop/f13/cash_random_med,
 /turf/open/floor/plasteel/f13,
-/area/f13/den)
+/area/f13/shopheep)
 "buW" = (
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/floor/plasteel/f13{
@@ -25938,14 +25941,9 @@
 	},
 /area/f13/desert)
 "bvh" = (
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#c1caff"
-	},
-/obj/structure/table/wood/settler,
-/obj/effect/spawner/lootdrop/f13/cash_random_med,
+/obj/machinery/autolathe/constructionlathe,
 /turf/open/floor/plasteel/f13,
-/area/f13/den)
+/area/f13/shopheep)
 "bvi" = (
 /obj/machinery/light{
 	dir = 4;
@@ -26669,13 +26667,11 @@
 	},
 /area/f13/klamat/mine)
 "bxm" = (
-/obj/machinery/light{
-	dir = 8;
-	light_color = "#e8eaff"
-	},
-/obj/machinery/trading_machine/weapon,
-/turf/open/floor/f13/wood,
-/area/f13/den)
+/obj/structure/rack,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/turf/open/floor/plasteel/f13,
+/area/f13/shopheep)
 "bxn" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/armor/tier2,
@@ -26988,9 +26984,10 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "byh" = (
-/obj/machinery/autolathe/constructionlathe,
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
 /turf/open/floor/plasteel/f13,
-/area/f13/den)
+/area/f13/shopheep)
 "byi" = (
 /obj/machinery/light/small/broken{
 	dir = 4
@@ -27325,11 +27322,10 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "bzj" = (
-/obj/structure/rack,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/glass/fifty,
+/obj/structure/table/wood/settler,
+/obj/effect/spawner/lootdrop/f13/cash_random_med,
 /turf/open/floor/plasteel/f13,
-/area/f13/den)
+/area/f13/shopheep)
 "bzk" = (
 /obj/structure/sink{
 	dir = 8;
@@ -27341,10 +27337,9 @@
 	},
 /area/f13/prison)
 "bzl" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
-/turf/open/floor/plasteel/f13,
-/area/f13/den)
+/obj/structure/simple_door/metal/barred,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "bzm" = (
 /obj/structure/sink{
 	desc = "'Probably the most important thing in this bunker...";
@@ -27637,9 +27632,9 @@
 /area/f13/admeme)
 "bAi" = (
 /obj/structure/table/wood/settler,
-/obj/effect/spawner/lootdrop/f13/cash_random_med,
-/turf/open/floor/plasteel/f13,
-/area/f13/den)
+/obj/effect/spawner/lootdrop/f13/armor/tier3,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "bAj" = (
 /obj/structure/safe,
 /turf/open/floor/plasteel/f13{
@@ -28255,16 +28250,10 @@
 	},
 /area/f13/desert)
 "bBZ" = (
-/obj/structure/window/fulltile/house{
-	dir = 2;
-	icon_state = "storewindowleft";
-	tag = "icon-storewindowleft"
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "ts1"
-	},
-/turf/open/floor/wood/f13/old,
-/area/f13/den)
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "bCa" = (
 /turf/open/floor/plasteel/f13{
 	icon_state = "platingdmg2"
@@ -28627,24 +28616,27 @@
 	},
 /area/f13/prison)
 "bCX" = (
-/obj/machinery/trading_machine/armor,
-/turf/open/floor/wood/f13/old,
-/area/f13/den)
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "bCY" = (
 /obj/effect/decal/cleanable/shreds,
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier1,
 /turf/open/floor/plating,
 /area/f13/powerplant)
 "bCZ" = (
-/obj/structure/table/wood/settler,
-/obj/effect/spawner/lootdrop/f13/armor/tier3,
-/turf/open/floor/f13/wood,
-/area/f13/den)
+/turf/open/floor/wood/f13{
+	icon_state = "housewood1-broken"
+	},
+/area/f13/shopheep)
 "bDa" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/obj/structure/closet/cabinet,
 /turf/open/floor/f13/wood,
-/area/f13/den)
+/area/f13/shopheep)
 "bDb" = (
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plating/f13/outside/road{
@@ -28652,11 +28644,8 @@
 	},
 /area/f13/desert)
 "bDc" = (
-/obj/item/key/vending,
-/turf/closed/wall/f13wood{
-	icon_state = "wood1"
-	},
-/area/f13/den)
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "bDd" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
@@ -28726,13 +28715,9 @@
 	},
 /area/f13/desert)
 "bDn" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/obj/effect/landmark/start/f13/shopkeeper,
 /turf/open/floor/f13/wood,
-/area/f13/den)
+/area/f13/shopheep)
 "bDo" = (
 /obj/machinery/light/small,
 /turf/open/floor/wood/f13/old/ruinedcornertr,
@@ -28815,12 +28800,9 @@
 /turf/open/floor/f13,
 /area/f13/admeme)
 "bDy" = (
-/obj/machinery/trading_machine/ammo,
-/obj/machinery/light{
-	dir = 4
-	},
+/obj/structure/chair/wood,
 /turf/open/floor/f13/wood,
-/area/f13/den)
+/area/f13/shopheep)
 "bDz" = (
 /obj/effect/decal/cleanable/greenglow,
 /obj/effect/decal/remains/human,
@@ -29399,9 +29381,19 @@
 	},
 /area/f13/sunny_dale)
 "bFm" = (
-/obj/structure/simple_door/metal/barred,
-/turf/open/floor/f13/wood,
-/area/f13/den)
+/obj/structure/table/wood/settler,
+/obj/machinery/button/door{
+	id = "ts1";
+	name = "Front Store Control";
+	pixel_y = -34
+	},
+/obj/machinery/button/door{
+	id = "ts2";
+	name = "Desk Shutters Control";
+	pixel_y = -24
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/shopheep)
 "bFn" = (
 /obj/structure/table/wood/settler,
 /obj/item/paper_bin,
@@ -29610,9 +29602,14 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bFR" = (
-/obj/effect/landmark/start/f13/shopkeeper,
-/turf/open/floor/f13/wood,
-/area/f13/den)
+/obj/structure/simple_door/room,
+/obj/machinery/door/poddoor/shutters{
+	id = "ts2"
+	},
+/turf/open/floor/wood/f13/old{
+	icon_state = "housewood3-broken1"
+	},
+/area/f13/shopheep)
 "bFS" = (
 /obj/item/clothing/suit/armor/f13/brokenpa,
 /obj/item/storage/trash_stack,
@@ -29929,22 +29926,20 @@
 /turf/open/floor/f13/wood,
 /area/f13/den)
 "bGR" = (
-/obj/structure/simple_door/room,
-/obj/machinery/door/poddoor/shutters{
-	id = "ts2"
-	},
-/turf/open/floor/wood/f13/old{
-	icon_state = "housewood3-broken1"
-	},
-/area/f13/den)
-"bGS" = (
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters{
 	id = "ts2"
 	},
 /turf/open/floor/f13/wood,
-/area/f13/den)
+/area/f13/shopheep)
+"bGS" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/poddoor/shutters{
+	id = "ts2"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "bGT" = (
 /turf/closed/wall/f13wood{
 	icon_state = "wasteland12alt"
@@ -30789,15 +30784,8 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "bJt" = (
-/obj/structure/window/fulltile/house{
-	icon_state = "storewindowright";
-	tag = "icon-storewindowright (NORTHEAST)"
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "ts1"
-	},
 /turf/open/floor/wood/f13/old,
-/area/f13/den)
+/area/f13/shopheep)
 "bJu" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
@@ -30807,19 +30795,14 @@
 	},
 /area/f13/ncr_main)
 "bJv" = (
-/obj/structure/table/reinforced,
-/obj/machinery/door/poddoor/shutters{
-	id = "ts2"
+/turf/open/floor/wood/f13/old{
+	icon_state = "housewood3-broken2"
 	},
-/turf/open/floor/f13/wood,
-/area/f13/den)
+/area/f13/shopheep)
 "bJw" = (
-/obj/structure/simple_door/room,
-/obj/machinery/door/poddoor/shutters{
-	id = "ts1"
-	},
+/obj/machinery/trading_machine/armor,
 /turf/open/floor/wood/f13/old,
-/area/f13/den)
+/area/f13/shopheep)
 "bJx" = (
 /obj/structure/sign/barsign{
 	icon_state = "the_lightbulb"
@@ -32573,6 +32556,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/brotherhood)
+"bOR" = (
+/obj/item/key/vending,
+/turf/closed/wall/r_wall/rust,
+/area/f13/shopheep)
 "bOS" = (
 /turf/closed/wall/f13wood{
 	icon_state = "wasteland3alt"
@@ -32702,6 +32689,14 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/red/whiteredfull,
 /area/f13/brotherhood)
+"bPj" = (
+/obj/machinery/light{
+	dir = 8;
+	light_color = "#e8eaff"
+	},
+/obj/machinery/trading_machine/weapon,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "bPk" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -36173,19 +36168,12 @@
 /turf/open/floor/plasteel/f13,
 /area/f13/underground/mountain)
 "bYX" = (
-/obj/structure/table/wood/settler,
-/obj/machinery/button/door{
-	id = "ts1";
-	name = "Front Store Control";
-	pixel_y = -34
+/obj/machinery/trading_machine/ammo,
+/obj/machinery/light{
+	dir = 4
 	},
-/obj/machinery/button/door{
-	id = "ts2";
-	name = "Desk Shutters Control";
-	pixel_y = -24
-	},
-/turf/open/floor/wood/f13/old,
-/area/f13/den)
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "bYY" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/gunparts/tier1,
@@ -36334,6 +36322,34 @@
 /obj/effect/spawner/lootdrop/f13/gunparts/tier1,
 /turf/open/floor/plating,
 /area/f13/underground/mountain)
+"bZt" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowleft";
+	tag = "icon-storewindowleft"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "ts1"
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/shopheep)
+"bZu" = (
+/obj/structure/window/fulltile/house{
+	icon_state = "storewindowright";
+	tag = "icon-storewindowright (NORTHEAST)"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "ts1"
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/shopheep)
+"bZv" = (
+/obj/structure/simple_door/room,
+/obj/machinery/door/poddoor/shutters{
+	id = "ts1"
+	},
+/turf/open/floor/wood/f13/old,
+/area/f13/shopheep)
 "cdT" = (
 /turf/closed/wall/r_wall/f13composite{
 	icon_state = "ruins6"
@@ -121431,17 +121447,17 @@ aGp
 aGB
 aGB
 aGB
-aGg
-aGg
-aGg
-aGg
-aGg
-aGB
-aGB
-aGB
-aGB
-aGB
-aGp
+aLm
+aLm
+aLm
+aLm
+aLm
+aLm
+aLm
+aLm
+aLm
+aLm
+aLm
 aen
 aer
 baE
@@ -121833,17 +121849,17 @@ aGp
 bmV
 bnb
 bki
-aGg
 aLm
-buV
-byh
-aGg
-bCZ
-aNk
-bGR
-aGG
-bxm
-aGq
+aQh
+buk
+bvh
+aLm
+bAi
+bDc
+bFR
+bJt
+bPj
+aLm
 bIC
 aer
 baE
@@ -122235,17 +122251,17 @@ bDK
 aNk
 aNk
 aNk
-aGg
+aLm
 aXz
 btU
-bzj
-aGg
-bDa
-aNk
-aGq
-aKn
-aGG
+bxm
+aLm
 bBZ
+bDc
+aLm
+bJv
+bJt
+bZt
 aen
 aer
 baE
@@ -122637,17 +122653,17 @@ aGq
 bmY
 aNk
 aNk
-aGg
+aLm
 aXz
 btU
-bzl
-aGg
-bDa
-aNk
-bGS
-aGG
-aGG
+byh
+aLm
+bBZ
+bDc
+bGR
 bJt
+bJt
+bZu
 aGk
 aer
 baE
@@ -123039,17 +123055,17 @@ bCj
 aNk
 aKz
 bJA
-aGg
+aLm
 bsA
 btU
 btU
-aGg
+aLm
+bCX
 bDn
-bFR
-bJv
-aGG
-aGG
-aGq
+bGS
+bJt
+bJt
+aLm
 abd
 aer
 baE
@@ -123441,17 +123457,17 @@ aGq
 bna
 aNk
 aNk
-aGg
+aLm
 btU
 btU
 btU
-bFm
-buk
-bmV
-bJv
-aGG
-aGG
-bJw
+bzl
+bCZ
+bDy
+bGS
+bJt
+bJt
+bZv
 aen
 aer
 baE
@@ -123843,17 +123859,17 @@ bDK
 bnb
 bna
 aFo
-aGg
+aLm
 buh
-bvh
-bAi
-aGg
-aQh
+buV
+bzj
+aLm
+bDa
+bFm
+aLm
+bJw
 bYX
-aGq
-bCX
-bDy
-aGq
+aLm
 abe
 aer
 baE
@@ -124245,17 +124261,17 @@ aGp
 aGB
 aGB
 aGB
-aGg
-aGg
-aGg
-aGg
-aGg
-aGB
-aGB
-aGB
-bDc
-aGB
-aGp
+aLm
+aLm
+aLm
+aLm
+aLm
+aLm
+aLm
+aLm
+bOR
+aLm
+aLm
 aen
 aer
 baE

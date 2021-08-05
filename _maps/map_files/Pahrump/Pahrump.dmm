@@ -280,10 +280,8 @@
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/ncr)
 "aaU" = (
-/obj/machinery/workbench,
-/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
-/turf/open/floor/f13,
-/area/f13/city)
+/turf/closed/wall/r_wall/rust,
+/area/f13/shopheep)
 "aaV" = (
 /obj/machinery/light/lampost{
 	dir = 1;
@@ -365,14 +363,12 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "abj" = (
-/obj/machinery/light{
-	dir = 1;
-	light_color = "#706891"
+/obj/structure/simple_door/interior,
+/obj/machinery/door/poddoor/shutters{
+	id = "shop_front"
 	},
-/obj/machinery/ammobench/makeshift,
-/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
-/turf/open/floor/f13,
-/area/f13/city)
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "abk" = (
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain2bottom";
@@ -387,11 +383,16 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "abm" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/traitbooks,
-/obj/item/book/granter/trait/gunsmith_four,
-/turf/open/floor/f13,
-/area/f13/city)
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowleft";
+	tag = "icon-storewindowleft"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "shop_front"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "abn" = (
 /obj/machinery/mineral/unloading_machine,
 /turf/open/floor/plasteel/barber{
@@ -2584,6 +2585,16 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"ahp" = (
+/obj/structure/window/fulltile/house{
+	icon_state = "storewindowhorizontal";
+	tag = "icon-storewindowhorizontal (NORTHEAST)"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "shop_front"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "ahq" = (
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -2753,6 +2764,17 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"ahR" = (
+/obj/structure/window/fulltile/house{
+	dir = 2;
+	icon_state = "storewindowright";
+	tag = "icon-storewindowright"
+	},
+/obj/machinery/door/poddoor/shutters{
+	id = "shop_front"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "ahS" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "housewindowvertical";
@@ -2823,6 +2845,11 @@
 /obj/structure/simple_door/interior,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
+"aid" = (
+/obj/machinery/workbench,
+/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
+/turf/open/floor/f13,
+/area/f13/shopheep)
 "aie" = (
 /obj/machinery/computer/shuttle/northbunkerelevator,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -3090,6 +3117,15 @@
 	tag = "icon-outermaincornerinner"
 	},
 /area/f13/wasteland)
+"aiR" = (
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#706891"
+	},
+/obj/machinery/ammobench/makeshift,
+/obj/effect/spawner/lootdrop/f13/gunparts/tier3,
+/turf/open/floor/f13,
+/area/f13/shopheep)
 "aiS" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/dirt{
@@ -3381,6 +3417,13 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
+"ajK" = (
+/obj/machinery/base_dispenser/ammo,
+/turf/open/floor/f13{
+	icon_state = "floordirtysolid";
+	tag = "icon-floordirtysolid"
+	},
+/area/f13/shopheep)
 "ajL" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random,
@@ -3531,6 +3574,12 @@
 	tag = "icon-shadowleft"
 	},
 /area/f13/wasteland)
+"aki" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "akj" = (
 /obj/structure/table,
 /obj/item/crafting/abraxo,
@@ -3737,10 +3786,17 @@
 	tag = "icon-horizontaloutermain2"
 	},
 /area/f13/ncr)
+"akN" = (
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "akO" = (
 /obj/effect/landmark/start/f13/ncrht,
 /turf/open/floor/plasteel/f13/vault_floor/dark,
 /area/f13/ncr)
+"akP" = (
+/obj/machinery/trading_machine/ammo,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "akQ" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/road{
@@ -3968,6 +4024,10 @@
 /obj/machinery/computer/terminal,
 /turf/open/floor/wood,
 /area/f13/ncr)
+"alw" = (
+/obj/machinery/trading_machine/armor,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "alx" = (
 /obj/structure/frame/machine,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -4060,6 +4120,14 @@
 /obj/effect/decal/remains/human,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"alJ" = (
+/obj/machinery/trading_machine/weapon,
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "alK" = (
 /obj/structure/barricade/sandbags,
 /turf/open/indestructible/ground/outside/dirt{
@@ -4158,6 +4226,9 @@
 	tag = "icon-horizontaloutermain2"
 	},
 /area/f13/ncr)
+"alY" = (
+/turf/open/floor/f13,
+/area/f13/shopheep)
 "alZ" = (
 /obj/structure/campfire/barrel,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -4284,6 +4355,21 @@
 	},
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
+"amr" = (
+/obj/machinery/autolathe/hacked{
+	desc = "This autolathe appears to have been hacked, unlocking all functions previously hidden.";
+	name = "hacked autolathe"
+	},
+/turf/open/floor/f13,
+/area/f13/shopheep)
+"ams" = (
+/obj/structure/rack,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/item/stack/sheet/plastic/five,
+/obj/item/stack/sheet/plastic/five,
+/turf/open/floor/f13,
+/area/f13/shopheep)
 "amt" = (
 /obj/item/flag/ncr,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -4355,6 +4441,26 @@
 "amC" = (
 /turf/closed/wall/f13/tunnel,
 /area/f13/building)
+"amD" = (
+/obj/structure/table/wood/settler,
+/obj/machinery/door/poddoor/shutters{
+	id = "shop_counter"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
+"amE" = (
+/obj/structure/simple_door/interior,
+/obj/machinery/door/poddoor/shutters{
+	id = "shop_counter"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
+"amF" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/obj/effect/spawner/lootdrop/f13/crafting,
+/turf/open/floor/f13,
+/area/f13/shopheep)
 "amG" = (
 /obj/machinery/door/poddoor/shutters{
 	id = 7246;
@@ -4517,6 +4623,41 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"anc" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/traitbooks,
+/obj/item/book/granter/trait/gunsmith_four,
+/turf/open/floor/f13,
+/area/f13/shopheep)
+"and" = (
+/obj/structure/table/wood/settler,
+/obj/machinery/button/door{
+	id = "shop_front";
+	layer = 4;
+	name = "Front of Store Shutters";
+	pixel_x = -27;
+	pixel_y = 5
+	},
+/obj/machinery/button/door{
+	dir = 2;
+	id = "shop_counter";
+	layer = 4;
+	name = "Counter Shutters";
+	pixel_x = -27;
+	pixel_y = -5
+	},
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
+"ane" = (
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/mop,
+/turf/open/floor/f13,
+/area/f13/shopheep)
+"anf" = (
+/obj/machinery/light,
+/turf/open/floor/f13,
+/area/f13/shopheep)
 "ang" = (
 /obj/structure/table/wood/settler,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/tier1,
@@ -4594,6 +4735,18 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
+"anq" = (
+/obj/structure/simple_door/metal/barred,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
+"anr" = (
+/obj/effect/landmark/start/f13/shopkeeper,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
+"ans" = (
+/obj/machinery/light,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "ant" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
@@ -4651,6 +4804,11 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/indestructible/ground/outside/ruins,
 /area/f13/ruins)
+"anC" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "anD" = (
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubbleplate";
@@ -4680,6 +4838,13 @@
 	icon_state = "outerpavement"
 	},
 /area/f13/wasteland)
+"anH" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
+/obj/machinery/light,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "anI" = (
 /obj/structure/chair/office/dark{
 	dir = 4
@@ -4759,6 +4924,13 @@
 	tag = "icon-rubblecorner (NORTH)"
 	},
 /area/f13/ruins)
+"anS" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
+/turf/open/floor/f13/wood,
+/area/f13/shopheep)
 "anU" = (
 /obj/machinery/light{
 	dir = 1;
@@ -17772,10 +17944,6 @@
 "aYI" = (
 /turf/open/floor/wood/f13/stage_l,
 /area/f13/village)
-"aYJ" = (
-/obj/structure/simple_door/metal/barred,
-/turf/open/floor/f13/wood,
-/area/f13/city)
 "aYK" = (
 /turf/open/floor/wood/f13/stage_r,
 /area/f13/village)
@@ -23676,10 +23844,6 @@
 /obj/structure/wreck/trash/machinepiletwo,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
-"boL" = (
-/obj/structure/reagent_dispensers/fueltank,
-/turf/open/indestructible/ground/outside/dirt,
-/area/f13/wasteland)
 "boM" = (
 /obj/structure/wreck/trash/brokenvendor,
 /turf/open/indestructible/ground/outside/dirt,
@@ -24292,45 +24456,6 @@
 	tag = "icon-floorrusty"
 	},
 /area/f13/city)
-"bqI" = (
-/obj/structure/simple_door/interior,
-/obj/machinery/door/poddoor/shutters{
-	id = "shop_front"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/city)
-"bqJ" = (
-/obj/structure/window/fulltile/house{
-	dir = 2;
-	icon_state = "storewindowleft";
-	tag = "icon-storewindowleft"
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "shop_front"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/city)
-"bqK" = (
-/obj/structure/window/fulltile/house{
-	icon_state = "storewindowhorizontal";
-	tag = "icon-storewindowhorizontal (NORTHEAST)"
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "shop_front"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/city)
-"bqL" = (
-/obj/structure/window/fulltile/house{
-	dir = 2;
-	icon_state = "storewindowright";
-	tag = "icon-storewindowright"
-	},
-/obj/machinery/door/poddoor/shutters{
-	id = "shop_front"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/city)
 "bqM" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowhorizontal";
@@ -24465,47 +24590,9 @@
 	tag = "icon-floorrusty"
 	},
 /area/f13/city)
-"brf" = (
-/obj/machinery/base_dispenser/ammo,
-/turf/open/floor/f13{
-	icon_state = "floordirtysolid";
-	tag = "icon-floordirtysolid"
-	},
-/area/f13/city)
-"brg" = (
-/obj/machinery/autolathe/hacked{
-	desc = "This autolathe appears to have been hacked, unlocking all functions previously hidden.";
-	name = "hacked autolathe"
-	},
-/turf/open/floor/f13,
-/area/f13/city)
-"brh" = (
-/obj/structure/rack,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/plastic/five,
-/obj/item/stack/sheet/plastic/five,
-/turf/open/floor/f13,
-/area/f13/city)
 "bri" = (
 /obj/machinery/light{
 	dir = 8
-	},
-/turf/open/floor/f13/wood,
-/area/f13/city)
-"brj" = (
-/obj/machinery/trading_machine/ammo,
-/turf/open/floor/f13/wood,
-/area/f13/city)
-"brk" = (
-/obj/machinery/trading_machine/armor,
-/turf/open/floor/f13/wood,
-/area/f13/city)
-"brl" = (
-/obj/machinery/trading_machine/weapon,
-/obj/machinery/light{
-	dir = 4;
-	light_color = "#c1caff"
 	},
 /turf/open/floor/f13/wood,
 /area/f13/city)
@@ -24666,26 +24753,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
-"brK" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/crafting,
-/obj/effect/spawner/lootdrop/f13/crafting,
-/turf/open/floor/f13,
-/area/f13/city)
-"brM" = (
-/obj/structure/table/wood/settler,
-/obj/machinery/door/poddoor/shutters{
-	id = "shop_counter"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/city)
-"brN" = (
-/obj/structure/simple_door/interior,
-/obj/machinery/door/poddoor/shutters{
-	id = "shop_counter"
-	},
-/turf/open/floor/f13/wood,
-/area/f13/city)
 "brO" = (
 /obj/structure/chair/f13chair2{
 	dir = 8
@@ -24765,35 +24832,6 @@
 	tag = "icon-floorrusty"
 	},
 /area/f13/city)
-"bsa" = (
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/mop,
-/turf/open/floor/f13,
-/area/f13/city)
-"bsb" = (
-/obj/machinery/light,
-/turf/open/floor/f13,
-/area/f13/city)
-"bsc" = (
-/obj/structure/table/wood/settler,
-/obj/machinery/button/door{
-	id = "shop_front";
-	layer = 4;
-	name = "Front of Store Shutters";
-	pixel_x = -27;
-	pixel_y = 5
-	},
-/obj/machinery/button/door{
-	dir = 2;
-	id = "shop_counter";
-	layer = 4;
-	name = "Counter Shutters";
-	pixel_x = -27;
-	pixel_y = -5
-	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
-/turf/open/floor/f13/wood,
-/area/f13/city)
 "bsd" = (
 /obj/structure/table,
 /obj/item/kitchen/knife,
@@ -24862,29 +24900,6 @@
 /area/f13/city)
 "bsn" = (
 /obj/machinery/light,
-/turf/open/floor/f13/wood,
-/area/f13/city)
-"bso" = (
-/obj/effect/landmark/start/f13/shopkeeper,
-/turf/open/floor/f13/wood,
-/area/f13/city)
-"bsp" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier2,
-/turf/open/floor/f13/wood,
-/area/f13/city)
-"bsq" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/machinery/light,
-/turf/open/floor/f13/wood,
-/area/f13/city)
-"bsr" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
-/obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/f13/wood,
 /area/f13/city)
 "bss" = (
@@ -41902,7 +41917,7 @@ bnh
 biQ
 biQ
 biO
-boL
+aek
 aek
 aNf
 bpL
@@ -44479,13 +44494,13 @@ acQ
 aek
 aTy
 aMr
-bio
-bio
-bio
-bio
-bio
-bio
-bio
+aaU
+aaU
+aaU
+aaU
+aaU
+aaU
+aaU
 bjV
 bjV
 bjV
@@ -44736,13 +44751,13 @@ acQ
 aek
 aTy
 aMr
-bio
 aaU
-bkL
-brg
-brK
-bsa
-bio
+aid
+alY
+amr
+amF
+ane
+aaU
 bsZ
 btD
 btR
@@ -44993,13 +45008,13 @@ acQ
 aek
 aTy
 aMr
-bio
-abj
-bkL
-bkL
-bkL
-bsb
-bio
+aaU
+aiR
+alY
+alY
+alY
+anf
+aaU
 bta
 abz
 biQ
@@ -45250,13 +45265,13 @@ acQ
 aek
 aTy
 aMr
-bio
-brf
-bkL
-brh
-abm
-bkL
-bio
+aaU
+ajK
+alY
+ams
+anc
+alY
+aaU
 biR
 biQ
 btS
@@ -45507,13 +45522,13 @@ acQ
 aek
 aTy
 aMr
-bio
-bio
-bio
-bio
-bio
-aYJ
-bio
+aaU
+aaU
+aaU
+aaU
+aaU
+anq
+aaU
 biQ
 biQ
 abz
@@ -45764,13 +45779,13 @@ acQ
 aek
 aff
 adw
-bjx
-bri
-bka
-bjw
-bsc
-bso
-bjx
+aaU
+aki
+akN
+aaU
+and
+anr
+aaU
 biQ
 biQ
 btT
@@ -46021,13 +46036,13 @@ acQ
 aek
 aek
 aek
-bqI
-bka
-bka
-brM
-bka
-bsn
-bjx
+abj
+akN
+akN
+amD
+akN
+ans
+aaU
 bjV
 btE
 bjV
@@ -46278,13 +46293,13 @@ acQ
 aek
 abg
 bmA
-bjw
-bka
-bka
-brM
-bka
-bsp
-bjx
+aaU
+akN
+akN
+amD
+akN
+anC
+aaU
 btb
 aek
 btU
@@ -46535,13 +46550,13 @@ acQ
 aek
 aTy
 aMr
-bqJ
-brj
-bka
-brM
-bka
-bsp
-bjx
+abm
+akP
+akN
+amD
+akN
+anC
+aaU
 aNf
 aek
 aek
@@ -46792,13 +46807,13 @@ acQ
 aek
 aTy
 aMr
-bqK
-brk
-bka
-bjw
-bka
-bsq
-bjx
+ahp
+alw
+akN
+aaU
+akN
+anH
+aaU
 btc
 aek
 aek
@@ -47049,13 +47064,13 @@ acQ
 aek
 aTy
 aMr
-bqL
-brl
-bka
-brN
-bka
-bsr
-bjx
+ahR
+alJ
+akN
+amE
+akN
+anS
+aaU
 bpp
 aNf
 aek
@@ -47306,13 +47321,13 @@ acQ
 aek
 aTy
 aMr
-bjw
-bjV
-bjV
-bjw
-bjV
-bjV
-bjw
+aaU
+aaU
+aaU
+aaU
+aaU
+aaU
+aaU
 aKH
 aKH
 aKH

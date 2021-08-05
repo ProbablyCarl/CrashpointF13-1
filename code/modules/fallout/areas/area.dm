@@ -479,3 +479,14 @@
 	blob_allowed = 0
 	environment = 5
 	grow_chance = 5
+
+/area/f13/shopheep
+	name = "Town Shop"
+	icon_state = "vaulttec"
+//	ambience_area =  list('sound/f13ambience/vaulttec_vault.ogg')
+//	ambientmusic = list('sound/f13music/fo2_vats.ogg','sound/misc/null.ogg')
+	ambientsounds = list('sound/f13ambience/ambigen_10.ogg','sound/f13ambience/ambigen_11.ogg','sound/f13ambience/ambigen_12.ogg', \
+	'sound/f13ambience/ambigen_13.ogg','sound/f13ambience/ambigen_14.ogg','sound/f13effects/steam_short.ogg','sound/f13effects/steam_long.ogg')
+	blob_allowed = 0
+	environment = 6
+	requires_power = FALSE
