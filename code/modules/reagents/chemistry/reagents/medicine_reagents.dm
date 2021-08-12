@@ -1364,7 +1364,7 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	..()
 
 /datum/reagent/medicine/healing_powder/on_mob_life(mob/living/M)
-	if(!M.reagents.has_reagent("stimfluid") && !M.reagents.has_reagent("stimfluidweak")) // NO FUN ALLOWED! Stims cannot be used together effeciently!
+	if(!M.reagents.has_reagent("stimfluid") && !M.reagents.has_reagent("stimfluidweak")) // NO FUN ALLOWED! Powder and Stims cannot be used together effeciently!
 		M.adjustFireLoss(-0.5*REM)
 		M.adjustBruteLoss(-0.5*REM)
 		M.adjustToxLoss(-0.5*REM)
