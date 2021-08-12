@@ -1356,19 +1356,20 @@ datum/reagent/medicine/bitter_drink/on_mob_life(mob/living/M)
 	metabolization_rate = 0.3 * REAGENTS_METABOLISM
 	overdose_threshold = 30
 
-/datum/reagent/medicine/healing_powder/on_mob_life(mob/living/carbon/M)
-	M.adjustFireLoss(-3*REM)
-	M.adjustBruteLoss(-3*REM)
-	M.hallucination = max(M.hallucination, 5)
-	. = 1
-	..()
-
 /datum/reagent/medicine/healing_powder/on_mob_life(mob/living/M)
 	if(!M.reagents.has_reagent("stimfluid") && !M.reagents.has_reagent("stimfluidweak")) // NO FUN ALLOWED! Powder and Stims cannot be used together effeciently!
-		M.adjustFireLoss(-0.5*REM)
-		M.adjustBruteLoss(-0.5*REM)
+		M.adjustFireLoss(-1*REM)
+		M.adjustBruteLoss(-1*REM)
 		M.adjustToxLoss(-0.5*REM)
 		M.adjustOxyLoss(-0.5*REM)
+		M.hallucination = max(M.hallucination, 5)//stims counter the hallucinations, but make it far worse at the same time.
+		. = 1
+	else
+		M.adjustFireLoss(-0.5*REM)
+		M.adjustBruteLoss(-0.5*REM)
+		M.adjustToxLoss(-0.2*REM)
+		M.adjustOxyLoss(-0.2*REM)
+	..()
 
 
 /datum/reagent/medicine/healing_powder/reaction_mob(mob/living/M, method=TOUCH, reac_volume, show_message = 1)

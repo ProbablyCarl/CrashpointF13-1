@@ -36857,6 +36857,16 @@
 /obj/item/trash/f13/porknbeans,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/underground/mountain)
+"cbd" = (
+/obj/machinery/shower{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/open/floor/f13{
+	icon_state = "floorrusty";
+	tag = "icon-floorrusty"
+	},
+/area/f13/underground/mountain)
 "cbe" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/underground/mountain)
@@ -36946,6 +36956,7 @@
 "cbq" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/pill_bottle/chem_tin/radx,
+/obj/machinery/light,
 /turf/open/floor/f13{
 	icon_state = "floorrusty";
 	tag = "icon-floorrusty"
@@ -36963,11 +36974,13 @@
 	},
 /area/f13/underground/mountain)
 "cbt" = (
-/obj/structure/table/reinforced,
-/obj/item/kitchen/rollingpin,
-/obj/item/kitchen/knife,
+/obj/structure/closet,
+/obj/item/clothing/suit/radiation,
+/obj/item/clothing/head/radiation,
+/obj/machinery/light,
 /turf/open/floor/f13{
-	icon_state = "bar"
+	icon_state = "floorrusty";
+	tag = "icon-floorrusty"
 	},
 /area/f13/underground/mountain)
 "cbu" = (
@@ -37059,11 +37072,14 @@
 	},
 /area/f13/underground/mountain)
 "cbG" = (
-/obj/structure/table,
-/obj/item/toy/cards/deck,
+/obj/structure/table/reinforced,
+/obj/item/kitchen/rollingpin,
+/obj/item/kitchen/knife,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/f13{
-	icon_state = "floorrusty";
-	tag = "icon-floorrusty"
+	icon_state = "bar"
 	},
 /area/f13/underground/mountain)
 "cbH" = (
@@ -37131,15 +37147,12 @@
 	},
 /area/f13/underground/mountain)
 "cbQ" = (
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = -12
-	},
-/obj/structure/mirror{
-	pixel_x = -32
-	},
+/obj/structure/table,
+/obj/item/toy/cards/deck,
+/obj/machinery/light,
 /turf/open/floor/f13{
-	icon_state = "whitegreenrustychess"
+	icon_state = "floorrusty";
+	tag = "icon-floorrusty"
 	},
 /area/f13/underground/mountain)
 "cbR" = (
@@ -37151,20 +37164,24 @@
 	},
 /area/f13/underground/mountain)
 "cbS" = (
-/obj/structure/closet/crate/secure/weapon,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
-/obj/effect/turf_decal/delivery,
+/obj/structure/table,
+/obj/machinery/light,
 /turf/open/floor/f13{
-	icon_state = "darkredfull";
-	tag = "icon-darkredfull"
+	icon_state = "floorrusty";
+	tag = "icon-floorrusty"
 	},
 /area/f13/underground/mountain)
 "cbT" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12
+	},
+/obj/structure/mirror{
+	pixel_x = -32
+	},
+/obj/machinery/light,
 /turf/open/floor/f13{
-	icon_state = "darkredfull";
-	tag = "icon-darkredfull"
+	icon_state = "whitegreenrustychess"
 	},
 /area/f13/underground/mountain)
 "cbU" = (
@@ -37181,6 +37198,34 @@
 /turf/open/floor/f13{
 	icon_state = "darkredfull";
 	tag = "icon-darkredfull"
+	},
+/area/f13/underground/mountain)
+"cbW" = (
+/obj/structure/closet/crate/secure/weapon,
+/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
+/obj/effect/turf_decal/delivery,
+/obj/machinery/light,
+/turf/open/floor/f13{
+	icon_state = "darkredfull";
+	tag = "icon-darkredfull"
+	},
+/area/f13/underground/mountain)
+"cbX" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/weapon/melee/tier2,
+/obj/machinery/light,
+/turf/open/floor/f13{
+	icon_state = "darkredfull";
+	tag = "icon-darkredfull"
+	},
+/area/f13/underground/mountain)
+"cbY" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty";
+	tag = "icon-floorrusty"
 	},
 /area/f13/underground/mountain)
 "cdT" = (
@@ -61381,7 +61426,7 @@ cbe
 cbe
 cbe
 cbr
-cbt
+cbG
 cby
 cbe
 cbe
@@ -62992,10 +63037,10 @@ cbe
 cbi
 cbi
 cbC
-cbG
+cbQ
 cbe
 cbL
-cbS
+cbW
 cbe
 aab
 aab
@@ -63386,7 +63431,7 @@ aGu
 cbe
 cbf
 cbh
-cbf
+cbd
 cbe
 cbi
 cbi
@@ -64595,12 +64640,12 @@ aab
 aab
 cbe
 cbo
-cbo
+cbt
 cbe
 cbv
 cbi
 cbE
-cbE
+cbS
 cbe
 cbM
 cbM
@@ -65005,7 +65050,7 @@ cbe
 cbe
 cbe
 cbP
-cbT
+cbX
 cbe
 aab
 aab
@@ -65808,7 +65853,7 @@ cbi
 cbi
 cbI
 cbJ
-cbQ
+cbT
 cbe
 aab
 aab
@@ -66206,7 +66251,7 @@ aab
 aab
 cbe
 cbx
-cbi
+cbY
 cbF
 cbe
 cbK
