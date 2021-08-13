@@ -2663,10 +2663,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
-"ahA" = (
-/obj/structure/reagent_dispensers/water_cooler,
-/turf/open/floor/f13/wood,
-/area/f13/ncr)
 "ahB" = (
 /obj/structure/chair{
 	dir = 4
@@ -20832,14 +20828,6 @@
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalrightborderright0";
 	tag = "icon-verticalrightborderright0"
-	},
-/area/f13/wasteland)
-"bgu" = (
-/mob/living/simple_animal/hostile/cazador,
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 4;
-	icon_state = "dirt";
-	tag = "icon-dirt (EAST)"
 	},
 /area/f13/wasteland)
 "bgv" = (
@@ -46090,7 +46078,7 @@ bcc
 aeY
 agB
 agW
-ahA
+agA
 aeY
 aiE
 aiD
@@ -56272,7 +56260,7 @@ aMr
 aMr
 aMr
 aMr
-alM
+aMr
 aMr
 aMr
 aMr
@@ -57556,7 +57544,7 @@ bfL
 aMr
 apL
 aaG
-bgu
+aaG
 abA
 aMr
 aMr
