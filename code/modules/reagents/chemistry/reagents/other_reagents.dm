@@ -120,12 +120,12 @@
 	glass_name = "glass of water"
 	glass_desc = "The father of all refreshments."
 	shot_glass_icon_state = "shotglassclear"
-	var/water_level = 0.1
+	var/water_level = 2
 
 /datum/reagent/water/on_mob_life(mob/living/carbon/M)
 	current_cycle++
 	M.water += water_level
-	M.piss += water_level * 10
+	M.piss += water_level / 4
 	holder.remove_reagent(src.id, metabolization_rate)
 
 /*
@@ -199,6 +199,7 @@
 	glass_name = "glass of dirty water"
 	glass_desc = "A rather foul smelling glass of water."
 	shot_glass_icon_state = "shotglassclear"
+	water_level = 0.2
 
 /datum/reagent/water/dwater/on_mob_life(mob/living/M, mob/user)
 	if(ishuman(M))
@@ -219,6 +220,7 @@
 	glass_name = "glass of dirty water"
 	glass_desc = "A rather foul smelling glass of water."
 	shot_glass_icon_state = "shotglassclear"
+	water_level = 1
 
 /datum/reagent/water/boiled/on_mob_life(mob/living/M, mob/user)
 	if(ishuman(M))
