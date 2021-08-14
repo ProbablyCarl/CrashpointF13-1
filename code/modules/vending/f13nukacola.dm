@@ -19,8 +19,8 @@
 	icon_state = "nuka_vending"
 	icon_deny = "nuka_vending-deny"
 	product_slogans = "Take the leap... enjoy a Quantum!"
-	products = list(/obj/item/reagent_containers/food/drinks/soda_cans/f13nukacola = 20)
-	contraband = list(/obj/item/reagent_containers/food/drinks/soda_cans/f13nukacola = 10)
+	products = list(/obj/item/reagent_containers/food/drinks/bottle/nukacola = 20)
+	contraband = list(/obj/item/reagent_containers/food/drinks/bottle/nukacola = 10)
 	premium = list(/obj/item/reagent_containers/food/drinks/drinkingglass/filled/nuka_cola = 3) //Actual Nuka Cola
 	refill_canister = /obj/item/vending_refill/nukacolavendfull
 

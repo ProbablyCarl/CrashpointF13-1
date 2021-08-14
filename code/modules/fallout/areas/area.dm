@@ -235,6 +235,7 @@
 	ambientsounds = list('sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_12.ogg','sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg','sound/f13effects/steam_short.ogg','sound/f13effects/steam_long.ogg')
 	environment = 21
 	grow_chance = 25
+	flags_2 = BLOCK_RADIO_2//Have fun with the shitty handhelds underground, bucko.
 
 /area/f13/trainstation
 	name = "Tunnel"
@@ -253,6 +254,7 @@
 	ambientsounds = list('sound/f13ambience/ambigen_9.ogg','sound/f13effects/steam_short.ogg','sound/f13effects/steam_long.ogg')
 	environment = 21
 	grow_chance = 50
+	flags_2 = BLOCK_RADIO_2//Have fun with the shitty handhelds underground, bucko.
 
 /area/f13/caves
 	name = "Caves"
@@ -262,6 +264,7 @@
 	ambientsounds = list('sound/f13ambience/ambigen_15.ogg','sound/f13ambience/ambigen_16.ogg','sound/f13ambience/ambigen_17.ogg','sound/f13ambience/ambigen_18.ogg','sound/f13ambience/ambigen_19.ogg')
 	environment = 8
 	grow_chance = 75
+	flags_2 = BLOCK_RADIO_2//Have fun with the shitty handhelds underground, bucko.
 
 /area/f13/subway
 	name = "Subway"
@@ -271,6 +274,7 @@
 	ambientsounds = list('sound/f13ambience/ambigen_1.ogg','sound/f13ambience/ambigen_2.ogg','sound/f13ambience/ambigen_9.ogg','sound/f13ambience/ambigen_12.ogg')
 	environment = 21
 	grow_chance = 25
+	flags_2 = BLOCK_RADIO_2//Have fun with the shitty handhelds underground, bucko.
 
 /area/f13/secret
 	name = "Secret"

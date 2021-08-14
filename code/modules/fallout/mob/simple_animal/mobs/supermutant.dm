@@ -117,7 +117,7 @@
 	projectiletype = /obj/item/projectile/bullet/F13/sm_hmg
 	projectilesound = 'sound/f13weapons/antimaterielfire.ogg'
 	extra_projectiles = 4 //5 projectiles
-	ranged_cooldown_time = 120//Long cooldown due to damage output.
+	ranged_cooldown_time = 15//From 120, - 'Long cooldown due to damage output.' | Changed due to it being an admin only mob.
 	loot = list(/obj/machinery/manned_turret/m2)
 
 /mob/living/simple_animal/hostile/supermutant/rangedmutant/heavy/death(gibbed)
