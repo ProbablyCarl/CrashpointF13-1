@@ -24,3 +24,13 @@
 	anchored = 1
 	layer = 2.1
 	resistance_flags = INDESTRUCTIBLE
+
+
+/obj/effect/decal/hooper_plaque
+	name = "commemorative plaque"
+	desc = "A plaque bearing the inscription:<br>'Once a joke, now a reality. Camp Hooper, hated by many.'"
+	icon = 'icons/fallout/objects/decals.dmi'
+	icon_state = "f_plaque"
+	anchored = 1
+	layer = 2.1
+	resistance_flags = INDESTRUCTIBLE

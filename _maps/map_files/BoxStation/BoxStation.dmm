@@ -446,6 +446,12 @@
 	icon_state = "wood1"
 	},
 /area/f13/legioncamp)
+"abA" = (
+/obj/effect/decal/hooper_plaque,
+/turf/open/floor/plasteel/f13{
+	icon_state = "dark"
+	},
+/area/f13/legioncamp)
 "abB" = (
 /obj/structure/chair/f13chair2,
 /obj/effect/landmark/start/f13/explorer,
@@ -639,6 +645,10 @@
 	icon_state = "dark"
 	},
 /area/f13/legioncamp)
+"ach" = (
+/obj/machinery/autolathe/hacked,
+/turf/open/floor/plasteel/f13,
+/area/f13/shopheep)
 "aci" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -2598,12 +2608,6 @@
 /obj/structure/barricade/wooden/planks/pregame,
 /turf/open/floor/wood/f13/old,
 /area/f13/klamat)
-"aii" = (
-/turf/open/floor/plating/f13/outside/road{
-	dir = 5;
-	icon_state = "outerpavementcorner"
-	},
-/area/f13/desert)
 "aij" = (
 /obj/structure/table/wood/settler,
 /turf/open/indestructible/ground/inside/mountain,
@@ -25832,10 +25836,6 @@
 	icon_state = "innermiddle"
 	},
 /area/f13/desert)
-"bvh" = (
-/obj/machinery/autolathe/constructionlathe,
-/turf/open/floor/plasteel/f13,
-/area/f13/shopheep)
 "bvi" = (
 /obj/machinery/light{
 	dir = 4;
@@ -122667,7 +122667,7 @@ bki
 aLm
 aQh
 buk
-bvh
+ach
 aLm
 bAi
 bDc
@@ -141808,7 +141808,7 @@ abz
 abz
 abs
 aeU
-aii
+aiV
 bzo
 bzo
 bzo
@@ -147037,6 +147037,16 @@ aMJ
 aam
 aag
 aag
+aip
+aeA
+aeA
+aib
+aag
+aag
+aip
+aeA
+aeA
+aib
 aag
 aag
 aag
@@ -147048,20 +147058,10 @@ aag
 aag
 aag
 aag
-aag
-aag
-aag
-aag
-aag
-aag
-aag
-aag
-aag
-aag
-aag
-aag
-aag
-aag
+aip
+aeA
+aeA
+aib
 aag
 aag
 aag
@@ -147439,10 +147439,10 @@ aMJ
 aam
 aag
 aag
-aip
-aeA
-aeA
-aib
+aim
+aav
+aav
+aiy
 aag
 abs
 acl
@@ -147828,7 +147828,7 @@ aav
 aav
 aam
 abp
-aMJ
+abA
 abv
 aam
 aMJ
