@@ -353,6 +353,11 @@
 		to_chat(src, "<span class='notice'>You don't need to take a piss.</span>")
 		return
 
+	if(istype(src, /mob/living/carbon/human))
+		var/mob/living/carbon/human/C = src
+		if(C.w_uniform != null)
+			SEND_SIGNAL(C, COMSIG_ADD_MOOD_EVENT, "piss", /datum/mood_event/nutrition/pissself)
+
 	var/object
 	for(var/L in loc.contents)
 		if(istype(loc, /turf) && object == null)
@@ -381,6 +386,11 @@
 	if(shit < 15)
 		to_chat(src, "<span class='notice'>You don't need to take a shit.</span>")
 		return
+
+	if(istype(src, /mob/living/carbon/human))
+		var/mob/living/carbon/human/C = src
+		if(C.w_uniform != null)
+			SEND_SIGNAL(C, COMSIG_ADD_MOOD_EVENT, "shit", /datum/mood_event/nutrition/shitself)
 
 	var/object
 	for(var/L in loc.contents)
