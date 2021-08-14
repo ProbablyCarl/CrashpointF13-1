@@ -153,7 +153,7 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("data/iconCache.sav")) //Cache of ic
 				var/list/row = src.connectionHistory[i]
 				if (!row || row.len < 3 || (!row["ckey"] || !row["compid"] || !row["ip"])) //Passed malformed history object
 					return
-				if (world.IsBanned(row["ckey"], row["compid"], row["ip"], real_bans_only=TRUE))
+				if (world.IsBanned(row["ckey"], row["ip"], row["compid"], real_bans_only=TRUE))//ripped this from the Cit downstream. No idea how we didn't catch this before.
 					found = row
 					break
 
@@ -217,7 +217,7 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("data/iconCache.sav")) //Cache of ic
 			var/datum/mind/M = I
 			if(M.current && M.current.client)
 				C = M.current.client
-			
+
 
 		if (!C)
 			continue

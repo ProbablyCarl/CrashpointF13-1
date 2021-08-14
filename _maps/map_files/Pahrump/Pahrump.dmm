@@ -13959,13 +13959,6 @@
 	},
 /turf/open/floor/f13/wood,
 /area/f13/village)
-"aMS" = (
-/mob/living/simple_animal/hostile/ghoul/reaver,
-/turf/open/indestructible/ground/outside/dirt{
-	dir = 10;
-	icon_state = "dirt"
-	},
-/area/f13/wasteland)
 "aMT" = (
 /obj/structure/fence,
 /turf/open/indestructible/ground/outside/dirt{
@@ -50528,7 +50521,7 @@ aKB
 aLP
 abr
 adT
-aMS
+anA
 aek
 aek
 aek
