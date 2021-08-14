@@ -175,7 +175,7 @@
 			return
 		R = target.reagents
 	amount = min(min(amount, src.total_volume), R.maximum_volume-R.total_volume)
-
+	/* retard
 	for (var/datum/reagent/current_reagent in src.reagent_list)
 		if(ishuman(target))
 			var/mob/living/carbon/human/H = target
@@ -191,7 +191,7 @@
 				H.water += amount * 1
 			else if(istype(current_reagent,/datum/reagent/water))
 				H.water += amount * 2
-
+	*/
 	var/part = amount / src.total_volume
 	var/trans_data = null
 	for(var/reagent in cached_reagents)

@@ -187,6 +187,20 @@
 	icon_state = "salt_pile"
 	gender = NEUTER
 
+/obj/effect/decal/cleanable/piss
+	name = "piss puddle"
+	desc = "A piss puddle. I sure do hope people don't piss everywhere."
+	icon = 'icons/effects/excrement.dmi'
+	icon_state = "piss"
+	gender = NEUTER
+
+/obj/effect/decal/cleanable/shit
+	name = "shit pile"
+	desc = "A pile of shit... Who the fuck?.. Why?.."
+	icon = 'icons/effects/excrement.dmi'
+	icon_state = "shit"
+	gender = NEUTER
+
 /obj/effect/decal/cleanable/glitter
 	name = "generic glitter pile"
 	desc = "The herpes of arts and crafts."
