@@ -11,6 +11,10 @@
 	verbs += /mob/living/proc/lay_down
 	verbs += /mob/living/proc/surrender
 
+	verbs += /mob/living/proc/piss
+	verbs += /mob/living/proc/shit
+
+
 	//initialize limbs first
 	create_bodyparts()
 

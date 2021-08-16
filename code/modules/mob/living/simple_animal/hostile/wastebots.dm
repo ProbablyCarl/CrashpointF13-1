@@ -25,7 +25,7 @@
 	del_on_death = 1
 	deathmessage = "blows apart!"
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three)
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 
 /mob/living/simple_animal/hostile/handy/Initialize()
 	. = ..()
@@ -50,7 +50,7 @@
 	retreat_distance = 2
 	minimum_distance = 2
 	check_friendly_fire = TRUE
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	speak_chance = 15
 	speak = list("You are about to be introduced to the U.S. army!", "You better run, you commie-loving bastard!", "Ready to die for your country, you commie son of a bitch?", "Since you don't seem willing to do the world a favor and kill yourself, I guess I'm going to have to do it for you.", "I'm just getting warmed up! Hoo-ah!", "Another glorious day in this man's army!")
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/three, /obj/item/stock_parts/cell/ammo/mfc)
@@ -69,7 +69,7 @@
 	projectiletype = /obj/item/projectile/plasma/repeater
 	retreat_distance = 2
 	minimum_distance = 4
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 
 /mob/living/simple_animal/hostile/handy/protectron
 	name = "protectron"
@@ -93,7 +93,7 @@
 	faction = list("wastebot", "enclave")
 	check_friendly_fire = TRUE
 	loot = list(/obj/effect/decal/cleanable/robot_debris, /obj/item/stack/crafting/electronicparts/five)
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	speak_chance = 15
 	speak = list("Engaging hostile target.", "Halt, lawbreaker! You are hereby sentenced to death for breaking curfew.", "Please put your hands in the air and prepare for disciplinary action.")
 
@@ -111,7 +111,7 @@
 	minimum_distance = 4//same as the gutsy
 	projectilesound = 'sound/weapons/laser.ogg'
 	projectiletype = /obj/item/projectile/beam/laser/pistol/wattz
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 
 /mob/living/simple_animal/pet/dog/protectron //Not an actual dog
 	name = "Trading Protectron"
@@ -146,7 +146,7 @@
 	melee_damage_upper = 72
 	extra_projectiles = 4 //5 projectiles
 	ranged_cooldown_time = 12 //brrrrrrrrrrrrt
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	ranged = TRUE
 	retreat_distance = 2
 	minimum_distance = 2
@@ -212,7 +212,7 @@
 	melee_damage_upper = 72
 	extra_projectiles = 5 //6 projectiles
 	ranged_cooldown_time = 24 //brrrrrrrrrrrrt
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	ranged = TRUE
 	retreat_distance = 6
 	minimum_distance = 4
@@ -255,7 +255,7 @@
 	speed = 0
 	melee_damage_lower = 55
 	melee_damage_upper = 60
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	attacktext = "grinds their claws on"
 //	projectilesound = 'sound/weapons/ionrifle.ogg'
 //	projectiletype = /obj/item/projectile/beam/laser/heavylaser//generic heavy for the moment
@@ -285,7 +285,7 @@
 	melee_damage_upper = 72//why would you even get close?
 	extra_projectiles = 0
 	ranged_cooldown_time = 12//big ol' 'fuck off' laser
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	ranged = TRUE
 	retreat_distance = 6
 	minimum_distance = 8

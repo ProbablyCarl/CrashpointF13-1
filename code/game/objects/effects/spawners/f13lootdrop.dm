@@ -584,13 +584,13 @@
 	lootcount = 3
 	var/loot1 = list(
 				/obj/item/gun/ballistic/revolver/single_shotgun,
-				/obj/item/storage/box/rubbershot/beanbag,
+				"",
 				""
 				)
 
 	var/loot2 = list(
 				/obj/item/gun/ballistic/revolver/caravan_shotgun,
-				/obj/item/storage/box/rubbershot/beanbag,
+				"",
 				""
 				)
 
@@ -933,8 +933,6 @@
 	loot = list(
 				/obj/item/ammo_box/magazine/m9mm,
 				/obj/item/storage/box/lethalshot,
-				/obj/item/storage/box/rubbershot,
-				/obj/item/storage/box/rubbershot/beanbag,
 				/obj/item/ammo_box/c38,
 				/obj/item/ammo_box/magazine/m10mm_adv,
 				/obj/item/ammo_box/magazine/m556/rifle/small

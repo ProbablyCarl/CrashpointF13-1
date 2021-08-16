@@ -153,7 +153,7 @@
 /datum/quirk/grenadesloot
 	name = "Scavenged Gear"
 	desc = "You recently went through an old ruin, and found an odd... grenade? Probably."
-	value = 3
+	value = 1
 	var/obj/item/heirloom ///SPAGETH CODE DON'T LEAVE TO REMOVE THE NAME.
 	var/where
 
@@ -162,13 +162,12 @@
 	var/obj/item/heirloom_type  ///DONT CHANGE HERILOOM STUFF FOR SOME REASON DONT WORK IF YOU REMOVE IT AAAAA.
 	switch(quirk_holder.mind.assigned_role)
 		if("Sentinel", "Centurion", "Sheriff", "NCR Captain", "Overseer")
-			heirloom_type = pick(/obj/item/grenade/flashbang, 200 ; /obj/item/grenade/smokebomb, 200 ; /obj/item/grenade/plastic)
+			heirloom_type = pick(/obj/item/grenade/syndieminibomb/concussion, 200 ; /obj/item/grenade/plastic/c4)
 		else
 			heirloom_type = pick(
-				300 ; /obj/item/grenade/smokebomb,
+				300 ; /obj/item/grenade/syndieminibomb/concussion,
 				200 ; /obj/item/grenade/empgrenade,
-				200 ; /obj/item/grenade/flashbang,
-				/obj/item/grenade/plastic)
+				/obj/item/grenade/plastic/c4)
 	heirloom = new heirloom_type(get_turf(quirk_holder)) //IF YOU CHANGE THIS FOR SOME REASON WILL NOT WORK.
 	var/list/slots = list(
 		"in your left pocket" = SLOT_L_STORE, //SPAWNS IN THE POCKETS

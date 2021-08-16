@@ -6,7 +6,7 @@
 	icon_living = "centaur"
 	icon_dead = "centaur_d"
 	mob_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	robust_searching = 1
 	turns_per_move = 5
 	speak_emote = list("growls")
@@ -25,8 +25,8 @@
 	attack_sound = 'sound/hallucinations/growl1.ogg'
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 20
-	robust_searching = 0
-	stat_attack = UNCONSCIOUS
+	robust_searching = 1
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	gold_core_spawnable = HOSTILE_SPAWN
 	faction = list("supermutant")
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/human/centaur = 3,

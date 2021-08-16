@@ -52,8 +52,8 @@ window "mainwindow"
 		type = MAIN
 		pos = 281,0
 		size = 640x440
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #4b5320
 		is-default = true
 		saved-params = "pos;size;is-minimized;is-maximized"
@@ -61,8 +61,6 @@ window "mainwindow"
 		icon = 'icons\\born.png'
 		macro = "default"
 		menu = "menu"
-		outer-size = 656x518
-		inner-size = 640x459
 	elem "split"
 		type = CHILD
 		pos = 3,0
@@ -89,7 +87,7 @@ window "mainwindow"
 		pos = 600,420
 		size = 40x20
 		anchor1 = 100,100
-		anchor2 = none
+		anchor2 = -1,-1
 		text-color = #ffffff
 		background-color = #4b5320
 		saved-params = "is-checked"
@@ -101,7 +99,7 @@ window "mainwindow"
 		pos = 520,420
 		size = 40x20
 		anchor1 = 100,100
-		anchor2 = none
+		anchor2 = -1,-1
 		text-color = #ffffff
 		background-color = #4b5320
 		saved-params = "is-checked"
@@ -113,7 +111,7 @@ window "mainwindow"
 		pos = 560,420
 		size = 40x20
 		anchor1 = 100,100
-		anchor2 = none
+		anchor2 = -1,-1
 		text-color = #ffffff
 		background-color = #4b5320
 		saved-params = "is-checked"
@@ -124,8 +122,8 @@ window "mainwindow"
 		type = BROWSER
 		pos = 0,0
 		size = 200x200
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #4b5320
 		is-visible = false
 		saved-params = ""
@@ -133,8 +131,8 @@ window "mainwindow"
 		type = BROWSER
 		pos = 0,0
 		size = 999x999
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #4b5320
 		is-visible = false
 		saved-params = ""
@@ -144,8 +142,8 @@ window "mapwindow"
 		type = MAIN
 		pos = 281,0
 		size = 640x480
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #4b5320
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
@@ -160,18 +158,20 @@ window "mapwindow"
 		is-default = true
 		saved-params = "icon-size"
 		zoom-mode = distort
-		style=".center { text-align: center; } .runechatdiv {background-color: #20202070}  .boldtext { font-weight: bold; } .black_outline { -dm-text-outline: 1px black } .maptext { font-family: 'JH_fallout'; font-size: 6px; color: white; line-height: 1.2; } .command_headset { font-weight: bold; font-size: 8px; } .small { font-size: 5px; } .very_small { font-size: 5px;} .big { font-size: 8px; } .reallybig { font-size: 8px; } .extremelybig { font-size: 8px; } .greentext { color: #00FF00; font-size: 7px; } .redtext { color: #FF0000; font-size: 7px; } .clown { color: #FF69Bf; font-size: 7px;  font-weight: bold; } .his_grace { color: #15D512; } .hypnophrase { color: #0d0d0d; font-weight: bold; } .yell { font-weight: bold; } .italics { font-size: 6px; font-style: italic; }"
+		style = ".center { text-align: center; } .runechatdiv {background-color: #20202070}  .boldtext { font-weight: bold; } .black_outline { -dm-text-outline: 1px black } .maptext { font-family: 'JH_fallout'; font-size: 6px; color: white; line-height: 1.2; } .command_headset { font-weight: bold; font-size: 8px; } .small { font-size: 5px; } .very_small { font-size: 5px;} .big { font-size: 8px; } .reallybig { font-size: 8px; } .extremelybig { font-size: 8px; } .greentext { color: #00FF00; font-size: 7px; } .redtext { color: #FF0000; font-size: 7px; } .clown { color: #FF69Bf; font-size: 7px;  font-weight: bold; } .his_grace { color: #15D512; } .hypnophrase { color: #0d0d0d; font-weight: bold; } .yell { font-weight: bold; } .italics { font-size: 6px; font-style: italic; }"
 
 window "infowindow"
 	elem "infowindow"
 		type = MAIN
 		pos = 281,0
 		size = 640x480
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #4b5320
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
+		outer-size = 656x538
+		inner-size = 640x499
 	elem "info"
 		type = CHILD
 		pos = 0,30
@@ -183,20 +183,9 @@ window "infowindow"
 		left = "statwindow"
 		right = "outputwindow"
 		is-vert = false
-	elem "changelog"
-		type = BUTTON
-		pos = 16,4
-		size = 104x20
-		anchor1 = 3,0
-		anchor2 = 19,0
-		text-color = #ffffff
-		background-color = #4b5320
-		saved-params = "is-checked"
-		text = "Changelog"
-		command = "changelog"
 	elem "rules"
 		type = BUTTON
-		pos = 120,4
+		pos = 8,4
 		size = 100x20
 		anchor1 = 19,0
 		anchor2 = 34,0
@@ -205,20 +194,20 @@ window "infowindow"
 		saved-params = "is-checked"
 		text = "Rules"
 		command = "rules"
-	elem "wiki"
+	elem "lore"
 		type = BUTTON
-		pos = 220,4
+		pos = 112,4
 		size = 100x20
 		anchor1 = 34,0
 		anchor2 = 50,0
 		text-color = #ffffff
 		background-color = #4b5320
 		saved-params = "is-checked"
-		text = "Wiki"
-		command = "wiki"
+		text = "Lore"
+		command = "lore"
 	elem "discord"
 		type = BUTTON
-		pos = 320,4
+		pos = 216,4
 		size = 100x20
 		anchor1 = 50,0
 		anchor2 = 66,0
@@ -229,7 +218,7 @@ window "infowindow"
 		command = "discord"
 	elem "github"
 		type = BUTTON
-		pos = 420,4
+		pos = 432,4
 		size = 100x20
 		anchor1 = 66,0
 		anchor2 = 81,0
@@ -240,7 +229,7 @@ window "infowindow"
 		command = "github"
 	elem "report-issue"
 		type = BUTTON
-		pos = 520,4
+		pos = 536,4
 		size = 100x20
 		anchor1 = 81,0
 		anchor2 = 97,0
@@ -255,8 +244,8 @@ window "outputwindow"
 		type = MAIN
 		pos = 281,0
 		size = 640x480
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #ffe1e2
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
@@ -265,6 +254,7 @@ window "outputwindow"
 		can-minimize = false
 		can-resize = false
 		is-pane = true
+		outer-size = 654x494
 	elem "browseroutput"
 		type = BROWSER
 		pos = 0,0
@@ -275,7 +265,6 @@ window "outputwindow"
 		is-visible = false
 		is-disabled = true
 		saved-params = ""
-		auto-format = false
 	elem "output"
 		type = OUTPUT
 		pos = 2,1
@@ -291,11 +280,13 @@ window "statwindow"
 		type = MAIN
 		pos = 281,0
 		size = 640x480
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = #4b5320
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
+		outer-size = 656x538
+		inner-size = 640x499
 	elem "stat"
 		type = INFO
 		pos = 0,0
