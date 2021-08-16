@@ -10,14 +10,14 @@
 	turns_per_move = 5
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/cazador_meat = 2,
 						/obj/item/stack/sheet/sinew = 2,
-						/obj/item/stack/sheet/animalhide/chitin = 3, 
+						/obj/item/stack/sheet/animalhide/chitin = 3,
 						/obj/item/reagent_containers/food/snacks/f13/venomgland = 1)
 	response_help = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm = "hits"
 	emote_taunt = list("buzzes")
 	emote_taunt_sound = 'sound/creatures/cazador_buzz.ogg'
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	robust_searching = 1
 	taunt_chance = 30
 	speed = 0
@@ -127,7 +127,7 @@
 	name = "Radscorpion venom"
 	id = "radscorpion_venom"
 	description = "A potent toxin resulting from Radscorpion stings that quickly kills if too much remains in the body."
-	color = "#801E28" 
+	color = "#801E28"
 	toxpwr = 1
 	taste_description = "pain"
 	taste_mult = 1.2

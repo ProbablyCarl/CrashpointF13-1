@@ -65,11 +65,11 @@
 
 /obj/item/ammo_casing/shotgun/magnumshot
 	name = "12 gauge magnum buckshot shell"
-	desc = "A 12 gauge magnum buckshot shell, holding a more powerful load than typical buckshot."
+	desc = "A 12 gauge magnum buckshot shell, holding far less projectiles in a tighter grouping, with a far larger diameter for each projectile."
 	icon_state = "magshell"
 	projectile_type = /obj/item/projectile/bullet/pellet/magnum_buckshot
-	pellets = 7
-	variance = 15
+	pellets = 3
+	variance = 8
 
 /obj/item/ammo_casing/shotgun/rubbershot
 	name = "12 gauge riot control shell"

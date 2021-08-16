@@ -39,6 +39,13 @@
 		if("View here")
 			src << browse('html/rules.html', "window=changes")
 
+/client/verb/lore()
+	set name = "lore"
+	set desc = "Show Server Lore."
+	set hidden = 1
+	switch(alert("Would you like to see the Lore?", null, "View here", "Cancel"))
+		if("View here")
+			src << browse('html/lore.html', "window=changes")
 
 /client/verb/github()
 	set name = "github"

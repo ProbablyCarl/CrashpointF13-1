@@ -6,7 +6,7 @@
 	icon_living = "feralghoul"
 	icon_dead = "feralghoul_dead"
 	mob_biotypes = list(MOB_ORGANIC, MOB_HUMANOID)
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	robust_searching = 1
 	turns_per_move = 5
 	speak_emote = list("growls")
@@ -22,8 +22,8 @@
 	attack_sound = 'sound/hallucinations/growl1.ogg'
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 20
-	robust_searching = 0
-	stat_attack = UNCONSCIOUS
+	robust_searching = 1
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	gold_core_spawnable = HOSTILE_SPAWN
 	faction = list("ghoul")
 	decompose = TRUE
@@ -31,6 +31,23 @@
 							/obj/item/stack/sheet/animalhide/human = 1,
 							/obj/item/stack/sheet/bone = 1)
 	loot = list(/obj/item/stack/f13Cash/random/bottle_cap/ghoul)
+
+	var/ghoul_noises = list('sound/f13npc/ghoul_alert.ogg','sound/f13npc/ghoul_charge1.ogg','sound/f13npc/ghoul_charge2.ogg','sound/f13npc/ghoul_charge3.ogg')
+
+/mob/living/simple_animal/hostile/ghoul/say(message, datum/language/language = null, var/list/spans = list(), language, sanitize, ignore_spam)
+	..()
+	if(stat)
+		return
+	var/chosen_sound = pick(ghoul_noises)
+	playsound(src, chosen_sound, 100, TRUE)
+
+/mob/living/simple_animal/hostile/ghoul/Life()
+	..()
+	if(stat)
+		return
+	if(prob(10))
+		var/chosen_sound = pick(ghoul_noises)
+		playsound(src, chosen_sound, 100, TRUE)
 
 /mob/living/simple_animal/hostile/ghoul/reaver
 	name = "feral ghoul reaver"
@@ -41,7 +58,7 @@
 	icon_dead = "ghoulreaver_dead"
 	speed = 1
 	a_intent = INTENT_HARM
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	maxHealth = 100
 	health = 100
 	harm_intent_damage = 6
@@ -94,7 +111,7 @@
 	maxHealth = 80
 	health = 80
 	speed = 1
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	harm_intent_damage = 10
 	melee_damage_lower = 20
 	melee_damage_upper = 20

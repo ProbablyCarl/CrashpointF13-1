@@ -68,7 +68,8 @@
 
 /obj/item/projectile/bullet/pellet/magnum_buckshot
 	name = "magnum buckshot pellet"
-	damage = 12
+	damage = 20//from 12
+	armour_penetration = 5
 
 /obj/item/projectile/bullet/pellet/shotgun_rubbershot
 	name = "rubbershot pellet"

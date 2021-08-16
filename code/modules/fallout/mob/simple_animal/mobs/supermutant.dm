@@ -11,7 +11,7 @@
 	speak = list("GRRRRRR!", "ARGH!", "NNNNNGH!", "HMPH!", "ARRRRR!")
 	speak_emote = list("shouts", "yells")
 	move_to_delay = 5
-	stat_attack = UNCONSCIOUS
+	stat_attack = UNCONSCIOUS || SOFT_CRIT
 	robust_searching = 1
 	environment_smash = ENVIRONMENT_SMASH_WALLS
 	turns_per_move = 5
