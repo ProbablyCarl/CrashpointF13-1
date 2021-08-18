@@ -165,7 +165,7 @@
 // deaf_message (optional) is what deaf people will see.
 // hearing_distance (optional) is the range, how many tiles away the message can be heard.
 
-/mob/audible_message(message, deaf_message, hearing_distance, self_message, no_ghosts = FALSE)
+/mob/audible_message(message, deaf_message, hearing_distance, self_message, no_ghosts = FALSE, audible_message_flags = NONE)
 	var/range = 7
 	if(hearing_distance)
 		range = hearing_distance
