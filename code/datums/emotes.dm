@@ -48,7 +48,11 @@
 		return
 
 	user.log_message(msg, INDIVIDUAL_EMOTE_LOG)
-	msg = msg
+
+	if(isanimal(user))
+		msg = "<b>[user]</b> " + msg
+	else
+		msg = msg
 
 	for(var/mob/M in GLOB.dead_mob_list)
 		if(!M.client || isnewplayer(M))
