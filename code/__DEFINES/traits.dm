@@ -70,6 +70,7 @@
 #define TRAIT_IRONFIST			"iron_fist"
 #define TRAIT_PSYCHO			"psycho"
 #define	TRAIT_LIFEGIVER			"lifegiver"
+#define	TRAIT_LIFEGIVER2		"lifegiver2"
 
 #define	TRAIT_CHEMWHIZ			"chemwhiz"
 #define TRAIT_TECHNOPHOBE		"luddite" //Cannot use autolathes/biogens

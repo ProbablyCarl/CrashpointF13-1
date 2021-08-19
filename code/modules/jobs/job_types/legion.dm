@@ -34,15 +34,12 @@
 	if(H.real_name == ("Biggus Dickus" || "Bigus Dickus"))
 		H.real_name = "Minimae Coles"
 		H.name = "Minimae Coles"
-//		H.lust_tolerance = 0
-//		H.sexual_potency = 0
-//		H.lust = 0
 
 /datum/outfit/job/CaesarsLegion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
-	H.add_trait(TRAIT_TECHNOPHOBE, TRAIT_GENERIC)
+	H.add_trait(TRAIT_TECHNOPHOBE, TRAIT_LEGIONBOIS, TRAIT_HARD_YARDS, TRAIT_GENERIC)
 
 /*
 Legate
@@ -116,7 +113,7 @@ Centurion
 
 /datum/job/CaesarsLegion/Legionnaire/f13centurion/after_spawn(mob/living/carbon/human/H, mob/M)
 	H.add_quirk("Hard Yards")
-	H.add_quirk("Lifegiver")
+	H.add_quirk("Lifegiver2")
 	H.add_quirk("Iron Fist")
 	H.add_quirk("Big Leagues")
 	if(H.age < cent_age)
@@ -207,8 +204,8 @@ Priestess of Mars
 	title = "Priestess of Mars"
 	flag = F13PRIESTESS
 	faction = "Legion"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 2
+	spawn_positions = 2
 	description = "You are a spiritual and logistics advisor for the Legion forces in the area. Being raised in and from the homeland, you have fully adapted to the Legion's ideals and fully committed yourself to the role as mother and caretaker of the Legion's future. You are an icon to be respected, even by fellow Legion; and although a woman, your status does not allow you to be belittled."
 	supervisors = "the Centurion, Mars"
 	exp_requirements = 800
@@ -254,8 +251,8 @@ Decanus
 	title = "Veteran Decanus"
 	flag = F13DECAN
 	faction = "Legion"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	description = "You answer directly to the Centurion, working with them to organize the Legionaries. You lead the Legionaries, and Vexillari on patrols, raids and scouting missions on behalf of your Centurion."
 	supervisors = "the Centurion and up"
 	exp_requirements = 360
@@ -294,8 +291,8 @@ Prime Decanus
 	title = "Prime Decanus"
 	flag = F13PRIMEDECAN
 	faction = "Legion"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 4
+	spawn_positions = 4
 	description = "You answer directly to the Veteran Decanus, who answers to the Centurion, working with them to organize the Legionaries."
 	supervisors = "the Veteran Decanus and up"
 	exp_requirements = 310
@@ -332,8 +329,8 @@ Vexillarius
 	title = "Legion Vexillarius"
 	flag = F13VEXILLARIUS
 	faction = "Legion"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	description = "You answer directly to the Decani and the Centurion, acting as a standard bearer for your squad. You raise troop morale, relay orders from the Decanii and the Centurion, and rally men when ordered, however, you hold no actual authority over the troops and should instead only relay orders from your superiors."
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 240
@@ -392,8 +389,8 @@ datum/job/CaesarsLegion/Legionnaire/f13slavemaster
 	title = "Legion Slavemaster"
 	flag = F13SLAVEMASTER
 	faction = "Legion"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the feared and respected disciplinary corps of the Legion. Acting as both master of the Slaves and de-facto executioner of the Centurion's will within his ranks, you are a faceless and undoubtedly cruel torturer... but be careful to not let your hubris and malice lead to a strikeback from those you thought broken."
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 240
@@ -429,8 +426,8 @@ Veteran Legionary
 	title = "Veteran Legionary"
 	flag = F13VETLEGIONARY
 	faction = "Legion"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 6
+	spawn_positions = 6
 	description = "You answer to the Decani and the Centurion, as well as the Auxilia when in your camp. Acting as a loyal soldier of the Centuria, you have the great honour of serving under Caesar in his quest to unite the scattered tribes of The Mojave. You are a hardened warrior, and have been waging war with the Legion for many years."
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 310
@@ -491,8 +488,8 @@ Prime Legionairy
 	title = "Legionnaire"
 	flag = F13LEGIONARY
 	faction = "Legion"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 20
+	spawn_positions = 20
 	description = "You answer to the Decani and the Centurion. Acting as a loyal soldier of the Legion, you're not expected to do anything but follow orders."
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 210
@@ -542,8 +539,8 @@ Recruit Legionary
 	title = "Recruit Legionary"
 	flag = F13RECRUITLEG
 	faction = "Legion"
-	total_positions = 12
-	spawn_positions = 12
+	total_positions = 0
+	spawn_positions = 0
 	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion."
 	supervisors = "the Decani and Centurion"
 
@@ -572,8 +569,8 @@ Explorer
 	title = "Legion Explorer"
 	flag = F13EXPLORER
 	faction = "Legion"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "Acting as the eyes and ears of the Legion, you are in the region to scout it out for potential conquest. Make note of your surroundings and above all, survive to report back."
 	supervisors = "the Decani and Centurion"
 	exp_requirements = 210
@@ -687,8 +684,8 @@ Auxilia
 	title = "Camp Follower"
 	flag = F13CAMPFOLLOWER
 	faction = "Legion"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 0
+	spawn_positions = 0
 	description = "You answer to any member of the Legion. Working as a Camp Follower for the Centuria, you bear the great honor of supporting Caesar's Army in its conquest of the Mojave in whatever capacity required from those whom you serve. You perform any tasks required of you, for you know how to serve the Legion well."
 	supervisors = "the entire legion"
 
@@ -743,3 +740,26 @@ Auxilia
 	else if (follower_job == "caretaker")
 		backpack = /obj/item/storage/backpack/satchel/explorer
 		backpack_contents = list(/obj/item/soap/homemade, /obj/item/melee/flyswatter, /obj/item/reagent_containers/glass/rag, /obj/item/reagent_containers/glass/bucket, /obj/item/stack/medical/gauze/improvised)
+
+
+/////////
+// F13ARMICUSTOS
+/////////
+/datum/job/CaesarsLegion/f13armicustos
+	title = "Armicustos"
+	flag = F13ARMICUSTOS
+	faction = "Legion"
+	total_positions = 1
+	spawn_positions = 1
+	description = "You answer to the Centurion. You're exclusively in charge of the Legion's armory, and shouldn't leave it unattended if possible."
+	supervisors = "the Centurion"
+
+	outfit = /datum/outfit/job/CaesarsLegion/f13armicustos
+
+/datum/outfit/job/CaesarsLegion/f13armicustos
+	name = "Armicustos"
+	jobtype = /datum/outfit/job/CaesarsLegion/f13armicustos
+	shoes = /obj/item/clothing/shoes/sandal
+	r_hand = /obj/item/flashlight/flare/torch
+	uniform = 		/obj/item/clothing/under/f13/legskirt
+	id =			/obj/item/card/id/dogtag/legfollower
