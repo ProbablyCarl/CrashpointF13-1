@@ -110,6 +110,19 @@
 	mob_tar.maxHealth += 15
 	mob_tar.health += 15
 
+/datum/quirk/lifegiver_cent
+	name = "Lifegiver2"
+	desc = "You embody wellness! Instantly gain +50 maximum Health"
+	value = 3
+	mob_trait = TRAIT_LIFEGIVER2
+	gain_text = "<span class='notice'>You feel far healthy than usual.</span>"
+	lose_text = "<span class='danger'>You feel far healthy than usual.</span>"
+
+/datum/quirk/lifegiver_cent/on_spawn()
+	var/mob/living/carbon/human/mob_tar = quirk_holder
+	mob_tar.maxHealth += 50
+	mob_tar.health += 50
+
 /datum/quirk/light_step
 	name = "Light Step"
 	desc = "You walk with a gentle step, making stepping on sharp objects quieter and less painful."

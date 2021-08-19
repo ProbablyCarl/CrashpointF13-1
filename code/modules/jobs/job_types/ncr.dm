@@ -19,6 +19,7 @@
 /*
 Colonel
 */
+
 /datum/job/ncr/f13colonel
 	title = "NCR Colonel"
 	flag = F13COLONEL
@@ -277,8 +278,8 @@ Corporal
 	title = "NCR Specialist"
 	flag = F13SPECIALIST
 	faction = "NCR"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	description = "You are an experienced enlisted soldier with a high degree of skill in a particular area. You work closely with your squad, taking orders from your Sergeant to achieve the NCR's goals."
 	supervisors = "Sergeants and above"
 	selection_color = "#fff5cc"
@@ -355,8 +356,8 @@ NCR Heavy Trooper
 	title = "NCR Heavy Trooper"
 	flag = F13NCRHT
 	faction = "NCR"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are a Sergeant who has been selected for the special duty of Heavy Trooper. You are exceptionally physically fit, being conditioned to wear the many, many pounds of salvaged power armor; and trained with heavy weaponry. You are the poster-child of the NCR Embassy, and should act accordingly."
 	supervisors = "the officers"
 	selection_color = "#fff5cc"
@@ -440,6 +441,43 @@ NCR Military Police
 		/obj/item/clothing/accessory/armband/mp=1,
 		)
 
+
+/*
+NCR Corpsman
+*/
+/datum/job/ncr/f13ncrcorpsman
+	title = "NCR Corpsman"
+	flag = F13CORPSMAN
+	faction = "NCR"
+	total_positions = 2
+	spawn_positions = 2
+	description = "You are the equivalent of an NCR Combat Medic, for your assigned Squad. Try not to die, while stopping others from suffering such a fate."
+	supervisors = "Sergeants and above"
+	selection_color = "#fff5cc"
+	exp_requirements = 240
+
+	outfit = /datum/outfit/job/ncr/f13ncrcorpsman
+
+/datum/outfit/job/ncr/f13ncrcorpsman
+	name = "NCR Corpsman"
+	jobtype = /datum/job/ncr/f13ncrcorpsman
+	id = 			/obj/item/card/id/dogtag/ncrmp
+	uniform =  		/obj/item/clothing/under/f13/ncr
+	accessory =     /obj/item/clothing/accessory/ncr/SSGT
+	head = 			/obj/item/clothing/head/f13/ncr/goggles
+	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
+	r_hand = 		/obj/item/melee/classic_baton/telescopic
+	l_hand = 		/obj/item/shield/riot/tele
+	belt =          /obj/item/storage/belt/grenade/ncr/mp
+	r_pocket =		/obj/item/restraints/handcuffs
+	glasses = 		/obj/item/clothing/glasses/sunglasses/big
+	backpack_contents = list(
+		/obj/item/kitchen/knife/combat=1, \
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
+		/obj/item/storage/bag/money/small/ncrenlisted, \
+		/obj/item/clothing/accessory/armband/mp=1,
+		)
+
 /*
 Trooper
 */
@@ -447,8 +485,8 @@ Trooper
 	title = "NCR Trooper"
 	flag = F13TROOPER
 	faction = "NCR"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 6
+	spawn_positions = 6
 	description = "You answer to everyone above you in the chain of command, taking orders from your Sergeant directly and obeying all commands given by officers such as the Lieutenant and Captain."
 	supervisors = "Corporals and above"
 	selection_color = "#fff5cc"
@@ -531,8 +569,8 @@ Veteran Ranger
 	title = "NCR Veteran Ranger"
 	flag = F13VETRANGER
 	faction = "NCR"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	description = "You answer directly to the Captain, working either independently or in a team to complete your mission objectives however required, operating either alone, in a squad or with the NCR Army. As a Veteran Ranger you work closely with the Captain in planning special operations with your team while also carrying out those orders in the field by any means necessary."
 	supervisors = "Captain and above"
 	selection_color = "#ffeeaa"
@@ -603,8 +641,8 @@ Ranger
 	title = "NCR Ranger"
 	flag = F13RANGER
 	faction = "NCR"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "As a Ranger, you perform reconnaissance, seize or destroy assets, and capture or recover designated targets in service to the Republic. Your reason for being sent here is to find and exploit local assets within the Region in order to prepare the area for the Republic's eventual arrival."
 	supervisors = "Ranger Command, and the Veteran Ranger"
 	selection_color = "#fff5cc"

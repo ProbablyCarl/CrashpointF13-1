@@ -60,6 +60,7 @@
 #define F13RECRUIT		(1<<9)
 #define F13VETRANGER	(1<<10)
 #define F13RANGER		(1<<11)
+#define F13CORPSMAN		(1<<12)
 
 #define LEGION			(1<<4)
 
@@ -78,6 +79,7 @@
 #define F13SLAVEMASTER	(1<<12)
 #define F13CAMPFOLLOWER	(1<<13)
 #define F13PRIMEDECAN	(1<<14)
+#define F13ARMICUSTOS	(1<<15)
 
 #define BOS				(1<<5)
 
