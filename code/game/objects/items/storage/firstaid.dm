@@ -139,7 +139,7 @@
 
 /obj/item/storage/firstaid/tactical
 	name = "combat medical kit"
-	desc = "I hope you've got insurance."
+	desc = "Everything a combat-medic will ever need!"
 	icon_state = "bezerk"
 
 /obj/item/storage/firstaid/tactical/ComponentInitialize()

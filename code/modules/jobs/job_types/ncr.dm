@@ -313,15 +313,15 @@ Corporal
 
 
 /datum/outfit/loadout/specmedic
-	name = "Field Medic"
+	name = "Combat Surgeon"
 	glasses = /obj/item/clothing/glasses/hud/health
 	head = 	/obj/item/clothing/head/f13/ncr/medic
 	backpack_contents = list(
 		/obj/item/clothing/accessory/armband/medblue=1,
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=3,
 		/obj/item/book/granter/trait/chemistry=1,
-		/obj/item/storage/pill_bottle/mining=1,
-		/obj/item/storage/firstaid/regular=1,
+		/obj/item/storage/pill_bottle/mannitol=1,
+		/obj/item/storage/firstaid/tactical=1,
 		)
 
 /datum/outfit/loadout/specsapper
@@ -463,20 +463,19 @@ NCR Corpsman
 	jobtype = /datum/job/ncr/f13ncrcorpsman
 	id = 			/obj/item/card/id/dogtag/ncrmp
 	uniform =  		/obj/item/clothing/under/f13/ncr
-	accessory =     /obj/item/clothing/accessory/ncr/SSGT
-	head = 			/obj/item/clothing/head/f13/ncr/goggles
+	accessory =     /obj/item/clothing/accessory/armband/medblue
+	head = 			/obj/item/clothing/head/f13/ncr/medic
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
-	r_hand = 		/obj/item/melee/classic_baton/telescopic
-	l_hand = 		/obj/item/shield/riot/tele
+	l_hand = 		/obj/item/gun/ballistic/automatic/greasegun
 	belt =          /obj/item/storage/belt/grenade/ncr/mp
 	r_pocket =		/obj/item/restraints/handcuffs
 	glasses = 		/obj/item/clothing/glasses/sunglasses/big
 	backpack_contents = list(
-		/obj/item/kitchen/knife/combat=1, \
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=1, \
-		/obj/item/storage/bag/money/small/ncrenlisted, \
-		/obj/item/clothing/accessory/armband/mp=1,
-		)
+		/obj/item/reagent_containers/hypospray/medipen/stimpak=3,
+		/obj/item/book/granter/trait/chemistry=1,
+		/obj/item/storage/pill_bottle/mining=1,
+		/obj/item/storage/firstaid/regular=1,
+		/obj/item/ammo_box/magazine/m9mm=3,)
 
 /*
 Trooper
@@ -516,14 +515,14 @@ Trooper
 		/obj/item/clothing/mask/ncr_facewrap)
 
 /datum/outfit/loadout/trooperfrontline
-	name = "Grenadier"
-	suit_store = 	/obj/item/gun/ballistic/automatic/pistol/ninemil
+	name = "Grenadier Trooper"
+	suit_store = 	/obj/item/gun/ballistic/shotgun/remington
 	belt = /obj/item/storage/belt/grenade/ncr/trooper
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m9mm=2)
+		/obj/item/ammo_box/a762=5)
 
 /datum/outfit/loadout/trooperranged
-	name = "Ranged Trooper"
+	name = "Hardened Trooper"
 	suit_store = 	/obj/item/gun/ballistic/automatic/marksman/servicerifle
 	backpack_contents = list(
 		/obj/item/ammo_box/magazine/m556/rifle=3)

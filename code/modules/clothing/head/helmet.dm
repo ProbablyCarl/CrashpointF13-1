@@ -566,8 +566,8 @@
 	armor = list("melee" = 60, "bullet" = 50, "laser" = 30, "energy" = 15, "bomb" = 25, "bio" = 50, "rad" = 20, "fire" = 70, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/legion/libritor
-	name = "legion libritor helmet"
-	desc = "A metal legion veteran helmet with an inverted color scheme for libritors"
+	name = "legion metal helmet"
+	desc = "A metal legion veteran helmet with an inverted color scheme. It's incredibly durable despite it's crude construction."
 	icon_state = "legheavy"
 	item_state = "legheavy"
 	armor = list("melee" = 80, "bullet" = 50, "laser" = 30, "energy" = 25, "bomb" = 25, "bio" = 60, "rad" = 20, "fire" = 80, "acid" = 0)

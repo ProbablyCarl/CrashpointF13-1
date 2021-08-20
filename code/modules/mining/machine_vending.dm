@@ -1,8 +1,8 @@
 /**********************Mining Equipment Vendor**************************/
 
 /obj/machinery/mineral/equipment_vendor
-	name = "mining equipment vendor"
-	desc = "An equipment vendor for miners, points collected at an ore redemption machine can be spent here."
+	name = "Legion Caravan Request"
+	desc = "A bookkeeping device used to create orders and requests for the Legion supply caravans. It accepts NCR dogtags as proof of the kill!"
 	icon = 'icons/obj/machines/mining_machines.dmi'
 	icon_state = "mining"
 	density = TRUE
@@ -66,7 +66,7 @@
 	var/dat
 	dat +="<div class='statusDisplay'>"
 	if(istype(inserted_id))
-		dat += "You have [inserted_id.mining_points] mining points collected. <A href='?src=[REF(src)];choice=eject'>Eject ID.</A><br>"
+		dat += "You have [inserted_id.mining_points] requesition collected. <A href='?src=[REF(src)];choice=eject'>Eject ID.</A><br>"
 	else
 		dat += "No ID inserted.  <A href='?src=[REF(src)];choice=insert'>Insert ID.</A><br>"
 	dat += "</div>"
