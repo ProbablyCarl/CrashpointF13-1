@@ -288,7 +288,7 @@ Corporal
 	outfit = /datum/outfit/job/ncr/f13specialist
 
 	loadout_options = list(
-	/datum/outfit/loadout/specmedic, //Medkit, medHUD, patches
+//	/datum/outfit/loadout/specmedic, //Medkit, medHUD, patches
 	/datum/outfit/loadout/specsapper, //C4, toolbelt, welding goggles
 	/datum/outfit/loadout/specscout //Scoped hunting rifle, binoculars
 	)
@@ -412,8 +412,8 @@ NCR Military Police
 	title = "NCR Military Police"
 	flag = F13NCRMP
 	faction = "NCR"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	description = "You are the primary enforcers of NCR law within the ranks of the local embassy. You are technically exempt from the standard chain of command, answering only to High-Command, and specifically, the NCR Office of Special Investigations (NCROSI). You are NOT to engage in direct combat with the enemy unless truly nessecary, but instead enforce laws and regulations within the NCR's control."
 	supervisors = "NCROSI"
 	selection_color = "#fff5cc"
@@ -461,21 +461,18 @@ NCR Corpsman
 /datum/outfit/job/ncr/f13ncrcorpsman
 	name = "NCR Corpsman"
 	jobtype = /datum/job/ncr/f13ncrcorpsman
-	id = 			/obj/item/card/id/dogtag/ncrmp
+	id = 			/obj/item/card/id/dogtag/ncrtrooper
 	uniform =  		/obj/item/clothing/under/f13/ncr
 	accessory =     /obj/item/clothing/accessory/armband/medblue
 	head = 			/obj/item/clothing/head/f13/ncr/medic
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
-	l_hand = 		/obj/item/gun/ballistic/automatic/greasegun
-	belt =          /obj/item/storage/belt/grenade/ncr/mp
-	r_pocket =		/obj/item/restraints/handcuffs
-	glasses = 		/obj/item/clothing/glasses/sunglasses/big
+	suit_store = 	/obj/item/gun/ballistic/automatic/greasegun
+	belt = /obj/item/defibrillator/compact/loaded
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=3,
-		/obj/item/book/granter/trait/chemistry=1,
-		/obj/item/storage/pill_bottle/mining=1,
 		/obj/item/storage/firstaid/regular=1,
-		/obj/item/ammo_box/magazine/m9mm=3,)
+		/obj/item/storage/pill_bottle/epinephrine=1,
+		/obj/item/ammo_box/magazine/greasegun =1,)
 
 /*
 Trooper
