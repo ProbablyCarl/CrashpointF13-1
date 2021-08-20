@@ -2663,6 +2663,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
+"ahA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/f13/armicustos,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "ahB" = (
 /obj/structure/chair{
 	dir = 4
@@ -3770,6 +3775,7 @@
 /area/f13/ncr)
 "akL" = (
 /obj/structure/chair/stool/f13stool,
+/obj/effect/landmark/start/f13/ncrspecialist,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain2";
 	tag = "icon-horizontaloutermain2"
@@ -4396,6 +4402,7 @@
 	name = "garage shutters";
 	pixel_y = -24
 	},
+/obj/effect/landmark/start/f13/ncrspecialist,
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermain2";
 	tag = "icon-horizontaloutermain2"
@@ -4927,6 +4934,13 @@
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/f13/wood,
 /area/f13/shopheep)
+"anT" = (
+/obj/effect/landmark/start/f13/ncrcorpsman,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaloutermain2";
+	tag = "icon-horizontaloutermain2"
+	},
+/area/f13/ncr)
 "anU" = (
 /obj/machinery/light{
 	dir = 1;
@@ -5076,6 +5090,13 @@
 	tag = "icon-rubblecorner (EAST)"
 	},
 /area/f13/ruins)
+"aop" = (
+/obj/effect/landmark/start/f13/ncrcorpsman,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "verticaloutermaintop";
+	tag = "icon-verticaloutermaintop"
+	},
+/area/f13/ncr)
 "aoq" = (
 /turf/open/indestructible/ground/outside/ruins{
 	icon_state = "rubblecorner";
@@ -5319,6 +5340,13 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"apb" = (
+/obj/effect/landmark/start/f13/ncrspecialist,
+/turf/open/indestructible/ground/outside/sidewalk{
+	icon_state = "horizontaloutermain2";
+	tag = "icon-horizontaloutermain2"
+	},
+/area/f13/ncr)
 "apc" = (
 /obj/structure/bed/mattress/pregame,
 /obj/effect/decal/cleanable/oil,
@@ -5464,6 +5492,10 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/f13/ncr)
+"apy" = (
+/obj/effect/landmark/start/f13/armicustos,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "apz" = (
 /obj/structure/chair{
 	dir = 4;
@@ -5559,6 +5591,20 @@
 	tag = "icon-horizontalinnermain1"
 	},
 /area/f13/wasteland)
+"apO" = (
+/obj/structure/rack,
+/obj/item/ammo_box/tube/a357,
+/obj/item/ammo_box/tube/a357,
+/obj/item/ammo_box/tube/a357,
+/obj/item/ammo_box/a762,
+/obj/item/ammo_box/a762,
+/obj/item/ammo_box/a762,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/turf/open/floor/f13/wood,
+/area/f13/legion)
 "apP" = (
 /obj/structure/closet/crate/medical,
 /turf/open/indestructible/ground/outside/road{
@@ -5570,13 +5616,6 @@
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "verticalleftborderleftbottom";
 	tag = "icon-verticalleftborderleftbottom"
-	},
-/area/f13/ncr)
-"apR" = (
-/obj/effect/landmark/start/f13/ncrspecialist,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaloutermain2";
-	tag = "icon-horizontaloutermain2"
 	},
 /area/f13/ncr)
 "apS" = (
@@ -5739,13 +5778,6 @@
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "horizontalinnermain2";
 	tag = "icon-horizontalinnermain2"
-	},
-/area/f13/ncr)
-"aqs" = (
-/obj/effect/landmark/start/f13/ncrspecialist,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "verticaloutermaintop";
-	tag = "icon-verticaloutermaintop"
 	},
 /area/f13/ncr)
 "aqt" = (
@@ -26455,21 +26487,6 @@
 /obj/item/ammo_box/c10mm,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
-"bwZ" = (
-/obj/structure/rack,
-/obj/item/ammo_box/tube/a357,
-/obj/item/ammo_box/tube/a357,
-/obj/item/ammo_box/tube/a357,
-/obj/item/ammo_box/a762,
-/obj/item/ammo_box/a762,
-/obj/item/ammo_box/a762,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/effect/spawner/lootdrop/f13/cash_legion_low,
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "bxa" = (
 /obj/structure/table/wood/settler,
 /obj/item/seeds/watermelon,
@@ -45567,7 +45584,7 @@ afS
 afS
 afs
 afs
-afs
+apb
 amG
 acZ
 acZ
@@ -46091,7 +46108,7 @@ acZ
 ayu
 apx
 apQ
-aqs
+aop
 aqR
 apT
 aqv
@@ -46347,7 +46364,7 @@ ayu
 aNu
 aNu
 aox
-apR
+anT
 aqt
 aqS
 apT
@@ -97180,7 +97197,7 @@ bnV
 bsO
 bwn
 bnV
-bnV
+apy
 brJ
 bnV
 bye
@@ -97951,7 +97968,7 @@ bnV
 bvP
 bnV
 brJ
-brJ
+ahA
 bnV
 bnV
 bsO
@@ -98722,7 +98739,7 @@ brJ
 bvP
 bnV
 brJ
-bwZ
+apO
 bnV
 bxH
 bsO
