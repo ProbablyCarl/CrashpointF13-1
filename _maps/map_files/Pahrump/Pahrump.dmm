@@ -5019,14 +5019,13 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "aof" = (
-/obj/structure/decoration/rag{
-	icon_state = "flag_ncr";
-	name = "NCR banner";
-	pixel_x = -32;
-	tag = "icon-flag_ncr"
+/obj/structure/table/wood/settler,
+/obj/machinery/button/door{
+	id = "ncr_main_gate";
+	pixel_y = 24
 	},
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/turf/open/floor/f13/wood,
+/area/f13/ncr)
 "aog" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "outermaincornerouter";
@@ -5206,10 +5205,11 @@
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "aoH" = (
-/obj/structure/simple_door/wood,
-/obj/structure/barricade/wooden/planks/pregame,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/caves)
+/obj/machinery/door/poddoor/gate{
+	id = "legion_gatehouse"
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/legion)
 "aoI" = (
 /obj/structure/table/wood,
 /obj/item/paper,
@@ -5618,6 +5618,13 @@
 	tag = "icon-verticalleftborderleftbottom"
 	},
 /area/f13/ncr)
+"apR" = (
+/obj/structure/table/glass,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2";
+	tag = "icon-housewood2"
+	},
+/area/f13/building)
 "apS" = (
 /turf/closed/wall/f13/store{
 	icon_state = "store6"
@@ -5675,6 +5682,14 @@
 	tag = "icon-verticalinnermain2"
 	},
 /area/f13/wasteland)
+"aqc" = (
+/obj/structure/table/glass,
+/obj/machinery/distillapparatus,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2";
+	tag = "icon-housewood2"
+	},
+/area/f13/building)
 "aqd" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "outerpavementcorner";
@@ -5780,6 +5795,17 @@
 	tag = "icon-horizontalinnermain2"
 	},
 /area/f13/ncr)
+"aqs" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/distillapparatus,
+/obj/structure/table/glass,
+/turf/open/floor/f13{
+	icon_state = "floorrusty";
+	tag = "icon-floorrusty"
+	},
+/area/f13/city)
 "aqt" = (
 /obj/structure/table/wood/settler,
 /obj/item/screwdriver,
@@ -5858,6 +5884,14 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/random_high,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"aqH" = (
+/obj/machinery/door/poddoor/gate{
+	id = "ncr_main_gate"
+	},
+/turf/open/floor/plating/f13/outside/road{
+	icon_state = "innermiddle"
+	},
+/area/f13/ncr)
 "aqI" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/indestructible/ground/inside/mountain,
@@ -6077,6 +6111,12 @@
 	tag = "icon-outermaincornerouter (EAST)"
 	},
 /area/f13/wasteland)
+"arp" = (
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "hole";
+	tag = "icon-hole"
+	},
+/area/f13/ncr)
 "arq" = (
 /mob/living/simple_animal/hostile/ghoul,
 /turf/open/indestructible/ground/outside/ruins,
@@ -6248,26 +6288,18 @@
 	},
 /area/f13/wasteland)
 "arQ" = (
-/obj/structure/fence{
-	dir = 4;
-	tag = "icon-metal_fence3"
+/turf/open/indestructible/ground/outside/road{
+	icon_state = "verticalrightborderleft0";
+	tag = "icon-verticalrightborderleft0"
 	},
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 1;
-	icon_state = "horizontaloutermain1";
-	tag = "icon-horizontaloutermain1 (NORTH)"
-	},
-/area/f13/wasteland)
+/area/f13/ncr)
 "arR" = (
-/obj/structure/fence{
-	dir = 4;
-	tag = "icon-metal_fence3"
+/obj/structure/window/fulltile/wood_window,
+/obj/structure/barricade/bars,
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorgrime"
 	},
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaloutermain2";
-	tag = "icon-horizontaloutermain2"
-	},
-/area/f13/wasteland)
+/area/f13/ncr)
 "arS" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	icon_state = "horizontaloutermainleft";
@@ -6345,13 +6377,8 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "ase" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/indestructible/ground/outside/sidewalk{
-	dir = 1;
-	icon_state = "horizontaloutermain1";
-	tag = "icon-horizontaloutermain1 (NORTH)"
-	},
-/area/f13/ncr)
+/turf/closed/wall/f13/ruins,
+/area/f13/legion)
 "asf" = (
 /turf/open/indestructible/ground/outside/sidewalk{
 	dir = 8;
@@ -6554,12 +6581,13 @@
 /turf/open/floor/f13/wood,
 /area/f13/ncr)
 "asI" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/indestructible/ground/outside/sidewalk{
-	icon_state = "horizontaloutermain2";
-	tag = "icon-horizontaloutermain2"
+/obj/structure/window/fulltile/house{
+	icon_state = "storewindowhorizontal";
+	tag = "icon-storewindowhorizontal (NORTHEAST)"
 	},
-/area/f13/ncr)
+/obj/structure/barricade/wooden/planks/pregame,
+/turf/open/indestructible/ground/outside/sidewalk,
+/area/f13/legion)
 "asJ" = (
 /obj/structure/car/rubbish3,
 /turf/open/indestructible/ground/outside/road{
@@ -6644,6 +6672,10 @@
 "asW" = (
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/ruins)
+"asX" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/legion)
 "asY" = (
 /obj/effect/decal/cleanable/blood/gibs/down{
 	icon_state = "gibleg";
@@ -6851,6 +6883,10 @@
 	tag = "icon-verticaloutermain2"
 	},
 /area/f13/wasteland)
+"atx" = (
+/obj/structure/barricade/wooden,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/legion)
 "aty" = (
 /obj/structure/rack,
 /obj/effect/decal/cleanable/cobweb,
@@ -6867,6 +6903,13 @@
 	tag = "icon-floorrusty"
 	},
 /area/f13/building)
+"atA" = (
+/obj/machinery/button/door{
+	id = "legion_gatehouse";
+	pixel_y = 24
+	},
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/legion)
 "atB" = (
 /obj/item/storage/box/drinkingglasses,
 /turf/open/floor/f13/wood,
@@ -6915,6 +6958,13 @@
 "atI" = (
 /turf/closed/wall/f13/wood/interior,
 /area/f13/building)
+"atJ" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 8;
+	icon_state = "dirt";
+	tag = "icon-dirt (WEST)"
+	},
+/area/f13/legion)
 "atK" = (
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/blood/old,
@@ -7017,6 +7067,13 @@
 	tag = "icon-housewood2"
 	},
 /area/f13/building)
+"atZ" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 10;
+	icon_state = "dirt";
+	tag = "icon-dirt (SOUTHWEST)"
+	},
+/area/f13/legion)
 "aua" = (
 /obj/structure/closet/cabinet,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
@@ -7515,6 +7572,16 @@
 	tag = "icon-floorrusty"
 	},
 /area/f13/building)
+"avr" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 8;
+	icon_state = "dirtcorner";
+	tag = "icon-dirtcorner (WEST)"
+	},
+/area/f13/legion)
 "avs" = (
 /obj/machinery/vending/nukacolavend,
 /turf/open/floor/f13{
@@ -7713,6 +7780,12 @@
 	tag = "icon-floorrusty"
 	},
 /area/f13/building)
+"avQ" = (
+/turf/open/indestructible/ground/outside/dirt{
+	dir = 8;
+	icon_state = "dirtcorner"
+	},
+/area/f13/legion)
 "avR" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/f13{
@@ -7827,6 +7900,17 @@
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"awe" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/machinery/door/poddoor/shutters{
+	id = "outerkebab_window"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty";
+	tag = "icon-floorrusty"
+	},
+/area/f13/city)
 "awf" = (
 /obj/structure/table/wood,
 /obj/machinery/light/small{
@@ -8661,6 +8745,17 @@
 	tag = "icon-floorrusty"
 	},
 /area/f13/building)
+"ayd" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced/fulltile,
+/obj/machinery/door/poddoor/shutters{
+	id = "kebab_window"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty";
+	tag = "icon-floorrusty"
+	},
+/area/f13/city)
 "aye" = (
 /obj/structure/chair{
 	dir = 4
@@ -10200,9 +10295,6 @@
 	tag = "icon-verticalleftborderleft0"
 	},
 /area/f13/wasteland)
-"aCn" = (
-/turf/closed/indestructible/ncrwall,
-/area/f13/village)
 "aCo" = (
 /obj/item/paper_bin{
 	pixel_x = -3;
@@ -21770,17 +21862,6 @@
 	tag = "icon-floorrusty"
 	},
 /area/f13/city)
-"biT" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/fulltile,
-/obj/machinery/door/poddoor/preopen{
-	id = "outerkebab_window"
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty";
-	tag = "icon-floorrusty"
-	},
-/area/f13/city)
 "biU" = (
 /obj/structure/table/wood/poker,
 /obj/machinery/light/small{
@@ -22296,17 +22377,6 @@
 /obj/item/storage/box/deputy,
 /turf/open/floor/f13{
 	icon_state = "dark"
-	},
-/area/f13/city)
-"bkm" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/fulltile,
-/obj/machinery/door/poddoor/preopen{
-	id = "kebab_window"
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty";
-	tag = "icon-floorrusty"
 	},
 /area/f13/city)
 "bkn" = (
@@ -26086,15 +26156,6 @@
 /obj/item/reagent_containers/food/snacks/grown/potato,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
-"bvP" = (
-/obj/structure/table/reinforced,
-/turf/open/floor/f13/wood,
-/area/f13/legion)
-"bvQ" = (
-/obj/structure/table/reinforced,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13/wood,
-/area/f13/legion)
 "bvR" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -40895,7 +40956,7 @@ adY
 aMr
 bjx
 aaC
-blt
+aqs
 biQ
 bmx
 biQ
@@ -42258,11 +42319,11 @@ aox
 bcc
 bcc
 bcc
-afn
-afn
-afn
-afn
-afn
+aqv
+aqv
+aqv
+aqv
+aqv
 apT
 aqv
 apT
@@ -42519,7 +42580,7 @@ arN
 agA
 asu
 asH
-afn
+aqv
 apT
 aqv
 apT
@@ -42772,11 +42833,11 @@ aox
 bcc
 atM
 atM
-afn
-asc
+aqv
+aof
 asv
 agA
-afn
+aqv
 apT
 aqv
 apT
@@ -43029,11 +43090,11 @@ aox
 axU
 atM
 axU
-afn
-asd
+arR
 asd
 agB
-afn
+asc
+aqv
 apU
 aqu
 aqT
@@ -43188,7 +43249,7 @@ bju
 bjO
 bju
 bkH
-bkm
+ayd
 acQ
 aek
 adY
@@ -43286,11 +43347,11 @@ aox
 axU
 atM
 atM
-afn
-ase
-ase
-asI
-afn
+aqv
+aqv
+arR
+aqv
+aqv
 ahP
 atp
 atM
@@ -43440,12 +43501,12 @@ amP
 amP
 bio
 bio
-biT
-biT
+awe
+awe
 bio
-bkm
-bkm
-bkm
+ayd
+ayd
+bio
 acQ
 aek
 adY
@@ -43543,7 +43604,7 @@ afP
 aaA
 aaA
 aaA
-arO
+aqv
 aaA
 asi
 aeD
@@ -43800,7 +43861,7 @@ ajz
 aII
 afJ
 aTS
-arv
+aqH
 arv
 afJ
 aaB
@@ -44057,7 +44118,7 @@ agJ
 aII
 aTk
 aKe
-ajz
+arp
 aKe
 aTk
 aTk
@@ -44314,7 +44375,7 @@ agJ
 asP
 asP
 asP
-asP
+arQ
 asP
 axf
 aaD
@@ -44571,7 +44632,7 @@ afK
 ajc
 ani
 aWc
-arP
+aqv
 ant
 aRu
 aRu
@@ -44828,7 +44889,7 @@ aRG
 arc
 atM
 axU
-arQ
+aqv
 aeo
 ayu
 asJ
@@ -45085,7 +45146,7 @@ afL
 ard
 arc
 atM
-arR
+aqv
 aeq
 ayu
 ayu
@@ -45342,7 +45403,7 @@ aqP
 are
 atM
 atM
-arR
+aqv
 asf
 ahm
 ahm
@@ -45598,9 +45659,9 @@ aox
 aox
 apS
 aqu
-aqu
-aqu
-aqu
+aqv
+aqv
+aqv
 aqu
 aqu
 aqu
@@ -53043,9 +53104,9 @@ bcc
 bcc
 bcc
 ame
-aph
-aph
-aph
+bcc
+bcc
+bcc
 bcc
 bcc
 bcc
@@ -53300,7 +53361,7 @@ bcc
 bcc
 ame
 ame
-aoH
+bcc
 ame
 ame
 bcc
@@ -53556,9 +53617,9 @@ bcc
 bcc
 bcc
 ame
-aof
-aph
-aoG
+bcc
+bcc
+bcc
 ame
 bcc
 bcc
@@ -72355,14 +72416,14 @@ aRG
 bez
 atM
 aAW
-aCn
-aCn
-aCn
-aCn
-aCn
-aCn
-aCn
-aCn
+aAi
+aAi
+aAi
+aAi
+aAi
+aAi
+aAi
+aAi
 aSu
 aaA
 aaA
@@ -72611,16 +72672,16 @@ azF
 afL
 bez
 ahP
-aCn
-aCn
+aAi
+aAi
 aDe
 aFH
 aKB
 bdu
 aFH
 aDe
-aCn
-aCn
+aAi
+aAi
 aMr
 aMr
 acO
@@ -72868,7 +72929,7 @@ aRu
 afM
 ahP
 ahP
-aCn
+aAi
 aBw
 aKB
 aKB
@@ -72877,7 +72938,7 @@ aKB
 aKB
 aKB
 aCo
-aCn
+aAi
 aMr
 aMr
 aMr
@@ -73125,7 +73186,7 @@ aNu
 azX
 ahP
 aAy
-aCn
+aAi
 aBx
 aKB
 aCj
@@ -73134,7 +73195,7 @@ aFH
 aKV
 aKB
 aCO
-aCn
+aAi
 aGW
 aMr
 aMr
@@ -73382,7 +73443,7 @@ azF
 azX
 ahP
 ahP
-aCn
+aAi
 aKB
 aKB
 aKB
@@ -73391,11 +73452,11 @@ aKB
 aKB
 aKB
 aSq
-aCn
-aCn
-aCn
-aCn
-aCn
+aAi
+aAi
+aAi
+aAi
+aAi
 azX
 aIF
 beI
@@ -73639,21 +73700,21 @@ aHa
 azX
 ahP
 ahP
-aCn
-aCn
-aCn
+aAi
+aAi
+aAi
 tzL
-aCn
-aCn
-aCn
+aAi
+aAi
+aAi
 acd
 aAi
 aAi
 aGX
 aKB
 aKB
-aCn
-aCn
+aAi
+aAi
 aeo
 aeK
 ayu
@@ -73896,13 +73957,13 @@ azF
 aAa
 ahP
 ahP
-aCn
+aAi
 aKV
 aKB
 aKB
 aKB
 aCo
-aCn
+aAi
 aKB
 aKB
 kgX
@@ -73910,7 +73971,7 @@ aCh
 aKB
 aHP
 aDf
-aCn
+aAi
 ajx
 bhi
 acZ
@@ -74153,13 +74214,13 @@ aRu
 azX
 ahP
 ahP
-aCn
+aAi
 aDc
 aFn
 aKB
 udB
 aCp
-aCn
+aAi
 aLh
 aKB
 aAi
@@ -74167,7 +74228,7 @@ aKB
 aKB
 aKB
 aDf
-aCn
+aAi
 ajx
 bhi
 aNu
@@ -74410,13 +74471,13 @@ amg
 azX
 ahP
 ahP
-aCn
+aAi
 aBA
 aHq
 aKB
 rup
 aEI
-aCn
+aAi
 aFN
 aGY
 ulA
@@ -74667,13 +74728,13 @@ amg
 azX
 ahP
 ahP
-aCn
+aAi
 aDd
 aCq
 aKB
 aKB
 aBx
-aCn
+aAi
 aAi
 aAi
 aAi
@@ -74681,7 +74742,7 @@ aKB
 aKB
 aKB
 aDf
-aCn
+aAi
 aer
 bhi
 aRu
@@ -74924,13 +74985,13 @@ azH
 aRG
 ahP
 ahP
-aCn
+aAi
 aKB
 aKB
 aKV
 aKB
 aBw
-aCn
+aAi
 aFO
 aIB
 acd
@@ -74938,7 +74999,7 @@ aKB
 aCh
 aKB
 aDf
-aCn
+aAi
 aer
 bhi
 acZ
@@ -75181,21 +75242,21 @@ amg
 afM
 ahP
 ahP
-aCn
+aAi
 aCo
 aBx
 aKB
 aFK
 aKB
-aCn
+aAi
 aEK
 aGk
 aAi
 aKB
 aHr
 aHQ
-aCn
-aCn
+aAi
+aAi
 aeo
 aeG
 afQ
@@ -75438,20 +75499,20 @@ azI
 azX
 ahP
 ahP
-aCn
 aAi
+aAi
+aAi
+acd
 aAi
 acd
 aAi
-acd
-aCn
-aCn
-aCn
-aCn
-aCn
-aCn
-aCn
-aCn
+aAi
+aAi
+aAi
+aAi
+aAi
+aAi
+aAi
 akB
 aep
 aNt
@@ -75695,7 +75756,7 @@ azF
 azX
 ahP
 ahP
-aCn
+aAi
 aBx
 aKV
 aKB
@@ -75704,7 +75765,7 @@ aKB
 aKB
 aFP
 aGl
-aCn
+aAi
 aMr
 als
 aMr
@@ -75952,7 +76013,7 @@ azF
 azX
 atM
 ahP
-aCn
+aAi
 aBB
 aKB
 aDg
@@ -75961,7 +76022,7 @@ aLh
 aCh
 aKB
 aGm
-aCn
+aAi
 aMr
 aMr
 aMr
@@ -76209,16 +76270,16 @@ amg
 azX
 atM
 bez
-aCn
-aCn
+aAi
+aAi
 aBx
 aDh
 aAi
 aEJ
 aFo
 aFQ
-aCn
-aCn
+aAi
+aAi
 aMr
 aMr
 aMr
@@ -76467,14 +76528,14 @@ azX
 atM
 ahP
 ahP
-aCn
-aCn
-aCn
-aCn
-aCn
-aCn
-aCn
-aCn
+aAi
+aAi
+aAi
+aAi
+aAi
+aAi
+aAi
+aAi
 aif
 aWc
 aWc
@@ -90743,7 +90804,7 @@ bcc
 aph
 aph
 ame
-ame
+bcc
 aoG
 abf
 aph
@@ -91000,8 +91061,8 @@ bcc
 bcc
 aph
 aph
-aoH
-aph
+bcc
+bcc
 aph
 aph
 aph
@@ -91053,7 +91114,7 @@ bcc
 aMr
 acU
 aaQ
-arJ
+aea
 adZ
 acU
 aez
@@ -91258,7 +91319,7 @@ bcc
 bcc
 agH
 ame
-ame
+bcc
 ame
 aph
 aph
@@ -91311,7 +91372,7 @@ bcc
 acU
 aaR
 arJ
-aea
+aqc
 acU
 aeA
 arJ
@@ -91568,7 +91629,7 @@ bcc
 acU
 adi
 arJ
-aea
+apR
 acU
 aeB
 aeB
@@ -97153,7 +97214,7 @@ aMr
 aMr
 aMr
 aMr
-aqE
+asX
 bcc
 bcc
 bcc
@@ -97409,8 +97470,8 @@ aMr
 aMr
 aMr
 aMr
-aqE
-aFz
+asX
+ase
 bcc
 bcc
 bcc
@@ -97665,8 +97726,8 @@ aMr
 aMr
 aMr
 aMr
-aqE
-aFz
+asX
+ase
 bcc
 bcc
 bcc
@@ -97921,10 +97982,10 @@ aMr
 aMr
 aMr
 bhr
-adU
-aFz
-adU
-aQW
+bnL
+ase
+bnL
+atx
 aek
 aek
 aff
@@ -97965,7 +98026,7 @@ bpR
 brJ
 bnV
 bnV
-bvP
+bsO
 bnV
 brJ
 ahA
@@ -98178,10 +98239,10 @@ adw
 aaG
 adw
 bib
-adU
-aQW
-aek
-aek
+bnL
+atx
+bvW
+bvW
 aek
 aek
 aek
@@ -98222,7 +98283,7 @@ bsO
 btC
 bnV
 bnV
-bvP
+buy
 bnV
 bnV
 bwX
@@ -98435,10 +98496,10 @@ aek
 aek
 aek
 aek
-aek
-aek
-aek
-aek
+aoH
+bvW
+bvW
+bvW
 aek
 aek
 aek
@@ -98479,7 +98540,7 @@ bsO
 btC
 bnV
 brJ
-bvQ
+buy
 bnV
 bnV
 bwY
@@ -98692,10 +98753,10 @@ aek
 aek
 aek
 aek
-aek
-aek
-aek
-aek
+bvW
+bvW
+bvW
+bvW
 abg
 bmA
 bmA
@@ -98736,7 +98797,7 @@ bsO
 btC
 bnV
 brJ
-bvP
+bsO
 bnV
 brJ
 apO
@@ -98949,10 +99010,10 @@ aek
 aek
 aek
 aek
-aek
-aek
-aek
-aek
+bvW
+bvW
+bvW
+bvW
 aTy
 aMr
 aMr
@@ -99206,10 +99267,10 @@ aEw
 aEw
 aEw
 bic
-aFz
-aek
-aek
-aek
+ase
+atA
+bvW
+bvW
 aTy
 aMr
 aMr
@@ -99462,11 +99523,11 @@ bhr
 aMr
 aMr
 aMr
-bha
-aFz
-adU
-anO
-aek
+aMr
+asI
+atJ
+atZ
+bvW
 aff
 aaG
 aaG
@@ -99720,10 +99781,10 @@ aMr
 aMr
 aMr
 bhr
-aqE
-adU
-adT
-anO
+ase
+ase
+avr
+atZ
 aek
 aek
 aek
@@ -99977,10 +100038,10 @@ aMr
 aMr
 aMr
 aMr
-aqE
-aet
-aFz
-adT
+asX
+bnK
+ase
+avQ
 aEw
 anO
 aek
@@ -100235,9 +100296,9 @@ aMr
 aMr
 aMr
 aMr
-aqE
-aet
-adU
+asX
+bnK
+bnL
 bhr
 adc
 aek
@@ -100492,10 +100553,10 @@ aMr
 aMr
 aMr
 aMr
-aFz
-aFz
-adU
-aFz
+ase
+ase
+bnL
+ase
 adT
 aEw
 anO
@@ -100749,10 +100810,10 @@ aMr
 aMr
 aMr
 aMr
-aFz
+ase
 bcc
 bcc
-aFz
+ase
 aMr
 bha
 adT
