@@ -143,4 +143,7 @@ obj/item/gun/ballistic/attackby(obj/item/I, mob/user, params)
 		updatesprites()
 		updatesize()
 		return
-//Version #3: For Crashpoint, not degeneracy.
+
+//This was coded by Fulminating Gold for Crashpoint3.
+//I do not give any server allowing ERP permission to use this code.
+//I simply do not want my code to be associated with an ERP server, and it's as simple as that.

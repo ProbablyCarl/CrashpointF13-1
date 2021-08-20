@@ -65,7 +65,7 @@
 	if(default_deconstruction_screwdriver(user, icon_state, icon_state, I))
 		update_icon()
 		return
-	if(default_deconstruction_crowbar(I)) //no deconstruction for cell replacement
+	if(default_deconstruction_crowbar(I))
 		return
 
 /obj/machinery/sepfunnel/attack_hand(mob/living/user, params)
@@ -91,7 +91,7 @@
 		if("Separate The Next Phase")
 			if(beaker1 == null || beaker2 == null)
 				return
-			beaker1.reagents.trans_id_to(beaker2, beaker1.reagents.reagent_list[beaker1.reagents.reagent_list.len].id, beaker1.reagents.reagent_list[1].volume)
+			beaker1.reagents.trans_id_to(beaker2, beaker1.reagents.reagent_list[beaker1.reagents.reagent_list.len].id, beaker1.reagents.reagent_list[beaker1.reagents.reagent_list.len].volume)
 			to_chat(user, "You transfer one reagent from the separatory funnel to \the [beaker2].")
 	updatesprites()
 
@@ -100,7 +100,7 @@
 //////////
 
 /obj/item/circuitboard/machine/sepfunnel
-	name = "Separatory Funnel"
+	name = "separatory funnel"
 	build_path = /obj/machinery/sepfunnel
 	req_components = list(
 		/obj/item/stack/cable_coil = 5,
@@ -108,3 +108,7 @@
 		/obj/item/stack/sheet/metal = 10,
 		/obj/item/stack/rods = 10
 		)
+
+//This was coded by Fulminating Gold for Crashpoint3.
+//I do not give any server allowing ERP permission to use this code.
+//I simply do not want my code to be associated with an ERP server, and it's as simple as that.

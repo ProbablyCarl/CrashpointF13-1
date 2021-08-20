@@ -121,6 +121,9 @@
 	glass_desc = "The father of all refreshments."
 	shot_glass_icon_state = "shotglassclear"
 	var/water_level = 2
+	meltingpoint = 275
+	boilingpoint = 375
+	phasepercents = list("SOLID" = 0, "LIQUID" = 1, "GAS" = 0)
 
 /datum/reagent/water/on_mob_life(mob/living/carbon/M)
 	current_cycle++
@@ -1366,6 +1369,9 @@
 	reagent_state = LIQUID
 	color = "#C8A5DC"
 	taste_description = "oil"
+	meltingpoint = 216
+	boilingpoint = 388
+	phasepercents = list("SOLID" = 0, "LIQUID" = 1, "GAS" = 0)
 
 /datum/reagent/stable_plasma
 	name = "Stable Plasma"
@@ -1807,3 +1813,19 @@
 	M.adjustToxLoss(0.5*REM, 0)
 	. = 1
 	..()
+
+/datum/reagent/wood
+	name = "wood dust"
+	id = "wdust"
+	description = "Wood ground up into a fine dust."
+	reagent_state = "SOLID"
+	color = "#663300"
+	taste_description = "wood"
+
+/datum/reagent/pdust
+	name = "plastic dust"
+	id = "pdust"
+	description = "Finely ground up plastic."
+	reagent_state = "SOLID"
+	color = "#FFFFFF"
+	taste_description = "plastic"

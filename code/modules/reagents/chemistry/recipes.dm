@@ -4,6 +4,8 @@
 	var/list/results = new/list()
 	var/list/required_reagents = new/list()
 	var/list/required_catalysts = new/list()
+	var/list/required_phases = new/list() //Reagent Phases
+	var/list/result_phases = new/list() //Reagent Phases
 
 	// Both of these variables are mostly going to be used with slime cores - but if you want to, you can use them for other things
 	var/required_container = null // the exact container path required for the reaction to happen

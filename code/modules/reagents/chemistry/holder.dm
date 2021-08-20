@@ -350,7 +350,73 @@
 		R.on_update (A)
 	update_total()
 
+//Reagent Phases (START)
+/datum/reagents/proc/phasetransitions()
+	var/heatpervol = 10
+	for(var/datum/reagent/R in reagent_list) //heat decrease, % increase
+		if(chem_temp > R.meltingpoint && R.phasepercents["SOLID"] > 0) //solid melt
+			var/heatdif = chem_temp - R.meltingpoint
+			var/change = min(((heatdif / heatpervol) / R.volume), R.phasepercents["SOLID"])
+			chem_temp -= change * R.volume * heatpervol
+			R.phasepercents["SOLID"] -= change
+			R.phasepercents["LIQUID"] += change
+
+		if(chem_temp > R.boilingpoint && R.phasepercents["LIQUID"] > 0) //liquid boil
+			var/heatdif = chem_temp - R.boilingpoint
+			var/change = min(((heatdif / heatpervol) / R.volume), R.phasepercents["LIQUID"])
+			chem_temp -= change * R.volume * heatpervol
+			R.phasepercents["LIQUID"] -= change
+			R.phasepercents["GAS"] += change
+			playsound(get_turf(my_atom), 'sound/effects/bubbles.ogg', 80, 1)
+
+		if(chem_temp < R.boilingpoint && R.phasepercents["GAS"] > 0) //gas condense
+			var/heatdif = R.boilingpoint - chem_temp
+			var/change = min(((heatdif / heatpervol) / R.volume), R.phasepercents["GAS"])
+			chem_temp += change * R.volume * heatpervol
+			R.phasepercents["GAS"] -= change
+			R.phasepercents["LIQUID"] += change
+
+		if(chem_temp < R.meltingpoint && R.phasepercents["LIQUID"] > 0) //liquid freezing
+			var/heatdif = R.meltingpoint - chem_temp
+			var/change = min(((heatdif / heatpervol) / R.volume), R.phasepercents["LIQUID"])
+			chem_temp += change * R.volume * heatpervol
+			R.phasepercents["LIQUID"] -= change
+			R.phasepercents["SOLID"] += change
+
+		chem_temp = round(chem_temp)
+
+/datum/reagents/proc/correctphases(reagent)
+	for(var/A in reagent_list)
+		var/datum/reagent/R = A
+		if (R.id == reagent)
+			var/total = R.phasepercents["SOLID"] + R.phasepercents["LIQUID"] + R.phasepercents["GAS"]
+			if(R.phasepercents["SOLID"] > 0)
+				R.phasepercents["SOLID"] /= total
+			if(R.phasepercents["LIQUID"] > 0)
+				R.phasepercents["LIQUID"] /= total
+			if(R.phasepercents["GAS"] > 0)
+				R.phasepercents["GAS"] /= total
+
+/datum/reagents/proc/gasescape(explosions = FALSE)
+	var/gaspercent = 0
+	for(var/datum/reagent/R in reagent_list)
+		if(istype(my_atom, /obj/item/reagent_containers)) // gas escape
+			var/obj/item/reagent_containers/container_atom = my_atom
+			if(container_atom.spillable && R.phasepercents["GAS"] > 0)
+				remove_reagent(R.id, (R.volume * R.phasepercents["GAS"]), safety = 1, phase = "GAS")
+		if(R.phasepercents["GAS"] * R.volume > 0)
+			gaspercent += R.phasepercents["GAS"] * R.volume / maximum_volume
+	if(explosions && gaspercent >= 0.5)
+		var/datum/effect_system/reagents_explosion/RE = new()
+		RE.set_up(round(total_volume/10, 1), get_turf(my_atom), 0, 0)
+		RE.start()
+		clear_reagents()
+		qdel(my_atom)
+
+//Reagent Phases (END)
+
 /datum/reagents/proc/handle_reactions()
+	phasetransitions() //Reagent Phases
 	var/list/cached_reagents = reagent_list
 	var/list/cached_reactions = GLOB.chemical_reactions_list
 	var/datum/cached_my_atom = my_atom
@@ -373,12 +439,22 @@
 				var/total_matching_reagents = 0
 				var/list/cached_required_catalysts = C.required_catalysts
 				var/total_required_catalysts = cached_required_catalysts.len
-				var/total_matching_catalysts= 0
+				var/total_matching_catalysts = 0
 				var/matching_container = 0
 				var/matching_other = 0
 				var/required_temp = C.required_temp
 				var/is_cold_recipe = C.is_cold_recipe
 				var/meets_temp_requirement = 0
+				//Reagent Phases (START)
+				var/total_required_phases = C.required_phases.len
+				var/total_matching_phases = 0
+
+				for(var/B in C.required_phases)
+					if(!has_phase(B, C.required_phases[B], cached_required_reagents[B]))
+						break
+					total_matching_phases++
+					world.log << "[C.required_phases[B]], [cached_required_reagents[B]]"
+				//Reagent Phases (END)
 
 				for(var/B in cached_required_reagents)
 					if(!has_reagent(B, cached_required_reagents[B]))
@@ -391,7 +467,6 @@
 				if(cached_my_atom)
 					if(!C.required_container)
 						matching_container = 1
-
 					else
 						if(cached_my_atom.type == C.required_container)
 							matching_container = 1
@@ -414,8 +489,14 @@
 				if(required_temp == 0 || (is_cold_recipe && chem_temp <= required_temp) || (!is_cold_recipe && chem_temp >= required_temp))
 					meets_temp_requirement = 1
 
+				//Reagent Phases (START)
+				/* remove
 				if(total_matching_reagents == total_required_reagents && total_matching_catalysts == total_required_catalysts && matching_container && matching_other && meets_temp_requirement)
 					possible_reactions  += C
+				*/
+				if(total_matching_reagents == total_required_reagents && total_matching_catalysts == total_required_catalysts && matching_container && matching_other && meets_temp_requirement && total_matching_phases == total_required_phases)
+					possible_reactions  += C
+				//Reagent Phases (END)
 
 		if(possible_reactions.len)
 			var/datum/chemical_reaction/selected_reaction = possible_reactions[1]
@@ -431,6 +512,9 @@
 			var/list/cached_required_reagents = selected_reaction.required_reagents
 			var/list/cached_results = selected_reaction.results
 			var/list/multiplier = INFINITY
+
+			//Reagent Phases (START)
+			/* removed
 			for(var/B in cached_required_reagents)
 				multiplier = min(multiplier, round(get_reagent_amount(B) / cached_required_reagents[B]))
 
@@ -441,6 +525,27 @@
 				multiplier = max(multiplier, 1) //this shouldnt happen ...
 				SSblackbox.record_feedback("tally", "chemical_reaction", cached_results[P]*multiplier, P)
 				add_reagent(P, cached_results[P]*multiplier, null, chem_temp)
+			*/
+			for(var/B in cached_required_reagents)
+				if(selected_reaction.required_phases.Find(B))
+					multiplier = min(multiplier, round(get_reagent_amount(B, phase = selected_reaction.required_phases[B]) / cached_required_reagents[B]))
+				else
+					multiplier = min(multiplier, round(get_reagent_amount(B) / cached_required_reagents[B]))
+
+			for(var/B in cached_required_reagents)
+				if(selected_reaction.required_phases.Find(B))
+					remove_reagent(B, (multiplier * cached_required_reagents[B]), safety = 1, phase = selected_reaction.required_phases[B])
+				else
+					remove_reagent(B, (multiplier * cached_required_reagents[B]), safety = 1)
+
+			for(var/P in selected_reaction.results)
+				multiplier = max(multiplier, 1) //this shouldnt happen ...
+				SSblackbox.record_feedback("tally", "chemical_reaction", cached_results[P]*multiplier, P)
+				if(selected_reaction.result_phases.Find(P))
+					add_reagent(P, cached_results[P]*multiplier, null, chem_temp, phase = selected_reaction.result_phases[P])
+				else
+					add_reagent(P, cached_results[P]*multiplier, null, chem_temp)
+			//Reagent Phases (END)
 
 			var/list/seen = viewers(4, get_turf(my_atom))
 			var/iconhtml = icon2html(cached_my_atom, seen)
@@ -466,6 +571,7 @@
 
 	while(reaction_occurred)
 	update_total()
+	gasescape(explosions = TRUE) //Reagent Phases
 	return 0
 
 /datum/reagents/proc/isolate_reagent(reagent)
@@ -556,7 +662,7 @@
 	var/S = specific_heat()
 	chem_temp = CLAMP(chem_temp + (J / (S * total_volume)), 2.7, 1000)
 
-/datum/reagents/proc/add_reagent(reagent, amount, list/data=null, reagtemp = 300, no_react = 0)
+/datum/reagents/proc/add_reagent(reagent, amount, list/data=null, reagtemp = 300, no_react = 0, phase)
 	if(!isnum(amount) || !amount)
 		return FALSE
 
@@ -594,6 +700,17 @@
 	for(var/A in cached_reagents)
 		var/datum/reagent/R = A
 		if (R.id == reagent)
+			//Reagent Phases (START)
+			if(phase != null)
+				R.phasepercents[phase] += amount / R.volume
+			else if(chem_temp < R.meltingpoint)
+				R.phasepercents["SOLID"] += amount / R.volume
+			else if(chem_temp < R.boilingpoint)
+				R.phasepercents["LIQUID"] += amount / R.volume
+			else
+				R.phasepercents["GAS"] += amount / R.volume
+			correctphases(R.id)
+			//Reagent Phases (STOP)
 			R.volume += amount
 			update_total()
 			if(my_atom)
@@ -612,6 +729,18 @@
 		R.data = data
 		R.on_new(data)
 
+	//Reagent Phases (START)
+	if(phase != null)
+		R.phasepercents = list("SOLID" = 0, "LIQUID" = 0, "GAS" = 0)
+		R.phasepercents[phase] = 1
+	else if(chem_temp < R.meltingpoint)
+		R.phasepercents = list("SOLID" = 1, "LIQUID" = 0, "GAS" = 0)
+	else if(chem_temp < R.boilingpoint)
+		R.phasepercents = list("SOLID" = 0, "LIQUID" = 1, "GAS" = 0)
+	else
+		R.phasepercents = list("SOLID" = 0, "LIQUID" = 0, "GAS" = 1)
+	//Reagent Phases (STOP)
+
 	update_total()
 	if(my_atom)
 		my_atom.on_reagent_change(ADD_REAGENT)
@@ -626,8 +755,8 @@
 		var/amt = list_reagents[r_id]
 		add_reagent(r_id, amt, data)
 
-/datum/reagents/proc/remove_reagent(reagent, amount, safety)//Added a safety check for the trans_id_to
-
+// Removed for Reagent Phases: /datum/reagents/proc/remove_reagent(reagent, amount, safety)//Added a safety check for the trans_id_to
+/datum/reagents/proc/remove_reagent(reagent, amount, safety, phase) //Reagent Phases
 	if(isnull(amount))
 		amount = 0
 		CRASH("null amount passed to reagent code")
@@ -647,6 +776,11 @@
 			//clamp the removal amount to be between current reagent amount
 			//and zero, to prevent removing more than the holder has stored
 			amount = CLAMP(amount, 0, R.volume)
+			//Reagent Phases (START)
+			if(phase != null) //Reagent Phases
+				R.phasepercents[phase] -= amount / R.volume
+				correctphases(R.id)
+			//Reagent Phases (END)
 			R.volume -= amount
 			update_total()
 			if(!safety)//So it does not handle reactions when it need not to
@@ -672,12 +806,36 @@
 
 	return 0
 
-/datum/reagents/proc/get_reagent_amount(reagent)
+//Reagent Phases (START)
+/datum/reagents/proc/has_phase(reagent, phase, amount = -1)
 	var/list/cached_reagents = reagent_list
 	for(var/_reagent in cached_reagents)
 		var/datum/reagent/R = _reagent
 		if (R.id == reagent)
-			return R.volume
+			if(!amount)
+				return R
+			else
+				if(R.phasepercents[phase] * R.volume >= amount)
+					return R
+				else
+					return 0
+
+	return 0
+//Reagent Phases (STOP)
+//Removed for Reagent Phases: /datum/reagents/proc/get_reagent_amount(reagent)
+/datum/reagents/proc/get_reagent_amount(reagent, phase) //Reagent Phases
+	var/list/cached_reagents = reagent_list
+	for(var/_reagent in cached_reagents)
+		var/datum/reagent/R = _reagent
+		if (R.id == reagent)
+			//Changes labelled with "Reagent Phases" were coded by Fulminating Gold for Crashpoint3. I do not give any server allowing ERP permission to use this code.
+			//Reagent Phases (START)
+			//return R.volume //removed
+			if(phase != null)
+				return R.volume * R.phasepercents[phase]
+			else
+				return R.volume
+			//Reagent Phases (STOP)
 
 	return 0
 
