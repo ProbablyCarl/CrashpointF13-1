@@ -491,6 +491,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "NCR Ranger"
 	icon_state = "NCR Patrol Ranger"
 
+/obj/effect/landmark/start/f13/ncrcorpsman
+	name = "NCR Corpsman"
+	icon_state = "NCR Recruit"
 
 // Legion
 
@@ -543,6 +546,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 /obj/effect/landmark/start/f13/campfollower
 	name = "Camp Follower"
+
+/obj/effect/landmark/start/f13/armicustos
+	name = "Armicustos"
+	icon_state = "Vexillarius"
 
 // Brotherhood of Steel
 

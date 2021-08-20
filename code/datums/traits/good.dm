@@ -99,7 +99,7 @@
 
 /datum/quirk/lifegiver
 	name = "Lifegiver"
-	desc = "You embody wellness! Instantly gain +15 maximum Health"
+	desc = "You embody wellness! Your max health has been raised to a generous 115."
 	value = 3
 	mob_trait = TRAIT_LIFEGIVER
 	gain_text = "<span class='notice'>You feel more healthy than usual.</span>"
@@ -111,12 +111,13 @@
 	mob_tar.health += 15
 
 /datum/quirk/lifegiver_cent
-	name = "Lifegiver2"
-	desc = "You embody wellness! Instantly gain +50 maximum Health"
-	value = 3
+	name = "Champion of Life"
+	desc = "You're a gladiator of the wastes! Your max health has been raised to a whopping 150!"
+	value = 6
+	locked = TRUE
 	mob_trait = TRAIT_LIFEGIVER2
-	gain_text = "<span class='notice'>You feel far healthy than usual.</span>"
-	lose_text = "<span class='danger'>You feel far healthy than usual.</span>"
+	gain_text = "<span class='notice'>You feel far more healthy than usual.</span>"
+	lose_text = "<span class='danger'>You feel far less healthy than usual.</span>"
 
 /datum/quirk/lifegiver_cent/on_spawn()
 	var/mob/living/carbon/human/mob_tar = quirk_holder

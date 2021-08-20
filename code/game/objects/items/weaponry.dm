@@ -78,12 +78,14 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	righthand_file = 'icons/mob/inhands/weapons/melee_righthand.dmi'
 	item_state = "salvagedmachete"
 	slot_flags = ITEM_SLOT_BELT
+	block_chance = 5
 
 /obj/item/claymore/machete/reinforced
 	name = "reinforced machete"
 	desc = "A reinforced machete made of high quality steel."
 	force = 35
 	throwforce = 25
+	block_chance = 10
 
 /obj/item/claymore/machete/gladius
 	name = "machete gladius"
@@ -93,7 +95,7 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	slot_flags = ITEM_SLOT_BELT
 	force = 35
 	throwforce = 25
-	block_chance = 10
+	block_chance = 25
 
 /obj/item/claymore/machete/pipe
 	name = "pipe"
