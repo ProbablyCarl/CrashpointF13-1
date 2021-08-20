@@ -3,7 +3,7 @@
 //////////
 
 /obj/machinery/pillpress
-	name = "Pill Press"
+	name = "pill press"
 	desc = "Used produce pills from powder."
 	density = FALSE
 	layer = BELOW_OBJ_LAYER
@@ -105,9 +105,13 @@
 //////////
 
 /obj/item/circuitboard/machine/pillpress
-	name = "Pill Press"
+	name = "pill press"
 	build_path = /obj/machinery/sepfunnel
 	req_components = list(
 		/obj/item/stack/sheet/metal = 5,
 		/obj/item/stack/rods = 5
 		)
+
+//This was coded by Fulminating Gold for Crashpoint3.
+//I do not give any server allowing ERP permission to use this code.
+//I simply do not want my code to be associated with an ERP server, and it's as simple as that.

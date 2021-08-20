@@ -586,10 +586,11 @@
 /datum/chemical_reaction/boilingwater
 	name = "Boiling Water"
 	id = "bwaterboil"
-	results = list("bwater" = 5)
-	required_reagents = list("dwater" = 10) // ADVANCED BOILING WATER CODE URAH
+	results = list("bwater" = 1)
+	required_reagents = list("dwater" = 2) // ADVANCED BOILING WATER CODE URAH
+	result_phases = list("bwater" = "LIQUID")
 	mob_react = FALSE // You cannot boil water inside yourself you fucking mongoloid
-	required_temp = 374
+	required_temp = 372
 
 /datum/chemical_reaction/watertabletreact
 	name = "Tablet Purifying Water"
@@ -611,3 +612,35 @@
 	results = list("wppowder" = 5)
 	required_reagents = list("saltpetre" = 5, "sacid" = 5, "silver" = 5, "sugar" = 5, "charcoal" = 5)
 	mob_react = FALSE //I don't think you're supposed to eat these, buddy. | You're not my Dad, asshole!
+
+/datum/chemical_reaction/dirtywatergas
+	name = "dirty water gas"
+	id = "dwgas"
+	results = list("water" = 0.4, "sodiumchloride" = 0.1)
+	required_reagents = list("dwater" = 0.5)
+	required_phases = list("dwater" = "GAS")
+	result_phases = list("water" = "GAS")
+	mob_react = FALSE
+
+/datum/chemical_reaction/boiledwatergas
+	name = "boiled water gas"
+	id = "bwgas"
+	results = list("water" = 0.4, "sodiumchloride" = 0.1)
+	required_reagents = list("bwater" = 0.5)
+	required_phases = list("bwater" = "GAS")
+	result_phases = list("water" = "GAS")
+	mob_react = FALSE
+
+/datum/chemical_reaction/woodburn
+	name = "wood burning"
+	id = "woodburn"
+	results = list("charcoal" = 1, "ash" = 1)
+	required_reagents = list("wdust" = 5)
+	mob_react = FALSE
+
+/datum/chemical_reaction/plasticpyrolisis
+	name = "plastic pyrolisis"
+	id = "ppyro"
+	results = list("oil" = 1)
+	required_reagents = list("pdust" = 2)
+	mob_react = FALSE

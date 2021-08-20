@@ -29,6 +29,11 @@
 	var/addiction_stage = 0
 	var/overdosed = 0 // You fucked up and this is now triggering its overdose effects, purge that shit quick.
 	var/self_consuming = FALSE
+	//Reagent Phases (START) //Changes labelled with "Reagent Phases" were coded by Fulminating Gold for Crashpoint3. I do not give any server allowing ERP permission to use this code.
+	var/list/phasepercents = list("SOLID" = 1, "LIQUID" = 0, "GAS" = 0)
+	var/meltingpoint = 9999
+	var/boilingpoint = 9999
+	//Reagent Phases (STOP)
 
 /datum/reagent/Destroy() // This should only be called by the holder, so it's already handled clearing its references
 	. = ..()
