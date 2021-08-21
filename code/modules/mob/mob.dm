@@ -121,8 +121,11 @@
 		hearers -= src
 
 	var/raw_msg = message
-	if(visible_message_flags & EMOTE_MESSAGE)
+
+	if(visible_message_flags & EMOTE_MESSAGE & !isanimal(src))
 		message = "<span class='emote'><b>[src]</b> [message]</span>"
+	else
+		message = "<span class='emote'>[message]</span>"
 
 	for(var/mob/M in hearers)
 		if(!M.client)
@@ -167,6 +170,9 @@
 
 /mob/audible_message(message, deaf_message, hearing_distance, self_message, no_ghosts = FALSE, audible_message_flags = NONE)
 	var/range = 7
+
+	message = "<span class='emote'><b>[src]</b> [message]</span>"
+
 	if(hearing_distance)
 		range = hearing_distance
 	for(var/mob/M in get_hearers_in_view(range, src))
