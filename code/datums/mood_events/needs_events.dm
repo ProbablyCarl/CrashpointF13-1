@@ -48,6 +48,7 @@
 /datum/mood_event/nutrition/piss
 	description = "<span class='warning'>I really need to take a piss!</span>\n"
 	mood_change = -4
+	timeout = 40
 
 /datum/mood_event/nutrition/shitself
 	description = "<span class='boldwarning'>I just shat myself...</span>\n"
@@ -57,6 +58,7 @@
 /datum/mood_event/nutrition/shit
 	description = "<span class='warning'>I really need to take a shit!</span>\n"
 	mood_change = -4
+	timeout = 40
 
 //Disgust
 /datum/mood_event/disgust/gross
