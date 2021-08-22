@@ -210,6 +210,7 @@ Priestess of Mars
 	supervisors = "the Centurion, Mars"
 	exp_requirements = 800
 	exp_type = EXP_TYPE_DECANUS
+	var/prs_age = PRS_AGE_MIN
 
 	outfit = /datum/outfit/job/CaesarsLegion/f13priestess
 
@@ -241,7 +242,8 @@ Priestess of Mars
 /datum/job/CaesarsLegion/f13priestess/after_spawn(mob/living/carbon/human/H, mob/M)
 	H.add_quirk("Poor Aim")
 	H.add_quirk("Spiritual")
-
+	if(H.age < prs_age)
+		H.age = prs_age
 
 /*
 Decanus

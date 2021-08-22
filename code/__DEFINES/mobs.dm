@@ -272,6 +272,7 @@
 #define CAP_AGE_MIN		30	//youngest an NCR Captain can be
 
 #define CET_AGE_MIN		30	//youngest a Centurion can be
+#define PRS_AGE_MIN		40	//youngest a Priestess of Mars can be
 
 #define ELD_AGE_MIN		45	//youngest an Elder can be
 #define LED_AGE_MIN		35	//youngest a BoS Leader can be, excluding Elder

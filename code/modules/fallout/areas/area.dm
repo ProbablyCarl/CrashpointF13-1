@@ -23,8 +23,11 @@
 	icon_state = "wasteland"
 //	ambience_area =  list('sound/f13ambience/wasteland.ogg')
 //	ambientmusic = list('sound/f13music/fo2_wasteland.ogg','sound/f13music/fo2_desert.ogg','sound/f13music/fo2_world.ogg','sound/misc/null.ogg')
-	ambientsounds = list('sound/f13ambience/battle_1.ogg','sound/f13ambience/battle_2.ogg','sound/f13ambience/battle_3.ogg', \
-	'sound/f13ambience/rattlesnake_1.ogg','sound/f13ambience/rattlesnake_2.ogg','sound/f13ambience/rattlesnake_3.ogg','sound/f13ambience/bird_1.ogg','sound/f13ambience/bird_2.ogg','sound/f13ambience/bird_3.ogg','sound/f13ambience/bird_4.ogg')
+	ambientsounds = list('sound/f13ambience/battle_1.ogg','sound/f13ambience/battle_2.ogg','sound/f13ambience/battle_3.ogg',\
+	'sound/f13ambience/rattlesnake_1.ogg','sound/f13ambience/rattlesnake_2.ogg','sound/f13ambience/rattlesnake_3.ogg',\
+	'sound/f13ambience/bird_1.ogg','sound/f13ambience/bird_2.ogg','sound/f13ambience/bird_3.ogg','sound/f13ambience/bird_4.ogg',\
+	'sound/f13ambience/wastes/explore_01.ogg','sound/f13ambience/wastes/explore_02.ogg','sound/f13ambience/wastes/explore_03.ogg',\
+	'sound/f13ambience/wastes/explore_04.ogg','sound/f13ambience/wastes/explore_05.ogg','sound/f13ambience/wastes/explore_06.ogg','sound/f13ambience/wastes/explore_07.ogg')
 	outdoors = 1
 	open_space = 1
 	blob_allowed = 0
