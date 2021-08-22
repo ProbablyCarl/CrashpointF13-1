@@ -1803,6 +1803,9 @@
 
 /* Category Medical*/
 
+//Legion / Tribal stuff
+
+
 /datum/crafting_recipe/healpowder
 	name = "Healing powder"
 	result = /obj/item/reagent_containers/pill/patch/healingpowder
@@ -1810,6 +1813,7 @@
 				/obj/item/reagent_containers/food/snacks/grown/xander = 1)
 	time = 50
 	category = CAT_MEDICAL
+	traits = TRAIT_TECHNOPHOBE
 
 /datum/crafting_recipe/healpoultice
 	name = "Healing poultice"
@@ -1820,7 +1824,7 @@
 				/obj/item/reagent_containers/food/snacks/grown/fungus = 1)
 	time = 80
 	category = CAT_MEDICAL
-
+	traits = TRAIT_TECHNOPHOBE
 
 /datum/crafting_recipe/legionmedx
 	name = "Natural Painkiller"
@@ -1829,6 +1833,8 @@
 				/obj/item/reagent_containers/food/snacks/grown/feracactus = 1)
 	time = 120
 	category = CAT_MEDICAL
+	traits = TRAIT_TECHNOPHOBE
+
 
 // Stimpacks!
 
