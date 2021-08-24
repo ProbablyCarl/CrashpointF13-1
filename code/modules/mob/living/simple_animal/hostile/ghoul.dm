@@ -19,7 +19,8 @@
 	melee_damage_lower = 10
 	melee_damage_upper = 10
 	attacktext = "claws"
-	attack_sound = 'sound/hallucinations/growl1.ogg'
+	attack_sound = list('sound/f13npc/ghoul_new/ghoul_attack_01.ogg','sound/f13npc/ghoul_new/ghoul_attack_02.ogg','sound/f13npc/ghoul_new/ghoul_attack_03.ogg',\
+	'sound/f13npc/ghoul_new/ghoul_attack_04.ogg')
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 20
 	robust_searching = 1
@@ -32,7 +33,11 @@
 							/obj/item/stack/sheet/bone = 1)
 	loot = list(/obj/item/stack/f13Cash/random/bottle_cap/ghoul)
 
-	var/ghoul_noises = list('sound/f13npc/ghoul_alert.ogg','sound/f13npc/ghoul_charge1.ogg','sound/f13npc/ghoul_charge2.ogg','sound/f13npc/ghoul_charge3.ogg')
+	death_sound = list('sound/f13npc/ghoul_new/ghoul_death_01.ogg','sound/f13npc/ghoul_new/ghoul_death_02.ogg','sound/f13npc/ghoul_new/ghoul_death_03.ogg',\
+	'sound/f13npc/ghoul_new/ghoul_death_04.ogg')
+
+	var/ghoul_noises = list('sound/f13npc/ghoul_alert.ogg','sound/f13npc/ghoul_new/ghoul_seizure_long.ogg','sound/f13npc/ghoul_new/ghoul_seizure_short.ogg',\
+	'sound/f13npc/ghoul_charge1.ogg','sound/f13npc/ghoul_charge2.ogg','sound/f13npc/ghoul_charge3.ogg')
 
 /mob/living/simple_animal/hostile/ghoul/say(message, datum/language/language = null, var/list/spans = list(), language, sanitize, ignore_spam)
 	..()
