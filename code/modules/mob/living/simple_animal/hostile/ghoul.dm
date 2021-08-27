@@ -11,6 +11,9 @@
 	turns_per_move = 5
 	speak_emote = list("growls")
 	emote_see = list("screeches")
+	emote_taunt = list("howls")
+	emote_taunt_sound = list('sound/f13npc/ghoul_charge1.ogg','sound/f13npc/ghoul_charge2.ogg','sound/f13npc/ghoul_charge3.ogg')
+	taunt_chance = 15
 	a_intent = INTENT_HARM
 	maxHealth = 45
 	health = 45
@@ -36,8 +39,7 @@
 	death_sound = list('sound/f13npc/ghoul_new/ghoul_death_01.ogg','sound/f13npc/ghoul_new/ghoul_death_02.ogg','sound/f13npc/ghoul_new/ghoul_death_03.ogg',\
 	'sound/f13npc/ghoul_new/ghoul_death_04.ogg')
 
-	var/ghoul_noises = list('sound/f13npc/ghoul_alert.ogg','sound/f13npc/ghoul_new/ghoul_seizure_long.ogg','sound/f13npc/ghoul_new/ghoul_seizure_short.ogg',\
-	'sound/f13npc/ghoul_charge1.ogg','sound/f13npc/ghoul_charge2.ogg','sound/f13npc/ghoul_charge3.ogg')
+	var/ghoul_noises = list('sound/f13npc/ghoul_alert.ogg','sound/f13npc/ghoul_new/ghoul_seizure_long.ogg','sound/f13npc/ghoul_new/ghoul_seizure_short.ogg')
 
 /mob/living/simple_animal/hostile/ghoul/say(message, datum/language/language = null, var/list/spans = list(), language, sanitize, ignore_spam)
 	..()
@@ -129,6 +131,7 @@
 /mob/living/simple_animal/hostile/ghoul/glowing/Aggro()
 	..()
 	summon_backup(10)
+	RadBurst()//temp test
 
 /mob/living/simple_animal/hostile/ghoul/glowing/AttackingTarget()
 	. = ..()
