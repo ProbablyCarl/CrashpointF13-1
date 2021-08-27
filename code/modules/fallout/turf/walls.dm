@@ -116,7 +116,7 @@
 /turf/closed/wall/f13/tunnel
 	name = "utility tunnel wall"
 	desc = "A sturdy metal wall with various pipes and wiring set inside a special groove."
-	icon = 'icons/fallout/turfs/walls/tunnel.dmi'
+	icon = 'icons/fallout/turfs/walls/tunnelOLD.dmi'
 	icon_state = "tunnel0"
 	icon_type_smooth = "tunnel"
 	hardness = 100
@@ -125,6 +125,19 @@
 	girder_type = 0
 	sheet_type = null
 	canSmoothWith = list(/turf/closed/wall/f13/tunnel, /turf/closed/wall)
+
+/turf/closed/wall/f13/sewer
+	name = "tunnel wall"
+	desc = "A sand blasted wall."
+	icon = 'icons/fallout/turfs/walls/tunnel.dmi'
+	icon_state = "sewer0"
+	icon_type_smooth = "sewer"
+	hardness = 100
+	smooth = SMOOTH_OLD
+	//	disasemblable = 0
+	girder_type = 0
+	sheet_type = null
+	canSmoothWith = list(/turf/closed/wall/f13/sewer, /turf/closed/wall)
 
 /turf/closed/wall/f13/vault
 	name = "composite wall"
