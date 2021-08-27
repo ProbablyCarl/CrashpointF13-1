@@ -28,6 +28,7 @@
 	var/hitsound = 'sound/effects/Glasshit.ogg'
 	var/rad_insulation = RAD_VERY_LIGHT_INSULATION
 	var/spawn_cleanable_shards = TRUE
+	var/threedimensional = FALSE //3D Walls
 
 /obj/structure/window/examine(mob/user)
 	..()
@@ -480,8 +481,23 @@
 	fulltile = TRUE
 	flags_1 = PREVENT_CLICK_UNDER_1
 	smooth = SMOOTH_TRUE
-	canSmoothWith = list(/obj/structure/window/fulltile, /obj/structure/window/reinforced/fulltile, /obj/structure/window/reinforced/tinted/fulltile, /obj/structure/window/plasma/fulltile, /obj/structure/window/plasma/reinforced/fulltile)
+	canSmoothWith = list(
+		/obj/structure/window/fulltile,
+		/obj/structure/window/reinforced/fulltile,
+		/obj/structure/window/reinforced/tinted/fulltile,
+		/obj/structure/window/plasma/fulltile,
+		/obj/structure/window/plasma/reinforced/fulltile,
+		/turf/closed/wall,
+		/turf/closed/wall/r_wall,
+		/turf/closed/wall/rust,
+		/turf/closed/wall/r_wall/rust,
+		/obj/structure/simple_door,
+		/turf/closed/wall/r_wall/f13superstore,
+		/turf/closed/wall/r_wall/f13composite,
+		/turf/closed/wall/f13wood
+		)
 	glass_amount = 2
+	threedimensional = TRUE //3D Walls
 
 /obj/structure/window/fulltile/unanchored
 	anchored = FALSE
@@ -753,6 +769,6 @@
 	icon = 'icons/obj/wood_window.dmi'
 	icon_state = "housewindow"
 	density = TRUE
-	smooth = SMOOTH_FALSE
+	smooth = SMOOTH_FALSE //3D Walls
 	level = 3
 	glass_amount = 2

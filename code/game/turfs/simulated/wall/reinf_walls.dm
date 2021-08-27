@@ -12,6 +12,7 @@
 	sheet_amount = 1
 	girder_type = /obj/structure/girder/reinforced
 	explosion_block = 2
+	threedimensional = TRUE
 
 /turf/closed/wall/r_wall/ComponentInitialize()
 	. = ..()

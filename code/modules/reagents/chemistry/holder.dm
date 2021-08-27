@@ -383,19 +383,30 @@
 			R.phasepercents["LIQUID"] -= change
 			R.phasepercents["SOLID"] += change
 
+		roundphases()
 		chem_temp = round(chem_temp)
 
-/datum/reagents/proc/correctphases(reagent)
+/datum/reagents/proc/roundphases()
+	for(var/datum/reagent/R in reagent_list)
+		R.phasepercents["SOLID"] = round(R.phasepercents["SOLID"], 10 ** round(log(10, 0.01 / total_volume) - 0.5))
+		R.phasepercents["LIQUID"] = round(R.phasepercents["LIQUID"], 10 ** round(log(10, 0.01 / total_volume) - 0.5))
+		R.phasepercents["GAS"] = round(R.phasepercents["GAS"], 10 ** round(log(10, 0.01 / total_volume) - 0.5))
+	correctphases(round = FALSE)
+
+/datum/reagents/proc/correctphases(reagent, round = TRUE)
 	for(var/A in reagent_list)
 		var/datum/reagent/R = A
 		if (R.id == reagent)
 			var/total = R.phasepercents["SOLID"] + R.phasepercents["LIQUID"] + R.phasepercents["GAS"]
-			if(R.phasepercents["SOLID"] > 0)
-				R.phasepercents["SOLID"] /= total
-			if(R.phasepercents["LIQUID"] > 0)
-				R.phasepercents["LIQUID"] /= total
-			if(R.phasepercents["GAS"] > 0)
-				R.phasepercents["GAS"] /= total
+			if(total != 1)
+				if(R.phasepercents["SOLID"] > 0)
+					R.phasepercents["SOLID"] /= total
+				if(R.phasepercents["LIQUID"] > 0)
+					R.phasepercents["LIQUID"] /= total
+				if(R.phasepercents["GAS"] > 0)
+					R.phasepercents["GAS"] /= total
+	if(round)
+		roundphases()
 
 /datum/reagents/proc/gasescape(explosions = FALSE)
 	var/gaspercent = 0
@@ -455,11 +466,18 @@
 					total_matching_phases++
 					world.log << "[C.required_phases[B]], [cached_required_reagents[B]]"
 				//Reagent Phases (END)
-
+				/*
 				for(var/B in cached_required_reagents)
 					if(!has_reagent(B, cached_required_reagents[B]))
 						break
 					total_matching_reagents++
+				*/
+				//Reaction Improvements
+				for(var/B in cached_required_reagents)
+					if(!has_reagent(B))
+						break
+					total_matching_reagents++
+				//Reaction Improvements
 				for(var/B in cached_required_catalysts)
 					if(!has_reagent(B, cached_required_catalysts[B]))
 						break
@@ -528,9 +546,9 @@
 			*/
 			for(var/B in cached_required_reagents)
 				if(selected_reaction.required_phases.Find(B))
-					multiplier = min(multiplier, round(get_reagent_amount(B, phase = selected_reaction.required_phases[B]) / cached_required_reagents[B]))
+					multiplier = min(multiplier, get_reagent_amount(B, phase = selected_reaction.required_phases[B]) / cached_required_reagents[B])
 				else
-					multiplier = min(multiplier, round(get_reagent_amount(B) / cached_required_reagents[B]))
+					multiplier = min(multiplier, get_reagent_amount(B) / cached_required_reagents[B])
 
 			for(var/B in cached_required_reagents)
 				if(selected_reaction.required_phases.Find(B))

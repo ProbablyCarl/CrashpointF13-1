@@ -132,6 +132,18 @@
 
 
 /atom/proc/diagonal_smooth(adjacencies)
+	//3D Walls (START)
+	if(istype(src, /turf/closed/wall))
+		var/turf/closed/wall/W = src
+		if(W.threedimensional)
+			cardinal_smooth(src, adjacencies)
+			return
+	if(istype(src, /obj/structure/window))
+		var/obj/structure/window/W = src
+		if(W.threedimensional)
+			cardinal_smooth(src, adjacencies)
+			return
+	//3D Walls (STOP)
 	switch(adjacencies)
 		if(N_NORTH|N_WEST)
 			replace_smooth_overlays("d-se","d-se-0")
@@ -191,6 +203,34 @@
 
 
 /proc/cardinal_smooth(atom/A, adjacencies)
+	//3D Walls (START)
+	if(istype(A, /turf/closed/wall))
+		var/turf/closed/wall/W = A
+		if(W.threedimensional)
+			W.icon_state = initial(W.icon_state)
+			if((adjacencies & N_NORTH))
+				W.icon_state += "_n"
+			if((adjacencies & N_SOUTH))
+				W.icon_state += "_s"
+			if((adjacencies & N_EAST))
+				W.icon_state += "_e"
+			if((adjacencies & N_WEST))
+				W.icon_state += "_w"
+			return
+	if(istype(A, /obj/structure/window))
+		var/obj/structure/window/W = A
+		if(W.threedimensional)
+			W.icon_state = initial(W.icon_state)
+			if((adjacencies & N_NORTH))
+				W.icon_state += "_n"
+			if((adjacencies & N_SOUTH))
+				W.icon_state += "_s"
+			if((adjacencies & N_EAST))
+				W.icon_state += "_e"
+			if((adjacencies & N_WEST))
+				W.icon_state += "_w"
+			return
+	//3D Walls (STOP)
 	//NW CORNER
 	var/nw = "1-i"
 	if((adjacencies & N_NORTH) && (adjacencies & N_WEST))

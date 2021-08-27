@@ -609,15 +609,15 @@
 /datum/chemical_reaction/wpsynthesis
 	name = "Purification Tablet Powder"
 	id = "wpsynth"
-	results = list("wppowder" = 5)
-	required_reagents = list("saltpetre" = 5, "sacid" = 5, "silver" = 5, "sugar" = 5, "charcoal" = 5)
+	results = list("wppowder" = 2)
+	required_reagents = list("saltpetre" = 1, "sacid" = 1, "silver" = 1, "sugar" = 1, "charcoal" = 1)
 	mob_react = FALSE //I don't think you're supposed to eat these, buddy. | You're not my Dad, asshole!
 
 /datum/chemical_reaction/dirtywatergas
 	name = "dirty water gas"
 	id = "dwgas"
-	results = list("water" = 0.4, "sodiumchloride" = 0.1)
-	required_reagents = list("dwater" = 0.5)
+	results = list("water" = 4, "sodiumchloride" = 1)
+	required_reagents = list("dwater" = 5)
 	required_phases = list("dwater" = "GAS")
 	result_phases = list("water" = "GAS")
 	mob_react = FALSE
@@ -625,8 +625,8 @@
 /datum/chemical_reaction/boiledwatergas
 	name = "boiled water gas"
 	id = "bwgas"
-	results = list("water" = 0.4, "sodiumchloride" = 0.1)
-	required_reagents = list("bwater" = 0.5)
+	results = list("water" = 4, "sodiumchloride" = 1)
+	required_reagents = list("bwater" = 5)
 	required_phases = list("bwater" = "GAS")
 	result_phases = list("water" = "GAS")
 	mob_react = FALSE
