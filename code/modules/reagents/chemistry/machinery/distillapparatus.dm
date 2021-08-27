@@ -174,16 +174,9 @@
 	reagents.handle_reactions()
 	for(var/datum/reagent/R in reagents.reagent_list)
 		if(R.phasepercents["GAS"] > 0)
-			var/gasvar = R.phasepercents["GAS"]
-			R.phasepercents["GAS"] = 0
-			var/leftover = R.phasepercents["SOLID"] + R.phasepercents["LIQUID"]
-			if(R.phasepercents["SOLID"] > 0)
-				R.phasepercents["SOLID"] /= leftover
-			if(R.phasepercents["LIQUID"] > 0)
-				R.phasepercents["LIQUID"] /= leftover
 			if(beaker2 != null)
-				beaker2.reagents.add_reagent(R.id, R.volume * gasvar, null, reagtemp = 300, no_react = 0, phase = null)
-			reagents.remove_reagent(R.id, R.volume * gasvar)
+				beaker2.reagents.add_reagent(R.id, R.volume * R.phasepercents["GAS"], null, reagtemp = 300, no_react = 0, phase = null)
+			beaker1.reagents.remove_reagent(R.id, R.volume * R.phasepercents["GAS"], safety = 0, phase = "GAS")
 	fuel -= 1
 	updatesprites()
 

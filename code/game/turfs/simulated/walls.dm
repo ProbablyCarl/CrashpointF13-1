@@ -26,10 +26,17 @@
 	/obj/structure/falsewall/reinforced,
 	/turf/closed/wall/rust,
 	/turf/closed/wall/r_wall/rust,
-	/turf/closed/wall/clockwork)
+	/turf/closed/wall/clockwork,
+	/obj/structure/window/reinforced/fulltile,
+	/obj/structure/window/fulltile,
+	/obj/structure/window/fulltile/wood_window,
+	/obj/structure/simple_door,
+	/turf/closed/wall/f13wood
+	)
 	smooth = SMOOTH_TRUE
 
 	var/list/dent_decals
+	var/threedimensional = FALSE //3D Walls
 
 /turf/closed/wall/examine(mob/user)
 	..()

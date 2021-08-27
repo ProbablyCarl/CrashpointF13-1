@@ -24,7 +24,7 @@
 	sheet_type = null
 	canSmoothWith = list(/turf/closed/wall/f13/ruins, /turf/closed/wall)
 	unbreakable = 0
-
+	threedimensional = TRUE
 
 /turf/closed/wall/f13/wood
 	name = "wooden wall"

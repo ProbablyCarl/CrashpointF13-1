@@ -39,14 +39,31 @@
 	icon_state = "woodwindowbroken"
 	max_integrity = 1
 
-/obj/structure/window/fulltile/store
+/obj/structure/window/fulltile/city
 	icon = 'icons/obj/wood_window.dmi'
-	icon_state = "storewindowhorizontal"
+	icon_state = "city"
 	dir = 5
 	max_integrity = 100
 	fulltile = 1
 	smooth = 0
 	level = 3
+	smooth = SMOOTH_TRUE
+	canSmoothWith = list(
+		/obj/structure/window/fulltile,
+		/obj/structure/window/reinforced/fulltile,
+		/obj/structure/window/reinforced/tinted/fulltile,
+		/obj/structure/window/plasma/fulltile,
+		/obj/structure/window/plasma/reinforced/fulltile,
+		/turf/closed/wall,
+		/turf/closed/wall/r_wall,
+		/turf/closed/wall/rust,
+		/turf/closed/wall/r_wall/rust,
+		/obj/structure/simple_door,
+		/turf/closed/wall/r_wall/f13superstore,
+		/turf/closed/wall/r_wall/f13composite,
+		/turf/closed/wall/f13wood,
+		/obj/structure/window/fulltile/city
+		)
 
 /obj/structure/window/fulltile/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/stack/sheet/mineral/wood))
