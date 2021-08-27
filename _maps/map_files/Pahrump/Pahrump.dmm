@@ -5201,7 +5201,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "aoG" = (
-/obj/item/candle/tribal_torch/lit,
+/obj/structure/destructible/tribal_torch/roundstart,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "aoH" = (
@@ -6585,7 +6585,7 @@
 	icon_state = "storewindowhorizontal";
 	tag = "icon-storewindowhorizontal (NORTHEAST)"
 	},
-/obj/structure/barricade/wooden/planks/pregame,
+/obj/structure/barricade/bars,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/legion)
 "asJ" = (
@@ -8837,6 +8837,10 @@
 	tag = "icon-floorrusty"
 	},
 /area/f13/building)
+"ayq" = (
+/obj/structure/destructible/tribal_torch/roundstart,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
 "ayr" = (
 /obj/structure/window/fulltile/house{
 	dir = 2;
@@ -21300,10 +21304,6 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/building)
-"bhr" = (
-/obj/item/candle/tribal_torch/lit,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "bhs" = (
 /obj/item/ammo_casing/c9mm/ap,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -93380,7 +93380,7 @@ bnV
 bnV
 bpG
 bnL
-bhr
+ayq
 acQ
 aek
 aek
@@ -95436,7 +95436,7 @@ aek
 aek
 aTy
 aMr
-bhr
+ayq
 acQ
 aek
 aek
@@ -96215,7 +96215,7 @@ aMr
 aMr
 aMr
 aMr
-bhr
+ayq
 bsO
 bts
 btH
@@ -96459,7 +96459,7 @@ bcc
 bcc
 bcc
 bcc
-bhr
+ayq
 acQ
 aek
 aTy
@@ -96725,7 +96725,7 @@ aMr
 acQ
 aek
 adY
-bhr
+ayq
 aMr
 aMr
 aMr
@@ -96977,7 +96977,7 @@ aMr
 acQ
 aek
 aTy
-bhr
+ayq
 aMr
 acQ
 aek
@@ -97226,7 +97226,7 @@ bcc
 bcc
 bcc
 bcc
-bhr
+ayq
 aMr
 aMr
 aMr
@@ -97977,11 +97977,11 @@ aRb
 aAe
 bfL
 aMr
-bhr
+ayq
 aMr
 aMr
 aMr
-bhr
+ayq
 bnL
 ase
 bnL
@@ -99519,7 +99519,7 @@ aRb
 aAe
 bfL
 aMr
-bhr
+ayq
 aMr
 aMr
 aMr
@@ -99538,7 +99538,7 @@ aeP
 adw
 adw
 abA
-bhr
+ayq
 aMr
 adT
 aEw
@@ -99780,7 +99780,7 @@ aMr
 aMr
 aMr
 aMr
-bhr
+ayq
 ase
 ase
 avr
@@ -100065,7 +100065,7 @@ aMr
 acQ
 aek
 adY
-bhr
+ayq
 aMr
 aMr
 aMr
@@ -100299,7 +100299,7 @@ aMr
 asX
 bnK
 bnL
-bhr
+ayq
 adc
 aek
 aek
@@ -100317,7 +100317,7 @@ aek
 aek
 aek
 aTy
-bhr
+ayq
 aMr
 acQ
 aek
@@ -101082,7 +101082,7 @@ anO
 aek
 aek
 aTy
-bhr
+ayq
 aMr
 acQ
 abg
@@ -101617,7 +101617,7 @@ aek
 aff
 abA
 aMr
-bhr
+ayq
 apL
 adS
 aek
@@ -101865,7 +101865,7 @@ aek
 aTy
 aMr
 aMr
-bhr
+ayq
 acQ
 abg
 aEw
@@ -102627,10 +102627,10 @@ aek
 aek
 aek
 adY
-bhr
+ayq
 aMr
 aet
-bhr
+ayq
 adc
 aek
 aek
@@ -103911,7 +103911,7 @@ aek
 aek
 aek
 adY
-bhr
+ayq
 aMr
 aMr
 bnL
@@ -104421,7 +104421,7 @@ aMr
 aMr
 aMr
 aMr
-bhr
+ayq
 adT
 aEw
 abh

@@ -47,3 +47,13 @@
 
 /obj/structure/destructible/tribal_torch/fire_act(exposed_temperature, exposed_volume)
 	StartBurning()
+
+//prelit
+/obj/structure/destructible/tribal_torch/roundstart
+	name = "tribal torch"
+
+/obj/structure/destructible/tribal_torch/roundstart/Initialize()
+	. = ..()
+	StartBurning()
+
+

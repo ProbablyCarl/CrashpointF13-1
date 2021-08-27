@@ -29,6 +29,10 @@
 	attacktext = "smashes"
 	attack_sound = "punch"
 
+/*	death_sound = list('sound/f13npc/supermutant_new/sm_death01.ogg','sound/f13npc/supermutant_new/sm_death02.ogg','sound/f13npc/supermutant_new/sm_death03.ogg',\
+	'sound/f13npc/supermutant_new/sm_death04.ogg','sound/f13npc/supermutant_new/sm_death05.ogg','sound/f13npc/supermutant_new/sm_death06.ogg',\
+	'sound/f13npc/supermutant_new/sm_death07.ogg','sound/f13npc/supermutant_new/sm_death08.ogg','sound/f13npc/supermutant_new/sm_death09.ogg')*/
+
 /mob/living/simple_animal/hostile/supermutant/Aggro()
 	..()
 	summon_backup(15)
