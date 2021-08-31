@@ -13,6 +13,18 @@
 	icon_state = "ruinswindowbroken"
 	max_integrity = 1
 
+//WHY DO WE NOT HAVE WINDOW SMOOTHING PROPERLY AHHHHHHHHHH FUCK
+
+/obj/structure/window/fulltile/ruins/vert_broken
+	icon_state = "ruinswindowbrokenvertical"
+	max_integrity = 1
+
+/obj/structure/window/fulltile/ruins/vertical
+	icon_state = "ruinswindowvertical"
+	max_integrity = 1
+
+/////////
+
 /obj/structure/window/fulltile/house
 	icon = 'icons/obj/wood_window.dmi'
 	icon_state = "housewindow"
@@ -25,6 +37,18 @@
 /obj/structure/window/fulltile/house/broken
 	icon_state = "housewindowbroken"
 	max_integrity = 1
+
+//WHY DO WE NOT HAVE WINDOW SMOOTHING PROPERLY AHHHHHHHHHH FUCK
+
+/obj/structure/window/fulltile/house/vert_broken
+	icon_state = "housewindowverticalbroken"
+	max_integrity = 1
+
+/obj/structure/window/fulltile/house/vertical
+	icon_state = "housewindowvertical"
+	max_integrity = 1
+
+/////////
 
 /obj/structure/window/fulltile/wood
 	icon = 'icons/obj/wood_window.dmi'
@@ -47,7 +71,7 @@
 	fulltile = 1
 	smooth = 0
 	level = 3
-	smooth = SMOOTH_TRUE
+/*	smooth = SMOOTH_TRUE
 	canSmoothWith = list(
 		/obj/structure/window/fulltile,
 		/obj/structure/window/reinforced/fulltile,
@@ -63,7 +87,21 @@
 		/turf/closed/wall/r_wall/f13composite,
 		/turf/closed/wall/f13wood,
 		/obj/structure/window/fulltile/city
-		)
+		)*/
+
+//WHY DO WE NOT HAVE WINDOW SMOOTHING PROPERLY AHHHHHHHHHH FUCK
+
+/obj/structure/window/fulltile/city/broken
+	icon_state = "citybroken"
+	max_integrity = 1
+
+/obj/structure/window/fulltile/city/vert_broken
+	icon_state = "cityverticalbroken"
+	max_integrity = 1
+
+/obj/structure/window/fulltile/city/vertical
+	icon_state = "cityvertical"
+	max_integrity = 1
 
 /obj/structure/window/fulltile/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/stack/sheet/mineral/wood))
