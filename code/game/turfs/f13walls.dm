@@ -21,13 +21,25 @@
 		/turf/closed/wall/r_wall/f13composite,
 		/obj/structure/window/reinforced/fulltile,
 		/obj/structure/window/fulltile,
-		/obj/structure/window/fulltile/wood_window
+		/obj/structure/window/fulltile/wood_window,
+		/obj/structure/window/fulltile/house,
+		/obj/structure/window/fulltile/house/vertical,
+		/obj/structure/window/fulltile/house/broken,
+		/obj/structure/window/fulltile/house/vert_broken,
+		/obj/structure/window/fulltile/city,
+		/obj/structure/window/fulltile/city/vertical,
+		/obj/structure/window/fulltile/city/broken,
+		/obj/structure/window/fulltile/city/vert_broken,
+		/obj/structure/window/fulltile/ruins,
+		/obj/structure/window/fulltile/ruins/vertical,
+		/obj/structure/window/fulltile/ruins/broken,
+		/obj/structure/window/fulltile/ruins/vert_broken,
 		)
 	//3D Walls
 
 /turf/closed/wall/r_wall/f13superstore
-	name = "store wall"
-	desc = "A huge chunk of store used to separate rooms."
+	name = "weathered wall"
+	desc = "A huge chunk of material used to separate rooms."
 	icon = 'icons/turf/walls/f13superstore.dmi'
 	hardness = 50
 	//3D Walls
@@ -36,7 +48,19 @@
 		/turf/closed/wall/r_wall/f13superstore,
 		/obj/structure/window/reinforced/fulltile,
 		/obj/structure/window/fulltile,
-		/obj/structure/window/fulltile/wood_window
+		/obj/structure/window/fulltile/wood_window,
+		/obj/structure/window/fulltile/house,
+		/obj/structure/window/fulltile/house/vertical,
+		/obj/structure/window/fulltile/house/broken,
+		/obj/structure/window/fulltile/house/vert_broken,
+		/obj/structure/window/fulltile/city,
+		/obj/structure/window/fulltile/city/vertical,
+		/obj/structure/window/fulltile/city/broken,
+		/obj/structure/window/fulltile/city/vert_broken,
+		/obj/structure/window/fulltile/ruins,
+		/obj/structure/window/fulltile/ruins/vertical,
+		/obj/structure/window/fulltile/ruins/broken,
+		/obj/structure/window/fulltile/ruins/vert_broken,
 		)
 	//3D Walls
 
@@ -52,6 +76,18 @@
 		/obj/structure/window/reinforced/fulltile,
 		/obj/structure/window/fulltile,
 		/obj/structure/window/fulltile/wood_window,
+		/obj/structure/window/fulltile/house,
+		/obj/structure/window/fulltile/house/vertical,
+		/obj/structure/window/fulltile/house/broken,
+		/obj/structure/window/fulltile/house/vert_broken,
+		/obj/structure/window/fulltile/city,
+		/obj/structure/window/fulltile/city/vertical,
+		/obj/structure/window/fulltile/city/broken,
+		/obj/structure/window/fulltile/city/vert_broken,
+		/obj/structure/window/fulltile/ruins,
+		/obj/structure/window/fulltile/ruins/vertical,
+		/obj/structure/window/fulltile/ruins/broken,
+		/obj/structure/window/fulltile/ruins/vert_broken,
 		)
 	//3D Walls
 
@@ -67,5 +103,17 @@
 		/obj/structure/window/reinforced/fulltile,
 		/obj/structure/window/fulltile,
 		/obj/structure/window/fulltile/wood_window,
+		/obj/structure/window/fulltile/house,
+		/obj/structure/window/fulltile/house/vertical,
+		/obj/structure/window/fulltile/house/broken,
+		/obj/structure/window/fulltile/house/vert_broken,
+		/obj/structure/window/fulltile/city,
+		/obj/structure/window/fulltile/city/vertical,
+		/obj/structure/window/fulltile/city/broken,
+		/obj/structure/window/fulltile/city/vert_broken,
+		/obj/structure/window/fulltile/ruins,
+		/obj/structure/window/fulltile/ruins/vertical,
+		/obj/structure/window/fulltile/ruins/broken,
+		/obj/structure/window/fulltile/ruins/vert_broken,
 		)
 	//3D Walls
