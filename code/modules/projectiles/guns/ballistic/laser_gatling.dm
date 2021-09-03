@@ -105,7 +105,7 @@
 	materials = list()
 	burst_size = 1
 	automatic = 1//allows click dragging to fire
-	fire_delay = 3
+	fire_delay = 1.2//T5 weapon with incredible power.
 	spread = 40
 	weapon_weight = WEAPON_HEAVY
 	fire_sound = 'sound/weapons/laser.ogg'

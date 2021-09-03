@@ -285,13 +285,13 @@
 	open_sound = "sound/f13machines/doorstore_open.ogg"
 	close_sound = "sound/f13machines/doorstore_close.ogg"
 	explosion_block = 2
-
+/*
 /obj/structure/simple_door/metal/dirtystore
 	desc = "A metal door with dirty glass, you can't see a thing behind it."
 	icon_state = "dirtystore"
 	door_type = "dirtystore"
 	can_hold_padlock = TRUE
-
+*/
 /obj/structure/simple_door/metal/store
 	icon_state = "store"
 	door_type = "store"
