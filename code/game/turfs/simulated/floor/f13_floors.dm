@@ -108,14 +108,44 @@
 	icon = 'icons/turf/f13road.dmi'
 	icon_state = "outermiddle"
 
+/////////
+//new wood start
+/////////
 /turf/open/floor/wood/f13
-	icon = 'icons/turf/floors.dmi'
-	icon_state = "housewood1"
+	icon_state = "wood"
 
 	New()
 		..()
-		if(icon_state == "housewood1")
-			icon_state = "housewood[rand(1,3)]"
+		if(icon_state == "wood")
+			icon_state = "wood[rand(1,3)]"
+
+/turf/open/floor/wood/f13/second
+	icon_state = "secondwood"
+
+	New()
+		..()
+		if(icon_state == "secondwood")
+			icon_state = "secondwood[rand(1,3)]"
+
+/turf/open/floor/wood/f13/third
+	icon_state = "thirdwood"
+
+	New()
+		..()
+		if(icon_state == "thirdwood")
+			icon_state = "thirdwood[rand(1,3)]"
+
+/turf/open/floor/wood/f13/fourth
+	icon_state = "fourthwood"
+
+	New()
+		..()
+		if(icon_state == "fourthwood")
+			icon_state = "fourthwood[rand(1,3)]"
+
+/////////
+//new wood end
+/////////
 
 /turf/open/floor/wood/f13/carpet
 	icon_state = "carpet"

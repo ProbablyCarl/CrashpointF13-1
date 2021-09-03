@@ -6764,8 +6764,8 @@
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "qj" = (
-/turf/open/floor/plating/asteroid/snow/ice,
 /obj/machinery/atmospherics/components/unary/outlet_injector/on,
+/turf/open/floor/plating/asteroid/snow/ice,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/post/cavern2)
 "qk" = (
@@ -8071,8 +8071,8 @@
 /turf/open/floor/plating/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
 "tM" = (
-/turf/open/floor/plating/asteroid/snow/ice,
 /obj/structure/barricade/wooden/snowed,
+/turf/open/floor/plating/asteroid/snow/ice,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "tN" = (
@@ -12250,18 +12250,18 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_dock)
 "FN" = (
-/turf/open/floor/plating/asteroid/snow/ice,
 /obj/effect/turf_decal/stripes/corner,
 /obj/machinery/conveyor_switch/oneway{
 	id = "snowdin_belt_mine";
 	name = "mining conveyor"
 	},
+/turf/open/floor/plating/asteroid/snow/ice,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "FO" = (
-/turf/open/floor/plating/asteroid/snow/ice,
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/loading_area,
+/turf/open/floor/plating/asteroid/snow/ice,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "FQ" = (
@@ -12316,7 +12316,6 @@
 /turf/open/floor/plating/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
 "FY" = (
-/turf/open/floor/plating/asteroid/snow/ice,
 /obj/machinery/conveyor{
 	dir = 2;
 	id = "snowdin_belt_mine"
@@ -12324,6 +12323,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/turf/open/floor/plating/asteroid/snow/ice,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/post/mining_dock)
 "FZ" = (
@@ -14049,17 +14049,17 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_dock)
 "WK" = (
-/turf/open/floor/plating/asteroid/snow/ice,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
+/turf/open/floor/plating/asteroid/snow/ice,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "XO" = (
-/turf/open/floor/plating/asteroid/snow/ice,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/turf/open/floor/plating/asteroid/snow/ice,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "Yn" = (

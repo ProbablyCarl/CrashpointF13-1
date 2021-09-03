@@ -876,8 +876,8 @@
 	light_color = "#00FFFF"
 
 /obj/machinery/light/fo13colored/emergency
-	icon_state = "bulb"
-	base_state = "bulb"
+	icon_state = "bulb_emergency"
+	base_state = "bulb_emergency"
 	fitting = "bulb"
 	brightness = 2
 	desc = "A small lighting fixture. This one appears lit by a backup generator."
