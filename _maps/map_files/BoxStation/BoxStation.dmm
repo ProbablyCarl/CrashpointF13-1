@@ -1573,7 +1573,7 @@
 /area/f13/desert)
 "aft" = (
 /obj/structure/closet/f13/leigon/ssandals,
-/obj/item/clothing/shoes/f13/rag,
+/obj/item/clothing/under/f13/caravan,
 /obj/item/clothing/under/f13/caravan,
 /turf/open/floor/wood/f13,
 /area/f13/legioncamp)
@@ -1604,14 +1604,6 @@
 	dir = 1
 	},
 /obj/structure/closet/f13/leigon/plants,
-/obj/item/clothing/shoes/f13/rag,
-/obj/item/clothing/under/f13/caravan,
-/turf/open/floor/wood/f13,
-/area/f13/legioncamp)
-"afy" = (
-/obj/structure/closet/f13/leigon/plants,
-/obj/item/clothing/shoes/f13/rag,
-/obj/item/clothing/under/f13/caravan,
 /turf/open/floor/wood/f13,
 /area/f13/legioncamp)
 "afz" = (
@@ -3439,7 +3431,7 @@
 /area/f13/klamat)
 "alg" = (
 /obj/structure/closet/f13/leigon/ssandals,
-/obj/item/clothing/shoes/f13/rag,
+/obj/item/clothing/under/f13/rag,
 /obj/item/clothing/under/f13/rag,
 /turf/open/floor/wood/f13,
 /area/f13/legioncamp)
@@ -3453,8 +3445,6 @@
 /area/f13/legioncamp)
 "alj" = (
 /obj/structure/closet/f13/leigon/plants,
-/obj/item/clothing/shoes/f13/rag,
-/obj/item/clothing/under/f13/rag,
 /turf/open/floor/wood/f13,
 /area/f13/legioncamp)
 "alk" = (
@@ -35766,6 +35756,11 @@
 	icon_state = "whitebluerustychess"
 	},
 /area/f13/farmhouse)
+"hdP" = (
+/obj/structure/table/wood/settler,
+/obj/item/lighter,
+/turf/open/indestructible/ground/outside/dirt,
+/area/f13/desert)
 "huC" = (
 /obj/structure/chair/stool/f13stool{
 	dir = 8;
@@ -135901,7 +135896,7 @@ aaI
 aav
 aav
 aav
-ahq
+hdP
 ahq
 aav
 aav
@@ -150399,7 +150394,7 @@ aav
 aav
 aav
 ajV
-ahq
+hdP
 ahq
 ajV
 aav
@@ -153593,9 +153588,9 @@ adW
 adv
 adv
 aal
+aft
 adv
-adv
-adv
+alg
 adQ
 aag
 aag
@@ -155201,7 +155196,7 @@ adW
 adv
 adv
 aal
-afy
+alj
 adv
 alj
 aal
