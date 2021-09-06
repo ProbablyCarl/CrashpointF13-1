@@ -7,7 +7,9 @@
 
 /obj/machinery/telecomms/server
 	name = "telecommunication server"
+	icon = 'icons/fallout/machines/falloutcomms64x32.dmi'
 	icon_state = "comm_server"
+	bound_width = 64//should work
 	desc = "A machine used to store data and network statistics."
 	density = TRUE
 	use_power = IDLE_POWER_USE
@@ -148,5 +150,9 @@
 	autolinkers = list("security")
 
 /obj/machinery/telecomms/server/presets/common/birdstation/Initialize()
+	. = ..()
+	freq_listening = list()
+
+/obj/machinery/telecomms/server/presets/common/wasteland/Initialize()
 	. = ..()
 	freq_listening = list()

@@ -102,6 +102,81 @@
 		qdel(turfPlant)
 	. =  ..()
 
+
+/////////
+// Begin Snow
+/////////
+
+#define SNOW_GRASS_SPONTANEOUS 		2
+#define SNOW_GRASS_WEIGHT 			4
+#define SNOW_LUSH_PLANT_SPAWN_LIST list(/obj/structure/flora/grass/both = 10, /obj/structure/flora/grass/brown = 10, /obj/structure/flora/grass/green = 10, /obj/structure/flora/wasteplant/wild_broc = 7, /obj/structure/flora/wasteplant/wild_feracactus = 5, /obj/structure/flora/wasteplant/wild_mutfruit = 5, /obj/structure/flora/wasteplant/wild_xander = 5, /obj/structure/flora/wasteplant/wild_agave = 5, /obj/structure/flora/tree/dead = 3)
+#define SNOW_DESOLATE_PLANT_SPAWN_LIST list(/obj/structure/flora/grass/both = 10, /obj/structure/flora/grass/brown = 10, /obj/structure/flora/grass/green = 10)
+
+/turf/open/floor/plating/f13/outside/snow
+	gender = PLURAL
+	name = "snow"
+	icon = 'icons/turf/snow.dmi'
+	desc = "Looks cold."
+	icon_state = "snow"
+	floor_tile = null
+	temperature = 180
+	slowdown = 2
+	bullet_sizzle = TRUE
+	archdrops = list(/obj/item/stack/sheet/mineral/snow = list(ARCH_PROB = 100,ARCH_MAXDROP = 5))
+	var/obj/structure/flora/turfPlant = null
+
+/turf/open/floor/plating/f13/outside/snow/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
+	return
+
+/turf/open/floor/plating/f13/outside/snow/crowbar_act(mob/living/user, obj/item/I)
+	return
+
+/turf/open/floor/plating/f13/outside/snow/Initialize()
+	. = ..()
+	icon_state = "snow[rand(1,12)]"
+	//If no fences, machines (soil patches are machines), etc. try to plant fauna
+	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
+		plantGrass()
+
+//Pass PlantForce for admin stuff I guess?
+/turf/open/floor/plating/f13/outside/snow/proc/plantGrass(Plantforce = FALSE)
+	var/Weight = 0
+	var/randPlant = null
+
+	//spontaneously spawn grass
+	if(Plantforce || prob(SNOW_GRASS_SPONTANEOUS))
+		randPlant = pickweight(SNOW_LUSH_PLANT_SPAWN_LIST) //Create a new grass object at this location, and assign var
+		turfPlant = new randPlant(src)
+		. = TRUE //in case we ever need this to return if we spawned
+		return .
+
+	//loop through neighbouring desert turfs, if they have grass, then increase weight
+	for(var/turf/open/floor/plating/f13/outside/snow/T in RANGE_TURFS(3, src))
+		if(T.turfPlant)
+			Weight += GRASS_WEIGHT
+
+	//use weight to try to spawn grass
+	if(prob(Weight))
+
+		//If surrounded on 5+ sides, pick from lush
+		if(Weight == (5 * GRASS_WEIGHT))
+			randPlant = pickweight(SNOW_LUSH_PLANT_SPAWN_LIST)
+		else
+			randPlant = pickweight(SNOW_DESOLATE_PLANT_SPAWN_LIST)
+		turfPlant = new randPlant(src)
+		. = TRUE
+
+//Make sure we delete the plant if we ever change turfs
+/turf/open/floor/plating/f13/outside/snow/ChangeTurf()
+	if(turfPlant)
+		qdel(turfPlant)
+	. =  ..()
+
+
+/////////
+// End Snow
+/////////
+
 /turf/open/floor/plating/f13/outside/road
 	name = "\proper road"
 	desc = "A stretch of road."
@@ -112,36 +187,32 @@
 //new wood start
 /////////
 /turf/open/floor/wood/f13
-	icon_state = "wood"
+	icon_state = "wood1"
 
 	New()
-		..()
-		if(icon_state == "wood")
-			icon_state = "wood[rand(1,3)]"
+		if(prob(15))
+			icon_state = "wood1_[rand(0,6)]"
 
 /turf/open/floor/wood/f13/second
-	icon_state = "secondwood"
+	icon_state = "wood2"
 
 	New()
-		..()
-		if(icon_state == "secondwood")
-			icon_state = "secondwood[rand(1,3)]"
+		if(prob(15))
+			icon_state = "wood2_[rand(0,6)]"
 
 /turf/open/floor/wood/f13/third
-	icon_state = "thirdwood"
+	icon_state = "wood3"
 
 	New()
-		..()
-		if(icon_state == "thirdwood")
-			icon_state = "thirdwood[rand(1,3)]"
+		if(prob(15))
+			icon_state = "wood3_[rand(0,4)]"
 
 /turf/open/floor/wood/f13/fourth
-	icon_state = "fourthwood"
+	icon_state = "wood4"
 
 	New()
-		..()
-		if(icon_state == "fourthwood")
-			icon_state = "fourthwood[rand(1,3)]"
+		if(prob(15))
+			icon_state = "wood4_[rand(0,6)]"
 
 /////////
 //new wood end

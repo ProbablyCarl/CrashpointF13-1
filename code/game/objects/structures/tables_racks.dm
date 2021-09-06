@@ -571,7 +571,7 @@
 //A table that'd be built by players, since their constructions would be... less impressive than their prewar counterparts.
 
 /obj/structure/table/wood/settler
-	desc = "A wooden table constructed by a carpentering amateur from various planks.<br>It's the work of wasteland settler."
+	desc = "A wooden table constructed by a carpentering amateur from various planks.<br>It's the work of wasteland settlers."
 	icon_state = "settlertable"
 	icon = 'icons/obj/smooth_structures/wood_table_settler.dmi'
 	icon_type_smooth = "settlertable"

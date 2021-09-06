@@ -7,9 +7,9 @@
 */
 
 /obj/machinery/telecomms/receiver
-	name = "subspace receiver"
+	name = "broadcast receiver"
 	icon_state = "broadcast receiver"
-	desc = "This machine has a dish-like shape and green lights. It is designed to detect and process subspace radio activity."
+	desc = "This machine has looks rather odd. It is designed to detect and process radio activity, you'd wager."
 	density = TRUE
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 30
@@ -66,3 +66,30 @@
 /obj/machinery/telecomms/receiver/preset_left/birdstation
 	name = "Receiver"
 	freq_listening = list()
+
+
+//--PRESET STANDARD--//
+
+/obj/machinery/telecomms/receiver/preset_wasteland
+	id = "Receiver C"
+	network = "tcommsat"
+	autolinkers = list("receiverC") // link to relay
+	freq_listening = list(FREQ_COMMAND, FREQ_ENGINEERING, FREQ_SECURITY, FREQ_SCIENCE, FREQ_MEDICAL, FREQ_SUPPLY, FREQ_SERVICE, FREQ_VAULT, FREQ_NCR, FREQ_BOS, FREQ_ENCLAVE, FREQ_DEN, FREQ_LEGION)
+/*
+/obj/machinery/telecomms/receiver/preset_wasteland/Initialize()
+	. = ..()
+	for(var/i = MIN_FREQ, i <= MAX_FREQ, i += 2)
+		freq_listening |= i
+*/
+//misc standard
+/obj/machinery/telecomms/receiver/preset_wasteland_two
+	id = "Receiver D"
+	network = "tcommsat"
+	autolinkers = list("receiverD") // link to relay
+	freq_listening = list(FREQ_COMMAND, FREQ_ENGINEERING, FREQ_SECURITY, FREQ_SCIENCE, FREQ_MEDICAL, FREQ_SUPPLY, FREQ_SERVICE, FREQ_VAULT, FREQ_NCR, FREQ_BOS, FREQ_ENCLAVE, FREQ_DEN, FREQ_LEGION)
+
+/obj/machinery/telecomms/receiver/preset_wasteland_three
+	id = "Receiver E"
+	network = "tcommsat"
+	autolinkers = list("receiverE") // link to relay
+	freq_listening = list(FREQ_COMMAND, FREQ_ENGINEERING, FREQ_SECURITY, FREQ_SCIENCE, FREQ_MEDICAL, FREQ_SUPPLY, FREQ_SERVICE, FREQ_VAULT, FREQ_NCR, FREQ_BOS, FREQ_ENCLAVE, FREQ_DEN, FREQ_LEGION)

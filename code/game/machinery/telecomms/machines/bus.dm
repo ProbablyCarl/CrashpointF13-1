@@ -10,6 +10,7 @@
 
 /obj/machinery/telecomms/bus
 	name = "bus mainframe"
+	icon = 'icons/fallout/machines/falloutcomms32x64.dmi'
 	icon_state = "bus"
 	desc = "A mighty piece of hardware used to send massive amounts of data quickly."
 	density = TRUE
@@ -77,6 +78,11 @@
 		freq_listening |= i
 
 /obj/machinery/telecomms/bus/preset_one/birdstation
+	name = "Bus"
+	autolinkers = list("processor1", "common")
+	freq_listening = list()
+
+/obj/machinery/telecomms/bus/preset_one/wasteland
 	name = "Bus"
 	autolinkers = list("processor1", "common")
 	freq_listening = list()

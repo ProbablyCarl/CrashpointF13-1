@@ -9,9 +9,9 @@
 
 /turf/open/floor/wood
 	desc = "Stylish dark wood."
-	icon_state = "wood"
+	icon_state = "wood1"
 	floor_tile = /obj/item/stack/tile/wood
-	broken_states = list("wood-broken", "wood-broken2", "wood-broken3", "wood-broken4", "wood-broken5", "wood-broken6", "wood-broken7")
+	broken_states = list("wood1_1", "wood1_2", "wood1_3", "wood1_4", "wood1_5", "wood1_6")
 
 /turf/open/floor/wood/examine(mob/user)
 	..()

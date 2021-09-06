@@ -10,6 +10,7 @@
 
 /obj/machinery/telecomms/hub
 	name = "telecommunication hub"
+	icon = 'icons/fallout/machines/falloutcomms32x64.dmi'
 	icon_state = "hub"
 	desc = "A mighty piece of hardware used to send/receive massive amounts of data."
 	density = TRUE
@@ -39,5 +40,5 @@
 	network = "tcommsat"
 	autolinkers = list("hub", "relay", "s_relay", "m_relay", "r_relay", "h_relay", "science", "medical",
 	"supply", "service", "vault", "ncr", "bos", "enclave", "town", "legion", "common", "command", "engineering", "security",
-	"receiverA", "receiverB", "broadcasterA", "broadcasterB")
+	"receiverA", "receiverB", "receiverC", "receiverD", "receiverE", "broadcasterA", "broadcasterB")
 
