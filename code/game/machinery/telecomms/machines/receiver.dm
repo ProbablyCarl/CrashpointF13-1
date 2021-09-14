@@ -74,7 +74,8 @@
 	id = "Receiver C"
 	network = "tcommsat"
 	autolinkers = list("receiverC") // link to relay
-	freq_listening = list(FREQ_COMMAND, FREQ_ENGINEERING, FREQ_SECURITY, FREQ_SCIENCE, FREQ_MEDICAL, FREQ_SUPPLY, FREQ_SERVICE, FREQ_VAULT, FREQ_NCR, FREQ_BOS, FREQ_ENCLAVE, FREQ_DEN, FREQ_LEGION)
+	freq_listening = list()
+//	freq_listening = list(FREQ_COMMAND, FREQ_ENGINEERING, FREQ_SECURITY, FREQ_SCIENCE, FREQ_MEDICAL, FREQ_SUPPLY, FREQ_SERVICE, FREQ_VAULT, FREQ_NCR, FREQ_BOS, FREQ_ENCLAVE, FREQ_DEN, FREQ_LEGION)
 /*
 /obj/machinery/telecomms/receiver/preset_wasteland/Initialize()
 	. = ..()
@@ -82,14 +83,22 @@
 		freq_listening |= i
 */
 //misc standard
-/obj/machinery/telecomms/receiver/preset_wasteland_two
+/obj/machinery/telecomms/receiver/preset_wasteland/two
 	id = "Receiver D"
 	network = "tcommsat"
 	autolinkers = list("receiverD") // link to relay
-	freq_listening = list(FREQ_COMMAND, FREQ_ENGINEERING, FREQ_SECURITY, FREQ_SCIENCE, FREQ_MEDICAL, FREQ_SUPPLY, FREQ_SERVICE, FREQ_VAULT, FREQ_NCR, FREQ_BOS, FREQ_ENCLAVE, FREQ_DEN, FREQ_LEGION)
+	freq_listening = list()
+//	freq_listening = list(FREQ_COMMAND, FREQ_ENGINEERING, FREQ_SECURITY, FREQ_SCIENCE, FREQ_MEDICAL, FREQ_SUPPLY, FREQ_SERVICE, FREQ_VAULT, FREQ_NCR, FREQ_BOS, FREQ_ENCLAVE, FREQ_DEN, FREQ_LEGION)
 
-/obj/machinery/telecomms/receiver/preset_wasteland_three
+/obj/machinery/telecomms/receiver/preset_wasteland/three
 	id = "Receiver E"
 	network = "tcommsat"
 	autolinkers = list("receiverE") // link to relay
-	freq_listening = list(FREQ_COMMAND, FREQ_ENGINEERING, FREQ_SECURITY, FREQ_SCIENCE, FREQ_MEDICAL, FREQ_SUPPLY, FREQ_SERVICE, FREQ_VAULT, FREQ_NCR, FREQ_BOS, FREQ_ENCLAVE, FREQ_DEN, FREQ_LEGION)
+	freq_listening = list()
+//	freq_listening = list(FREQ_COMMAND, FREQ_ENGINEERING, FREQ_SECURITY, FREQ_SCIENCE, FREQ_MEDICAL, FREQ_SUPPLY, FREQ_SERVICE, FREQ_VAULT, FREQ_NCR, FREQ_BOS, FREQ_ENCLAVE, FREQ_DEN, FREQ_LEGION)
+/*
+//Paper for mapping.
+/obj/item/paper/guides/radio_relay
+	name = "Radio Relays For Dummies"
+	info = "<center><b>Dummies Guide To Telecomms</b></center><br><br><center></center><br><br>Take a multi-tool. Use your multi-tool (<b>on a receiver!!!</b>) to insert the frequency you wish to speak over. That's it! It's that simple. However, keep in mind that this is easy to disrupt, if the enemy(<b>That darn Janitor...</b>) finds out what you had placed into the filters.</center>"
+*/

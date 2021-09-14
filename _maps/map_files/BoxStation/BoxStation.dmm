@@ -3416,6 +3416,7 @@
 /area/f13/klamat)
 "akY" = (
 /obj/structure/table/wood/settler,
+/obj/item/multitool,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -13917,7 +13918,7 @@
 	},
 /area/f13/sunny_dale)
 "aMj" = (
-/obj/machinery/telecomms/receiver/preset_wasteland_two,
+/obj/machinery/telecomms/receiver/preset_wasteland/two,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -21866,6 +21867,7 @@
 /area/f13/den)
 "bjc" = (
 /obj/structure/table/wood/settler,
+/obj/item/multitool,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrustysolid"
 	},

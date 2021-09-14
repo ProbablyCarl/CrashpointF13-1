@@ -24550,6 +24550,7 @@
 /area/f13/village)
 "bsz" = (
 /obj/structure/table/wood/settler,
+/obj/item/multitool,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrustysolid"
 	},
@@ -24759,13 +24760,20 @@
 /obj/machinery/light/fo13colored/emergency{
 	dir = 8
 	},
-/obj/machinery/telecomms/receiver/preset_wasteland_two,
+/obj/machinery/telecomms/receiver/preset_wasteland/two,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrustysolid"
 	},
 /area/f13/bunker)
 "bte" = (
 /turf/open/floor/plasteel/f13,
+/area/f13/bunker)
+"btf" = (
+/obj/structure/table/wood/settler,
+/obj/item/multitool,
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/bunker)
 "btg" = (
 /obj/machinery/telecomms/broadcaster/preset_left/wasteland,
@@ -24809,12 +24817,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/building)
-"btm" = (
-/obj/structure/table/wood/settler,
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorrustysolid"
-	},
-/area/f13/bunker)
 "btn" = (
 /obj/structure/table/wood/settler,
 /obj/machinery/computer/terminal{
@@ -41198,7 +41200,7 @@ acQ
 aek
 adX
 abh
-alM
+aMr
 aMr
 aMr
 aMr
@@ -90835,7 +90837,7 @@ aaY
 bsU
 bte
 btg
-btm
+btf
 bte
 aaY
 aYg
