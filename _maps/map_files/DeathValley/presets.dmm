@@ -1444,6 +1444,426 @@
 	tag = "icon-floorrusty"
 	},
 /area/space)
+"eA" = (
+/turf/closed/wall/r_wall/f13superstore,
+/area/f13/tcoms)
+"eB" = (
+/turf/closed/indestructible/rock,
+/area/f13/underground/mountain)
+"eC" = (
+/turf/closed/mineral/random,
+/area/f13/underground/mountain)
+"eD" = (
+/turf/closed/wall/r_wall,
+/area/f13/tcoms)
+"eE" = (
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/f13/tcoms)
+"eF" = (
+/obj/machinery/telecomms/server/presets/vault,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eG" = (
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eH" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/f13/tcoms)
+"eI" = (
+/obj/machinery/telecomms/server/presets/den,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eJ" = (
+/obj/machinery/telecomms/server/presets/bos,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eK" = (
+/obj/machinery/telecomms/server/presets/ncr,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eL" = (
+/obj/machinery/telecomms/server/presets/enclave,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eM" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/f13/tcoms)
+"eN" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/f13/tcoms)
+"eO" = (
+/obj/machinery/telecomms/server/presets/engineering,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eP" = (
+/obj/machinery/telecomms/bus/preset_four,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eQ" = (
+/obj/machinery/telecomms/processor/preset_three,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eR" = (
+/obj/machinery/telecomms/server/presets/security,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eS" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/f13/tcoms)
+"eT" = (
+/obj/structure/table,
+/turf/open/floor/plasteel/yellow/side{
+	dir = 9
+	},
+/area/f13/tcoms)
+"eU" = (
+/obj/item/radio/intercom{
+	dir = 8;
+	freerange = 1;
+	name = "Station Intercom (Telecomms)";
+	pixel_y = 26
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"eV" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"eW" = (
+/obj/machinery/telecomms/server/presets/common,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eX" = (
+/obj/machinery/telecomms/processor/preset_four,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eY" = (
+/obj/machinery/telecomms/bus/preset_three,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"eZ" = (
+/obj/machinery/telecomms/server/presets/command,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fa" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/f13/tcoms)
+"fb" = (
+/obj/machinery/computer/message_monitor{
+	dir = 4
+	},
+/turf/open/floor/plasteel/yellow/side{
+	dir = 8
+	},
+/area/f13/tcoms)
+"fc" = (
+/obj/structure/chair/office/dark{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"fd" = (
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"fe" = (
+/obj/structure/table,
+/obj/item/paper_bin,
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"ff" = (
+/obj/machinery/blackbox_recorder,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fg" = (
+/obj/machinery/telecomms/broadcaster/preset_right,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fh" = (
+/obj/machinery/telecomms/receiver/preset_right,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fi" = (
+/obj/machinery/computer/telecomms/server{
+	dir = 4;
+	network = "tcommsat"
+	},
+/turf/open/floor/plasteel/yellow/side{
+	dir = 10
+	},
+/area/f13/tcoms)
+"fj" = (
+/obj/structure/table,
+/obj/item/folder/blue,
+/obj/item/pen/blue,
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"fk" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/open/floor/plating,
+/area/f13/tcoms)
+"fl" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/f13/tcoms)
+"fm" = (
+/obj/machinery/status_display,
+/turf/closed/wall,
+/area/f13/tcoms)
+"fn" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/f13/tcoms)
+"fo" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "Control Room";
+	req_access_txt = "19; 61"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"fp" = (
+/obj/machinery/ntnet_relay,
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/f13/tcoms)
+"fq" = (
+/obj/machinery/telecomms/hub/preset,
+/turf/open/floor/plasteel/vault/telecomms/mainframe{
+	dir = 8
+	},
+/area/f13/tcoms)
+"fr" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Server Room";
+	req_access_txt = "61"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/vault{
+	dir = 5
+	},
+/area/f13/tcoms)
+"fs" = (
+/turf/open/floor/plasteel/vault{
+	dir = 5
+	},
+/area/f13/tcoms)
+"ft" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/engineering/glass{
+	name = "Server Room";
+	req_access_txt = "61"
+	},
+/turf/open/floor/plasteel/vault{
+	dir = 5
+	},
+/area/f13/tcoms)
+"fu" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"fv" = (
+/obj/structure/closet/emcloset,
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"fw" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/f13/tcoms)
+"fx" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/f13/tcoms)
+"fy" = (
+/obj/structure/sign/warning/securearea{
+	desc = "A warning sign which reads 'SERVER ROOM'.";
+	name = "SERVER ROOM"
+	},
+/turf/closed/wall,
+/area/f13/tcoms)
+"fz" = (
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "Telecomms Admin";
+	departmentType = 5;
+	name = "Telecomms RC";
+	pixel_x = 30
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"fA" = (
+/obj/machinery/telecomms/message_server,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fB" = (
+/obj/machinery/telecomms/broadcaster/preset_left,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fC" = (
+/obj/machinery/telecomms/receiver/preset_left,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fD" = (
+/obj/structure/table,
+/obj/item/multitool,
+/turf/open/floor/plasteel/yellow/side{
+	dir = 9
+	},
+/area/f13/tcoms)
+"fE" = (
+/mob/living/simple_animal/hostile/retaliate/spaceman{
+	desc = "He do be jammin'.";
+	name = "Comms Master"
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"fF" = (
+/obj/machinery/light_switch{
+	pixel_x = 27
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"fG" = (
+/obj/machinery/telecomms/server/presets/supply,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fH" = (
+/obj/machinery/telecomms/bus/preset_two,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fI" = (
+/obj/machinery/telecomms/processor/preset_one,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fJ" = (
+/obj/machinery/telecomms/server/presets/medical,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fK" = (
+/obj/machinery/computer/telecomms/monitor{
+	dir = 4;
+	network = "tcommsat"
+	},
+/turf/open/floor/plasteel/yellow/side{
+	dir = 8
+	},
+/area/f13/tcoms)
+"fL" = (
+/obj/machinery/telecomms/server/presets/service,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fM" = (
+/obj/machinery/telecomms/processor/preset_two,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fN" = (
+/obj/structure/sign/warning/nosmoking{
+	pixel_y = -32
+	},
+/obj/machinery/light,
+/turf/open/floor/circuit/telecomms/mainframe,
+/area/f13/tcoms)
+"fO" = (
+/obj/machinery/telecomms/bus/preset_one,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fP" = (
+/obj/machinery/telecomms/server/presets/science,
+/turf/open/floor/plasteel/dark/telecomms/mainframe,
+/area/f13/tcoms)
+"fQ" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/f13/tcoms)
+"fR" = (
+/obj/structure/table,
+/obj/item/radio/off,
+/turf/open/floor/plasteel/yellow/side{
+	dir = 10
+	},
+/area/f13/tcoms)
+"fS" = (
+/obj/item/radio/intercom{
+	name = "Station Intercom (General)";
+	pixel_y = -35
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"fT" = (
+/obj/machinery/airalarm{
+	dir = 1;
+	pixel_y = -22
+	},
+/obj/machinery/light,
+/obj/structure/filingcabinet/chestdrawer,
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"fU" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -2;
+	pixel_y = -1
+	},
+/turf/open/floor/plasteel,
+/area/f13/tcoms)
+"fV" = (
+/turf/closed/indestructible/riveted,
+/area/f13/tcoms)
+"fW" = (
+/turf/open/indestructible,
+/area/f13/tcoms)
+"fX" = (
+/obj/machinery/telecomms/relay/preset/telecomms,
+/turf/open/indestructible,
+/area/f13/tcoms)
 
 (1,1,1) = {"
 aa
@@ -21341,13 +21761,13 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+cZ
+cZ
+cZ
+cZ
+cZ
 aa
 cZ
 bV
@@ -21498,7 +21918,7 @@ aa
 aa
 aa
 aa
-aa
+cZ
 aa
 aa
 aa
@@ -21655,13 +22075,13 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+fV
+fV
+fV
+fV
+fV
 aa
 cZ
 bV
@@ -21812,13 +22232,13 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+fV
+fW
+fW
+fW
+fV
 aa
 cZ
 bV
@@ -21969,13 +22389,13 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+fV
+fW
+fX
+fW
+fV
 aa
 cZ
 bV
@@ -22126,13 +22546,13 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+fV
+fW
+fW
+fW
+fV
 aa
 cZ
 bV
@@ -22283,13 +22703,13 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+fV
+fV
+fV
+fV
+fV
 aa
 cZ
 bV
@@ -22584,26 +23004,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
 aa
 cZ
 bV
@@ -22741,7 +23161,7 @@ aa
 aa
 aa
 aa
-aa
+cZ
 aa
 aa
 aa
@@ -22898,26 +23318,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
 aa
 cZ
 bV
@@ -23055,26 +23475,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eA
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eA
 aa
 cZ
 bV
@@ -23212,26 +23632,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eA
+eD
+eE
+eE
+eE
+eE
+eM
+eE
+eE
+eG
+eG
+fp
+eG
+eG
+eE
+eE
+eD
+eA
 aa
 cZ
 bV
@@ -23369,26 +23789,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eA
+eD
+eF
+eJ
+eL
+eG
+eG
+eO
+eW
+ff
+eG
+eE
+eG
+fA
+fG
+fL
+eD
+eA
 aa
 cZ
 bV
@@ -23526,26 +23946,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eA
+eD
+eG
+eG
+eG
+eG
+eG
+eP
+eX
+fg
+eE
+eE
+eE
+fB
+fH
+fM
+eD
+eA
 aa
 cZ
 bV
@@ -23683,26 +24103,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eA
+eD
+eH
+eE
+eE
+eE
+eE
+eE
+eE
+eE
+eE
+fq
+eE
+eE
+eE
+fN
+eD
+eA
 aa
 cZ
 bV
@@ -23840,26 +24260,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eA
+eD
+eG
+eG
+eG
+eG
+eG
+eQ
+eY
+fh
+eE
+eE
+eE
+fC
+fI
+fO
+eD
+eA
 aa
 cZ
 bV
@@ -23997,26 +24417,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eA
+eD
+eI
+eK
+eG
+eG
+eG
+eR
+eZ
+eG
+eG
+eE
+eG
+eG
+fJ
+fP
+eD
+eA
 aa
 cZ
 bV
@@ -24154,26 +24574,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eA
+eD
+eE
+eE
+eE
+eE
+eN
+eE
+eE
+eG
+fk
+fr
+fw
+eG
+eE
+eE
+eD
+eA
 aa
 cZ
 bV
@@ -24311,26 +24731,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eA
+eD
+eD
+eD
+eD
+eD
+eD
+eS
+fa
+fa
+fl
+fs
+fx
+fa
+fa
+fQ
+eD
+eA
 aa
 cZ
 bV
@@ -24468,26 +24888,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eA
+eA
+eA
+eA
+eA
+eA
+eD
+eT
+fb
+fi
+fm
+ft
+fy
+fD
+fK
+fR
+eD
+eA
 aa
 cZ
 bV
@@ -24625,26 +25045,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eB
+eB
+eB
+eB
+eB
+eA
+eD
+eU
+fc
+fd
+fn
+fu
+fd
+fd
+fc
+fS
+eD
+eA
 aa
 cZ
 bV
@@ -24782,26 +25202,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eC
+eC
+eC
+eC
+eB
+eA
+eD
+eV
+fd
+fd
+fo
+fd
+fd
+fE
+fd
+fT
+eD
+eA
 aa
 cZ
 bV
@@ -24939,26 +25359,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eC
+eC
+eC
+eC
+eB
+eA
+eD
+eD
+fe
+fj
+fn
+fv
+fz
+fF
+fd
+fU
+eD
+eA
 aa
 cZ
 bV
@@ -25096,26 +25516,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eC
+eC
+eC
+eC
+eB
+eA
+eA
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eD
+eA
 aa
 cZ
 bV
@@ -25253,26 +25673,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+eC
+eC
+eC
+eC
+eB
+eB
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
+eA
 aa
 cZ
 bV
@@ -25410,7 +25830,7 @@ aa
 aa
 aa
 aa
-aa
+cZ
 aa
 aa
 aa
@@ -25567,26 +25987,26 @@ aa
 aa
 aa
 aa
+cZ
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
+cZ
 aa
 cZ
 aa

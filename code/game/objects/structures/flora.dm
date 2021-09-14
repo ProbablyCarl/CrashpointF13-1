@@ -105,6 +105,10 @@
 	desc = "A dead tree. How it died, you know not."
 	icon_state = "tree_1"
 
+/obj/structure/flora/tree/dead/Initialize()
+	. = ..()
+	icon_state = "tree_[rand(1,6)]"
+
 /obj/structure/flora/tree/joshua
 	name = "joshua tree"
 	desc = "A tree named by mormons, who said it's branches mimiced the biblical Joshua, raising his hands in prayer."

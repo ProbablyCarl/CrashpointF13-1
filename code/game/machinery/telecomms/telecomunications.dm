@@ -15,7 +15,7 @@
 GLOBAL_LIST_EMPTY(telecomms_list)
 
 /obj/machinery/telecomms
-	icon = 'icons/obj/machines/telecomms.dmi'
+	icon = 'icons/fallout/machines/falloutcomms.dmi'
 	critical_machine = TRUE
 	var/list/links = list() // list of machines this machine is linked to
 	var/traffic = 0 // value increases as traffic increases

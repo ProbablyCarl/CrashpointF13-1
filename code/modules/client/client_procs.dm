@@ -274,12 +274,12 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 		if( !C )
 			continue
 
-		if(C.prefs)											//Rare runtime
+		if(C.prefs)//supposedly fixes a runtime with the following lines. Ripped from OldPollo. I miss you, Lads. :(
 			if(C.prefs.toggles & CHAT_OOC)
-				C << "<span class='notice'><b>[src.key] has connected to the server.</b></span>"
+				to_chat(world, "<span class='notice'><b>[src.key] has connected to the server.</b></span>")
 
 				if(C.prefs.toggles)
-					C << sound('sound/effects/adminhelp.ogg')
+					C << sound('sound/f13effects/oocjoin.ogg')
 
 	if(GLOB.player_details[ckey])
 		player_details = GLOB.player_details[ckey]

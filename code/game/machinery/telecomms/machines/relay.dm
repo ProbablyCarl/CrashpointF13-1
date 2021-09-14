@@ -9,7 +9,7 @@
 /obj/machinery/telecomms/relay
 	name = "telecommunication relay"
 	icon_state = "relay"
-	desc = "A mighty piece of hardware used to send massive amounts of data far away."
+	desc = "A mighty piece of hardware. Survived the war and now it'll survive more. Doesn't look like it has any useable dials. Odd."
 	density = TRUE
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 30

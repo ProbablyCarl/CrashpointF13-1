@@ -424,3 +424,13 @@
 /obj/item/radio/off	// Shortwave radios, their only difference is spawning with the speakers off, this was made to help the lag.
 	listening = 0			// And it's nice to have a subtype too for future features.
 	dog_fashion = /datum/dog_fashion/back
+
+/////////
+// Radio Tower required.
+/////////
+
+/obj/item/radio/tower	// Shortwave radios that require the use of a radio tower in game to function. Unlike intercomms.
+	name = "Walkie-talkie"
+	desc = "Looks as if it's just about ready to die on you. Probably requires a relay, unlike intercomms and ham radio sets."
+	listening = 0//Starts off.
+	subspace_transmission = TRUE

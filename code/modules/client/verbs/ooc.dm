@@ -62,7 +62,7 @@
 		if(C.prefs.chat_toggles & CHAT_OOC)
 
 			if(C.prefs.toggles)
-				C << sound('sound/effects/adminhelp.ogg')
+				C << sound('sound/f13effects/oocalert.ogg')
 
 			if(holder)
 				if(!holder.fakekey || C.holder)

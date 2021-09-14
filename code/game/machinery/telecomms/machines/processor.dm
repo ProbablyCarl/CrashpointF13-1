@@ -55,3 +55,6 @@
 
 /obj/machinery/telecomms/processor/preset_one/birdstation
 	name = "Processor"
+
+/obj/machinery/telecomms/processor/preset_one/wasteland
+	name = "Processor"
