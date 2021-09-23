@@ -87,14 +87,14 @@
 			"Refuel" = image(icon = 'icons/obj/distillapparatus.dmi', icon_state = "fuelburner")
 			)
 		var/list/choice = show_radial_menu(user, src, choices, custom_check = CALLBACK(src, .proc/check_menu, user), require_near = TRUE)
-		if(choice == "Fill Boiling Flask" && !beaker1 && I != null)
+		if(choice == "Fill Boiling Flask" && !beaker1)
 			if(user.transferItemToLoc(I, src))
 				beaker1 = I
 				to_chat(user, "You pour \the [beaker1]'s contents into the boiling flask.")
 				reagents.maximum_volume = beaker1.reagents.maximum_volume
 				reagents.chem_temp = beaker1.reagents.chem_temp
 				beaker1.reagents.trans_to(src, beaker1.reagents.total_volume)
-		else if(choice == "Place Receiver Flask" && !beaker2 && I != null)
+		else if(choice == "Place Receiver Flask" && !beaker2)
 			if(user.transferItemToLoc(I, src))
 				beaker2 = I
 				to_chat(user, "You place \the [beaker2] under the spout of the condenser.")
@@ -176,7 +176,7 @@
 		if(R.phasepercents["GAS"] > 0)
 			if(beaker2 != null)
 				beaker2.reagents.add_reagent(R.id, R.volume * R.phasepercents["GAS"], null, reagtemp = 300, no_react = 0, phase = null)
-			beaker1.reagents.remove_reagent(R.id, R.volume * R.phasepercents["GAS"], safety = 0, phase = "GAS")
+			reagents.remove_reagent(R.id, R.volume * R.phasepercents["GAS"], safety = 0, phase = "GAS")
 	fuel -= 1
 	updatesprites()
 
@@ -186,7 +186,7 @@
 
 /obj/item/circuitboard/machine/distillapparatus
 	name = "distillation apparatus"
-	build_path = /obj/machinery/sepfunnel
+	build_path = /obj/machinery/distillapparatus
 	req_components = list(
 		/obj/item/stack/sheet/glass = 20,
 		/obj/item/stack/sheet/metal = 10,
