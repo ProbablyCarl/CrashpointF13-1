@@ -49,16 +49,22 @@
 	name = "improvised internal magazine"
 	ammo_type = /obj/item/ammo_casing/c9mm
 	caliber = "9mm"
-	max_ammo = 4
+	max_ammo = 1//from 4
 
 /obj/item/ammo_box/magazine/internal/cylinder/improvised10mm
 	name = "improvised internal magazine"
 	ammo_type = /obj/item/ammo_casing/c10mm
 	caliber = "10mm"
-	max_ammo = 6
+	max_ammo = 1//from 6
 
 /obj/item/ammo_box/magazine/internal/cylinder/thatgun
 	name = ".223 pistol cylinder"
 	ammo_type = /obj/item/ammo_casing/a556
 	caliber = "a556"
 	max_ammo = 5
+
+/obj/item/ammo_box/magazine/internal/cylinder/type17
+	name = "type-17 10mm cylinder"
+	ammo_type = /obj/item/ammo_casing/c10mm
+	caliber = "10mm"
+	max_ammo = 10

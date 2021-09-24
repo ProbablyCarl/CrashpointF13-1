@@ -57,19 +57,19 @@
 	allowed = list(/obj/item/pen,/obj/item/paper,/obj/item/stamp,/obj/item/reagent_containers/food/drinks/flask,/obj/item/melee,/obj/item/storage/box/matches,/obj/item/lighter,/obj/item/clothing/mask/cigarette,/obj/item/storage/fancy/cigarettes,/obj/item/flashlight,/obj/item/ammo_box,/obj/item/ammo_casing,/obj/item/scalpel,/obj/item/surgical_drapes,/obj/item/cautery,/obj/item/hemostat,/obj/item/retractor,/obj/item/storage/pill_bottle/dice,/obj/item/dice)
 
 /obj/item/clothing/suit/f13/mfp //Mad Max 1 1979 babe!
-	name = "MFP jacket"
-	desc = "A Main Force Patrol leather jacket.<br>Offbeat."
+	name = "armored jacket"
+	desc = "A padded leather jacket.<br>Offbeat."
 	icon_state = "mfp"
 	item_state = "hostrench"
 	body_parts_covered = CHEST|ARMS
 	armor = list(melee = 20, bullet = 10, laser = 0, energy = 0, bomb = 10, bio = 0, rad = 0, fire = 20, acid = 0)
 	allowed = list(/obj/item/pen,/obj/item/paper,/obj/item/stamp,/obj/item/reagent_containers/food/drinks/flask,/obj/item/storage/box/matches,/obj/item/lighter,/obj/item/clothing/mask/cigarette,/obj/item/storage/fancy/cigarettes,/obj/item/flashlight,/obj/item/gun,/obj/item/ammo_box,/obj/item/ammo_casing)
-
+/*
 /obj/item/clothing/suit/f13/mfp/raider //"Offbeat" is actually a quote from Mad Max said by Max himself.
 	name = "offbeat jacket"
 	desc = "A black leather jacket with a single metal shoulder pad on the right side.<br>The right sleeve was obviously ripped or cut away.<br>It looks like it was originally a piece of a Main Force Patrol uniform."
 	icon_state = "mfp_raider"
-
+*/
 /obj/item/clothing/suit/f13/lonesome
 	name = "lonesome duster"
 	desc = "A blue leather coat with the number 21 on the back.<br><i>If war doesn't change, men must change, and so must their symbols.</i><br><i>Even if there is nothing at all, know what you follow.</i>"
@@ -90,7 +90,7 @@
 
 /obj/item/clothing/suit/f13/duster
 	name = "duster"
-	desc = "A long brown leather overcoat.<br>A powerful accessory of fearsome bounty hunter."
+	desc = "A long brown leather overcoat.<br>A powerful accessory of fearsome bounty hunters."
 	icon_state = "duster"
 	item_state = "det_suit"
 	body_parts_covered = CHEST|LEGS|FEET|ARMS
@@ -146,7 +146,7 @@
 /obj/item/clothing/suit/bio_suit/f13/hazmat/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/rad_insulation, RAD_NO_INSULATION, TRUE, FALSE)
-	
+
 /obj/item/clothing/head/bio_hood/f13/hazmat
 	name = "hazmat hood"
 	desc = "My star, my perfect silence."
@@ -161,7 +161,7 @@
 /obj/item/clothing/head/bio_hood/f13/hazmat/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/rad_insulation, RAD_NO_INSULATION, TRUE, FALSE)
-	
+
 //Fallout 13 toggle apparel directory
 
 /obj/item/clothing/suit/toggle/labcoat/f13

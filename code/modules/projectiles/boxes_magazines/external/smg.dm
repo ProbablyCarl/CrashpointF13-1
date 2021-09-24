@@ -81,10 +81,10 @@
 	start_empty = 1
 
 /obj/item/ammo_box/magazine/greasegun
-	name = "45 submachine gun magazine (.45)"
+	name = "grease gun magazine (9mm)"
 	icon_state = "grease"
-	ammo_type = /obj/item/ammo_casing/c45
-	caliber = ".45"
+	ammo_type = /obj/item/ammo_casing/c9mm
+	caliber = "9mm"
 	max_ammo = 30
 	multiple_sprites = 2
 

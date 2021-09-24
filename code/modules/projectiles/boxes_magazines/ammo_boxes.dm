@@ -155,6 +155,15 @@
 	name = "ammo box (9mm JHP)"
 	ammo_type = /obj/item/ammo_casing/c9mm/jhp
 
+//near empty 9mm
+/obj/item/ammo_box/c9mm/near_empty
+	name = "ammo box (9mm FMJ)"
+	icon_state = "9mmbox"
+	ammo_type = /obj/item/ammo_casing/c9mm
+	max_ammo = 5
+	materials = list(MAT_METAL = 500)
+	w_class = WEIGHT_CLASS_NORMAL
+
 //10mm
 /obj/item/ammo_box/c10mm
 	name = "ammo box (10mm FMJ)"
@@ -171,6 +180,15 @@
 /obj/item/ammo_box/c10mm/ap
 	name = "ammo box (10mm AP)"
 	ammo_type = /obj/item/ammo_casing/c10mm/ap
+
+//near empty 10mm
+/obj/item/ammo_box/c10mm/near_empty
+	name = "ammo box (10mm FMJ)"
+	icon_state = "10mmbox"
+	ammo_type = /obj/item/ammo_casing/c10mm
+	max_ammo = 5
+	materials = list(MAT_METAL = 500)
+	w_class = WEIGHT_CLASS_NORMAL
 
 //5.56x45
 /obj/item/ammo_box/a556
@@ -383,6 +401,17 @@
 	max_ammo = 5
 	multiple_sprites = 1
 	materials = list(MAT_METAL = 20000)
+
+//10mm
+/obj/item/ammo_box/c10mm/stripper
+	name = "stripper clip (10mm FMJ)"
+	desc = "A stripper clip."
+	icon_state = "10"
+	ammo_type = /obj/item/ammo_casing/c10mm
+	max_ammo = 10
+	multiple_sprites = 1
+	materials = list(MAT_METAL = 2500)
+	w_class = WEIGHT_CLASS_SMALL
 
 //Toy
 /obj/item/ammo_box/foambox

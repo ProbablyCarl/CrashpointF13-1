@@ -97,6 +97,7 @@
 	desc = "A metal footlocker. The lock appears to be broken off."
 	icon = 'icons/fallout/objects/crates.dmi'
 	icon_state = "footlocker"
+	density = 0//You can step over it. :)
 
 /obj/structure/closet/crate/footlocker/legion
 	name = "legion footlocker"

@@ -503,6 +503,8 @@
 	new /obj/item/grenade/smokebomb(src)
 	new /obj/item/grenade/smokebomb(src)
 	new /obj/item/grenade/smokebomb(src)
+	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
+	new /obj/item/grenade/syndieminibomb/concussion/frag(src)
 
 /obj/item/storage/belt/grenade/ncr/mp/PopulateContents()
 	new /obj/item/grenade/chem_grenade/teargas(src)

@@ -198,10 +198,6 @@
 	. = ..()
 	reagents.add_reagent("piss", 30)
 
-/obj/effect/decal/cleanable/piss/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/slippery, 80, (NO_SLIP_WHEN_WALKING | SLIDE))
-
 /obj/effect/decal/cleanable/shit
 	name = "shit pile"
 	desc = "A pile of shit... Who the fuck?.. Why?.."
@@ -212,10 +208,6 @@
 /obj/effect/decal/cleanable/shit/Initialize()
 	. = ..()
 	reagents.add_reagent("shit", 30)
-
-/obj/effect/decal/cleanable/shit/ComponentInitialize()
-	. = ..()
-	AddComponent(/datum/component/slippery, 80, (NO_SLIP_WHEN_WALKING | SLIDE))
 
 /obj/effect/decal/cleanable/glitter
 	name = "generic glitter pile"

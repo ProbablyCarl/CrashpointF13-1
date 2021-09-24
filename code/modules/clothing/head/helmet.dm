@@ -704,10 +704,10 @@
 
 /obj/item/clothing/head/helmet/f13/metalmask/mk2
 	name = "reflective metal mask"
-	desc = "A reflective metal hockey mask."
+	desc = "A reflective mask capable of protecting well against energy weapons, at the cost of being brittle to standard attacks."
 	icon_state = "metal_mask2"
 	item_state = "metal_mask2"
-	armor = list("melee" = 50, "bullet" = 35, "laser" = 50, "energy" = 50, "bomb" = 25, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 0)
+	armor = list("melee" = 35, "bullet" = 25, "laser" = 65, "energy" = 60, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 
 /obj/item/clothing/head/helmet/f13/metalmask/mk2/Initialize()
 	. = ..()
@@ -723,9 +723,10 @@
 	desc = "A prewar armor design by Nikola Tesla before being confinscated by the U.S. government. Provides the high energy weapons resistance."
 	icon_state = "tesla_helmet"
 	item_state = "tesla_helmet"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 55, "energy" = 55, "bomb" = 35, "bio" = 0, "rad" = 10, "fire" = 30, "acid" = 80)
-	var/hit_reflect_chance = 70
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 75, "energy" = 65, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	strip_delay = 10
+	var/hit_reflect_chance = 90
 
 /obj/item/clothing/head/helmet/f13/tesla/IsReflect(def_zone)
 	if(!(def_zone in list("head"))) //If not shot where ablative is covering you, you don't get the reflection bonus!

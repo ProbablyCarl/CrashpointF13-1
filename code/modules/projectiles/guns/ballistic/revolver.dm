@@ -572,7 +572,7 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
 	w_class = WEIGHT_CLASS_SMALL
 	fire_delay = 3
-	extra_damage = 30
+	extra_damage = 20
 	extra_penetration = 0
 	//Extra Modifiable Gun Vars
 	modifiablegun = TRUE
@@ -614,3 +614,16 @@
 	attachableparts = list("internal" = new /obj/item/gunpart/BHS_Receiver, "internal2" = null, "east" = null, "west" = null, "south" = null, "north" = null)
 	//Blacklisted Parts
 	blacklistedparts = list("stock")
+
+/obj/item/gun/ballistic/revolver/zhurong/standard
+	name = "Shanxi Type 17"
+	desc = "An example of a chinese pistol issued during the previous 'great war'. Chambered in 10mm."
+//	icon_state = "c96"
+	icon_state = "zhurong"//doesn't have the extended mag well.
+	w_class = WEIGHT_CLASS_SMALL
+	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/type17
+	fire_delay = 4
+	extra_damage = 25
+	extra_penetration = 5
+	fire_sound = 'sound/f13weapons/c96.ogg'
+//	distant_sound = 'sound/f13weapons/c96_distant.ogg'//I've not finished this system yet. Just leaving it for later. -Carl

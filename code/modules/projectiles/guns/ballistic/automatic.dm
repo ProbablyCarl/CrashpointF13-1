@@ -515,7 +515,7 @@
 	return
 
 /obj/item/gun/ballistic/automatic/tommygun
-	name = "\improper Thompson SMG"
+	name = "\improper .45 Auto submachine gun"
 	desc = "Based on the classic 'Chicago Typewriter'."
 	icon_state = "tommygun"
 	item_state = "tommygun"
@@ -571,7 +571,7 @@
 
 /obj/item/gun/ballistic/automatic/assault_carbine
 	name = "assault carbine"
-	desc = "A variant of the R81 with increased rate of fire and a matte black exterior."
+	desc = "A rifle with increased rate of fire and a matte black exterior. Designed for paratrooper service, this is cut down and without most features one would expect from such a rifle."
 	icon_state = "assault_carbine"
 	item_state = "assault_carbine"
 	slot_flags = 0
@@ -606,7 +606,7 @@
 	return
 
 /obj/item/gun/ballistic/automatic/assault_rifle
-	name = "assault rifle"
+	name = "R91 assault rifle"
 	desc = "A standard R91 assault rifle, out of use around the time of the Great War."
 	icon_state = "assault_rifle"
 	item_state = "fnfal"
@@ -658,7 +658,7 @@
 	extra_penetration = 20
 
 
-/obj/item/gun/ballistic/automatic/infiltrator/burst_select()
+/obj/item/gun/ballistic/automatic/assault_rifle/infiltrator/burst_select()
 	var/mob/living/carbon/human/user = usr
 	switch(select)
 		if(0)
@@ -672,7 +672,7 @@
 
 /obj/item/gun/ballistic/automatic/type93
 	name = "type 93 assault rifle"
-	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate for the People's Liberation Army during the Resource Wars, for the purpose of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
+	desc = "The Type 93 Chinese assault rifle was designed and manufactured by a Chinese industrial conglomerate. Put into service for the People's Liberation Army during the Resource Wars, alongside the use of equipping the Chinese infiltrators and American fifth-columnists. Chambered in 5.56x45."
 	icon_state = "type93"
 	item_state = "handmade_rifle"
 	w_class = WEIGHT_CLASS_BULKY
@@ -683,13 +683,14 @@
 	burst_size = 2
 	fire_delay = 3
 	spread = 10
+	automatic = 1
 	weapon_weight = WEAPON_HEAVY
 	extra_damage = 25
 	extra_penetration = 5
 
 /obj/item/gun/ballistic/automatic/marksman
 	name = "marksman carbine"
-	desc = "A R94 marksman carbine, chambered in 5.56x45. Seen heavy usage in pre-war conflicts. This one isn't a select fire variant."
+	desc = "A marksman carbine, chambered in 5.56x45. Seen heavy usage in pre-war conflicts. This one isn't a select fire variant."
 	icon_state = "marksman_rifle"
 	item_state = "marksman"
 	w_class = WEIGHT_CLASS_BULKY
@@ -728,7 +729,7 @@
 
 /obj/item/gun/ballistic/automatic/marksman/servicerifle
 	name = "service rifle"
-	desc = "A 5.56x45 semi-automatic service rifle manufactured by the NCR and issued to all combat personnel."
+	desc = "A 5.56x45 semi-automatic service rifle likely manufactured pre-war, used heavily by the NCR and issued to all combat personnel."
 	icon_state = "service_rifle"
 	item_state = "servicerifle"
 	fire_sound = 'sound/f13weapons/varmint_rifle.ogg'
@@ -760,7 +761,7 @@
 	fire_delay = 8
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle/small
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	extra_damage = 30
+	extra_damage = 15//from 30 for lower tier
 	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/marksman/servicerifle/varmint/ratslayer
@@ -827,8 +828,8 @@
 	weapon_weight = WEAPON_HEAVY
 
 /obj/item/gun/ballistic/automatic/greasegun
-	name = "M3A1 Grease Gun"
-	desc = "An inexpensive .45 ACP submachine gun. Slow fire rate means less waste of ammo and controllable bursts."
+	name = "Modified M3A1 Grease Gun"
+	desc = "An inexpensive .45 ACP submachine gun, converted to fire 9mm. This does not retain the slow rate of fire, trading it away at the expense of less powerful ammo."
 	icon_state = "grease_gun"
 	item_state = "smg9mm"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
@@ -836,7 +837,7 @@
 	can_suppress = FALSE
 	automatic = 1
 	burst_size = 2
-	fire_delay = 3
+	fire_delay = 1
 	burst_delay = 3
 	force = 15
 	spread = 10
@@ -891,12 +892,9 @@
 	can_suppress = FALSE
 	burst_size = 1
 	fire_delay = 10
-	zoomable = TRUE
-	zoom_amt = 10
-	zoom_out_amt = 13
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
-	extra_damage = 70
+	extra_damage = 40//from 70, no longer Enclave DS only.
 	extra_penetration = 60
 	projectile_speed = 0.4
 
@@ -1035,12 +1033,13 @@
 
 /obj/item/gun/ballistic/automatic/m1918
 	name = "M1918 Automatic Rifle"
-	desc = "A hefty rifle meant for supporting fire. Examples of this that actually work are rare, so it's lucky you've found it in good condition."
-	lefthand_file = 'icons/mob/inhands/weapons/large_guns_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/large_guns_righthand.dmi'
-	icon = 'icons/fallout/objects/guns/large_ballistic.dmi'
-	icon_state = "bar1918_stock"
-	item_state = "bar1918_stock"
+	desc = "A hefty rifle meant for supporting fire. Examples of this that actually work are rare, so it's lucky you've found it in good condition. \
+	Looks like this one has the carry handle removed."
+	lefthand_file = 'icons/mob/inhands/64x64_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/64x64_righthand.dmi'
+	icon = 'icons/fallout/objects/guns/40x32.dmi'
+	icon_state = "bar1918_gripstock"
+	item_state = "bar1918_gripstock"
 	mag_type = /obj/item/ammo_box/magazine/m762
 	init_mag_type = /obj/item/ammo_box/magazine/m762/ext
 	fire_sound = 'sound/f13weapons/bozar_fire.ogg'

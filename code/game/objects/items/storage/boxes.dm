@@ -763,6 +763,17 @@
 	STR.max_items = 14
 	STR.can_hold = typecacheof(list(/obj/item/ammo_casing/shotgun))
 
+/obj/item/storage/box/lethalshot/improvised
+	name = "box of improvised shells"
+	desc = "A box full of improvised buckshot."
+	icon_state = "slugshot_box"
+	illustration = null
+	w_class = WEIGHT_CLASS_SMALL
+
+/obj/item/storage/box/lethalshot/improvised/PopulateContents()
+	for(var/i in 1 to 5)
+		new /obj/item/ammo_casing/shotgun/improvised(src)
+
 /obj/item/storage/box/magnumshot
 	name = "box of magnum buckshot shotgun shots"
 	desc = "A box full of lethal magnum buckshot rounds, designed for hunting shotguns."

@@ -84,6 +84,10 @@
 	projectile_type = /obj/item/projectile/beam/laser/pistol/wattz
 	e_cost = 25
 
+/obj/item/ammo_casing/energy/laser/pistol/wattz/rifle
+	projectile_type = /obj/item/projectile/beam/laser/pistol/wattz/rifle
+	e_cost = 75
+
 /obj/item/ammo_casing/energy/laser/pistol/wattz/magneto
 	projectile_type = /obj/item/projectile/beam/laser/pistol/wattz/magneto
 
