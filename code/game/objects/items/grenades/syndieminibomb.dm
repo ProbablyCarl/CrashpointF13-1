@@ -27,6 +27,11 @@
 	desc = "Fire in the hole."
 	icon_state = "frag"
 
+/obj/item/grenade/syndieminibomb/concussion/frag/prime()
+	update_mob()
+	explosion(src.loc,1,2,2,flame_range = 1)
+	qdel(src)
+
 /obj/item/grenade/syndieminibomb/pipebomb
 	name = "pipebomb"
 	desc = "A rather long tube of explosives."

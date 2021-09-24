@@ -292,7 +292,7 @@
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 30, "energy" = 30, "bomb" = 35, "bio" = 0, "rad" = 15, "fire" = 40, "acid" = 35)
 
 /obj/item/clothing/suit/armor/f13/bmetalarmor
-	name = "metal armor"
+	name = "heavy metal armor"
 	desc = "A set of sturdy metal armor made from various bits of scrap metal. It looks heavy and impairs movement"
 	icon_state = "bmetalarmor"
 	item_state = "bmetalarmor"
@@ -321,12 +321,12 @@
 	return ..()
 
 /obj/item/clothing/suit/armor/f13/metalarmor/reinforced
-    name = "metal armor mark 2"
-    desc = "A set of polished plates formed together to form a reflective chestplate specially effective agaisnt energy weaponry."
+    name = "reflective metal armor"
+    desc = "A set of special polished plates formed together to create a reflective chestplate, at the cost of being brittle to standard attacks."
     icon_state = "metal_chestplate2"
     item_state = "metal_chestplate2"
     body_parts_covered = CHEST|GROIN|ARMS|LEGS
-    armor = list("melee" = 45, "bullet" = 45, "laser" = 55, "energy" = 50, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
+    armor = list("melee" = 35, "bullet" = 25, "laser" = 65, "energy" = 60, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
     slowdown = 0
     strip_delay = 10
 
@@ -341,12 +341,19 @@
 
 /obj/item/clothing/suit/armor/f13/tesla
 	name = "tesla armor"
-	desc = "A prewar armor design by Nikola Tesla before being confinscated by the U.S. government. Provides the high energy weapons resistance."
+	desc = "A prewar armor design by Nikola Tesla before being confinscated by the U.S. government. It's so powerful it renders the user nigh-invulnerable to energy weapons, at the cost of being weak to most else."
 	icon_state = "tesla_armor"
 	item_state = "tesla_armor"
 	blood_overlay_type = "armor"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 55, "energy" = 55, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
+	armor = list("melee" = 35, "bullet" = 35, "laser" = 75, "energy" = 65, "bomb" = 35, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100)
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
+	var/hit_reflect_chance = 90
+
+/obj/item/clothing/suit/armor/f13/tesla/IsReflect(def_zone)
+	if(!(def_zone in list("chest"))) //If not shot where ablative is covering you, you don't get the reflection bonus!
+		return 0
+	if (prob(hit_reflect_chance))
+		return 1
 
 /obj/item/clothing/suit/armor/f13/raider
 	name = "supa-fly raider armor"

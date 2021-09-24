@@ -48,16 +48,8 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/underground/enclave_base)
-"ai" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
-/turf/open/floor/plasteel/f13/vault_floor{
-	icon_state = "floorgrime"
-	},
-/area/f13/underground/enclave_base)
 "aj" = (
 /obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier5,
 /turf/open/floor/plasteel/f13/vault_floor{
 	icon_state = "floorgrime"
 	},
@@ -131,17 +123,8 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/underground/enclave_base)
-"as" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
-/turf/open/floor/plasteel/f13/vault_floor{
-	icon_state = "floorgrime"
-	},
-/area/f13/underground/enclave_base)
 "at" = (
 /obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
 /turf/open/floor/plasteel/f13/vault_floor{
 	icon_state = "floorgrime"
 	},
@@ -151,16 +134,14 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
 /turf/open/floor/plasteel/f13/vault_floor{
 	icon_state = "floorgrime"
 	},
 /area/f13/underground/enclave_base)
 "av" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
+/obj/structure/rack,
 /turf/open/floor/plasteel/f13/vault_floor{
-	icon_state = "floorgrime"
+	icon_state = "whiteredfull"
 	},
 /area/f13/underground/enclave_base)
 "aw" = (
@@ -181,12 +162,9 @@
 	},
 /area/f13/underground/enclave_base)
 "ay" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
-/turf/open/floor/plasteel/f13/vault_floor{
-	icon_state = "floorgrime"
-	},
-/area/f13/underground/enclave_base)
+/obj/structure/closet/cabinet,
+/turf/open/floor/f13/wood,
+/area/f13/tunnel)
 "az" = (
 /obj/structure/fence{
 	dir = 4;
@@ -312,12 +290,18 @@
 	},
 /area/f13/underground/enclave_base)
 "aQ" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/unique,
-/turf/open/floor/plasteel/f13/vault_floor{
-	icon_state = "whiteredfull"
+/obj/machinery/light{
+	dir = 4
 	},
-/area/f13/underground/enclave_base)
+/obj/structure/table/wood,
+/obj/structure/window/reinforced/spawner,
+/obj/structure/window/reinforced/spawner/east,
+/obj/structure/window/reinforced/spawner/north,
+/obj/structure/window/reinforced/spawner/west,
+/turf/open/floor/plasteel/f13{
+	icon_state = "floorrusty"
+	},
+/area/f13/ahs)
 "aR" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -1306,10 +1290,9 @@
 	},
 /area/f13/ahs)
 "do" = (
-/obj/effect/decal/waste,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/unique,
-/turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
+/obj/structure/rack,
+/turf/open/floor/f13/wood,
+/area/f13/tunnel)
 "dp" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/plating/f13/inside/mountain{
@@ -1318,12 +1301,6 @@
 /area/f13/underground/cave)
 "dq" = (
 /obj/effect/decal/waste,
-/turf/open/floor/plating/f13/inside/mountain{
-	icon_state = "mountain2"
-	},
-/area/f13/underground/cave)
-"dr" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier4,
 /turf/open/floor/plating/f13/inside/mountain{
 	icon_state = "mountain2"
 	},
@@ -1337,10 +1314,6 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/ahs)
-"du" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier4,
-/turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
 "dv" = (
 /obj/machinery/light{
 	dir = 1
@@ -2109,10 +2082,6 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/ahs)
-"fr" = (
-/obj/effect/spawner/lootdrop/f13/armor/tier4,
-/turf/open/floor/plating/f13/inside/mountain,
-/area/f13/underground/cave)
 "fs" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2438,12 +2407,6 @@
 /area/f13/ahs)
 "ga" = (
 /obj/item/bedsheet/patriot,
-/turf/open/floor/plasteel/f13{
-	icon_state = "plating"
-	},
-/area/f13/ahs)
-"gb" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -3122,17 +3085,6 @@
 	icon_state = "yellowdirtysolid"
 	},
 /area/f13/ahs)
-"hE" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
-/obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/f13{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/ahs)
 "hF" = (
 /obj/machinery/light,
 /obj/structure/chair/f13chair2{
@@ -3287,14 +3239,6 @@
 "hU" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/f13{
-	icon_state = "yellowdirtyfull"
-	},
-/area/f13/ahs)
-"hV" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowdirtyfull"
@@ -3712,13 +3656,6 @@
 /area/f13/ahs)
 "iQ" = (
 /obj/structure/filingcabinet,
-/turf/open/floor/plasteel/f13{
-	icon_state = "redrustyfull"
-	},
-/area/f13/ahs)
-"iR" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
-/obj/structure/table/reinforced,
 /turf/open/floor/plasteel/f13{
 	icon_state = "redrustyfull"
 	},
@@ -4225,20 +4162,6 @@
 	icon = 'icons/obj/doors/airlocks/station/command.dmi';
 	name = "Vault 223 Overseer storage"
 	},
-/turf/open/floor/plasteel/f13{
-	icon_state = "floorrusty"
-	},
-/area/f13/ahs)
-"jX" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/effect/spawner/lootdrop/f13/weapon/gun/tier3,
-/obj/structure/table/wood,
-/obj/structure/window/reinforced/spawner,
-/obj/structure/window/reinforced/spawner/east,
-/obj/structure/window/reinforced/spawner/north,
-/obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrusty"
 	},
@@ -5000,13 +4923,6 @@
 	icon_state = "whitepurplerustychess2"
 	},
 /area/f13/underground/enclave_base)
-"lU" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/f13/armor/tier5,
-/turf/open/floor/plasteel/f13/vault_floor{
-	icon_state = "floorgrime"
-	},
-/area/f13/underground/enclave_base)
 "lV" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vault1,
@@ -5225,14 +5141,6 @@
 	icon_state = "floorrusty"
 	},
 /area/f13/ahs)
-"mB" = (
-/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
-"mC" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
-/turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
 "mD" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -5377,11 +5285,6 @@
 "mZ" = (
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
-"na" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/melee/random,
-/turf/open/floor/f13/wood,
-/area/f13/tunnel)
 "nb" = (
 /turf/closed/wall/r_wall/rust,
 /area/f13/tunnel)
@@ -5420,11 +5323,6 @@
 	id = "mining_area";
 	tag = "icon-conveyor0 (WEST)"
 	},
-/turf/open/floor/f13/wood,
-/area/f13/tunnel)
-"ni" = (
-/obj/structure/closet/cabinet,
-/obj/effect/spawner/lootdrop/f13/armor/random,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "nj" = (
@@ -5591,11 +5489,6 @@
 /obj/structure/simple_door/house,
 /turf/closed/mineral/random/low_chance,
 /area/f13/underground/cave)
-"nP" = (
-/obj/effect/decal/remains/human,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
-/turf/open/floor/f13/wood,
-/area/f13/tunnel)
 "nQ" = (
 /obj/structure/closet/cabinet,
 /obj/item/stack/f13Cash/random/bottle_cap/med,
@@ -5606,11 +5499,6 @@
 	dir = 4;
 	tag = "icon-wooden_chair_settler (EAST)"
 	},
-/turf/open/floor/f13/wood,
-/area/f13/tunnel)
-"nS" = (
-/obj/structure/table/wood/settler,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/random,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "nT" = (
@@ -5666,11 +5554,6 @@
 "oc" = (
 /obj/structure/ore_box,
 /turf/open/indestructible/ground/inside/mountain,
-/area/f13/tunnel)
-"od" = (
-/obj/structure/table/wood/settler,
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
-/turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "oe" = (
 /obj/machinery/shower{
@@ -5762,12 +5645,6 @@
 /mob/living/simple_animal/hostile/handy/protectron,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
-	},
-/area/f13/ahs)
-"vl" = (
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
-/turf/open/floor/plasteel/f13{
-	icon_state = "plating"
 	},
 /area/f13/ahs)
 "xE" = (
@@ -27347,7 +27224,7 @@ cO
 cO
 cO
 cO
-mB
+mT
 mT
 mU
 mT
@@ -27604,7 +27481,7 @@ cO
 cO
 cO
 cO
-mC
+mT
 mT
 mV
 mT
@@ -27618,7 +27495,7 @@ nA
 cO
 mZ
 cO
-nP
+nu
 mX
 nX
 mX
@@ -27868,7 +27745,7 @@ mT
 mT
 mT
 mZ
-ni
+ay
 mX
 nt
 nB
@@ -28380,7 +28257,7 @@ mT
 mT
 mT
 mX
-na
+do
 mZ
 mZ
 no
@@ -28392,7 +28269,7 @@ mX
 mZ
 mZ
 nZ
-od
+nA
 mX
 cO
 cO
@@ -28642,7 +28519,7 @@ mX
 mX
 mX
 mX
-ni
+ay
 mZ
 mZ
 mX
@@ -29674,7 +29551,7 @@ cO
 cO
 cO
 mX
-nS
+nA
 cO
 cO
 mX
@@ -48268,7 +48145,7 @@ cO
 cO
 cO
 cO
-do
+fn
 cO
 fg
 cO
@@ -48527,7 +48404,7 @@ cO
 cO
 dl
 dl
-du
+dl
 fn
 cO
 cO
@@ -48783,7 +48660,7 @@ cO
 cO
 dk
 dp
-dr
+dU
 mx
 dl
 ck
@@ -49557,7 +49434,7 @@ cO
 cO
 dl
 dl
-fr
+dl
 cO
 cO
 cO
@@ -55480,7 +55357,7 @@ iw
 fK
 ga
 gc
-vl
+cQ
 iw
 iw
 cC
@@ -55735,7 +55612,7 @@ fh
 iw
 iw
 fL
-gb
+cQ
 cQ
 gA
 iw
@@ -59853,7 +59730,7 @@ cw
 iw
 hl
 eP
-hV
+iA
 eP
 iz
 eP
@@ -60880,7 +60757,7 @@ cw
 dn
 iw
 ho
-hE
+iV
 eP
 im
 iA
@@ -65516,7 +65393,7 @@ cO
 cO
 iw
 jJ
-jX
+aQ
 kg
 iw
 cO
@@ -67079,9 +66956,9 @@ on
 on
 on
 ab
-as
+at
 au
-ay
+at
 az
 ba
 ad
@@ -67309,7 +67186,7 @@ xE
 ib
 iw
 iw
-iR
+ib
 fc
 eO
 jq
@@ -67329,7 +67206,7 @@ on
 on
 ab
 ad
-ai
+aj
 ad
 ab
 ab
@@ -67594,7 +67471,7 @@ ad
 ad
 ao
 ad
-av
+aj
 ad
 az
 ad
@@ -67843,7 +67720,7 @@ on
 on
 ab
 ad
-lU
+aj
 ad
 ao
 ad
@@ -68100,7 +67977,7 @@ on
 on
 ab
 ad
-lU
+aj
 ad
 ab
 ab
@@ -68366,7 +68243,7 @@ on
 ab
 at
 ax
-ay
+at
 az
 mO
 ad
@@ -70427,7 +70304,7 @@ on
 on
 on
 ab
-aQ
+av
 bg
 ab
 on

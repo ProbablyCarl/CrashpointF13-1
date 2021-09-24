@@ -22,7 +22,7 @@
 	icon_state = "praetor"
 	item_state = "g_suit"
 	body_parts_covered = CHEST
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 30, bomb = 30, bio = 30, rad = 30, fire = 30, acid = 30)
+	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100, fire = 100, acid = 100)
 	resistance_flags = UNACIDABLE
 	strip_delay = 10
 	icon = 'icons/fallout/clothing/suits.dmi'

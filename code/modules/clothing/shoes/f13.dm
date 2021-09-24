@@ -158,12 +158,12 @@
 	desc = "These boots are constructed with a titanium alloy. There are some runes engraved on the side.<br>To Mars!"
 	icon_state = "mars"
 	item_state = "mars"
-	armor = list(melee = 40, bullet = 20, laser = 20, energy = 20, bomb = 20, bio = 80, rad = 80, fire = 80, acid = 50)
+	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100, fire = 100, acid = 100)
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOES_MIN_TEMP_PROTECT
 	heat_protection = FEET
 	max_heat_protection_temperature = SHOES_MAX_TEMP_PROTECT
-//	clothing_flags = NOSLIP
+	clothing_flags = NOSLIP
 
 /obj/item/clothing/shoes/f13/miner
 	name = "mining boots"

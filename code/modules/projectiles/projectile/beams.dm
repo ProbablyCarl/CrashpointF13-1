@@ -201,6 +201,11 @@
 	armour_penetration = -8
 	hitscan = TRUE
 
+/obj/item/projectile/beam/laser/pistol/wattz/rifle //Wattz rifle
+	damage = 20
+	armour_penetration = -2//Less penalty applied, for five less damage.
+	hitscan = TRUE
+
 /obj/item/projectile/beam/laser/pistol/wattz/magneto //upgraded Wattz
 	name = "penetrating laser beam"
 	damage = 30

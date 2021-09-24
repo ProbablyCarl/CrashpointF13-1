@@ -738,6 +738,7 @@
 #include "code\game\objects\effects\spawners\f13turf.dm"
 #include "code\game\objects\effects\spawners\gibspawner.dm"
 #include "code\game\objects\effects\spawners\lootdrop.dm"
+#include "code\game\objects\effects\spawners\new_spawners.dm"
 #include "code\game\objects\effects\spawners\roomspawner.dm"
 #include "code\game\objects\effects\spawners\structure.dm"
 #include "code\game\objects\effects\spawners\traps.dm"

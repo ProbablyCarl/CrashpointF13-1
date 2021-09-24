@@ -204,8 +204,8 @@ Priestess of Mars
 	title = "Priestess of Mars"
 	flag = F13PRIESTESS
 	faction = "Legion"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	description = "You are a spiritual and logistics advisor for the Legion forces in the area. Being raised in and from the homeland, you have fully adapted to the Legion's ideals and fully committed yourself to the role as mother and caretaker of the Legion's future. You are an icon to be respected, even by fellow Legion; and although a woman, your status does not allow you to be belittled."
 	supervisors = "the Centurion, Mars"
 	exp_requirements = 800
@@ -232,7 +232,7 @@ Priestess of Mars
 		return
 	if(H.gender == MALE)
 		H.gender = FEMALE
-		H.real_name = random_unique_name(MALE)
+		H.real_name = random_unique_name(FEMALE)
 		H.name = H.real_name
 		if(H.wear_id)
 			var/obj/item/card/id/dogtag/L = H.wear_id

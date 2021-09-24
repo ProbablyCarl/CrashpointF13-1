@@ -67,11 +67,8 @@ Cult Leader
 		/obj/item/reagent_containers/pill/patch/jet=2, \
 		/obj/item/reagent_containers/syringe/medx=1)
 	suit_store = pick(
-		/obj/item/gun/ballistic/revolver/detective, \
-		/obj/item/gun/ballistic/shotgun/remington, \
 		/obj/item/gun/ballistic/revolver/caravan_shotgun, \
-		/obj/item/gun/ballistic/revolver/pipe_rifle, \
-		/obj/item/gun/ballistic/automatic/pistol/ninemil)
+		/obj/item/gun/ballistic/revolver/pipe_rifle)
 	shoes = /obj/item/clothing/shoes/workboots
 
 /datum/outfit/job/wasteland/f13pusher/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -170,11 +167,8 @@ Raider
 		/obj/item/storage/bag/money/small/raider=1)
 
 	suit_store = pick(
-		/obj/item/gun/ballistic/revolver/detective, \
-		/obj/item/gun/ballistic/shotgun/remington, \
 		/obj/item/gun/ballistic/revolver/zipgun, \
 		/obj/item/gun/ballistic/revolver/pipe_rifle, \
-		/obj/item/gun/ballistic/revolver/caravan_shotgun, \
 		/obj/item/gun/ballistic/revolver/single_shotgun)
 
 /datum/outfit/job/wasteland/f13raider/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -291,8 +285,6 @@ Wastelander
 		/obj/item/reagent_containers/pill/radx=1, \
 		/obj/item/storage/bag/money/small/wastelander)
 	suit_store = pick(
-	/obj/item/gun/ballistic/revolver/detective, \
-	/obj/item/gun/ballistic/shotgun/remington, \
 	/obj/item/gun/ballistic/revolver/zipgun, \
 	/obj/item/gun/ballistic/revolver/pipe_rifle)
 

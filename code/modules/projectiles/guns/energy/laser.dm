@@ -185,7 +185,7 @@
 
 /obj/item/gun/energy/laser/scatter
 	name = "tribeam laser rifle"
-	desc = "A modified AER9 equipped with a refraction kit that spreads its bolts. It is usually only given to high-ranking soldiers within the Brotherhood, due to it's level of technology, as well as its reputation of friendly fire."
+	desc = "A modified AER9 equipped with a refraction kit that spreads its bolts. Has a reputation of friendly fire."
 	icon_state = "tribeam"
 	item_state = "laser-rifle9"
 	fire_delay = 3
@@ -291,6 +291,17 @@
 	weapon_weight = WEAPON_LIGHT
 	cell_type = /obj/item/stock_parts/cell/ammo/ec
 	slot_flags = ITEM_SLOT_BELT
+
+/obj/item/gun/energy/laser/wattz_rifle
+	name = "Wattz 2000 laser rifle"
+	desc = "A Wattz 2000 Laser Rifle. Uses micro fusion cells for more powerful lasers against armored targets, with an extended barrel for additional range."
+	icon_state = "wattz2000"
+	item_state = "laser-rifle9"
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/pistol/wattz/rifle)
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_HEAVY
+	cell_type = /obj/item/stock_parts/cell/ammo/mfc
+	slot_flags = ITEM_SLOT_BACK
 
 /obj/item/gun/energy/laser/plasma/alien
 	name = "alien blaster"
