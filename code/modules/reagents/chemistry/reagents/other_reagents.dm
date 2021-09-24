@@ -121,8 +121,8 @@
 	glass_desc = "The father of all refreshments."
 	shot_glass_icon_state = "shotglassclear"
 	var/water_level = 2
-	meltingpoint = 275
-	boilingpoint = 375
+	meltingpoint = 273
+	boilingpoint = 373
 	phasepercents = list("SOLID" = 0, "LIQUID" = 1, "GAS" = 0)
 
 /datum/reagent/water/on_mob_life(mob/living/carbon/M)
@@ -1829,3 +1829,19 @@
 	reagent_state = "SOLID"
 	color = "#FFFFFF"
 	taste_description = "plastic"
+
+/datum/reagent/aluminumoxide
+	name = "Aluminum Oxide"
+	id = "aloxide"
+	description = "Oxidized Aluminum"
+	reagent_state = "SOLID"
+	color = "#FFFFFF"
+	taste_description = "metal"
+
+/datum/reagent/acetylene
+	name = "acetylene"
+	id = "acetylene"
+	description = "A flammable gas."
+	reagent_state = "LIQUID"
+	color = "#FFFFFF"
+	taste_description = "metal"

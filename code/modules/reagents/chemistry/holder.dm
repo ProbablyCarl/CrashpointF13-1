@@ -199,7 +199,10 @@
 		var/transfer_amount = T.volume * part
 		if(preserve_data)
 			trans_data = copy_data(T)
-		R.add_reagent(T.id, transfer_amount * multiplier, trans_data, chem_temp, no_react = 1) //we only handle reaction after every reagent has been transfered.
+		//Reagent Phases
+		//R.add_reagent(T.id, transfer_amount * multiplier, trans_data, chem_temp, no_react = 1) //we only handle reaction after every reagent has been transfered. //removed
+		R.add_reagent(T.id, transfer_amount * multiplier, trans_data, chem_temp, no_react = 1, phase = T.phasepercents)
+		//Reagent Phases
 		remove_reagent(T.id, transfer_amount)
 
 	update_total()
@@ -383,16 +386,16 @@
 			R.phasepercents["LIQUID"] -= change
 			R.phasepercents["SOLID"] += change
 
-		roundphases()
+		//roundphases()
 		chem_temp = round(chem_temp)
-
+/*
 /datum/reagents/proc/roundphases()
 	for(var/datum/reagent/R in reagent_list)
 		R.phasepercents["SOLID"] = round(R.phasepercents["SOLID"], 10 ** round(log(10, 0.01 / total_volume) - 0.5))
 		R.phasepercents["LIQUID"] = round(R.phasepercents["LIQUID"], 10 ** round(log(10, 0.01 / total_volume) - 0.5))
 		R.phasepercents["GAS"] = round(R.phasepercents["GAS"], 10 ** round(log(10, 0.01 / total_volume) - 0.5))
 	correctphases(round = FALSE)
-
+*/
 /datum/reagents/proc/correctphases(reagent, round = TRUE)
 	for(var/A in reagent_list)
 		var/datum/reagent/R = A
@@ -405,8 +408,8 @@
 					R.phasepercents["LIQUID"] /= total
 				if(R.phasepercents["GAS"] > 0)
 					R.phasepercents["GAS"] /= total
-	if(round)
-		roundphases()
+//	if(round)
+//		roundphases()
 
 /datum/reagents/proc/gasescape(explosions = FALSE)
 	var/gaspercent = 0
@@ -461,23 +464,14 @@
 				var/total_matching_phases = 0
 
 				for(var/B in C.required_phases)
-					if(!has_phase(B, C.required_phases[B], cached_required_reagents[B]))
-						break
-					total_matching_phases++
-					world.log << "[C.required_phases[B]], [cached_required_reagents[B]]"
-				//Reagent Phases (END)
-				/*
+					if(has_phase(B, C.required_phases[B], null))
+						total_matching_phases++
 				for(var/B in cached_required_reagents)
-					if(!has_reagent(B, cached_required_reagents[B]))
+					if(!has_reagent(B, null))
 						break
 					total_matching_reagents++
-				*/
-				//Reaction Improvements
-				for(var/B in cached_required_reagents)
-					if(!has_reagent(B))
-						break
-					total_matching_reagents++
-				//Reaction Improvements
+				//Reagent Phases
+
 				for(var/B in cached_required_catalysts)
 					if(!has_reagent(B, cached_required_catalysts[B]))
 						break
@@ -508,7 +502,7 @@
 					meets_temp_requirement = 1
 
 				//Reagent Phases (START)
-				/* remove
+				/* removed
 				if(total_matching_reagents == total_required_reagents && total_matching_catalysts == total_required_catalysts && matching_container && matching_other && meets_temp_requirement)
 					possible_reactions  += C
 				*/
@@ -544,23 +538,38 @@
 				SSblackbox.record_feedback("tally", "chemical_reaction", cached_results[P]*multiplier, P)
 				add_reagent(P, cached_results[P]*multiplier, null, chem_temp)
 			*/
-			for(var/B in cached_required_reagents)
+			for(var/B in cached_required_reagents) //multiplier
 				if(selected_reaction.required_phases.Find(B))
 					multiplier = min(multiplier, get_reagent_amount(B, phase = selected_reaction.required_phases[B]) / cached_required_reagents[B])
+					//multiplier = min(multiplier, get_reagent_amount(B) / cached_required_reagents[B])
+					var/list/seen = viewers(4, get_turf(my_atom))
+					var/iconhtml = icon2html(cached_my_atom, seen)
+					for(var/mob/M in seen)
+						to_chat(M, "<span class='notice'>Multiplier: [selected_reaction.required_phases[B]]. [multiplier]</span>")
 				else
 					multiplier = min(multiplier, get_reagent_amount(B) / cached_required_reagents[B])
 
-			for(var/B in cached_required_reagents)
+			for(var/B in cached_required_reagents) //requirements
 				if(selected_reaction.required_phases.Find(B))
 					remove_reagent(B, (multiplier * cached_required_reagents[B]), safety = 1, phase = selected_reaction.required_phases[B])
+					//remove_reagent(B, (multiplier * cached_required_reagents[B]), safety = 1)
+					var/list/seen = viewers(4, get_turf(my_atom))
+					var/iconhtml = icon2html(cached_my_atom, seen)
+					for(var/mob/M in seen)
+						to_chat(M, "<span class='notice'>Required: [selected_reaction.required_phases[B]], [multiplier * cached_required_reagents[B]]</span>")
 				else
 					remove_reagent(B, (multiplier * cached_required_reagents[B]), safety = 1)
 
-			for(var/P in selected_reaction.results)
-				multiplier = max(multiplier, 1) //this shouldnt happen ...
+			for(var/P in selected_reaction.results) //results
+				//multiplier = max(multiplier, 1) //this shouldnt happen ... //no fuck off...
 				SSblackbox.record_feedback("tally", "chemical_reaction", cached_results[P]*multiplier, P)
 				if(selected_reaction.result_phases.Find(P))
 					add_reagent(P, cached_results[P]*multiplier, null, chem_temp, phase = selected_reaction.result_phases[P])
+					//add_reagent(P, cached_results[P]*multiplier, null, chem_temp)
+					var/list/seen = viewers(4, get_turf(my_atom))
+					var/iconhtml = icon2html(cached_my_atom, seen)
+					for(var/mob/M in seen)
+						to_chat(M, "<span class='notice'>Results: [selected_reaction.result_phases[P]], [cached_results[P]*multiplier]</span>")
 				else
 					add_reagent(P, cached_results[P]*multiplier, null, chem_temp)
 			//Reagent Phases (END)
@@ -831,7 +840,15 @@
 		var/datum/reagent/R = _reagent
 		if (R.id == reagent)
 			if(!amount)
-				return R
+				if(R.phasepercents[phase] * R.volume > 0)
+					return R
+				else
+					return 0
+			else if(amount < 0)
+				if(R.phasepercents[phase] * R.volume > 0)
+					return R
+				else
+					return 0
 			else
 				if(R.phasepercents[phase] * R.volume >= amount)
 					return R
