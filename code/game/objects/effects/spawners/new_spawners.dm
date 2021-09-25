@@ -29,7 +29,7 @@
 	loot = pick(loot1, loot2)
 	. = ..()
 
-/obj/effect/spawner/lootdrop/f13/armor/newsets/makeshift/tier2 //TIER 2 MAKESHIFTARMOR
+/obj/effect/spawner/lootdrop/f13/armor/newsets/makeshift/tier2 //TIER 2 MAKESHIFT ARMOR
 	name = "tier 2 makeshift armor"
 	lootcount = 1
 	var/loot1 = list(
@@ -637,6 +637,27 @@
 /obj/effect/spawner/lootdrop/f13/weapon/newsets/big_guns/tier3/Initialize(mapload) //on mapload, pick what shit to spawn
 	loot = pick(loot1, loot2)
 	. = ..()
+
+/obj/effect/spawner/lootdrop/f13/weapon/newsets/big_guns/tier_random
+	name = "tier random big guns weapons"
+	lootcount = 2 //guaranteeing it /will/ spawn
+	var/loot1 = list(
+				/obj/item/minigunpack,
+				""
+				)
+	var/loot2 = list(
+				/obj/item/gun/ballistic/automatic/atlauncher,
+				""
+				)
+	var/loot3 = list(
+				/obj/item/gun/ballistic/revolver/grenadelauncher/unrestricted,
+				/obj/item/ammo_box/a40mm
+				)
+
+/obj/effect/spawner/lootdrop/f13/weapon/newsets/big_guns/tier_random/Initialize(mapload) //on mapload, pick what shit to spawn
+	loot = pick(loot1, loot2, loot3)
+	. = ..()
+
 
 /////////
 // End of Big Guns.
