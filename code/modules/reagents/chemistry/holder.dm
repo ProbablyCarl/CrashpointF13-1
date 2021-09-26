@@ -555,11 +555,6 @@
 				SSblackbox.record_feedback("tally", "chemical_reaction", cached_results[P]*multiplier, P)
 				if(selected_reaction.result_phases.Find(P))
 					add_reagent(P, cached_results[P]*multiplier, null, chem_temp, phase = selected_reaction.result_phases[P])
-					//add_reagent(P, cached_results[P]*multiplier, null, chem_temp)
-					var/list/seen = viewers(4, get_turf(my_atom))
-					var/iconhtml = icon2html(cached_my_atom, seen)
-					for(var/mob/M in seen)
-						to_chat(M, "<span class='notice'>Results: [selected_reaction.result_phases[P]], [cached_results[P]*multiplier]</span>")
 				else
 					add_reagent(P, cached_results[P]*multiplier, null, chem_temp)
 			//Reagent Phases (END)
