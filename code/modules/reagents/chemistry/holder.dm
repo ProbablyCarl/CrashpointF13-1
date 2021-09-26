@@ -541,22 +541,12 @@
 			for(var/B in cached_required_reagents) //multiplier
 				if(selected_reaction.required_phases.Find(B))
 					multiplier = min(multiplier, get_reagent_amount(B, phase = selected_reaction.required_phases[B]) / cached_required_reagents[B])
-					//multiplier = min(multiplier, get_reagent_amount(B) / cached_required_reagents[B])
-					var/list/seen = viewers(4, get_turf(my_atom))
-					var/iconhtml = icon2html(cached_my_atom, seen)
-					for(var/mob/M in seen)
-						to_chat(M, "<span class='notice'>Multiplier: [selected_reaction.required_phases[B]]. [multiplier]</span>")
 				else
 					multiplier = min(multiplier, get_reagent_amount(B) / cached_required_reagents[B])
 
 			for(var/B in cached_required_reagents) //requirements
 				if(selected_reaction.required_phases.Find(B))
 					remove_reagent(B, (multiplier * cached_required_reagents[B]), safety = 1, phase = selected_reaction.required_phases[B])
-					//remove_reagent(B, (multiplier * cached_required_reagents[B]), safety = 1)
-					var/list/seen = viewers(4, get_turf(my_atom))
-					var/iconhtml = icon2html(cached_my_atom, seen)
-					for(var/mob/M in seen)
-						to_chat(M, "<span class='notice'>Required: [selected_reaction.required_phases[B]], [multiplier * cached_required_reagents[B]]</span>")
 				else
 					remove_reagent(B, (multiplier * cached_required_reagents[B]), safety = 1)
 
@@ -565,11 +555,6 @@
 				SSblackbox.record_feedback("tally", "chemical_reaction", cached_results[P]*multiplier, P)
 				if(selected_reaction.result_phases.Find(P))
 					add_reagent(P, cached_results[P]*multiplier, null, chem_temp, phase = selected_reaction.result_phases[P])
-					//add_reagent(P, cached_results[P]*multiplier, null, chem_temp)
-					var/list/seen = viewers(4, get_turf(my_atom))
-					var/iconhtml = icon2html(cached_my_atom, seen)
-					for(var/mob/M in seen)
-						to_chat(M, "<span class='notice'>Results: [selected_reaction.result_phases[P]], [cached_results[P]*multiplier]</span>")
 				else
 					add_reagent(P, cached_results[P]*multiplier, null, chem_temp)
 			//Reagent Phases (END)
