@@ -467,12 +467,7 @@ NCR Corpsman
 	head = 			/obj/item/clothing/head/f13/ncr/medic
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
 	suit_store = 	/obj/item/gun/ballistic/automatic/greasegun
-	belt = /obj/item/defibrillator/compact/loaded
-	backpack_contents = list(
-		/obj/item/reagent_containers/hypospray/medipen/stimpak=3,
-		/obj/item/storage/firstaid/regular=1,
-		/obj/item/storage/pill_bottle/epinephrine=1,
-		/obj/item/ammo_box/magazine/greasegun =1,)
+	backpack =		/obj/item/defibrillator/loaded
 
 /*
 Trooper

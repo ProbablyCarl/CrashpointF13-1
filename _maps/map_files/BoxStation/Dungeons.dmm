@@ -148,6 +148,16 @@
 	icon_state = "floorgrime"
 	},
 /area/f13/underground/enclave_base)
+"av" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8;
+	icon_state = "warningline"
+	},
+/obj/effect/spawner/lootdrop/f13/armor/newsets/energy/tier1,
+/turf/open/floor/plasteel/f13{
+	icon_state = "redrustyfull"
+	},
+/area/f13/ahs)
 "aw" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/armor/newsets/projectile/tier3,
@@ -65696,7 +65706,7 @@ iw
 hG
 hY
 fc
-iC
+av
 iC
 iw
 cO
