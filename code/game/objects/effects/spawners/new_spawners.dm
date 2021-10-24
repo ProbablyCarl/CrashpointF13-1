@@ -682,7 +682,7 @@
 	name = "tier 2 throwing weapons"
 	lootcount = 1 //guaranteeing it /will/ spawn
 	var/loot1 = list(
-				/obj/item/grenade/syndieminibomb/pipebomb
+				/obj/item/grenade/syndieminibomb/tin
 				)
 	var/loot2 = list(
 				/obj/item/grenade/syndieminibomb/concussion/frag
