@@ -8404,7 +8404,6 @@
 	dir = 4;
 	tag = "icon-rwindow (EAST)"
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/newsets/melee/tier2,
 /turf/open/floor/plasteel/barber{
 	icon = 'icons/turf/f13floors2.dmi';
 	icon_state = "bluerustychess2";
@@ -11131,7 +11130,6 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/effect/spawner/lootdrop/f13/weapon/newsets/melee/tier2,
 /turf/open/floor/wood/f13,
 /area/f13/building)
 "aFY" = (
@@ -13176,9 +13174,10 @@
 	},
 /area/f13/farm)
 "aLX" = (
-/obj/effect/spawner/lootdrop/f13/weapon/newsets/melee/tier2,
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/f13/weapon/newsets/throwing/tier2,
 /turf/open/floor/wood/f13,
-/area/f13/building)
+/area/f13/village)
 "aLY" = (
 /obj/structure/chair/wood,
 /turf/open/floor/wood/f13,
@@ -14343,10 +14342,15 @@
 	},
 /area/f13/wasteland)
 "aPC" = (
-/obj/effect/spawner/lootdrop/f13/weapon/newsets/melee/tier2,
+/obj/item/clothing/under/f13/police,
+/obj/item/clothing/head/f13/police,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/suit/armor/vest,
+/obj/structure/closet,
+/obj/item/clothing/head/beret,
+/obj/effect/spawner/lootdrop/f13/weapon/newsets/throwing/tier2,
 /turf/open/floor/f13{
-	icon_state = "floorrusty";
-	tag = "icon-floorrusty"
+	icon_state = "floorrusty"
 	},
 /area/f13/building)
 "aPD" = (
@@ -15004,13 +15008,11 @@
 /turf/open/floor/wood/f13,
 /area/f13/village)
 "aRB" = (
-/obj/machinery/light/small{
-	dir = 1
+/obj/effect/spawner/lootdrop/f13/weapon/newsets/throwing/tier1,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
 	},
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/f13/weapon/newsets/melee/tier2,
-/turf/open/floor/wood/f13,
-/area/f13/village)
+/area/f13/building)
 "aRC" = (
 /obj/structure/wreck/trash/two_barrels,
 /turf/open/indestructible/ground/outside/sidewalk{
@@ -15996,11 +15998,6 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"aUA" = (
-/obj/structure/closet/cabinet,
-/obj/effect/spawner/lootdrop/f13/weapon/newsets/melee/tier2,
-/turf/open/floor/wood/f13,
-/area/f13/village)
 "aUB" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
@@ -46408,7 +46405,7 @@ aMr
 apT
 abH
 aAM
-aAM
+aLX
 apT
 aDg
 apT
@@ -70799,7 +70796,7 @@ aMr
 aMr
 alf
 atz
-aPC
+aPI
 aum
 auD
 alf
@@ -72639,7 +72636,7 @@ acZ
 amg
 aJp
 abr
-aUA
+aSi
 aIg
 aIg
 aAp
@@ -75021,7 +75018,7 @@ abr
 acd
 abr
 abr
-aRB
+aTK
 abH
 abH
 aQj
@@ -86365,7 +86362,7 @@ bhy
 bhV
 bhG
 alf
-biI
+aPC
 ahq
 agO
 ahq
@@ -87905,7 +87902,7 @@ bhu
 alf
 bhH
 ahq
-ahq
+aRB
 alf
 biK
 ahq
@@ -93973,7 +93970,7 @@ aUU
 aUU
 aUU
 aUU
-aLX
+aSB
 aUU
 aUU
 aUU
