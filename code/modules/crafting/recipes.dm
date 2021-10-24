@@ -1942,9 +1942,9 @@
 
 /* Category Explosives - mk.2*/
 
-/datum/crafting_recipe/tincan_grenade
-	name = "Tin Grenade"
-	result = /obj/item/grenade/syndieminibomb/tin
+/datum/crafting_recipe/pipebomb
+	name = "Pipebomb"
+	result = /obj/item/grenade/syndieminibomb/pipebomb
 	reqs = list(/obj/item/reagent_containers/glass/bottle/blackpowder = 1,
 				/obj/item/stack/sheet/metal = 15)
 	time = 30
