@@ -15998,6 +15998,16 @@
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"aUA" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/landmark/observer_start,
+/turf/open/floor/f13{
+	icon_state = "floorrusty";
+	tag = "icon-floorrusty"
+	},
+/area/f13/city)
 "aUB" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
@@ -42447,7 +42457,7 @@ ams
 anc
 alY
 aaU
-biR
+aUA
 biQ
 btS
 biQ

@@ -257,7 +257,7 @@ GLOBAL_PROTECT(security_mode)
 		hostedby = CONFIG_GET(string/hostedby)
 
 	s += "<b>\[ENG] Fallout 13 \[18+]<br>"
-	s += "An 'HRP' server. 2277.<br>"
+	s += "An 'HRP' server. 2283.<br>"
 	s += "Hosted by: The Cabal"
 
 	var/n = 0

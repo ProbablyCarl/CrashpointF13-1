@@ -61,9 +61,6 @@
 	for(var/client/C in GLOB.clients)
 		if(C.prefs.chat_toggles & CHAT_OOC)
 
-			if(C.prefs.toggles)
-				C << sound('sound/f13effects/oocalert.ogg')
-
 			if(holder)
 				if(!holder.fakekey || C.holder)
 					if(check_rights_for(src, R_ADMIN))
