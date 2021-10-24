@@ -32,14 +32,14 @@
 	explosion(src.loc,1,2,2,flame_range = 1)
 	qdel(src)
 
-/obj/item/grenade/syndieminibomb/tin
-	name = "tin grenade"
-	desc = "A crude can of explosives."
+/obj/item/grenade/syndieminibomb/pipebomb
+	name = "pipebomb"
+	desc = "A rather long tube of explosives."
 	icon = 'icons/obj/grenade.dmi'
-	icon_state = "tingrenade"
+	icon_state = "syndicate"
 	item_state = "flashbang"
 
-/obj/item/grenade/syndieminibomb/tin/prime()
+/obj/item/grenade/syndieminibomb/pipebomb/prime()
 	update_mob()
 	explosion(src.loc,1,1,3,5,flame_range = 6)
 	qdel(src)
